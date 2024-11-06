@@ -285,15 +285,14 @@ a {
 }
 
 .titulo-inicio {
-    font-size: xx-large(1rem, 2.5vw + .8rem, 3rem);
-    font-family: 
-    Cambria, Cochin, Georgia, Times, 'Times New Roman', serif(--font-grande);
-    font-weight: normal;
+    font-size: clamp(1rem, 2.5vw + .8rem, 3rem);
+    font-family: var(--font-grande);
+    font-weight: bolder;
 }
 
 .destaque-inicio {
     font-weight: bolder;
-    font-size: larger;
+    font-size: 25px;
 }
 
 .paragrafo-inicio p {
