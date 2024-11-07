@@ -402,6 +402,7 @@ a {
     z-index: 1;
     user-select: none;
     overflow: visible;
+    padding-left: 100px;
 }
 
 .container-sobre {
@@ -564,11 +565,12 @@ a {
 
 /*************** SKILLS *****/
 .skills {
-    width: 100%;
+    width: 135%;
     padding: 7rem 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: whitesmoke;
 }
 
 .container-skills {
@@ -583,7 +585,7 @@ a {
     width: 100%;
     text-align: center;
     margin-bottom: 2rem;
-    color: var(--color-white);
+    color: var(--color-black);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -596,7 +598,7 @@ a {
 
 .text-headline-skills p {
     font-size: 1.5rem;
-    color: var(--color-gray2);
+    color: var(--color-black);
     font-weight: 500;
     line-height: 1.4;
     max-width: 900px;
@@ -609,9 +611,9 @@ a {
 }
 
 .box-skills {
-    border: 1px solid hsla(0, 0%, 100%, 0.15);
+    border: 1px solid hsla(0, 33%, 1%, 0.15);
     border-radius: 20px;
-    color: var(--color-white);
+    color: var(--color-black);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -622,7 +624,7 @@ a {
 
 .box-skills i {
     font-size: 4rem;
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
 .box-skills h3 {
@@ -630,7 +632,7 @@ a {
 }
 
 .box-skills p {
-    color: var(--color-gray2);
+    color: var(--color-black);
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.4;
