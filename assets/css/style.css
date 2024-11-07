@@ -285,18 +285,25 @@ a {
 }
 
 .titulo-inicio {
-    font-size: clamp(1rem, 2.5vw + .8rem, 3rem);
+    font-size: 60px;
     font-family: var(--font-grande);
     font-weight: bolder;
 }
 
 .destaque-inicio {
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .paragrafo-inicio p {
-    font-size: clamp(1.2rem, 1.5vw + 1rem, 2rem);
+    font-size: 30px;
+    max-width: 900px;
+    color: var(--color-gray2);
+    font-family: var(--font-pequena);
+}
+
+.descricao-inicio p {
+    font-size: 25px;
     max-width: 900px;
     color: var(--color-gray2);
     font-family: var(--font-pequena);
@@ -576,9 +583,11 @@ a {
 .container-skills {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 10px;
+    flex-wrap: wrap;
 }
 
 .headline-skills {
@@ -612,13 +621,13 @@ a {
 
 .box-skills {
     border: 1px solid hsla(0, 33%, 1%, 0.15);
-    border-radius: 20px;
+    border-radius: 30px;
     color: var(--color-black);
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 450px;
-    padding: 2rem;
+    padding: 1rem;
     gap: 1.5rem;
 }
 
