@@ -571,12 +571,15 @@ a {
 }
 
 /*************** SKILLS *****/
+
+
+
 .skills {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: whitesmoke;
+    background-color: rgb(255, 255, 255);
     padding: 7rem 1rem;
 }
 
@@ -653,9 +656,9 @@ a {
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
     .conteudo-skills {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
     }
 }
 
