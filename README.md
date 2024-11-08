@@ -65,9 +65,6 @@ Eu sou **Ricardo Moura**, desenvolvedor web freelancer e criador de conteúdo fo
 
 Se você gostou deste projeto ou deseja aprender mais sobre como melhorar seus projetos, siga-me nas minhas redes sociais para mais conteúdos:
 
-- **Instagram:** [@riicardomoura](https://www.instagram.com/riicardomoura/)
-- **LinkedIn:** [Ricardo Moura](https://www.linkedin.com/in/ricardomouradev/)
-- **Meus Links:** [RM│Dev.](https://rmdeveloper.com.br/meus-links)
 
 ## 🎁 Como Contribuir
 
