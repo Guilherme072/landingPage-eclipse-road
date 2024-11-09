@@ -17,7 +17,7 @@
     --color-white: #f6f6f6;
     --color-destaque1: #836FFF;
     --color-destaque2: #728e6f;
-    --color-destaque3:rgb(107, 146, 255);
+    --color-destaque3: rgb(107, 146, 255);
 }
 
 /* Estilizando a barra de rolagem */
@@ -83,14 +83,14 @@ a {
 #backToTop {
     bottom: 20px;
     left: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 #whatsappButton {
     bottom: 20px;
     right: 20px;
     background-color: #25D366;
-    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5); 
+    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5);
     animation: pulse 2s infinite;
 }
 
@@ -108,10 +108,12 @@ a {
         transform: scale(1);
         box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
     }
+
     50% {
         transform: scale(1.1);
         box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
     }
+
     100% {
         transform: scale(1);
         box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
@@ -140,9 +142,9 @@ a {
     justify-content: space-between;
     z-index: 99;
     transition: top 0.3s ease-in-out;
-    background-color: rgba(0, 0, 0, .9); 
-    backdrop-filter: blur(10px); 
-    -webkit-backdrop-filter: blur(10px); 
+    background-color: rgba(0, 0, 0, .9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 /* Logo */
@@ -402,15 +404,16 @@ a {
 .sobre {
     background-color: var(--color-black);
     width: 100%;
-    height: 63vh;
+    /* height: 63vh; */
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem 1rem;
+    padding: 4rem 1rem;
     z-index: 1;
     user-select: none;
     overflow: visible;
-    padding-left: 100px;
+    /* padding-left: 100px; */
+
 }
 
 .container-sobre {
@@ -1164,6 +1167,10 @@ a {
     justify-content: center;
 }
 
+.footer-column a:hover{
+    text-decoration: underline;
+}
+
 .logo-column {
     align-items: flex-start;
 }
@@ -1232,40 +1239,41 @@ a {
     margin: 0.2rem 0;
 }
 
-.credits-column a{
+.credits-column a {
     color: var(--color-destaque3);
 }
 
 
-.container-free-your-mind-itens{
+.container-free-your-mind-itens {
     display: flex;
     margin: 0 auto;
     gap: 100px;
     margin-bottom: 90px;
 }
 
-.container-free-your-mind .container-free-your-mind-title{
+.container-free-your-mind .container-free-your-mind-title {
     font-size: 5rem;
     text-align: center;
     margin-bottom: 80px;
 }
 
-.container-free-your-mind-item{
+.container-free-your-mind-item {
     display: flex;
     flex-direction: column;
 }
 
-.container-free-your-mind-item h5, .container-free-your-mind-item span{
+.container-free-your-mind-item h5,
+.container-free-your-mind-item span {
     font-size: 5rem;
     text-align: center;
 }
 
-.container-free-your-mind-item h6{
+.container-free-your-mind-item h6 {
     font-size: 3rem;
     text-align: center;
 }
 
-.lista-contato a:hover{
+.lista-contato a:hover {
     text-decoration: underline;
 }
 
@@ -1273,72 +1281,72 @@ a {
     display: flex;
 }
 
-.roll-content{
+.roll-content {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    align-items: center;
-    margin-top: 300px;
+    margin-top: 50px;
+    overflow: hidden;
 }
 
 .roll-content-item {
     margin: 10px;
 }
 
-.roll-content-item img{
+.roll-content-item img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
 }
 
-.roll-content-itens{
+.roll-content-itens {
     width: fit-content;
     display: flex;
     margin-bottom: 10px;
 }
 
-.roll-content-left-to-right{
+.roll-content-left-to-right {
     animation: roll-left-to-right 120s linear infinite;
 }
 
-.roll-content-right-to-left{
+.roll-content-right-to-left {
     animation: roll-right-to-left 120s linear infinite;
 }
 
-@keyframes roll-left-to-right{
-    0%{
-        transform: translate(0, 0);
+@keyframes roll-left-to-right {
+    from {
+        transform: translateX(0%);
     }
-    99%{
-        transform: translate(50%, 0);
-    }
-    100%{
-        transform: translate(0, 0);
+
+    to {
+        transform: translateX(-50%);
     }
 }
 
-@keyframes roll-right-to-left{
-    0%{
-        transform: translate(0, 0);
+@keyframes roll-right-to-left {
+    from {
+        transform: translateX(-50%);
     }
-    99%{
-        transform: translate(-50%, 0);
-    }
-    100%{
-        transform: translate(0, 0);
+
+    to {
+        transform: translateX(0%);
     }
 }
 
-@keyframes roll-item-float{
-    0%, 50%, 100% {
+@keyframes roll-item-float {
+
+    0%,
+    50%,
+    100% {
         transform: translateY(0px);
         animation-timing-function: ease-out;
     }
+
     25% {
         transform: translateY(10px);
         animation-timing-function: ease-in;
     }
-    
+
     75% {
         transform: translateY(-10px);
         animation-timing-function: ease-in;
