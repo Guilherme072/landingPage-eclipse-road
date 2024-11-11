@@ -293,7 +293,7 @@ a {
 
 .destaque-inicio {
     font-weight: bolder;
-    font-size: 35px;
+    font-size: 40px;
 }
 
 .paragrafo-inicio p {
@@ -1360,4 +1360,8 @@ a {
     height: 100%;
     object-fit: cover;
     z-index: -1;
+}
+
+a img {
+    cursor: pointer;
 }
