@@ -136,13 +136,13 @@ a {
     position: fixed;
     top: 0;
     width: 100vw;
-    padding: 0.2rem 1.2rem;
+    padding: 1.2rem 2.2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 99;
     transition: top 0.3s ease-in-out;
-    
+
 }
 
 /* Logo */
@@ -1166,7 +1166,7 @@ a {
     justify-content: center;
 }
 
-.footer-column a:hover{
+.footer-column a:hover {
     text-decoration: underline;
 }
 
@@ -1310,6 +1310,30 @@ a {
 
 .roll-content-right-to-left {
     animation: roll-right-to-left 120s linear infinite;
+}
+
+.seta-inicio {
+    position: absolute;
+    bottom: 50px;
+    color: white;
+}
+
+.seta-inicio img {
+    filter: contrast(0);
+    width: 100px;
+    cursor: pointer;
+}
+
+@keyframes start-arrow-remove {
+    from {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
 }
 
 @keyframes roll-left-to-right {
