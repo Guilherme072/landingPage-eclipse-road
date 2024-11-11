@@ -645,6 +645,7 @@ a {
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.4;
+    text-align: justify;
 }
 
 @media (min-width: 600px) {
