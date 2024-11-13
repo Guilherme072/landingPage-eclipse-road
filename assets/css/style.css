@@ -142,6 +142,7 @@ a {
     justify-content: space-between;
     z-index: 99;
     transition: top 0.3s ease-in-out;
+    backdrop-filter: blur(10px);
 
 }
 
@@ -412,6 +413,10 @@ a {
     overflow: visible;
     /* padding-left: 100px; */
 
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+
 }
 
 .container-sobre {
@@ -550,6 +555,38 @@ a {
     width: 90%;
     z-index: 1000;
     animation: rotate 20s linear infinite;
+}
+
+.sobrenos{
+    display: flex;
+    color: white;
+    padding: 150px 50px;
+    justify-content: center;
+}
+
+.sobrenos-left{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+.sobrenos-left p{
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 33px;
+    font-weight: 100;
+    margin-top: 20px;
+}
+
+.sobrenos-left img{
+    width: 100%;
+}
+
+.sobrenos-right {
+    display: flex;
+    align-items: center;
+    padding-left: 46px;
 }
 
 @keyframes rotate {
@@ -1248,6 +1285,7 @@ a {
     display: flex;
     margin: 0 auto;
     gap: 100px;
+    margin: 0 50px;
     margin-bottom: 90px;
 }
 
@@ -1325,6 +1363,11 @@ a {
     cursor: pointer;
 }
 
+.video-fundo-agenciados{
+    position: absolute;
+    z-index: -2;
+}
+
 @keyframes start-arrow-remove {
     from {
         transform: translateY(0%);
@@ -1391,6 +1434,58 @@ a img {
     cursor: pointer;
 }
 
+.rede-social {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+}
+
+.rede-social i {
+    font-size: 1em;
+    color: #7303f3;
+}
+
+.rede-social a {
+    font-size: 1.3em;
+    color: #7303f3;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border-bottom: 1px dotted black; /* Para indicar que é uma palavra com explicação */
+    text-decoration: none;
+}
+
+/* Caixa de texto que aparece quando o mouse passa sobre a palavra */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Posiciona a tooltip acima do texto */
+    left: 50%;
+    margin-left: -100px; /* Centraliza a caixa */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Exibe o tooltip quando o mouse passa sobre a palavra */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    
+}
 
 
 
