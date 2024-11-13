@@ -32,7 +32,9 @@ if (targetElement) {
 
 function loadIncreaseNumbers(){
     setTimeout(() => {
-        increaseNumber(document.querySelector("#followers-count"), 1, 22, 1, 70)
+        increaseNumber(document.querySelector("#followers-count"), 1, 3.1, 0.1, 70)
+        increaseNumber(document.querySelector("#youtube-count"), 1, 17, 1, 70)
+        increaseNumber(document.querySelector("#instagram-count"), 70, 85, 1, 70)
         increaseNumber(document.querySelector("#views-count"), 1, 3.5, 0.1, 50)
     }, 50)
 }
