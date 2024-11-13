@@ -95,7 +95,7 @@
                         </svg>
                     </button>
                 </div>
-                <div class="seta-inicio" id="seta-inicio" data-aos="fade-up" data-aos-duration="1000">
+                <div class="seta-inicio" id="seta-inicio" data-aos="fade-up" data-aos-duration="1000" onclick="window.scroll({top: 350, behavior: 'smooth'})">
                     <img src="assets/img/setainicio.gif"/>
                 </div>
                 <!-- <div class="complemento-inicio">
@@ -134,7 +134,8 @@
                     <div class="box-skills" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
                         <i class="bi bi-globe"></i>
                         <h3>Soluções de networking</h3>
-                        <p>Oferecemos um serviço de matchmaking, conectando influenciadores a marcas que se alinham com seus valores e objetivos, garantindo o sucesso de cada parceria.</p>
+                        <p>Oferecemos um serviço de <span class="tooltip" spellcheck="false"> matchmaking,<span class="tooltiptext">Se refere à prática de conectar pessoas ou entidades com interesses comuns para gerar benefícios mútuos.</span> 
+                        </span>conectando influenciadores a marcas que se alinham com seus valores e objetivos, garantindo o sucesso de cada parceria.</p>
                     </div>
                     <div class="box-skills" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
                         <i class="bi bi-people-fill"></i>
@@ -148,14 +149,6 @@
 
         <!--Sobre-->
         <section id="sobre" class="sobre">
-            
-            <!-- <div class="video-container">
-            <video autoplay muted loop id="video-fundo">
-                <source src="assets/videos/fundoagenciados.mp4" type="video/mp4">
-                Seu navegador não suporta vídeos.
-            </video>
-            </div> -->
-            
             <div class="container-sobre">
                 <!--Slide Sobre-->
                 <div class="headline-sobre" data-aos="fade-up" data-aos-duration="1000" style="position: relative;">
@@ -424,57 +417,23 @@
                 </div>
 
             </div>
+            <video autoplay muted loop class="video-fundo-agenciados">
+                <source src="assets/videos/fundoagenciados.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos.
+            </video>
         </section>
         <!--Fim Sobre-->
 
         <!--Serviços-->
-        <section id="servicos" class="servicos">
-            <div class="container-servicos">
-                <div class="headline-servicos" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="titulo-servicos">
-                        <h1>Abas</h1>
-                    </div>
-                    <div class="descricao-servicos" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                        <p></p>
-                    </div>
-                </div>
-                <div class="servicos-cards">
-                    <!--Serviço 1-->
-                    <div class="card-servicos-left" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
-                        <div class="card-titulo">
-                            <h1>Sobre nós</h1>
-                        </div>
-                        <div class="card-icon"><i class="bi bi-share"></i></div>
-                    </div>
-                    <!--Serviço 2-->
-                    <div class="card-servicos" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
-                        <div class="card-titulo">
-                            <h1>Agenciados</h1>
-                        </div>
-                        <div class="card-icon"><i class="bi bi-people"></i></div>
-                    </div>
-                    <!--Serviço 3-->
-                    <div class="card-servicos-left" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
-                        <div class="card-titulo">
-                            <h1>Produtora</h1>
-                        </div>
-                        <div class="card-icon"><i class="bi bi-camera-video"></i></div>
-                    </div>
-                    <!--Serviço 4-->
-                    <div class="card-servicos" data-aos="fade-left" data-aos-delay="600" data-aos-duration="1000">
-                        <div class="card-titulo">
-                            <h1>Precificação</h1>
-                        </div>
-                        <div class="card-icon"><i class="bi bi-currency-dollar"></i></div>
-                    </div>
-                    <!--Serviço 5-->
-                    <div class="card-servicos-left" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000">
-                        <div class="card-titulo">
-                            <h1>Midia kit </h1>
-                        </div>
-                        <div class="card-icon"><i class="bi bi-share"></i></div>
-                    </div>
-                    <!--Serviço 6-->
+        <section id="sobrenos" class="sobrenos">
+            <div class="sobrenos-left">
+                <img src="/assets/img/logosobrenos.png">
+                <p>ECLIPSE<br>ROAD</p>
+            </div>
+            <div class="sobrenos-right">
+                <div>
+                    <p style="font-weight: 800; font-size: 4rem; line-height: 67px;">Anunciou com a Eclipse, <br>anunciou com o 𝕏 todo.</p>
+                    <p style="font-size: 1.5rem; margin-top: 45px;">A Eclipse Road tem como missão ajudar influenciadores a se conectarem com publicidades. Atuamos principalmente no X, mesmo tendo perfis relevantes em todas as redes. <br><br>Valorizamos a privacidade e a autenticidade dos nossos parceiros e clientes, o que nos permite criar relações de confiança. Estamos sempre em busca de inovação e excelência para garantir a realização de cada projeto com dedicação e profissionalismo.</p>
                 </div>
             </div>
         </section>
@@ -483,15 +442,23 @@
         <!--Complemento FREE YOUR MIND-->
         <section id="free-your-mind" class="free-your-mind">
             <div class="container-free-your-mind" data-aos="fade-up" data-aos-duration="1000">
-                <span class="container-free-your-mind-title">Nossos números</span>
+                <span class="container-free-your-mind-title">Mensalmente, nós fazemos...</span>
                 <div class="container-free-your-mind-itens" id="increase-numbers">
                     <div class="container-free-your-mind-item">
-                        <h5>+<span id="followers-count">1</span> milhões</h5>
-                        <h6>de seguidores</h6>
+                        <h5>+<span id="youtube-count">1</span>M</h5>
+                        <h6>visualizações no YouTube <br><span style="font-size: 2rem; display: block;">(vídeos longos)</span></h6>
+                    </div>                    
+                    <div class="container-free-your-mind-item">
+                        <h5>+<span id="instagram-count">1</span>M</h5>
+                        <h6>visualizações no Instagram</h6>
+                    </div>                    
+                    <div class="container-free-your-mind-item">
+                        <h5>+<span id="views-count">1</span>B</h5>
+                        <h6>impressões no X</h6>
                     </div>
                     <div class="container-free-your-mind-item">
-                        <h5>+<span id="views-count">1</span> bilhões</h5>
-                        <h6>de impressões mensais</h6>
+                        <h5>+<span id="followers-count">1</span>M</h5>
+                        <h6>seguidores</h6>
                     </div>
                 </div>
             </div>
@@ -519,7 +486,16 @@
                             <div class="conteudo-textos-case">
                                 <h1>Zanfa</h1>
                                 <p>Zanfa é dono de um perfil humorístico extremamente engajado na rede social X. Mesmo com 300 mil seguidores, a conta tem uma das maiores impressões do site brasileiro.</p>
-                                <span>Redes</span>
+                                <span class="rede-social">
+                                    <a href="https://x.com/Zanfa" target="_blank" class="rede-social-link">𝕏</a>
+                                    
+                                    <a href="http://fb.com/capinaremos" target="_blank" class="rede-social-link">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/zanfao/" target="_blank" class="rede-social-link">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -529,7 +505,14 @@
                             <div class="conteudo-textos-case">
                                 <h1>Xarope com X</h1>
                                 <p>Xarope com X além de ser um exelente editor de vídeo é um youtuber com conteúdos dinamicos e mais de 100 mil inscritos. Além de um perfil no X bem engajado. </p>
-                                <span>Redes</span>
+                                <span class="rede-social">
+                                    <a href="https://www.youtube.com/@XAROPECOMX" target="_blank" class="rede-social-link">
+                                        <i class="bi bi-youtube"></i>
+                                    </a>
+                                    
+                                    <a href="https://x.com/xaropecomx" target="_blank" class="rede-social-link">𝕏</a>
+                                
+                                </span>
                             </div>
                         </div>
                         <div class="imagens-case">
@@ -553,7 +536,17 @@
                             <div class="conteudo-textos-case">
                                 <h1>Kerbitos</h1>
                                 <p>Kerbitos além de um instagram com mais de 250 mil seguidores e bem engajado, tem um canal no youtube com mais de 3 milhões de inscritos.</p>
-                                <span>Redes</span>
+                                <span class="rede-social">
+                                    <a href="https://www.youtube.com/@Kerbitos" target="_blank" class="rede-social-link">
+                                        <i class="bi bi-youtube"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/kerbitos/" target="_blank" class="rede-social-link">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                    <a href="https://www.tiktok.com/@kerbitos" target="_blank" class="rede-social-link">
+                                        <i class="bi bi-tiktok"></i>
+                                    </a>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -563,7 +556,15 @@
                             <div class="conteudo-textos-case">
                                 <h1>Samengo</h1>
                                 <p>Samengo é um grande perfil no nicho de esportes, especialmente entre os torcedores do Flamengo. Alcançou a marca de 100 mil seguidores em uma semana em uma rede social e possui um engajamento incrível em todas as suas mídias.</p>
-                                <span>Redes</span>
+                                <span class="rede-social">
+                                    <a href="https://www.instagram.com/samengo_ofc/" target="_blank" class="rede-social-link">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                    <a href="https://www.twitch.tv/samengo" target="_blank" class="rede-social-link">
+                                        <i class="bi bi-twitch"></i>
+                                    </a>
+                                    <a href="https://x.com/samengo_ofc" target="_blank" class="rede-social-link">𝕏</a>
+                                </span>
                             </div>
                         </div>
                         <div class="imagens-case">
@@ -670,6 +671,7 @@
     <script src="assets/js/slidePortfolio.js"></script>
     <script src="assets/js/numbersIncrease.js"></script>
     <script src="assets/js/startArrow.js"></script>
+    <script src="assets/js/headerBackground.js"></script>
 
 </body>
 
