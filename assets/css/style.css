@@ -1505,6 +1505,9 @@ a img {
     .paragrafo-inicio p {
         font-size: 1.5rem;
     }
+    .nav-menu a {
+        font-size: 30px;
+    }
 }
 
 
