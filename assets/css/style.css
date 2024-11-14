@@ -1487,5 +1487,18 @@ a img {
     
 }
 
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .container {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
 
 
