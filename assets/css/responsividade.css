@@ -7,6 +7,7 @@
         text-align: center;
         flex-direction: column;
         align-items: center;
+        overflow-x: hidden;
     }
 
     /************************** SOBRE ***/
@@ -163,7 +164,17 @@
     }
 
     .titulo-contato h1 {
-        font-size: 6rem;
+        font-size: 2.5rem;
+        text-align: left;
+        margin-top: 24px;
+    }
+
+    .titulo-contato h2 {
+        margin-top: 10px;
+    }
+
+    .titulo-contato p {
+        font-size: 8.5vw;
     }
 
     .descricao-contato {
@@ -179,8 +190,8 @@
         letter-spacing: 1.5px;
         line-height: 1.4;
         font-weight: bold;
+        margin-top: 50px;
     }
-
 
     .conteudo-contato {
         padding-top: 2rem;
@@ -207,6 +218,7 @@
         text-align: right;
         margin-top: 0;
     }
+
 
     .container-free-your-mind-itens{
         flex-direction: column;
@@ -248,11 +260,13 @@
 
     .conteudo-textos-case h1 {
         font-size: 7vw;
+        margin-top: 88px;
     }
 
     .slide img {
-        width: 100%;
-        height: 90%;
+        width: 99%;
+        height: 83%;
+        margin-top: 62px;
     }
     
     .header {
@@ -266,8 +280,76 @@
     }
 
     .sizetext {
-        font-size: 2rem;
+        font-size: 3rem;
     }
+
+    .sobrenos {
+        flex-direction: column; /* Alinha os elementos em coluna */
+        text-align: center;    /* Centraliza o texto */
+    }
+
+    .sobrenos-left {
+        width: 80%; /* Aumenta a largura da imagem no celular */
+        max-width: 100%; /* Garante que não exceda a tela */
+        margin: 0 auto; /* Centraliza horizontalmente */
+        margin-top: -10px;
+        text-align: center;
+        padding-left: 43px;
+    }
+
+    .sobrenos-right {
+        width: 100%; /* Texto ocupa toda a largura */
+        font-size: 1.2rem; /* Ajusta o tamanho do texto */
+        padding-left: 4px;
+    }
+    .sobrenos-left p {
+        text-align: center;
+        font-size: 2rem;
+        letter-spacing: 20px;
+        font-weight: 100;
+        margin-top: 20px;
+    }
+
+    .sobrenos-texto {
+        font-size: 1.3rem;
+    }
+
+    .sobrenos-titulo {
+        font-size: 1.9rem;
+        line-height: 40px;
+        margin-top: 30px;
+    }
+
+    .seta-inicio img {
+        width: 67px;
+    }
+
+    .seta-inicio {
+        bottom: 105px;
+    }
+
+    .logo img {
+        width: 110px;
+    }
+
+    .logo {
+        width: 0;
+    }
+
+    .cta span {
+        font-size: 15px;
+    }
+
+    .cta::before {
+        width: 40px;
+        height: 39px;
+    }
+
+    .container-free-your-mind-title strong {
+        font-family: var(--font-grande);
+        font-size: 3rem;
+    }
+
 }
 
 

@@ -342,7 +342,7 @@ a {
 .cta span {
     position: relative;
     font-family: var(--font-pequena);
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
     letter-spacing: 0.05em;
     color: var(--color-white);
@@ -589,6 +589,16 @@ a {
     padding-left: 46px;
 }
 
+.sobrenos-titulo{
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 67px;
+}
+
+.sobrenos-texto {
+    font-size: 1.5rem;
+    margin-top: 45px;
+}
 @keyframes rotate {
     from {
         transform: rotate(0deg);
@@ -819,7 +829,6 @@ a {
     align-items: center;
     justify-content: center;
     padding: 4rem 1rem;
-    font-family: var(--font-grande);
 }
 
 .container-free-your-mind {
@@ -829,6 +838,7 @@ a {
     flex-direction: column;
     align-items: left;
     justify-content: center;
+    padding-left: 30px;
 }
 
 .line-container {
@@ -1070,9 +1080,15 @@ a {
 .titulo-contato h1 {
     color: var(--color-black);
     width: 100%;
-    font-size: 2vw;
+    font-size: 2.2vw;
     font-weight: lighter;
     font-family: var(--font-grande);
+    margin-top: -60px;
+}
+
+.vamos p {
+    font-size: 2vw;
+    text-align: left;
 }
 
 .titulo-contato h2 {
@@ -1081,7 +1097,7 @@ a {
     font-size: 2rem;
     /* font-weight: lighter; */
     /* font-family: var(--font-grande); */
-    margin-top: -50px;
+    margin-top: -170px;
 }
 
 .sizetext {
@@ -1119,6 +1135,7 @@ a {
     justify-content: center;
     gap: 1rem;
     padding: 2rem 0rem 2rem 0rem;
+    margin-top: -166px;
 }
 
 .formulario-contato h2 {
@@ -1308,15 +1325,34 @@ a {
     margin-bottom: 80px;
 }
 
+.container-free-your-mind-title {
+    font-family: var(--font-grande);
+}
+
 .container-free-your-mind-item {
     display: flex;
     flex-direction: column;
+}
+
+.container-free-your-mind-item-sem {
+    font-size: 3.5rem;
+    text-align: center;
+}
+.container-free-your-mind-item-sem h5  { 
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: var(--font-grande);
+}
+
+.container-free-your-mind-item-sem span {
+    font-size: 3.5rem;
 }
 
 .container-free-your-mind-item h5,
 .container-free-your-mind-item span {
     font-size: 3.5rem;
     text-align: center;
+    font-family: var(--font-grande);
 }
 
 .container-free-your-mind-item h6 {
@@ -1501,6 +1537,8 @@ a img {
     opacity: 1;
     
 }
+
+
 
 @media (max-width: 1024px) {
     body {
