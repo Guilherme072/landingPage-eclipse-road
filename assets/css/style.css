@@ -818,7 +818,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem 1rem;
+    padding: 4rem 1rem;
     font-family: var(--font-grande);
 }
 
@@ -895,7 +895,7 @@ a {
 
 .headline-portfolio .titulo {
     width: 50%;
-    font-size: 8vw;
+    font-size: 5vw;
     font-weight: lighter;
     font-family: var(--font-grande);
 }
@@ -1005,7 +1005,7 @@ a {
 
 .conteudo-textos-case h1 {
     color: var(--color-white);
-    font-size: 4vw;
+    font-size: 2.5vw;
     letter-spacing: 3px;
 }
 
@@ -1060,8 +1060,8 @@ a {
 }
 
 .titulo-contato {
-    height: 100%;
-    width: 50%;
+    height: 15%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -1069,10 +1069,23 @@ a {
 
 .titulo-contato h1 {
     color: var(--color-black);
-    width: 50%;
-    font-size: 8vw;
+    width: 100%;
+    font-size: 2vw;
     font-weight: lighter;
     font-family: var(--font-grande);
+}
+
+.titulo-contato h2 {
+    /* color: black; */
+    width: 100%;
+    font-size: 2rem;
+    /* font-weight: lighter; */
+    /* font-family: var(--font-grande); */
+    margin-top: -50px;
+}
+
+.sizetext {
+    font-size: 2.3vw;
 }
 
 .descricao-contato {
@@ -1290,7 +1303,7 @@ a {
 }
 
 .container-free-your-mind .container-free-your-mind-title {
-    font-size: 5rem;
+    font-size: 3.5rem;
     text-align: center;
     margin-bottom: 80px;
 }
@@ -1302,12 +1315,12 @@ a {
 
 .container-free-your-mind-item h5,
 .container-free-your-mind-item span {
-    font-size: 5rem;
+    font-size: 3.5rem;
     text-align: center;
 }
 
 .container-free-your-mind-item h6 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 
@@ -1460,6 +1473,8 @@ a img {
     cursor: pointer;
     border-bottom: 1px dotted black; /* Para indicar que é uma palavra com explicação */
     text-decoration: none;
+    text-align: left;
+    margin-right: 0.1rem;
 }
 
 /* Caixa de texto que aparece quando o mouse passa sobre a palavra */
@@ -1493,8 +1508,10 @@ a img {
     }
     .container {
         width: 100%;
-        padding: 10px;
+        padding: 0;
         text-align: center;
+        flex-direction: column;
+        align-items: center;
     }
     h1 {
         font-size: 3rem;
@@ -1507,6 +1524,17 @@ a img {
     }
     .nav-menu a {
         font-size: 30px;
+    }
+    .sobrenos-left {
+        padding: 5px;
+        max-width: 100%;
+        height: auto;
+    }
+    .headline-scroll span {
+        font-size: 2rem;
+    }
+    .headline-portfolio .titulo {
+        font-size: 3.5rem;
     }
 }
 

@@ -2,7 +2,11 @@
 @media (max-width: 1024px) {
 
     .container {
+        width: 100%;
         padding: 0;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     /************************** SOBRE ***/
@@ -94,7 +98,7 @@
     }
 
     .headline-portfolio .titulo {
-        font-size: 6rem;
+        font-size: 3.5rem;
     }
 
     .headline-portfolio .descricao {
@@ -206,4 +210,59 @@
     .container-free-your-mind-itens{
         flex-direction: column;
     }
+
+    body {
+        font-size: 16px;
+    }
+    .container {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    .destaque-inicio {
+        font-size: 1.7rem;
+    }
+    .paragrafo-inicio p {
+        font-size: 1.5rem;
+    }
+    .nav-menu a {
+        font-size: 30px;
+    }
+    .sobrenos-left {
+        padding: 5px;
+        max-width: 100%;
+        height: auto;
+    }
+    .headline-scroll span {
+        font-size: 2rem;
+    }
+    .headline-portfolio .titulo {
+        font-size: 3.5rem;
+    }
+
+    .conteudo-textos-case h1 {
+        font-size: 7vw;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 90%;
+    }
+    
+    .header {
+        padding: 0.4rem 2.2rem;
+    }
+
+    .roll-content-item img {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+    }
 }
+
+
