@@ -347,7 +347,11 @@
 
     .container-free-your-mind-title strong {
         font-family: var(--font-grande);
-        font-size: 3rem;
+        font-size: 2.7rem;
+    }
+
+    .container-free-your-mind {
+        padding-left: 0px;
     }
 
 }
