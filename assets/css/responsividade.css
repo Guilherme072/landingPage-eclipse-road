@@ -187,7 +187,7 @@
         text-decoration: none;
         color: var(--color-black);
         font-size: 1.5rem;
-        letter-spacing: 1.5px;
+        letter-spacing: 1px;
         line-height: 1.4;
         font-weight: bold;
         margin-top: 50px;
@@ -264,9 +264,16 @@
     }
 
     .slide img {
-        width: 99%;
+        width: 98%;
         height: 83%;
-        margin-top: 62px;
+        margin-top: 70px;
+    }
+
+    .slide {
+    position: relative;
+    width: 94%;
+    height: 84%;
+    overflow: hidden
     }
     
     .header {
@@ -280,7 +287,7 @@
     }
 
     .sizetext {
-        font-size: 3rem;
+        font-size: 2.6rem;
     }
 
     .sobrenos {
@@ -354,6 +361,13 @@
         padding-left: 0px;
     }
 
+    .conteudo-textos-case-s {
+        margin-top: 10px;
+    }
+
+    .rede-social {
+        margin-top: 15px;
+    }
 }
 
 
