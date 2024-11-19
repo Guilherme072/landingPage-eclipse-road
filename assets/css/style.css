@@ -839,6 +839,8 @@ a {
     align-items: left;
     justify-content: center;
     padding-left: 30px;
+
+    align-items: center;
 }
 
 .line-container {
@@ -1102,6 +1104,8 @@ a {
 
 .sizetext {
     font-size: 2.3vw;
+    color: var(--color-black);
+    font-family: var(--font-grande);
 }
 
 .descricao-contato {
@@ -1135,7 +1139,6 @@ a {
     justify-content: center;
     gap: 1rem;
     padding: 2rem 0rem 2rem 0rem;
-    margin-top: -166px;
 }
 
 .formulario-contato h2 {
@@ -1317,6 +1320,7 @@ a {
     gap: 100px;
     margin: 0 50px;
     margin-bottom: 90px;
+    text-align: center;
 }
 
 .container-free-your-mind .container-free-your-mind-title {
@@ -1536,44 +1540,6 @@ a img {
     visibility: visible;
     opacity: 1;
     
-}
-
-
-
-@media (max-width: 1024px) {
-    body {
-        font-size: 16px;
-    }
-    .container {
-        width: 100%;
-        padding: 0;
-        text-align: center;
-        flex-direction: column;
-        align-items: center;
-    }
-    h1 {
-        font-size: 3rem;
-    }
-    .destaque-inicio {
-        font-size: 1.7rem;
-    }
-    .paragrafo-inicio p {
-        font-size: 1.5rem;
-    }
-    .nav-menu a {
-        font-size: 30px;
-    }
-    .sobrenos-left {
-        padding: 5px;
-        max-width: 100%;
-        height: auto;
-    }
-    .headline-scroll span {
-        font-size: 2rem;
-    }
-    .headline-portfolio .titulo {
-        font-size: 3.5rem;
-    }
 }
 
 
