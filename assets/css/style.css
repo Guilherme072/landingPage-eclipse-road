@@ -1546,5 +1546,8 @@ a img {
     background-color: grey;
 }
 
-
+.text-end {
+    bottom: 10px;
+    display: flex;
+}
 

@@ -1,5 +1,5 @@
 /* Responsividade para iPad (tablet) */
-@media  (max-width: 1024px) {
+@media  (max-width: 1500px) {
 
     .container {
         width: 100%;
@@ -7,7 +7,7 @@
         flex-direction: column;
         align-items: center;
         overflow-x: hidden;
-        max-width: 1200px;
+        max-width: 1500px;
     }
 
     /************************** SOBRE ***/
@@ -279,8 +279,8 @@
     }
 
     .roll-content-item img {
-        width: 75px;
-        height: 75px;
+        width: 51px;
+        height: 51px;
         border-radius: 50%;
     }
 
