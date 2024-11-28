@@ -151,7 +151,7 @@ a {
     z-index: 99;
     transition: top 0.3s ease-in-out;
     backdrop-filter: blur(10px);
-    background-color: gray;
+    background-color: rgb(137, 3, 226);
 
 }
 
@@ -379,7 +379,7 @@ a {
   .box {
     background-color: #292929; /* Fundo das caixas */
     border-radius: 15px;
-    padding: 70px;
+    padding: 60px;
     width: 251px; /* Tamanho das caixas */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -399,9 +399,8 @@ a {
   
   h3 {
     font-size: 1rem;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
     color: #8879e4; 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   
   .social-links i {
@@ -417,11 +416,15 @@ a {
 
   .descricao-ag {
     line-height: 20px;
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
   }
 
+  .descricao-titulo {
+    font-size: 13px;
+    color: rgb(172, 169, 169);
+  }
 
+  
   /* Responsividade para telas menores */
 @media (mix-width: 768px) and (max-width: 1024px) {
     .container {
