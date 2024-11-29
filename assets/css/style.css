@@ -676,6 +676,11 @@ a {
     height: 450px;
     padding: 1rem;
     gap: 1.5rem;
+    transition: transform 0.3s;
+}
+
+.box-skills:hover {
+    transform: translateY(-5px);
 }
 
 .box-skills i {

@@ -424,6 +424,23 @@ a {
     color: rgb(172, 169, 169);
   }
 
+  .verified-icon {
+    width: 14px;
+    height: 14px;
+    margin-left: 0px;
+    margin-right: -11px;
+  }
+
+  .profile-name {
+    font-size: 15px;
+    font-weight: bold;
+    color: #8676f5; /* Roxo */
+    display: flex; /* Flexbox para alinhar ícone com o texto */
+    align-items: center; /* Centralizar verticalmente */
+    justify-content: center; /* Alinhar no centro horizontalmente */
+    gap: 5px; /* Espaço entre o texto e o ícone */
+  }
+
   
   /* Responsividade para telas menores */
 @media (mix-width: 768px) and (max-width: 1024px) {
