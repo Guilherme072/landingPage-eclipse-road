@@ -331,6 +331,10 @@
         width: 67px;
     }
 
+    .inicio {
+        margin: -2rem;
+    }
+    
     .seta-inicio {
         bottom: 60px;
     }
