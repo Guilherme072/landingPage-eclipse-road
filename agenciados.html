@@ -10,9 +10,13 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
 
+  <!--CSS-->
   <link rel="stylesheet" href="">
   <link rel="stylesheet" href="assets/css/style-agenciado.css">
 
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  
   <link rel="shortcut icon" href="assets/img/icon.png" type="image/png">
   <link rel="icon" href="assets/img/icon.png" type="image/png">
 </head>
@@ -28,17 +32,25 @@
           <img src="assets/img/SUA-LOGO-AQUI.png" alt="Logo">
         </a>
       </div>
-      <ul class="menu">
-        <li><a href="#inicio">INÍCIO</a></li>
-        <li><a href="#agenciados">AGENCIADOS</a></li>
-        <li><a href="#produtora">PRODUTORA</a></li>
-        <li><a href="#precificacao">PRECIFICAÇÃO</a></li>
-        <li><a href="#sobre-nos">SOBRE NÓS</a></li>
-      </ul>
-      <div class="search-bar">
-        <input type="text" placeholder="Pesquisar">
+      <nav class="navbar">
+        <ul class="navbar-links">
+          <li><a href="#inicio">INÍCIO</a></li>
+          <li><a href="#agenciados">AGENCIADOS</a></li>
+          <li><a href="#produtora">PRODUTORA</a></li>
+          <li><a href="#precificacao">PRECIFICAÇÃO</a></li>
+          <li><a href="#sobre-nos">SOBRE NÓS</a></li>
+        </ul>
+      
+      <div class="search-container">
+        <input type="text" placeholder="Pesquisar" class="search-bar">
       </div>
-
+      
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
     </header>
 
     <main id="inicio" class="inicio">
@@ -58,7 +70,7 @@
             <a href="https://x.com/memeinteligente" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/kaciozin " target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/kaciozin " target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
@@ -77,13 +89,13 @@
             <a href="https://x.com/samengo_ofc" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/samengo_ofc/" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/samengo_ofc/" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="https://www.twitch.tv/samengo" target="_blank" class="social-links-redes">  
+            <a href="https://www.twitch.tv/samengo" target="_blank" class="social-links-redes">
               <i class="bi bi-twitch"></i>
             </a>
-            <a href="https://www.facebook.com/Soutamericamengo?_rdr" target="_blank" class="social-links-redes">  
+            <a href="https://www.facebook.com/Soutamericamengo?_rdr" target="_blank" class="social-links-redes">
               <i class="bi bi-facebook"></i>
             </a>
           </div>
@@ -102,13 +114,13 @@
             <a href="https://x.com/mateiformiga" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.youtube.com/@TocaDoCoelho" target="_blank" class="social-links-redes">  
+            <a href="https://www.youtube.com/@TocaDoCoelho" target="_blank" class="social-links-redes">
               <i class="bi bi-youtube"></i>
             </a>
-            <a href="https://www.instagram.com/coelhitos/" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/coelhitos/" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="https://www.tiktok.com/@coelhovidaloka" target="_blank" class="social-links-redes">  
+            <a href="https://www.tiktok.com/@coelhovidaloka" target="_blank" class="social-links-redes">
               <i class="bi bi-tiktok"></i>
             </a>
           </div>
@@ -127,13 +139,13 @@
             <a href="https://x.com/CrimesReais" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.youtube.com/@CrimesReais" target="_blank" class="social-links-redes">  
+            <a href="https://www.youtube.com/@CrimesReais" target="_blank" class="social-links-redes">
               <i class="bi bi-youtube"></i>
             </a>
-            <a href="https://www.instagram.com/crimesreaisoficial" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/crimesreaisoficial" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="https://www.tiktok.com/@crimesreaisoficial" target="_blank" class="social-links-redes">  
+            <a href="https://www.tiktok.com/@crimesreaisoficial" target="_blank" class="social-links-redes">
               <i class="bi bi-tiktok"></i>
             </a>
           </div>
@@ -152,13 +164,13 @@
             <a href="https://x.com/kerbitoos" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.youtube.com/kerbitos" target="_blank" class="social-links-redes">  
+            <a href="https://www.youtube.com/kerbitos" target="_blank" class="social-links-redes">
               <i class="bi bi-youtube"></i>
             </a>
-            <a href="https://www.instagram.com/kerbitos/" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/kerbitos/" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="https://www.tiktok.com/@kerbitos?lang=pt-BR" target="_blank" class="social-links-redes">  
+            <a href="https://www.tiktok.com/@kerbitos?lang=pt-BR" target="_blank" class="social-links-redes">
               <i class="bi bi-tiktok"></i>
             </a>
           </div>
@@ -177,7 +189,7 @@
             <a href="https://x.com/foraacademia" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/foraacademia/ " target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/foraacademia/ " target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
@@ -196,10 +208,10 @@
             <a href="https://x.com/CentralDoBrega" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/centraldobraga/" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/centraldobraga/" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="https://www.twitch.tv/centraldobrega" target="_blank" class="social-links-redes">  
+            <a href="https://www.twitch.tv/centraldobrega" target="_blank" class="social-links-redes">
               <i class="bi bi-twitch"></i>
             </a>
           </div>
@@ -218,13 +230,13 @@
             <a href="https://x.com/danielpassapicc" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.youtube.com/@danielpassapic" target="_blank" class="social-links-redes">  
+            <a href="https://www.youtube.com/@danielpassapic" target="_blank" class="social-links-redes">
               <i class="bi bi-youtube"></i>
             </a>
-            <a href="https://www.instagram.com/danielpassapi/" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/danielpassapi/" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="https://www.tiktok.com/@danielpassapi?lang=pt-BR" target="_blank" class="social-links-redes">  
+            <a href="https://www.tiktok.com/@danielpassapi?lang=pt-BR" target="_blank" class="social-links-redes">
               <i class="bi bi-tiktok"></i>
             </a>
           </div>
@@ -243,7 +255,7 @@
             <a href="https://x.com/itimaliasof" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/itimaliascomeback/" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/itimaliascomeback/" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
@@ -255,17 +267,17 @@
           </h3>
           <h5 class="descricao-ag">
             <p class="descricao-titulo">@zanfa</p><br>
-            <p class="seguidores"p>+1.8M Seguidores</p>
+            <p class="seguidores" p>+1.8M Seguidores</p>
             <p class="categoria">Humor</p><br>
           </h5><br>
           <div class="social-links">
             <a href="https://x.com/Zanfa" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/zanfao/" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/zanfao/" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="https://www.facebook.com/capinaremos" target="_blank" class="social-links-redes">  
+            <a href="https://www.facebook.com/capinaremos" target="_blank" class="social-links-redes">
               <i class="bi bi-facebook"></i>
             </a>
           </div>
@@ -284,7 +296,7 @@
             <a href="https://x.com/paulbatistta" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.youtube.com/@PauloBatistatech" target="_blank" class="social-links-redes">  
+            <a href="https://www.youtube.com/@PauloBatistatech" target="_blank" class="social-links-redes">
               <i class="bi bi-youtube"></i>
             </a>
           </div>
@@ -303,7 +315,7 @@
             <a href="https://x.com/CR7Brasil" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/crsevenbrasil " target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/crsevenbrasil " target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
@@ -322,13 +334,13 @@
             <a href="https://x.com/comentaristaedu" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.youtube.com/c/ComentaristaEduOficial" target="_blank" class="social-links-redes">  
+            <a href="https://www.youtube.com/c/ComentaristaEduOficial" target="_blank" class="social-links-redes">
               <i class="bi bi-youtube"></i>
             </a>
-            <a href="https://www.instagram.com/comentaristaedu" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/comentaristaedu" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="https://www.tiktok.com/@comentaristaedu" target="_blank" class="social-links-redes">  
+            <a href="https://www.tiktok.com/@comentaristaedu" target="_blank" class="social-links-redes">
               <i class="bi bi-tiktok"></i>
             </a>
           </div>
@@ -363,7 +375,7 @@
             <a href="https://x.com/burraookk" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/memeburros/" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/memeburros/" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
@@ -382,13 +394,13 @@
             <a href="https://x.com/FilipLeme" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.youtube.com/user/IssoDaria1Video" target="_blank" class="social-links-redes">  
+            <a href="https://www.youtube.com/user/IssoDaria1Video" target="_blank" class="social-links-redes">
               <i class="bi bi-youtube"></i>
             </a>
-            <a href="https://www.instagram.com/filipleme/" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/filipleme/" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="https://www.tiktok.com/@filipleme?lang=pt-BR" target="_blank" class="social-links-redes">  
+            <a href="https://www.tiktok.com/@filipleme?lang=pt-BR" target="_blank" class="social-links-redes">
               <i class="bi bi-tiktok"></i>
             </a>
           </div>
@@ -396,7 +408,7 @@
         <div class="box">
           <img src="assets/img/burrosgeniais.png" alt="burrosgeniais" class="profile-img">
           <h3 class="profile-name">Coisas burras ditas de forma inteligente
-            
+
           </h3>
           <h5 class="descricao-ag">
             <p class="descricao-titulo">@burrosgeniais</p><br>
@@ -410,8 +422,32 @@
           </div>
         </div>
         <div class="box">
+          <img src="assets/img/muitohumildee.png" alt="muitohumildee" class="profile-img">
+          <h3 class="profile-name">O Bon Vivant MuitoHumilde
+            <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
+          </h3>
+          <h5 class="descricao-ag">
+            <p class="descricao-titulo">@muitohumildee</p><br>
+            <p class="seguidores">+264K Seguidores</p>
+            <p class="categoria">Futebol</p><br>
+          </h5><br>
+          <div class="social-links">
+            <a href="https://x.com/muitohumildee?t=r2tQ-YkT_sqsKX3CH7gBAQ&s=09" target="_blank"
+              class="social-links-redes">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/muitohumildee?igsh=bTJ4Y3NsYTF2MXFk" target="_blank"
+              class="social-links-redes">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://m.twitch.tv/muitohumildee/clips" target="_blank" class="social-links-redes">
+              <i class="bi bi-twitch"></i>
+            </a>
+          </div>
+        </div>
+        <div class="box">
           <img src="assets/img/eoacopalipse.png" alt="eo_acopalices" class="profile-img">
-          <h3 class="profile-name">Memes pra ver antes do acopalices 
+          <h3 class="profile-name">Memes pra ver antes do acopalices
             <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
           </h3>
           <h5 class="descricao-ag">
@@ -439,7 +475,7 @@
             <a href="https://x.com/maconhi1da" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/jennymesmo" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/jennymesmo" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
@@ -474,10 +510,10 @@
             <a href="https://x.com/br_dadepressao" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/br_dadepressao" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/br_dadepressao" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="https://www.facebook.com/BRDADEPRESSA0" target="_blank" class="social-links-redes">  
+            <a href="https://www.facebook.com/BRDADEPRESSA0" target="_blank" class="social-links-redes">
               <i class="bi bi-facebook"></i>
             </a>
           </div>
@@ -496,7 +532,7 @@
             <a href="https://x.com/maricarpool" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/maricarpool" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/maricarpool" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
@@ -520,12 +556,13 @@
         <div class="box">
           <img src="assets/img/coisamaconhei.png" alt="coisasmaconhei" class="profile-img">
           <h3 class="profile-name">Isso com certeza foi feito por um maconheiro
-            
+
           </h3>
           <h5 class="descricao-ag">
             <p class="descricao-titulo">@coisasmaconhei</p><br>
-            <p class="seguidores"><+445K Seguidores</p>
-            <p class="categoria">Memes</p><br>
+            <p class="seguidores">
+              <+445K Seguidores</p>
+                <p class="categoria">Memes</p><br>
           </h5><br>
           <div class="social-links">
             <a href="https://x.com/coisasmaconhei" target="_blank" class="social-links-redes">
@@ -535,7 +572,7 @@
         </div>
         <div class="box">
           <img src="assets/img/purosucobr.png" alt="purosucodobr" class="profile-img">
-          <h3 class="profile-name">Isso é o mais puro suco de Brasil 
+          <h3 class="profile-name">Isso é o mais puro suco de Brasil
             <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
           </h3>
           <h5 class="descricao-ag">
@@ -563,20 +600,20 @@
             <a href="https://x.com/aNIMEfla" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.youtube.com/@animefla" target="_blank" class="social-links-redes">  
+            <a href="https://www.youtube.com/@animefla" target="_blank" class="social-links-redes">
               <i class="bi bi-youtube"></i>
             </a>
-            <a href="https://www.tiktok.com/@nime_kpop" target="_blank" class="social-links-redes">  
+            <a href="https://www.tiktok.com/@nime_kpop" target="_blank" class="social-links-redes">
               <i class="bi bi-tiktok"></i>
             </a>
-            <a href="https://www.twitch.tv/animefla" target="_blank" class="social-links-redes">  
+            <a href="https://www.twitch.tv/animefla" target="_blank" class="social-links-redes">
               <i class="bi bi-twitch"></i>
             </a>
           </div>
         </div>
         <div class="box">
           <img src="assets/img/oqueprefere.png" alt="oque_prefere" class="profile-img">
-          <h3 class="profile-name">O que você prefere? 
+          <h3 class="profile-name">O que você prefere?
             <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
           </h3>
           <h5 class="descricao-ag">
@@ -588,7 +625,7 @@
             <a href="https://x.com/oque_prefere" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/oqueprefere_" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/oqueprefere_" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
@@ -600,21 +637,24 @@
           </h3>
           <h5 class="descricao-ag">
             <p class="descricao-titulo">@culernews</p><br>
-            <p class="seguidores">+50K Seguidores</p>
+            <p class="seguidores">+80K Seguidores</p>
             <p class="categoria">Futebol</p><br>
           </h5><br>
           <div class="social-links">
             <a href="https://x.com/Culernews" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/culesnewsbr/" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/culesnewsbr/" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@culesnews?_t=8rpBreD1Igy&_r=1" target="_blank" class="social-links-redes">
+              <i class="bi bi-tiktok"></i>
             </a>
           </div>
         </div>
         <div class="box">
           <img src="assets/img/xarope.png" alt="xaropecomx" class="profile-img">
-          <h3 class="profile-name">Xarope com X 
+          <h3 class="profile-name">Xarope com X
             <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
           </h3>
           <h5 class="descricao-ag">
@@ -626,10 +666,10 @@
             <a href="https://x.com/xaropecomx" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.youtube.com/xaropecomx" target="_blank" class="social-links-redes">  
+            <a href="https://www.youtube.com/xaropecomx" target="_blank" class="social-links-redes">
               <i class="bi bi-youtube"></i>
             </a>
-            <a href="https://www.instagram.com/xaropee/?hl=pt-br" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/xaropee/?hl=pt-br" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
@@ -648,7 +688,7 @@
             <a href="https://x.com/vittorocriador" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/vittorthecreator" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/vittorthecreator" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
@@ -667,20 +707,20 @@
             <a href="https://x.com/SucumbaEA2" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/sucumba.ea" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/sucumba.ea" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="https://www.tiktok.com/@sucumba.ea" target="_blank" class="social-links-redes">  
+            <a href="https://www.tiktok.com/@sucumba.ea" target="_blank" class="social-links-redes">
               <i class="bi bi-tiktok"></i>
             </a>
-            <a href="https://www.facebook.com/SucumbaEA?mibextid=ZbWKwL" target="_blank" class="social-links-redes">  
+            <a href="https://www.facebook.com/SucumbaEA?mibextid=ZbWKwL" target="_blank" class="social-links-redes">
               <i class="bi bi-facebook"></i>
             </a>
           </div>
         </div>
         <div class="box">
           <img src="assets/img/sobrerinthias.png" alt="sobrerinthians " class="profile-img">
-          <h3 class="profile-name">Sobre Corinthians 
+          <h3 class="profile-name">Sobre Corinthians
             <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
           </h3>
           <h5 class="descricao-ag">
@@ -692,7 +732,7 @@
             <a href="https://x.com/sobrerinthians" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/sobrerinthiansofc" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/sobrerinthiansofc" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
@@ -700,7 +740,7 @@
         <div class="box">
           <img src="assets/img/gostosas2d.png" alt="Gostosas2d" class="profile-img">
           <h3 class="profile-name">Garotas anime esquizo
-            
+
           </h3>
           <h5 class="descricao-ag">
             <p class="descricao-titulo">@gostosas2d</p><br>
@@ -711,7 +751,7 @@
             <a href="https://x.com/gostosas2d" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.twitch.tv/biahkov" target="_blank" class="social-links-redes">  
+            <a href="https://www.twitch.tv/biahkov" target="_blank" class="social-links-redes">
               <i class="bi bi-twitch"></i>
             </a>
           </div>
@@ -746,7 +786,7 @@
             <a href="https://x.com/yannehellenn" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/yannehellenn" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/yannehellenn" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
@@ -765,13 +805,13 @@
             <a href="https://x.com/joaomercio" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.youtube.com/@joaomercio" target="_blank" class="social-links-redes">  
+            <a href="https://www.youtube.com/@joaomercio" target="_blank" class="social-links-redes">
               <i class="bi bi-youtube"></i>
             </a>
-            <a href="https://www.instagram.com/joaomercio" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/joaomercio" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="https://www.tiktok.com/@joaomercio" target="_blank" class="social-links-redes">  
+            <a href="https://www.tiktok.com/@joaomercio" target="_blank" class="social-links-redes">
               <i class="bi bi-tiktok"></i>
             </a>
           </div>
@@ -790,7 +830,7 @@
             <a href="https://x.com/MbappeBrasiI" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/_mbappebrasil" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/_mbappebrasil" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
@@ -798,7 +838,7 @@
         <div class="box">
           <img src="assets/img/istoevideo.png" alt="Istoevideojogos" class="profile-img">
           <h3 class="profile-name">Isto É Videojogos
-            
+
           </h3>
           <h5 class="descricao-ag">
             <p class="descricao-titulo">@istoevideojogos</p><br>
@@ -809,14 +849,32 @@
             <a href="https://x.com/istoevideojogos" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.youtube.com/@istoevideojogos" target="_blank" class="social-links-redes">  
+            <a href="https://www.youtube.com/@istoevideojogos" target="_blank" class="social-links-redes">
               <i class="bi bi-youtube"></i>
             </a>
-            <a href="https://www.instagram.com/istoevideojogos" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/istoevideojogos" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="https://www.facebook.com/istoevideojogos?mibextid=ZbWKwL" target="_blank" class="social-links-redes">  
+            <a href="https://www.facebook.com/istoevideojogos?mibextid=ZbWKwL" target="_blank"
+              class="social-links-redes">
               <i class="bi bi-facebook"></i>
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="assets/img/monarkpostaria.png" alt="monarkpostaria" class="profile-img">
+          <h3 class="profile-name">Monark Postaria
+            <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
+          </h3>
+          <h5 class="descricao-ag">
+            <p class="descricao-titulo">@monarkpostaria</p><br>
+            <p class="seguidores">+30K Seguidores</p>
+            <p class="categoria">Memes</p><br>
+          </h5><br>
+          <div class="social-links">
+            <a href="https://x.com/monarkpostaria?t=WJUm0_htmn6ofGNwOijvMA&s=09" target="_blank"
+              class="social-links-redes">
+              <i class="bi bi-twitter"></i>
             </a>
           </div>
         </div>
@@ -834,14 +892,14 @@
             <a href="https://x.com/CuriosidadesPRL" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/curiosidadesprl" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/curiosidadesprl" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
         </div>
         <div class="box">
           <img src="assets/img/salu.png" alt="salu70220788" class="profile-img">
-          <h3 class="profile-name">Pérolas da net 
+          <h3 class="profile-name">Pérolas da net
             <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
           </h3>
           <h5 class="descricao-ag">
@@ -869,13 +927,13 @@
             <a href="https://x.com/neongeneshit" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.youtube.com/@neongeneshit/videos" target="_blank" class="social-links-redes">  
+            <a href="https://www.youtube.com/@neongeneshit/videos" target="_blank" class="social-links-redes">
               <i class="bi bi-youtube"></i>
             </a>
-            <a href="https://www.instagram.com/neongeneshit" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/neongeneshit" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="https://www.tiktok.com/@neongeneshit" target="_blank" class="social-links-redes">  
+            <a href="https://www.tiktok.com/@neongeneshit" target="_blank" class="social-links-redes">
               <i class="bi bi-tiktok"></i>
             </a>
           </div>
@@ -894,13 +952,13 @@
             <a href="https://x.com/paposfut" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/paposfut" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/paposfut" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="" target="_blank" class="social-links-redes">  
+            <a href="" target="_blank" class="social-links-redes">
               <i class="bi bi-twitch"></i>
             </a>
-            <a href="" target="_blank" class="social-links-redes">  
+            <a href="" target="_blank" class="social-links-redes">
               <i class="bi bi-facebook"></i>
             </a>
           </div>
@@ -908,7 +966,7 @@
         <div class="box">
           <img src="assets/img/coisasmaromba.png" alt="coisasmaromba" class="profile-img">
           <h3 class="profile-name">Coisas de Maromba
-            
+
           </h3>
           <h5 class="descricao-ag">
             <p class="descricao-titulo">@coisasmaromba</p><br>
@@ -935,7 +993,7 @@
             <a href="https://x.com/kaciozin" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/kaciozin" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/kaciozin" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
@@ -1002,7 +1060,7 @@
             <a href="https://x.com/FelipeGains" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/felipegains" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/felipegains" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
@@ -1010,7 +1068,7 @@
         <div class="box">
           <img src="assets/img/comidasestadios.png" alt="ComidasEstadios" class="profile-img">
           <h3 class="profile-name">Comidas dos Estadios
-            
+
           </h3>
           <h5 class="descricao-ag">
             <p class="descricao-titulo">@comidasEstadios</p><br>
@@ -1021,7 +1079,7 @@
             <a href="https://x.com/ComidasEstadios" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/comidasestadios" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/comidasestadios" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
@@ -1040,7 +1098,7 @@
             <a href="https://x.com/pcbuildwizard" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.youtube.com/@pcbuildwizard" target="_blank" class="social-links-redes">  
+            <a href="https://www.youtube.com/@pcbuildwizard" target="_blank" class="social-links-redes">
               <i class="bi bi-youtube"></i>
             </a>
           </div>
@@ -1075,7 +1133,7 @@
             <a href="https://x.com/CuriosidadesBRL" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/curiosidadebrl" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/curiosidadebrl" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
@@ -1094,7 +1152,7 @@
             <a href="https://x.com/CinefilosPost" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/cinefilosposting/" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/cinefilosposting/" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
@@ -1113,10 +1171,10 @@
             <a href="https://x.com/Felipe_Lixu" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.youtube.com/@FelipeLix" target="_blank" class="social-links-redes">  
+            <a href="https://www.youtube.com/@FelipeLix" target="_blank" class="social-links-redes">
               <i class="bi bi-youtube"></i>
             </a>
-            <a href="https://www.instagram.com/felipe.lix/" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/felipe.lix/" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
@@ -1151,13 +1209,14 @@
             <a href="https://x.com/NemTudo_" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://youtube.com/@nemtudoo" target="_blank" class="social-links-redes">  
+            <a href="https://youtube.com/@nemtudoo" target="_blank" class="social-links-redes">
               <i class="bi bi-youtube"></i>
             </a>
-            <a href="https://www.instagram.com/_nemtudo_/ " target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/_nemtudo_/ " target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="https://nemtudo.me/?fbclid=PAZXh0bgNhZW0CMTEAAaYJjN6Y_cwNPoFfAG6vfz4ZrCxZYYAy2Gu-GoPBGOrnpT9u5LZHqhwpK2A_aem_7m8yf_7dv9YrAkccgBXM2g" target="_blank" class="social-links-redes">  
+            <a href="https://nemtudo.me/?fbclid=PAZXh0bgNhZW0CMTEAAaYJjN6Y_cwNPoFfAG6vfz4ZrCxZYYAy2Gu-GoPBGOrnpT9u5LZHqhwpK2A_aem_7m8yf_7dv9YrAkccgBXM2g"
+              target="_blank" class="social-links-redes">
               <i class="bi bi-pc-display"></i>
             </a>
           </div>
@@ -1176,7 +1235,7 @@
             <a href="https://x.com/PoetasFla" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/poetasfla" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/poetasfla" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
@@ -1195,13 +1254,13 @@
             <a href="https://x.com/PraiseTheFrom" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/praisethefrom" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/praisethefrom" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="https://www.tiktok.com/@praisethefrom" target="_blank" class="social-links-redes">  
+            <a href="https://www.tiktok.com/@praisethefrom" target="_blank" class="social-links-redes">
               <i class="bi bi-tiktok"></i>
             </a>
-            <a href="https://www.facebook.com/PraiseTheFrom" target="_blank" class="social-links-redes">  
+            <a href="https://www.facebook.com/PraiseTheFrom" target="_blank" class="social-links-redes">
               <i class="bi bi-facebook"></i>
             </a>
           </div>
@@ -1236,7 +1295,7 @@
             <a href="https://x.com/realmilgrauu" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/realmilgrau_ofc/" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/realmilgrau_ofc/" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
@@ -1244,7 +1303,7 @@
         <div class="box">
           <img src="assets/img/brigademulher.png" alt="brigademulher" class="profile-img">
           <h3 class="profile-name">Briga de Mulher
-            
+
           </h3>
           <h5 class="descricao-ag">
             <p class="descricao-titulo">@brigademulher</p><br>
@@ -1260,7 +1319,7 @@
         <div class="box">
           <img src="assets/img/mengaocomics.png" alt="mengaorcomics" class="profile-img">
           <h3 class="profile-name">Mengão Rage Comics
-            
+
           </h3>
           <h5 class="descricao-ag">
             <p class="descricao-titulo">@mengaorcomics</p><br>
@@ -1287,7 +1346,7 @@
             <a href="https://x.com/wolfkickss" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/jp.hlobo/" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/jp.hlobo/" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
@@ -1322,7 +1381,7 @@
             <a href="https://x.com/odeiootaco" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/gatinhosepeitos/" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/gatinhosepeitos/" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
@@ -1341,7 +1400,7 @@
             <a href="https://x.com/paddockparalelo" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="#" target="_blank" class="social-links-redes">  
+            <a href="#" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
@@ -1365,7 +1424,7 @@
         <div class="box">
           <img src="assets/img/museucorin.png" alt="museu_sccp" class="profile-img">
           <h3 class="profile-name">Museu de memes do Corinthians
-            
+
           </h3>
           <h5 class="descricao-ag">
             <p class="descricao-titulo">@museu_sccp</p><br>
@@ -1376,7 +1435,7 @@
             <a href="https://x.com/museu_sccp" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/museu_sccp" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/museu_sccp" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
@@ -1395,7 +1454,7 @@
             <a href="https://x.com/futnostalgico" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/futebolnostalgico_/" target="_blank" class="social-links-redes">  
+            <a href="https://www.instagram.com/futebolnostalgico_/" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
@@ -1416,25 +1475,88 @@
             </a>
           </div>
         </div>
-        <div class="box">
-          <img src="assets/img/.png" alt="" class="profile-img">
-          <h3 class="profile-name"></h3>
-          <h5 class="descricao-ag">
-            <p class="descricao-titulo"></p><br>
-            <p class="seguidores">+192K Seguidores</p>
-            <p class="categoria">Futebol</p><br>
-          </h5><br>
-          <div class="social-links">
-            <a href="https://x.com/monarkpostaria" target="_blank" class="social-links-redes">
-              <i class="bi bi-twitter"></i>
-            </a>
-          </div>
-        </div>
         <!-- Adicione mais caixas conforme necessário -->
+
+
+        <!--Complemento FREE YOUR MIND-->
+        <section id="free-your-mind" class="free-your-mind">
+          <div class="container-free-your-mind" data-aos="fade-up" data-aos-duration="1000">
+            <span class="container-free-your-mind-title"> <strong>Nossos Números...</strong></span>
+            <div class="container-free-your-mind-itens" id="increase-numbers">
+              <div class="container-free-your-mind-item-sem">
+                <h5>+<span id="youtube-count">1</span>M</h5>
+                <h6>visualizações no YouTube <br><span style="font-size: 2rem; display: block;">(vídeos
+                    longos)</span></h6>
+              </div>
+              <div class="divider"></div>
+              <div class="container-free-your-mind-item">
+                <h5>+<span id="instagram-count">1</span>M</h5>
+                <h6>visualizações no Instagram</h6>
+              </div>
+              <div class="divider"></div>
+              <div class="container-free-your-mind-item">
+                <h5>+<span id="views-count">1</span>B</h5>
+                <h6>impressões no X</h6>
+              </div>
+              <div class="divider"></div>
+              <div class="container-free-your-mind-item">
+                <h5>+<span id="followers-count">1</span>M</h5>
+                <h6>seguidores</h6>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Fim FREE YOUR MIND-->
+
+
+
+        <section id="final" class="final">
+          <div class="container-texto-final">
+            <span class="titulo-final">
+              Seja Agenciado
+            </span>
+            <div class="texto-agenciados-1">
+              <h5>Nossa agência possui objetivos claros e uma política de identidade com nossos agenciados a ser
+                respeitada. Buscamos alinhar os ANUNCIANTES com nossos AGENCIADOS de maneira a não comprometer ou
+                interferir a integridade de seu conteúdo.</h5>
+              <div class="complemento-agenciados">
+                <img src="assets/img/AGENCIADO.png" alt="" class="rotate-imagem-agenciados">
+              </div>
+            </div>
+            <div class="texto-agenciados-2">
+              <h5>
+                A Eclipse Road valoriza profundamente a liberdade e a identidade das pessoas que agenciamos. Não temos
+                acesso ao seu perfil; nunca obrigaremos que você poste ou exclua algo; as publicidades originárias de
+                você ou da sua conta são exclusivamente suas; nós recebemos apenas uma porcentagem das publicidades que
+                nós trazemos, e você tem total liberdade para aceitar ou recusar tais propostas publicitárias.
+                <a class="cta" href="https://wa.me/5518997403693" target="_blank">
+                  <span>Seja Agenciado</span>
+                  <svg width="15px" height="10px" viewBox="0 0 13 10">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+                </a>
+              </h5>
+
+            </div>
+          </div>
+        </section>
+
+
       </div>
 
 
-      <script src="assets/js/header.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Inicialização do AOS -->
+    <script>
+        AOS.init();
+    </script>
+
+      <script src="assets/js/numbersIncrease.js"></script>
 </body>
 
 </html>
