@@ -237,6 +237,10 @@
     h1 {
         font-size: 3rem;
     }
+    
+    .inicio {
+        margin: -2rem;
+    }
     .destaque-inicio {
         font-size: 1.7rem;
     }
@@ -331,10 +335,6 @@
         width: 67px;
     }
 
-    .inicio {
-        margin: -3.5rem;
-    }
-    
     .seta-inicio {
         bottom: 60px;
     }

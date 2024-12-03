@@ -48,6 +48,7 @@ body {
     color: #fff;
     width: 100%;
     display: flex;
+    grid-template-rows: auto 1fr auto;
     align-items: center;
     justify-content: center;
     font-family: var(--font-pequena);
@@ -57,6 +58,11 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+  flex: 1;
 }
 
 li {
@@ -170,7 +176,7 @@ a {
 
   
   
-  .menu {
+  .navbar-links {
     list-style: none;            /* Remove marcadores da lista */
     display: flex;               /* Ativa flexbox */
     gap: 20px;                   /* Espaçamento entre os itens */
@@ -186,11 +192,11 @@ a {
     left: 50px;
   }
   
-  .menu li {
+  .navbar-links li {
     display: inline-block;
   }
   
-  .menu li a {
+  .navbar-links li a {
     color: white;                /* Texto branco */
     text-decoration: none;       /* Remove o sublinhado */
     font-size: 16px;             /* Tamanho da fonte */
@@ -198,20 +204,20 @@ a {
     padding: 5px 10px;
   }
   
-  .menu li a:hover {
+  .navbar-links li a:hover {
     color: black;                /* Cor preta ao passar o mouse */
     border-radius: 4px;          /* Borda arredondada */
     transition: 0.3s;            /* Transição suave */
   }
 
-  .search-bar {
+  .search-container {
     
     display: flex;
     align-items: center;
     justify-content: flex-end;
   }
   
-  .search-bar input {
+  .search-container input {
     padding: 5px 10px;
     border: 2px solid white;
     border-radius: 10px;
@@ -222,7 +228,7 @@ a {
     justify-content: end;
   }
   
-  .search-bar input::placeholder {
+  .search-container input::placeholder {
     color: white;
   }
 
@@ -286,12 +292,13 @@ a {
 /* Botão Inicio */
 .cta {
     position: relative;
-    margin: auto;
+    margin-top: 10px;
     padding: 12px 18px;
     transition: all 0.2s ease;
     border: none;
     background: none;
     cursor: pointer;
+
 }
 
 .cta span {
@@ -301,13 +308,13 @@ a {
 .cta:before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 11px;
+    left: 3px;
     display: block;
     border-radius: 50px;
     background: blueviolet;
-    width: 45px;
-    height: 45px;
+    width: 33px;
+    height: 33px;
     transition: all 0.3s ease;
 }
 
@@ -427,7 +434,6 @@ a {
   .verified-icon {
     width: 14px;
     height: 14px;
-    margin-left: 0px;
     margin-right: -11px;
   }
 
@@ -441,16 +447,189 @@ a {
     gap: 5px; /* Espaço entre o texto e o ícone */
   }
 
-  
+  /*************** ALGUMA FRASE AQUI  *****/
+
+  .container-free-your-mind-itens {
+    display: flex;
+    margin: 0 auto;
+    gap: 100px;
+    margin: 0 50px;
+    margin-bottom: 90px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.container-free-your-mind .container-free-your-mind-title {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.container-free-your-mind-title {
+    font-family: var(--font-grande);
+}
+
+.container-free-your-mind-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-free-your-mind-item-sem {
+    font-size: 3.5rem;
+    text-align: center;
+}
+.container-free-your-mind-item-sem h5  { 
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: var(--font-grande);
+}
+
+.container-free-your-mind-item-sem span {
+    font-size: 3.5rem;
+}
+
+.container-free-your-mind-item h5,
+.container-free-your-mind-item span {
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: var(--font-grande);
+}
+
+.container-free-your-mind-item h6 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.free-your-mind {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem;
+}
+
+.container-free-your-mind {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding-left: 30px;
+  max-width: 1200px;
+  align-items: center;
+}
+
+.divider {
+  width: 3px;
+    height: 120px; /* Altura da linha */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    filter: blur(0.7px); /* Suaviza as bordas */
+    margin: 0 20px;
+  }
+
+.container-texto-final {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  width: 100vw;
+  padding: 30px;
+}
+
+.titulo-final {
+  font-size: 3rem;
+}
+
+.texto-agenciados-1 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+.texto-agenciados-2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.complemento-agenciados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent; /* Fundo transparente */
+  overflow: visible; /* Evita cortes durante a rotação */
+}
+
+.complemento-agenciados img {
+  position: relative;
+  left: 10px;
+  top: 6px;
+  width: 20%;
+  z-index: 1000;
+  animation: rotate 20s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-imagem-agenciados {
+  width: 200px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+  animation: rotate 5s linear infinite; /* Gira continuamente em 5 segundos */
+  display: block; /* Remove possíveis espaçamentos extras */
+  background: transparent; /* Garante que não tenha fundo */
+  border: none; /* Remove borda residual */
+}
+
+.botao-seja-agenciado {
+  display: flex;
+  background-color: #6b05f1;
+  box-sizing: border-box;
+  border-radius: 5px;
+  justify-content: end;
+  margin-top: 10px;
+}
+
+.final {
+  background-color: #000;
+  width: 100vw; /* Faz a seção ocupar toda a largura disponível */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 5px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+
   /* Responsividade para telas menores */
-@media (mix-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
     .container {
-      grid-template-columns: repeat(2, 1fr); /* 2 itens por linha em telas menores */
-      gap: 20px; /* Espaço entre os itens */
+        gap: 20px; /* Espaço entre os itens */
         padding: 10px;
         justify-items: center;
         align-items: start;
-        display: grid;
+        display: flex; 
     }
 
     .box {
@@ -462,6 +641,7 @@ a {
         max-width: 250px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         transition: transform 0.3s;
+        justify-content: center;
       }
       
       .box:hover {
@@ -478,7 +658,7 @@ a {
       h3 {
         font-size: 1rem;
         margin-bottom: 10px;
-        color: #ff5722;
+        color: #8676f5;
       }
       
       .social-links i {
@@ -489,7 +669,7 @@ a {
       }
       
       .social-links i:hover {
-        color: #ff5722;
+        color: #8676f5;
       }
 
       .header {
@@ -498,13 +678,74 @@ a {
       .logo img {
         display: flex;
       }
+      .container-free-your-mind-itens {
+        flex-direction: column; /* Itens empilhados em telas menores */
+        align-items: center;
+      }
+      .free-your-mind {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .container-free-your-mind-item, 
+      .container-free-your-mind-item-sem {
+        flex: 1 1 100%; /* Ocupa 100% da largura */
+        margin-bottom: 20px;
+      }
+
+      .complemento-agenciados img {
+        z-index: 1000;
+        animation: rotate 20s linear infinite;
+      }
+
+      
+      .navbar-links {
+        display: none; /* Esconde os links da barra de navegação em telas menores */
+        position: absolute;
+        top: 60px; /* Ajuste a distância do topo para que os links fiquem abaixo do menu hambúrguer */
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        text-align: center;
+      }
+    
+      .hamburger {
+        display: block; /* Exibe o menu hambúrguer */
+        cursor: pointer;
+        position: absolute;
+        top: 15px; /* Ajuste a distância do topo */
+        right: 15px; /* Ajuste a distância da borda direita */
+        z-index: 10; /* Garante que o menu hambúrguer fique acima de outros elementos */
+      }
+    
+      .hamburger span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+        margin: 5px 0;
+      }
+    
+      /* Estilos para a barra de pesquisa em dispositivos móveis */
+      .search-container {
+        display: none; /* Esconde a barra de pesquisa em telas menores */
+      }
+    
+      .navbar.active .search-container {
+        display: block; /* Exibe a barra de pesquisa quando o menu hambúrguer é clicado */
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 80%;
+        z-index: 1;
+      }
+    
+      .search-bar {
+        width: 100%;
+      }
+    
   }
   
-  @media (max-width: 480px) {
-    .container {
-      grid-template-columns: 1fr; /* 1 item por linha em telas muito pequenas */
-    }
-  }
 
 
 
