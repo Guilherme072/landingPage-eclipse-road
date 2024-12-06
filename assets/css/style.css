@@ -1117,6 +1117,9 @@ a {
     width: 50%;
     text-align: right;
 }
+.descricao-contato-a {
+    display: none;
+}
 
 .descricao-contato a {
     text-decoration: none;

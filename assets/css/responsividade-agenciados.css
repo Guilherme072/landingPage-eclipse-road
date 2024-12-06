@@ -7,6 +7,7 @@
         flex-direction: column;
         align-items: center;
         max-width: 1500px;
+        display: grid;
     }
 
     /************************** SOBRE ***/
@@ -385,6 +386,26 @@
         height: 100%;
         width: 100%;
     }
+
+    .hamburger {
+        display: block; /* Exibe o menu hambúrguer */
+      }
+
+
+      .search-container {
+        display: none; /* Esconde a barra de pesquisa em telas menores */
+      }
+
+      .navbar-links {
+        display: none; /* Esconde os links da barra de navegação em telas menores */
+        position: absolute;
+        top: 60px; /* Ajuste a distância do topo para que os links fiquem abaixo do menu hambúrguer */
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        text-align: center;
+        z-index: 5;
+      }
 }
 
 
