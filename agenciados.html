@@ -11,45 +11,52 @@
     integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
 
   <!--CSS-->
-  <link rel="stylesheet" href="assets/css/responsividade-agenciados.css">
   <link rel="stylesheet" href="assets/css/style-agenciado.css">
+  <link rel="stylesheet" href="assets/css/responsividade-agenciados.css">
 
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  
+
   <link rel="shortcut icon" href="assets/img/icon.png" type="image/png">
   <link rel="icon" href="assets/img/icon.png" type="image/png">
 </head>
 
-<body>  
-  <div class="container">
+<body>
+  
+  <!--Botão voltar ao topo-->
+  
+  <div id="backToTop" class="fixed-button">
+    <i class="bi bi-chevron-up"></i>
+  </div>
+  
+  <div class="container-inicio">
 
     <!--Header-->
     <header class="header">
       <div class="logo">
-          <a href="index.html">
-              <img src="assets/img/SUA-LOGO-AQUI.png" alt="">
-          </a>
+        <a href="index.html">
+          <img src="assets/img/SUA-LOGO-AQUI.png" alt="">
+        </a>
       </div>
       <div class="menu">
-          <label class="hamburger">
-              <input type="checkbox" id="menuToggle">
-              <svg viewBox="0 0 32 32">
-                  <path class="line line-top-bottom"
-                      d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
-                  </path>
-                  <path class="line" d="M7 16 27 16"></path>
-              </svg>
-          </label>
+        <label class="hamburger">
+          <input type="checkbox" id="menuToggle">
+          <svg viewBox="0 0 32 32">
+            <path class="line line-top-bottom"
+              d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+            </path>
+            <path class="line" d="M7 16 27 16"></path>
+          </svg>
+        </label>
       </div>
       <div class="menu-aberto">
-          <nav class="nav-menu">
-              <a href="index.html">INÍCIO</a>
-              <a href="#sobre">AGENCIADOS</a>
-              <a href="#sobrenos">SOBRE NÓS</a>
-              <a href="agenciados.html">+AGENCIADOS</a>
-              <a href="#contato">CONTATO</a>
-          </nav>
+        <nav class="nav-menu">
+          <a href="index.html">INÍCIO</a>
+          <a href="#sobre">AGENCIADOS</a>
+          <a href="#sobrenos">SOBRE NÓS</a>
+          <a href="agenciados.html">+AGENCIADOS</a>
+          <a href="#contato">CONTATO</a>
+        </nav>
       </div>
 
       <!--PARA DESKTOP-->
@@ -62,16 +69,18 @@
           <li><a href="#precificacao">PRECIFICAÇÃO</a></li>
           <li><a href="#sobre-nos">SOBRE NÓS</a></li>
         </ul>
-      
-      <div class="search-container">
-        <input type="text" placeholder="Pesquisar" class="search-bar">
-      </div>
-  </header>
-  <!--Fim Header-->
+
+        <div class="search-container">
+          <input type="text" placeholder="Pesquisar" class="search-bar">
+        </div>
+    </header>
+    <!--Fim Header-->
 
     <main id="inicio" class="inicio">
 
+      
       <div class="container">
+      <section class="container-box">
         <div class="box">
           <img src="assets/img/memesinteligentes.png" alt="memeinteligente" class="profile-img">
           <h3 class="profile-name">Memes Inteligentes
@@ -191,7 +200,7 @@
             </a>
           </div>
         </div>
-        <div class="box" >
+        <div class="box">
           <img src="assets/img/foraacademia.png" alt="foraacademia" class="profile-img">
           <h3 class="profile-name">Fora Academia
             <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
@@ -210,7 +219,7 @@
             </a>
           </div>
         </div>
-        <div class="box" >
+        <div class="box">
           <img src="assets/img/centraldobraga.png" alt="CentraldoBrega" class="profile-img">
           <h3 class="profile-name">Central do Braga
             <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
@@ -437,7 +446,7 @@
             </a>
           </div>
         </div>
-        <div class="box"> 
+        <div class="box">
           <img src="assets/img/muitohumildee.png" alt="muitohumildee" class="profile-img">
           <h3 class="profile-name">O Bon Vivant MuitoHumilde
             <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
@@ -456,24 +465,36 @@
               class="social-links-redes">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="https://m.twitch.tv/muitohumildee/clips" target="_blank" class="social-links-redes">
+            <a href="https://www.twitch.tv/muitohumildee" target="_blank" class="social-links-redes">
               <i class="bi bi-twitch"></i>
+            </a>
+            <a href="https://www.tiktok.com/@muitohumilde10?lang=en&is_from_webapp=1&sender_device=mobile&sender_web_id=7438372298145875512" target="_blank" class="social-links-redes">
+              <i class="bi bi-tiktok"></i>
             </a>
           </div>
         </div>
         <div class="box">
-          <img src="assets/img/eoacopalipse.png" alt="eo_acopalices" class="profile-img">
-          <h3 class="profile-name">Memes pra ver antes do acopalices
+          <img src="assets/img/fladadepressao.png" alt="FlaDaDepressao" class="profile-img">
+          <h3 class="profile-name">FLA DA DEPRESSÃO 
             <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
           </h3>
           <h5 class="descricao-ag">
-            <p class="descricao-titulo">@eo_acopalices</p><br>
-            <p class="seguidores">+910K Seguidores</p>
-            <p class="categoria">Memes</p><br>
+            <p class="descricao-titulo">@_FlaDaDepressao</p><br>
+            <p class="seguidores">+2.6M Seguidores</p>
+            <p class="categoria">Futebol</p><br>
           </h5><br>
           <div class="social-links">
-            <a href="https://x.com/eo_acopalices" target="_blank" class="social-links-redes">
+            <a href="https://x.com/_FlaDaDepressao" target="_blank" class="social-links-redes">
               <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/flamengodadepressao" target="_blank" class="social-links-redes">
+              <i class="bi bi-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/flamengodadepressao" target="_blank" class="social-links-redes">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/FlamengoDaDepressao" target="_blank" class="social-links-redes">
+              <i class="bi bi-facebook"></i>
             </a>
           </div>
         </div>
@@ -493,6 +514,22 @@
             </a>
             <a href="https://www.instagram.com/jennymesmo" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="assets/img/eoacopalipse.png" alt="eo_acopalices" class="profile-img">
+          <h3 class="profile-name">Memes pra ver antes do acopalices
+            <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
+          </h3>
+          <h5 class="descricao-ag">
+            <p class="descricao-titulo">@eo_acopalices</p><br>
+            <p class="seguidores">+910K Seguidores</p>
+            <p class="categoria">Memes</p><br>
+          </h5><br>
+          <div class="social-links">
+            <a href="https://x.com/eo_acopalices" target="_blank" class="social-links-redes">
+              <i class="bi bi-twitter"></i>
             </a>
           </div>
         </div>
@@ -586,7 +623,7 @@
             </a>
           </div>
         </div>
-        <div class="box" >
+        <div class="box">
           <img src="assets/img/purosucobr.png" alt="purosucodobr" class="profile-img">
           <h3 class="profile-name">Isso é o mais puro suco de Brasil
             <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
@@ -895,6 +932,31 @@
           </div>
         </div>
         <div class="box">
+          <img src="assets/img/padrindafladepre.png" alt="ruanfladadepre" class="profile-img">
+          <h3 class="profile-name">Ruan do Fla Deprê
+            <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
+          </h3>
+          <h5 class="descricao-ag">
+            <p class="descricao-titulo">@ruanfladadepre</p><br>
+            <p class="seguidores">+300K Seguidores</p>
+            <p class="categoria">Futebol</p><br>
+          </h5><br>
+          <div class="social-links">
+            <a href="https://x.com/ruanfladadepre" target="_blank"
+              class="social-links-redes">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/ruanfladadepre/" target="_blank"
+              class="social-links-redes">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/flamengodadepressao" target="_blank"
+              class="social-links-redes">
+              <i class="bi bi-youtube"></i>
+            </a>
+          </div>
+        </div>
+        <div class="box">
           <img src="assets/img/curiosidadespl.png" alt="CuriodidadesPRL" class="profile-img">
           <h3 class="profile-name">Curiodidades PRL
             <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
@@ -970,12 +1032,6 @@
             </a>
             <a href="https://www.instagram.com/paposfut" target="_blank" class="social-links-redes">
               <i class="bi bi-instagram"></i>
-            </a>
-            <a href="" target="_blank" class="social-links-redes">
-              <i class="bi bi-twitch"></i>
-            </a>
-            <a href="" target="_blank" class="social-links-redes">
-              <i class="bi bi-facebook"></i>
             </a>
           </div>
         </div>
@@ -1135,7 +1191,7 @@
             </a>
           </div>
         </div>
-        <div class="box"> 
+        <div class="box">
           <img src="assets/img/curiosidadesbr.png" alt="CuriosidadesBRL" class="profile-img">
           <h3 class="profile-name">Curiosidades BRL
             <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
@@ -1491,6 +1547,7 @@
             </a>
           </div>
         </div>
+      </section>
         <!-- Adicione mais caixas conforme necessário -->
 
 
@@ -1529,22 +1586,34 @@
         <section id="final" class="final">
           <div class="container-texto-final" data-aos="fade-up" data-aos-duration="1000">
             <span class="titulo-final">
-              Seja Agenciado
+              <strong>
+                Se torne um Agenciado!
+              </strong>
             </span>
-            <div class="texto-agenciados-1">
-              <h5>Nossa agência possui objetivos claros e uma política de identidade com nossos agenciados a ser
-                respeitada. Buscamos alinhar os ANUNCIANTES com nossos AGENCIADOS de maneira a não comprometer ou
-                interferir a integridade de seu conteúdo.</h5>
-              <div class="complemento-agenciados">
-                <img src="assets/img/AGENCIADO.png" alt="" class="rotate-imagem-agenciados">
+            <div class="agenciados-container">
+              <div class="texto-agenciados-1" data-aos="fade-right" data-aos-delay="300">
+                <h5>Possuímos objetivos claros e uma política de identidade com nossos agenciados a ser <span
+                    class="destaque-ag">respeitada</span>.
+                  Buscamos alinhar os <span class="destaque-ag">anunciantes</span> com nossos <span
+                    class="destaque-ag">agenciados</span> de maneira a não comprometer ou interferir a
+                  integridade de seu conteúdo.
+                </h5>
+              </div>
+              <div class="right-sobre" data-aos="fade-left" data-aos-duration="300">
+                <div class="imagem-sobre">
+                  <img src="assets/img/sua-foto.png" alt="">
+                </div>
+                <div class="complemento-agenciados">
+                  <img src="assets/img/AGENCIADO.png" alt="" class="rotate-imagem-agenciados">
+                </div>
               </div>
             </div>
-            <div class="texto-agenciados-2">
+            <div class="texto-agenciados-2" data-aos="fade-left" data-aos-delay="400">
               <h5>
-                A Eclipse Road valoriza profundamente a liberdade e a identidade das pessoas que agenciamos. Não temos
-                acesso ao seu perfil; nunca obrigaremos que você poste ou exclua algo; as publicidades originárias de
-                você ou da sua conta são exclusivamente suas; nós recebemos apenas uma porcentagem das publicidades que
-                nós trazemos, e você tem total liberdade para aceitar ou recusar tais propostas publicitárias.<br>
+                Respeitamos sua liberdade e identidade. Você mantém <span class="destaque-ag">controle total</span> sobre seu perfil, postagens e
+                <span class="destaque-ag">publicidades próprias</span>, aceitando apenas as propostas que <span class="destaque-ag">desejar</span>. Nossa remuneração vem
+                exclusivamente
+                das campanhas que trazemos <span class="destaque-ag">para você</span>.<br>
                 <a class="cta" href="https://wa.me/5518997403693" target="_blank">
                   <span>Seja Agenciado</span>
                   <svg width="15px" height="10px" viewBox="0 0 13 10">
@@ -1553,28 +1622,45 @@
                   </svg>
                 </a>
               </h5>
-
+            </div>
+            <div class="texto-agenciados-3" data-aos="fade-right" data-aos-delay="300">
+              <h5>
+                Sendo nosso agenciado, você tem <span class="destaque-ag">acesso</span> à nossa rede de contatos, que compreendem <span class="destaque-ag">mais</span> do que uma rede de
+                anunciantes, e soluções que podemos fornecer. Além disso, você possuí <span class="destaque-ag">desconto</span> em nossos serviços
+                disponíveis.
+              </h5>
+            </div>
+            <div class="texto-agenciados-4" data-aos="fade-left" data-aos-delay="200">
+              <h5>
+                Para se tornar nosso agenciado, <span class="destaque-ag">não</span> é necessário assinar uma mensalidade fixa <span class="destaque-ag">nem</span> realizar qualquer
+                pagamento prévio. Além disso, você <span class="destaque-ag">não</span> terá nenhuma responsabilidade ou compromisso de <span class="destaque-ag">exclusividade</span> no
+                início.
+              </h5>
+              <a href="#inicio" class="volta-inicio">
+                <h6 style="color: white">Voltar ao Inicio</h6>
+              </a>
             </div>
           </div>
         </section>
-
-
-      </div>
+      
+  </div>
 
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <!-- AOS -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- Inicialização do AOS -->
-    <script>
+      <!-- Inicialização do AOS -->
+      <script>
         AOS.init();
-    </script>
+      </script>
 
       <script src="assets/js/numbersIncrease.js"></script>
       <script src="assets/js/header.js"></script>
+      <script src="assets/js/actionButton-ag.js"></script>
       
+
 </body>
 
 </html>
