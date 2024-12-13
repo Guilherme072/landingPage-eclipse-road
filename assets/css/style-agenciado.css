@@ -727,11 +727,12 @@ a {
 }
 
 .final {
-  background-color: #000;
+  background-image: url(../img2/estiloluz4.png);
   width: 100vw; /* Faz a seção ocupar toda a largura disponível */
   display: flex;
   align-items: center;
   justify-content: center;
+  background-size: cover;
 }
 
 .destaque-ag {
@@ -804,6 +805,79 @@ a {
   background: transparent; /* Garante que não tenha fundo */
   border: none; /* Remove borda residual */
 }
+
+.filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.filter-plataforma {
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 8px 15px;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+}
+.filter-category {
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 8px 15px;
+  background: transparent;
+  color: #fcfcfc;
+  cursor: pointer;
+  font-size: 14px;
+}
+.filter-followers {
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 8px 15px;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+}
+.filter-engajament {
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 8px 15px;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filter-search {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: 2px solid #fff; /* Linha visível */
+  width: 200px; /* Largura ajustável */
+  padding-left: 3px;
+}
+.filter-search input {
+  border: none;
+  background: transparent;
+  color: #fff;
+  padding: 5px 5px 5px 25px; /* Espaço para a lupa */
+  outline: none;
+  font-size: 14px;
+  width: 150px;
+}
+.filter-search input::placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+.filtros {
+  color: #000;
+}
+.search-icon {
+  margin-right: 5px;
+}
+
 
 
 
