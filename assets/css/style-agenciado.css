@@ -78,6 +78,11 @@ a {
     text-decoration: none;
 }
 
+.inicio{
+  display: flex;
+  flex-direction: column;
+}
+
 /*Botões fixos*/
 .fixed-button {
     position: fixed;
@@ -671,6 +676,10 @@ a {
 
 .titulo-final {
   font-size: 4.2rem;
+  font-weight: bold;
+  background: linear-gradient(98deg, #fff, #6b05f1, #fff); /* Gradiente horizontal */
+  -webkit-background-clip: text; /* Permite o gradiente afetar o texto */
+  -webkit-text-fill-color: transparent; /* Deixa o texto transparente */
 }
 
 .texto-agenciados-1 {
