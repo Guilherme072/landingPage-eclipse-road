@@ -189,10 +189,22 @@ a {
     width: 100%;
     margin: 0;
     flex: 0;
+    bottom: 10px;
 }
 
 .logo img {
     width: 150px;
+}
+
+.logo-final {
+  width: 100%;
+  margin: 0;
+  flex: 0;
+}
+
+.logo-final img {
+  width: 150px;
+  margin-top: 35px;
 }
 
 /* Menu */
@@ -291,7 +303,6 @@ a {
   background-color: black;
   display: flex;
   justify-content: end;
-    display: none;
 }
 
 .search-container input::placeholder {
@@ -678,9 +689,20 @@ a {
 .titulo-final {
   font-size: 4.2rem;
   font-weight: bold;
-  background: linear-gradient(98deg, #fff, #6b05f1, #fff); /* Gradiente horizontal */
+  background: linear-gradient(270deg, 
+  #fff 0%,   /* Branco no lado direito */
+  #eee 20%,  /* Cinza muito claro */
+  #ddd 40%,  /* Cinza claro */
+  #bbb 60%,  /* Cinza médio */
+  #888 80%,  /* Cinza escuro */
+  #353535 100%  /* Cinza mais escuro no lado esquerdo */); /* Branco à direita, cinza à esquerda */
   -webkit-background-clip: text; /* Permite o gradiente afetar o texto */
   -webkit-text-fill-color: transparent; /* Deixa o texto transparente */
+}
+
+.subtitulo-final {
+  font-size: 2rem;
+  color: white;
 }
 
 .texto-agenciados-1 {
@@ -728,7 +750,7 @@ a {
 }
 
 .final {
-  background-image: url(../img2/estiloluz4.png);
+  background-image: url(../img2/imgestilo4.png);
   width: 100vw; /* Faz a seção ocupar toda a largura disponível */
   display: flex;
   align-items: center;

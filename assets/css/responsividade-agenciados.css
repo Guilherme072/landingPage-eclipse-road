@@ -536,6 +536,43 @@
         display: none;
     }
 
+    .filter {
+        left: 0; /* Garante que o dropdown fique alinhado ao início do botão */
+        right: 0; /* Fica centralizado em relação ao botão */
+        margin: 0 auto; /* Centraliza o menu na tela */
+        width: auto; /* Ajusta automaticamente para caber */
+        max-width: 100%; /* Não ultrapassa os limites da tela */
+        display: flex;
+        flex-direction: column;
+      }
+
+      .final {
+        background-image: url(../img2/imgestilo3.png);
+        width: 100vw; /* Faz a seção ocupar toda a largura disponível */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+      }
+      
+      .titulo-final {
+        font-size: 4.2rem;
+        font-weight: bold;
+        background: linear-gradient(270deg, 
+        #fff 0%,   /* Branco no lado direito */
+        #eee 20%,  /* Cinza muito claro */
+        #ddd 40%,  /* Cinza claro */
+        #bbb 60%,  /* Cinza médio */
+        #888 80%,  /* Cinza escuro */
+        #353535 100%  /* Cinza mais escuro no lado esquerdo */); /* Branco à direita, cinza à esquerda */
+        -webkit-background-clip: text; /* Permite o gradiente afetar o texto */
+        -webkit-text-fill-color: transparent; /* Deixa o texto transparente */
+      }
+
+      .subtitulo-final {
+        font-size: 1rem;
+      }
+
 
 }
 
@@ -1615,6 +1652,14 @@
     .right-sobre {
         display: none;
     }
+
+    .titulo-final {
+        font-size: 4.2rem;
+        font-weight: bold;
+        background: linear-gradient(270deg, #fff, #aaa, #555, #000); /* Gradiente mais forte à direita */
+        -webkit-background-clip: text; /* Permite o gradiente afetar o texto */
+        -webkit-text-fill-color: transparent; /* Deixa o texto transparente */
+      }
 
     
  }
