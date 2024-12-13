@@ -79,37 +79,44 @@
     <main id="inicio" class="inicio">
 
       <div class="filter">
-        <select name="plaforma" id="filter_select_plataform">
-          <option value="all" selected>Todos as plataforma</option>
-          <option value="x">X</option>
-          <option value="instagram">Instagram</option>
-          <option value="twitch">Twitch</option>
-          <option value="youtube">Youtube</option>
-          <option value="tiktok">TikTok</option>
-          <option value="facebook">Facebook</option>
+        <select name="plaforma" id="filter_select_plataform" class="filter-plataforma">
+          <option value="all" class="filtros" selected >Todos as plataforma</option>
+          <option value="x" class="filtros">X</option>
+          <option value="instagram" class="filtros">Instagram</option>
+          <option value="twitch" class="filtros">Twitch</option>
+          <option value="youtube" class="filtros">Youtube</option>
+          <option value="tiktok" class="filtros">TikTok</option>
+          <option value="facebook" class="filtros">Facebook</option>
         </select>
-        <select name="categoria" id="filter_select_category">
-          <option value="all" selected>Todos as categorias</option>
-          <option value="memes">Memes</option>
-          <option value="futebol">Futebol</option>
-          <option value="programacao">Programação</option>
-          <option value="entretenimento">Entretenimento</option>
-          <option value="games">Games</option>
+        <select name="categoria" id="filter_select_category" class="filter-category">
+          <option value="all" class="filtros" selected>Todos as categorias</option>
+          <option value="memes" class="filtros">Memes</option>
+          <option value="futebol" class="filtros">Futebol</option>
+          <option value="programacao" class="filtros">Programação</option>
+          <option value="entretenimento" class="filtros">Entretenimento</option>
+          <option value="games" class="filtros">Games</option>
         </select>
-        <select name="seguidores" id="filter_select_followers">
-          <option value="all" selected>Todos os seguidores</option>
-          <option value="1000">+1K</option>
-          <option value="10000">+10K</option>
-          <option value="100000">+100K</option>
-          <option value="500000">+500K</option>
-          <option value="1000000">+1M</option>
+        <select name="seguidores" id="filter_select_followers" class="filter-followers">
+          <option value="all" class="filtros" selected>Todos os seguidores</option>
+          <option value="1000" class="filtros">+1K</option>
+          <option value="10000" class="filtros">+10K</option>
+          <option value="100000" class="filtros">+100K</option>
+          <option value="500000" class="filtros">+500K</option>
+          <option value="1000000" class="filtros">+1M</option>
         </select>
-        <select name="plaforma" id="filter_select_engajament">
-          <option value="all" selected>Todos os engajamentos</option>
-          <option value="1">1</option>
-          <option value="100000">100k</option>
+        <select name="plaforma" id="filter_select_engajament" class="filter-engajament">
+          <option value="all" class="filtros" selected>Todos os engajamentos</option>
+          <option value="1" class="filtros">1</option>
+          <option value="100000" class="filtros">100k</option>
         </select>
-        <input type="text" name="nome" id="filter_search" placeholder="Pesquisar...">
+        <div class="filter-search">
+          <span class="search-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zm-5.442 1.13a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z"/>
+            </svg>
+          </span>
+          <input type="text" name="nome" id="filter_search" placeholder="Pesquisar...">
+        </div>
       </div>
 
       
@@ -134,7 +141,7 @@
             </a>
           </div>
         </div>
-        <div class="box user-item" filter_plataform="x,instagram,twitch,facebook" filter_category="futebol" filter_followers="400000" filter_engajament="60000">
+        <div class="box user-item" filter_name="samengo" filter_plataform="x,instagram,twitch,facebook" filter_category="futebol" filter_followers="400000" filter_engajament="60000">
           <img src="assets/img/same.png" alt="Samengo" class="profile-img">
           <h3 class="profile-name">Samengo
             <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
@@ -159,7 +166,7 @@
             </a>
           </div>
         </div>
-        <div class="box user-item" filter_plataform="x,instagram,youtube,tiktok" filter_category="entretenimento" filter_followers="7200000" filter_engajament="70000">
+        <div class="box user-item" filter_name="guilherme coelho" filter_plataform="x,instagram,youtube,tiktok" filter_category="entretenimento" filter_followers="7200000" filter_engajament="70000">
           <img src="assets/img/coelho.png" alt="Coelho" class="profile-img">
           <h3 class="profile-name">Guilherme Coelho
             <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
@@ -184,7 +191,7 @@
             </a>
           </div>
         </div>
-        <div class="box user-item" filter_plataform="x,instagram,youtube,tiktok" filter_category="noticias" filter_followers="2700000" filter_engajament="50000">
+        <div class="box user-item" filter_name="crimes reais" filter_plataform="x,instagram,youtube,tiktok" filter_category="noticias" filter_followers="2700000" filter_engajament="50000">
           <img src="assets/img/crimesreais.png" alt="Crimes reais" class="profile-img">
           <h3 class="profile-name">Crimes Reais
             <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
@@ -209,7 +216,7 @@
             </a>
           </div>
         </div>
-        <div class="box user-item" filter_plataform="x,instagram,youtube,tiktok" filter_category="entretenimento" filter_followers="4700000" filter_engajament="50000">
+        <div class="box user-item" filter_name="gabriel kerber" filter_plataform="x,instagram,youtube,tiktok" filter_category="entretenimento" filter_followers="4700000" filter_engajament="50000">
           <img src="assets/img/kerbitos.png" alt="Kerbitos" class="profile-img">
           <h3 class="profile-name">Gabriel Kerber
             <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
@@ -234,7 +241,7 @@
             </a>
           </div>
         </div>
-        <div class="box user-item" filter_plataform="x,instagram" filter_category="academia" filter_followers="510000" filter_engajament="40000">
+        <div class="box user-item" filter_name="fora academia" filter_plataform="x,instagram" filter_category="academia" filter_followers="510000" filter_engajament="40000">
           <img src="assets/img/foraacademia.png" alt="foraacademia" class="profile-img">
           <h3 class="profile-name">Fora Academia
             <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
@@ -253,7 +260,7 @@
             </a>
           </div>
         </div>
-        <div class="box user-item" filter_plataform="x,instagram,twitch" filter_category="futebol" filter_followers="280000" filter_engajament="30000">
+        <div class="box user-item" filter_name="central do braga" filter_plataform="x,instagram,twitch" filter_category="futebol" filter_followers="280000" filter_engajament="30000">
           <img src="assets/img/centraldobraga.png" alt="CentraldoBrega" class="profile-img">
           <h3 class="profile-name">Central do Braga
             <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
@@ -275,7 +282,7 @@
             </a>
           </div>
         </div>
-        <div class="box user-item" filter_plataform="x,instagram,youtube,tiktok" filter_category="humor" filter_followers="600000" filter_engajament="50000">
+        <div class="box user-item" filter_name="daniel neckel" filter_name="ct martinelli" filter_plataform="x,instagram,youtube,tiktok" filter_category="humor" filter_followers="600000" filter_engajament="50000">
           <img src="assets/img/danielpassapikyt.png" alt="Kerbitos" class="profile-img">
           <h3 class="profile-name">Daniel Neckel
             <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
@@ -300,7 +307,7 @@
             </a>
           </div>
         </div>
-        <div class="box user-item" filter_plataform="x,instagram" filter_category="animais" filter_followers="1500000" filter_engajament="70000">
+        <div class="box user-item" filter_name="iti malias" filter_plataform="x,instagram" filter_category="animais" filter_followers="1500000" filter_engajament="70000">
           <img src="assets/img/itchimalias.png" alt="itimaliasof" class="profile-img">
           <h3 class="profile-name">Iti malias
             <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
@@ -319,7 +326,7 @@
             </a>
           </div>
         </div>
-        <div class="box user-item" filter_plataform="x,instagram,facebook" filter_category="humor" filter_followers="1800000" filter_engajament="50000">
+        <div class="box user-item" filter_name="zanfa" filter_plataform="x,instagram,facebook" filter_category="humor" filter_followers="1800000" filter_engajament="50000">
           <img src="assets/img/zanfa.png" alt="Zanfa" class="profile-img">
           <h3 class="profile-name">Zanfa
             <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
@@ -341,7 +348,7 @@
             </a>
           </div>
         </div>
-        <div class="box user-item" filter_plataform="x,youtube" filter_category="games" filter_followers="30000" filter_engajament="50000">
+        <div class="box user-item" filter_name="paulo batista" filter_plataform="x,youtube" filter_category="games" filter_followers="30000" filter_engajament="50000">
           <img src="assets/img/paulobatista.png" alt="paulbatistta" class="profile-img">
           <h3 class="profile-name">Paulo Batista
             <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
@@ -360,7 +367,7 @@
             </a>
           </div>
         </div>
-        <div class="box user-item" filter_plataform="x,instagram" filter_category="futebol" filter_followers="320000" filter_engajament="50000">
+        <div class="box user-item" filter_name="cr7 brasil" filter_plataform="x,instagram" filter_category="futebol" filter_followers="320000" filter_engajament="50000">
           <img src="assets/img/cr7brasil.png" alt="CR7Brasil" class="profile-img">
           <h3 class="profile-name">CR7 Brasil
             <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
@@ -1618,7 +1625,8 @@
 
 
         <section id="final" class="final">
-          <div class="container-texto-final" data-aos="fade-up" data-aos-duration="1000">
+          
+        <div class="container-texto-final" data-aos="fade-up" data-aos-duration="1000">
             <span class="titulo-final">
               <strong>
                 Se torne um Agenciado!
