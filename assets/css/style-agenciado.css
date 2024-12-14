@@ -301,7 +301,7 @@ a {
   font-size: 14px;
   color: white;
   background-color: black;
-  display: none;
+  display: flex;
   justify-content: end;
 }
 
