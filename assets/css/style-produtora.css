@@ -573,6 +573,15 @@ a {
   .logo {
     display: block;
   }
+  .titulo-produtora {
+    font-size: 2.5rem;
+  }
+  .subtitulo-produtora {
+    font-size: 1.2rem;
+  }
+  .hamburger {
+    display: block;
+  }
 }
 
 

@@ -573,13 +573,13 @@
         font-size: 1rem;
       }
 
-    .navbar {
+      .navbar {
         display: none;
       }
 
-    .logo {
+      .logo {
         display: block;
-    }
+      }
 
 
 }
@@ -1121,6 +1121,14 @@
     .right-sobre {
         display: none;
     }
+
+    .navbar {
+        display: none;
+      }
+
+      .logo {
+        display: block;
+      }
  }
 
  @media (min-width: 1024px) and (max-width: 1366px) { 
@@ -1667,6 +1675,14 @@
         background: linear-gradient(270deg, #fff, #aaa, #555, #000); /* Gradiente mais forte à direita */
         -webkit-background-clip: text; /* Permite o gradiente afetar o texto */
         -webkit-text-fill-color: transparent; /* Deixa o texto transparente */
+      }
+
+      .navbar {
+        display: none;
+      }
+
+      .logo {
+        display: block;
       }
 
     
