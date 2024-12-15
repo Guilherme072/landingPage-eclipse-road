@@ -573,6 +573,10 @@
         font-size: 1rem;
       }
 
+    .navbar {
+        display: none;
+      }
+
 
 }
 
