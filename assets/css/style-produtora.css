@@ -44,12 +44,12 @@ html {
 }
 
 body {
-  background-image: url(../img2/imgestilo4.png);
+    background-color: #000;
     background-size: cover;
     color: #fff;
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     font-family: var(--font-pequena);
     overflow-x: hidden;
@@ -378,7 +378,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3rem 0rem;
+    padding: 0rem 0rem;
     z-index: 1;
     user-select: none;
     padding-bottom: 0px;
@@ -394,67 +394,64 @@ a {
     justify-content: center;
 }
 
-/* Estilo geral do popup */
-.popup {
-  background-color: #1a1a1a; /* Fundo escuro */
-  padding: 80px;
-  border-radius: 20px;
-  width: 370px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column; /* Alinhar elementos verticalmente */
-  justify-content: center; /* Centralizar verticalmente */
-  align-items: center; /* Centralizar horizontalmente */
-  margin-top: 30px;
-}
-
-/* Estilo do título */
-.popup h2 {
-  color: white;
-  margin-bottom: 15px;
-  font-size: 28px;
-}
-
-/* Estilo dos botões */
-.popup-button {
-  display: block;
-  background-color: #333;
-  color: white;
-  border: none;
-  padding: 10px;
-  margin: 5px 0;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 20px;
-  width: 100%; /* Botões ocupam toda a largura do contêiner */
-  max-width: 210px; /* Limitar largura máxima */
-  height: 40px; /* Altura fixa para todos os botões */
-  transition: background-color 0.3s;
-  text-align: center;
-}
-
-.popup-button:hover {
-  background-color: #555;
-}
-
-.titulo-inicio {
-  font-size: 2rem;
-}
-
-.subtitulo-inicio {
-  font-size: 1rem;
-  text-align: center;
-  
-}
-
-.container-contato {
+.container-produtora {
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.titulo-produtora {
+  font-size: 3.5rem;
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,     /* Gradiente da esquerda para a direita */
+    #fff 0%,   /* Branco no lado esquerdo */
+    #b687e2 20%,  /* Cinza muito claro */
+    #ddd 40%,  /* Cinza claro */
+    #bbb 60%,  /* Cinza médio */
+    #888 80%,  /* Cinza escuro */
+    #444 100%  /* Cinza mais escuro no lado direito */
+  );
+  -webkit-background-clip: text; /* Gradiente afeta apenas o texto */
+  -webkit-text-fill-color: transparent; /* Texto transparente */
+}
+
+.subtitulo-produtora {
+  font-size: 1.4rem;
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,     /* Gradiente da esquerda para a direita */
+    #a868e4 0%,   /* Branco no lado esquerdo */
+    #eee 20%,  /* Cinza muito claro */
+    #ddd 40%,  /* Cinza claro */
+    #bbb 60%,  /* Cinza médio */
+    #888 80%,  /* Cinza escuro */
+    #444 100%  /* Cinza mais escuro no lado direito */
+  );
+  -webkit-background-clip: text; /* Gradiente afeta apenas o texto */
+  -webkit-text-fill-color: transparent; /* Texto transparente */
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.logo-produtora {
+  width: 100%;
+  display: flex;
   justify-content: center;
-  height: 90vh;
+  position: fixed;
+  bottom: 50px;
+}
+
+.logo-produtora img {
+  width: 150px;
 }
 
 .navbar {

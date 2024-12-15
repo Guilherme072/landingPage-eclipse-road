@@ -180,7 +180,7 @@ a {
     z-index: 99;
     transition: top 0.3s ease-in-out;
     backdrop-filter: blur(10px);
-    background-color: rgb(137, 3, 226);
+    background-color: transparent;
 
 }
 
@@ -190,6 +190,7 @@ a {
     margin: 0;
     flex: 0;
     bottom: 10px;
+    display: none;
 }
 
 .logo img {
@@ -301,7 +302,7 @@ a {
   font-size: 14px;
   color: white;
   background-color: black;
-  display: flex;
+  display: NONE;
   justify-content: end;
 }
 
@@ -900,6 +901,119 @@ a {
 .search-icon {
   margin-right: 5px;
 }
+
+.navbar {
+  position: fixed; /* Fixa no topo */
+  top: 40px; /* Distância do topo */
+  left: 50%; /* Alinha horizontalmente */
+  transform: translateX(-50%); /* Centraliza no meio da tela */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px; /* Reduz o padding para tamanho menor */
+  background-color: #000;
+  border-radius: 50px;
+  width: 700px; /* Tamanho fixo menor */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); /* Sombra suave */
+  z-index: 1000; /* Garante que a barra fique acima de outros elementos */
+}
+
+.logo {
+  font-size: 1.2rem; /* Tamanho menor do texto */
+  font-weight: bold;
+}
+
+.highlight {
+  color: #ff9800; /* Laranja */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9rem; /* Reduz o tamanho dos links */
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff9800;
+}
+
+.cta-button a {
+  background-color: #333;
+  padding: 6px 15px; /* Botão menor */
+  border-radius: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+}
+
+.cta-button a:hover {
+  border: 1px solid #ff9800;
+  box-shadow: 0 0 10px #ff9800;
+}
+
+/* Conteúdo para testar */
+.content {
+  margin-top: 100px; /* Dá espaço abaixo da barra */
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.logo-pc {
+  width: 12%;
+}
+
+.logo-pc img {
+  width: 90px;
+  display: flex;
+}
+
+.glow-outline {
+  background-color: #1f1f1f;
+  color: #fff;
+  border: 2px solid transparent; /* Removendo a borda interna */
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+}
+
+.glow-outline::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 149, 0, 0.8); /* Borda giratória fora do botão */
+  animation: rotateGlow 2s linear infinite;
+}
+
+@keyframes rotateGlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 
 

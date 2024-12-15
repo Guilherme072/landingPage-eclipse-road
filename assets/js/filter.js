@@ -36,36 +36,52 @@ function applyFilters() {
         }
     }
 
-    updateNumbers();
+    // updateNumbers();
 }
 
 
-function updateNumbers() {
-    let youtubeFollowers = 0;
-    let instagramFollowers = 0;
-    let xViews = 0;
-    let totalFollowers = 0;
+// function updateNumbers() {
+//     let youtubeFollowers = 0;
+//     let instagramFollowers = 0;
+//     let xViews = 0;
+//     let totalFollowers = 0;
 
-    document.querySelectorAll('.item:not(.hidden)').forEach(item => {
-        const platform = item.getAttribute('data-platform');
-        const followers = parseInt(item.getAttribute('data-followers'), 10) || 0;
-        const engajament = parseInt(item.getAttribute('data-engajament'), 10) || 0;
+//     document.querySelectorAll('.user-item:not(.hidden)').forEach(item => {
+//         console.log(item, "ITEM")
+//         const platform = item.getAttribute('filter_plataform');
+//         const followers = parseInt(item.getAttribute('filter_followers'), 10) || 0;
+//         const engajament = parseInt(item.getAttribute('filter_engajament'), 10) || 0;
 
-        totalFollowers += followers;
+//         console.log(platform, followers, engajament)
 
-        if (platform.includes('youtube')) {
-            youtubeFollowers += followers;
-        }
-        if (platform.includes('instagram')) {
-            instagramFollowers += followers;
-        }
-        if (platform.includes('x')) {
-            xViews += engajament;
-        }
-    });
+//         totalFollowers += followers;
 
-    document.getElementById('youtube-count').textContent = (youtubeFollowers / 1000000).toFixed(1);
-    document.getElementById('instagram-count').textContent = (instagramFollowers / 1000000).toFixed(1);
-    document.getElementById('views-count').textContent = (xViews / 1000000000).toFixed(1);
-    document.getElementById('followers-count').textContent = (totalFollowers / 1000000).toFixed(1);
-}
+//         if (platform.includes('youtube')) {
+//             youtubeFollowers += followers;
+//         }
+//         if (platform.includes('instagram')) {
+//             instagramFollowers += followers;
+//         }
+//         if (platform.includes('x')) {
+//             xViews += engajament;
+//         }
+//     });
+
+//     console.log(youtubeFollowers, instagramFollowers, xViews, totalFollowers)
+
+//     document.getElementById('youtube-count').textContent = formatNumber(youtubeFollowers)
+//     document.getElementById('instagram-count').textContent = formatNumber(instagramFollowers)
+//     document.getElementById('views-count').textContent = formatNumber(xViews) 
+//     document.getElementById('followers-count').textContent = formatNumber(totalFollowers)
+// }
+
+
+// function formatNumber(num) {
+//     if (num >= 1000000) {
+//         return (num / 1000000).toFixed(num % 1000000 === 0 ? 0 : 1); // Milhões
+//     } else if (num >= 1000) {
+//         return (num / 1000).toFixed(num % 1000 === 0 ? 0 : 1); // Milhares
+//     } else {
+//         return num.toString(); // Números menores permanecem inalterados
+//     }
+// }
