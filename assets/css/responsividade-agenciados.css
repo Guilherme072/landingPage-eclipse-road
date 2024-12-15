@@ -577,6 +577,10 @@
         display: none;
       }
 
+    .logo {
+        display: block;
+    }
+
 
 }
 
