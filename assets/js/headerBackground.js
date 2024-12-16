@@ -10,7 +10,7 @@ window.addEventListener('scroll', function() {
 
     // Verifica se a rolagem foi exatamente 100vh
     if (Math.abs(scrollY - oneVh) > 100) {
-        document.querySelector(".header").style.background = "rgb(0 0 0 / 86%)";
+        document.querySelector(".header").style.background = "transparent";
     } else {
         document.querySelector(".header").style.background = "transparent";
 

@@ -256,6 +256,12 @@
     .nav-menu a {
         font-size: 30px;
     }
+    .menu {
+        display: block;
+    }
+    .menu-aberto {
+        display: block;
+    }
     .sobrenos-left {
         padding: 5px;
         max-width: 100%;
@@ -351,6 +357,7 @@
 
     .logo {
         width: 0;
+        display: block;
     }
 
     .cta span {
@@ -392,8 +399,14 @@
         height: 100%;
         width: 100%;
     }
-}
 
+    .navbar {
+        display: none;
+    }
+
+    
+
+}
 @media (min-width: 820px) and (max-width: 1180px) { 
     .container {
         width: 100%;
