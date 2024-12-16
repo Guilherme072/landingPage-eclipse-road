@@ -495,6 +495,15 @@ a {
 .nav-links a:hover {
   color: #836FFF;
 }
+.nav-link {
+  color: #000;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  color: #836FFF; /* Cor da aba ativa */
+  font-weight: bold;
+}
 
 .cta-button a {
   background-color: #333;
