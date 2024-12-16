@@ -586,6 +586,15 @@ a {
     background-image: url(../videos/fundoembrevecel.mp4);
     background-size: cover;
   }
+  .logo img {
+    width: 110px;
+  }
+  .logo {
+    width: 0;
+  }
+  .nav-menu a {
+    font-size: 30px;
+  }
 }
 
 
