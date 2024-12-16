@@ -913,7 +913,7 @@ a {
   padding: 8px 20px; /* Reduz o padding para tamanho menor */
   background-color: #000;
   border-radius: 50px;
-  width: 700px; /* Tamanho fixo menor */
+  width: 730px; /* Tamanho fixo menor */
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); /* Sombra suave */
   z-index: 1000; /* Garante que a barra fique acima de outros elementos */
 }
@@ -924,7 +924,7 @@ a {
 }
 
 .highlight {
-  color: #ff9800; /* Laranja */
+  color: #836FFF; /* Laranja */
 }
 
 .nav-links {
@@ -941,7 +941,7 @@ a {
 }
 
 .nav-links a:hover {
-  color: #ff9800;
+  color: #836FFF;
 }
 
 .cta-button a {
