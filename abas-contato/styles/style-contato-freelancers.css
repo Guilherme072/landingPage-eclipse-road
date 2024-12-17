@@ -551,8 +551,8 @@ a {
 }
 
 .cta-button a:hover {
-  border: 1px solid #ff9800;
-  box-shadow: 0 0 10px #ff9800;
+  border: 1px solid #836FFF;
+  box-shadow: 0 0 10px #836FFF;
 }
 
 /* Conteúdo para testar */
@@ -597,14 +597,7 @@ a {
   animation: rotateGlow 2s linear infinite;
 }
 
-@keyframes rotateGlow {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+
 
 @media (max-width: 1024px) {
   .navbar {
