@@ -465,7 +465,7 @@ a {
   padding: 8px 20px; /* Reduz o padding para tamanho menor */
   background-color: #000;
   border-radius: 50px;
-  width: 730px; /* Tamanho fixo menor */
+  width: 785px; /* Tamanho fixo menor */
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); /* Sombra suave */
   z-index: 1000; /* Garante que a barra fique acima de outros elementos */
 }
@@ -488,7 +488,7 @@ a {
 .nav-links a {
   text-decoration: none;
   color: #fff;
-  font-size: 0.9rem; /* Reduz o tamanho dos links */
+  font-size: 1.2rem; /* Reduz o tamanho dos links */
   transition: color 0.3s;
 }
 
@@ -520,8 +520,8 @@ a {
 }
 
 .cta-button a:hover {
-  border: 1px solid #ff9800;
-  box-shadow: 0 0 10px #ff9800;
+  border: 1px solid #836FFF;
+  box-shadow: 0 0 10px #836FFF;
 }
 
 /* Conteúdo para testar */

@@ -445,11 +445,11 @@ a {
   position: relative; 
   top: 35px;
   text-align: center;
-  padding: 0 10%;
+  padding: 0 10% 200px;
 }
-.teste {
+.titulo-sobre {
   position: relative;
-  top: 90px;
+  top: 70px;
 }
 
 .destaque-sobre {
@@ -511,7 +511,7 @@ a {
   padding: 8px 20px; /* Reduz o padding para tamanho menor */
   background-color: #000;
   border-radius: 50px;
-  width: 730px; /* Tamanho fixo menor */
+  width: 785px; /* Tamanho fixo menor */
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); /* Sombra suave */
   z-index: 1000; /* Garante que a barra fique acima de outros elementos */
 }
@@ -534,7 +534,7 @@ a {
 .nav-links a {
   text-decoration: none;
   color: #fff;
-  font-size: 0.9rem; /* Reduz o tamanho dos links */
+  font-size: 1.2rem; /* Reduz o tamanho dos links */
   transition: color 0.3s;
 }
 
@@ -567,8 +567,8 @@ a {
 }
 
 .cta-button a:hover {
-  border: 1px solid #ff9800;
-  box-shadow: 0 0 10px #ff9800;
+  border: 1px solid #836FFF;
+  box-shadow: 0 0 10px #836FFF;
 }
 
 /* Conteúdo para testar */
@@ -613,14 +613,79 @@ a {
   animation: rotateGlow 2s linear infinite;
 }
 
-@keyframes rotateGlow {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+/* Seção Destaque */
+/* Seção Destaque */
+.highlight-section {
+  margin-top: 700px; /* Aumente o valor para descer mais */
+  text-align: center;
+  padding: 50px 20px;
+  background-color: transparent; /* Opcional: cor de fundo */
 }
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  background: linear-gradient(
+    90deg,     /* Gradiente da esquerda para a direita */
+    #fff 0%,   /* Branco no lado esquerdo */
+    #eee 20%,  /* Cinza muito claro */
+    #ddd 40%,  /* Cinza claro */
+    #bbb 60%,  /* Cinza médio */
+    #888 80%,  /* Cinza escuro */
+    #444 100%  /* Cinza mais escuro no lado direito */
+  );
+  -webkit-background-clip: text; /* Gradiente afeta apenas o texto */
+  -webkit-text-fill-color: transparent; /* Texto transparente */
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  flex: 1 1 300px;
+  max-width: 350px;
+  text-align: center;
+  padding: 20px;
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.image-section {
+  margin-top: 50px;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #fff; /* Cor branca */
+  border-radius: 50%; /* Torna o fundo um círculo */
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  margin: 0 auto; /* Centraliza a bolinha */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
+}
+
+/* Estilo dos ícones */
+.icon-circle i {
+  font-size: 1.4rem; /* Tamanho do ícone */
+  color: #000000; /* Cor roxa para os ícones */
+}
+
+
 
 @media (max-width: 1024px) {
   .navbar {
@@ -648,7 +713,7 @@ a {
   .texto-produtora-2 {
     font-size: 1.2rem;
   }
-  .teste {
+  .titulo-sobre {
     font-size: 2.5rem;
   }
   .hamburger {
