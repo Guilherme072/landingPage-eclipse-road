@@ -551,8 +551,8 @@ a {
 }
 
 .cta-button a:hover {
-  border: 1px solid #836FFF;
-  box-shadow: 0 0 10px #836FFF;
+  border: 1px solid #ff9800;
+  box-shadow: 0 0 10px #ff9800;
 }
 
 /* Conteúdo para testar */
@@ -596,7 +596,6 @@ a {
   border: 2px solid rgba(255, 149, 0, 0.8); /* Borda giratória fora do botão */
   animation: rotateGlow 2s linear infinite;
 }
-
 
 
 @media (max-width: 1024px) {
