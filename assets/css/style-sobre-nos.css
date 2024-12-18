@@ -427,7 +427,7 @@ a {
   color: var(--color-white); 
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8); 
   position: relative; 
-  top: 220px; 
+  top: 320px;
 }
 .titulo-produtora-1 {
   font-size: 2.4rem; 
@@ -435,7 +435,7 @@ a {
   color: var(--color-white); 
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8); 
   position: relative; 
-  top: 220px; 
+   
 }
 
 .texto-produtora-1 {
@@ -445,11 +445,11 @@ a {
   position: relative; 
   top: 35px;
   text-align: center;
-  padding: 0 10% 200px;
+  padding: 0 10% 20px;
 }
 .titulo-sobre {
   position: relative;
-  top: 70px;
+  
 }
 
 .destaque-sobre {
@@ -462,9 +462,9 @@ a {
   color: var(--color-white); 
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8); 
   position: relative; 
-  top: 220px; 
+  top: 10px; 
   text-align: center;
-  padding-top: 90px;
+  
 }
 
 .texto-produtora-2 {
@@ -612,10 +612,17 @@ a {
   border: 2px solid rgba(255, 149, 0, 0.8); /* Borda giratória fora do botão */
   animation: rotateGlow 2s linear infinite;
 }
+.conteudo-unificado {
+  margin-top: 100px; /* Espaçamento geral */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 60px; /* Espaçamento entre blocos internos */
+}
 
 /* Seção Destaque */
 .highlight-section {
-  margin-top: 650px; /* Aumente o valor para descer mais */
+  margin-top: 500px; /* Aumente o valor para descer mais */
   text-align: center;
   padding: 50px 20px;
   background-color: transparent; /* Opcional: cor de fundo */
@@ -697,6 +704,155 @@ a {
   color: #000000; /* Cor roxa para os ícones */
 }
 
+/* Estilização da seção principal */
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Espaçamento entre os cards */
+  padding: 50px 20px; /* Espaçamento interno */
+  margin: 80px 0; /* Espaçamento superior e inferior */
+  background-color: transparent; /* Cor de fundo */
+  position: relative;
+  
+}
+
+/* Estilização de cada bloco de serviço */
+.service {
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  width: 320px;
+  height: 400px;
+  transition: transform 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-10px);
+}
+
+/* Ícones */
+.icon-sobre img { 
+  padding: 15px;
+  border-radius: 15%;
+  width: 280px;
+  height: 190px;
+  margin-bottom: 5px;
+}
+
+/* Títulos */
+.service h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* Parágrafos */
+.service p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #bbb;
+}
+
+/* Contato */
+.contact-section {
+  width: 100%;
+  max-width: 700px;
+  background: linear-gradient(to bottom right, #383838, #080808);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-section h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #f7f5f5;
+}
+
+.contact-section p {
+  font-size: 1rem;
+  color: #f7f5f5;
+  line-height: 1.5;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: transparent;
+  transition: border-color 0.3s;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #fafafa;
+}
+
+.form-group input,
+.form-group textarea {
+  color: #fff; 
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #836FFF;
+  outline: none;
+}
+
+.form-group textarea {
+  resize: none;
+  height: 120px;
+}
+
+.submit-btn {
+  background-color: #836FFF;
+  color: #fff;
+  padding: 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #836FFF;
+}
+
+.footer-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #fefeff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #836FFF;
+}
 
 
 @media (max-width: 1024px) {
@@ -743,6 +899,10 @@ a {
   }
   .nav-menu a {
     font-size: 30px;
+  }
+  .services {
+    display: flex;
+    flex-direction: column;
   }
 }
 
