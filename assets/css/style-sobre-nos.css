@@ -614,16 +614,15 @@ a {
 }
 
 /* Seção Destaque */
-/* Seção Destaque */
 .highlight-section {
-  margin-top: 700px; /* Aumente o valor para descer mais */
+  margin-top: 650px; /* Aumente o valor para descer mais */
   text-align: center;
   padding: 50px 20px;
   background-color: transparent; /* Opcional: cor de fundo */
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 40px;
   background: linear-gradient(
@@ -637,6 +636,7 @@ a {
   );
   -webkit-background-clip: text; /* Gradiente afeta apenas o texto */
   -webkit-text-fill-color: transparent; /* Texto transparente */
+  
 }
 
 .features {
@@ -651,6 +651,18 @@ a {
   max-width: 350px;
   text-align: center;
   padding: 20px;
+}
+
+.feature-item h3 {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+}
+
+.feature-item p {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
 }
 
 .icon {
