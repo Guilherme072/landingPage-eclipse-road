@@ -49,7 +49,7 @@ body {
     color: #fff;
     width: 100%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     font-family: var(--font-pequena);
     overflow-x: hidden;
@@ -404,8 +404,10 @@ a {
   font-size: 4.5rem;
   font-weight: bold;
   color: var(--color-white);
-  padding-top: 350px;
+  margin-top: 35vh; /* Espaçamento relativo à altura da viewport */
+  text-align: center; /* Centraliza o texto horizontalmente */
 }
+
 .subtitulo-produtora {
   font-size: 1.1rem;
   font-weight: bold;
