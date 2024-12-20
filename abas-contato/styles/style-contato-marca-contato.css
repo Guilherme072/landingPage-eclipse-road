@@ -397,7 +397,7 @@ a {
 /* Estilo geral do popup */
 .popup {
   background-color: #1a1a1a; /* Fundo escuro */
-  padding: 80px;
+  padding: 20px;
   border-radius: 20px;
   width: 355px;
   height: 400px;
@@ -411,6 +411,11 @@ a {
   margin-top: 30px;
 }
 
+.popup span {
+  flex-grow: 1; /* Deixa o texto ocupar o espaço restante */
+  text-align: right; /* Garante que o texto fique alinhado à esquerda */
+}
+
 /* Estilo do título */
 .popup h2 {
   color: white;
@@ -420,8 +425,11 @@ a {
 
 /* Estilo dos botões */
 .popup-button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #333;
+  gap: 10px;
   color: white;
   border: none;
   padding: 10px;
@@ -429,11 +437,11 @@ a {
   border-radius: 20px;
   cursor: pointer;
   font-size: 20px;
-  width: 210px; /* Botões ocupam toda a largura do contêiner */
-  max-width: 210px; /* Limitar largura máxima */
+  width: 220px; /* Botões ocupam toda a largura do contêiner */
+  max-width: 220px; /* Limitar largura máxima */
   height: 60px; /* Altura fixa para todos os botões */
   transition: background-color 0.3s;
-  text-align: center;
+  text-align: right;
 }
 
 .popup-links {
@@ -483,7 +491,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  
 }
 
 .navbar {
@@ -598,10 +606,18 @@ a {
   border: 2px solid rgba(255, 149, 0, 0.8); /* Borda giratória fora do botão */
   animation: rotateGlow 2s linear infinite;
 }
+
 .estilo-sobre {
   color: #836FFF;
 }
 
+.popup-button i {
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: right;
+  font-size: 20px;
+}
 
 @media (max-width: 1024px) {
   .navbar {
@@ -614,7 +630,7 @@ a {
     display: block;
   }
   .titulo-inicio {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
   }
   .subtitulo-inicio {
     font-size: 1rem;

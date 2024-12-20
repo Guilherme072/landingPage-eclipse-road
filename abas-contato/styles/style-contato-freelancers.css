@@ -399,7 +399,8 @@ a {
   background-color: #1a1a1a; /* Fundo escuro */
   padding: 80px;
   border-radius: 20px;
-  width: 370px;
+  width: 355px;
+  height: 400px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   font-family: Arial, sans-serif;
@@ -445,6 +446,7 @@ a {
 
 .popup-button:hover {
   background-color: #555;
+  box-shadow: 1px 1px 14px #836FFF;
 }
 
 .titulo-inicio {
@@ -551,8 +553,8 @@ a {
 }
 
 .cta-button a:hover {
-  border: 1px solid #ff9800;
-  box-shadow: 0 0 10px #ff9800;
+  border: 1px solid #836FFF;
+  box-shadow: 0 0 10px #836FFF;
 }
 
 /* Conteúdo para testar */
@@ -626,6 +628,8 @@ a {
   .popup {
     width: 300px;
     padding: 50px;
+    position: relative;
+    bottom: 70px;
   }
 }
 
