@@ -1132,8 +1132,108 @@
       }
  }
 
- 
+ @media (min-width: 1024px) and (max-width: 1366px) { 
+    .texto-agenciados-1 {
+        font-size: 2.4rem;
+        margin-bottom: 20px;
+        flex: 1;
+        text-align: left;
+        padding-left: 100px;
+      }
+    .texto-agenciados-2 {
+        font-size: 2.4rem;
+        margin-bottom: 20px;
+        flex: 1; 
+        margin-left: 250px; 
+        color: white; 
+        text-align: right;
+        padding-right: 100px;
+      }
+      .texto-agenciados-3 {
+        font-size: 2.4rem;
+        margin-bottom: 20px;
+        flex: 1;
+        margin-right: 250px;
+        text-align: left;
+        padding-left: 100px;
+      }
+      
+      .texto-agenciados-4 {
+        font-size: 2.4rem;
+        margin-bottom: 20px;
+        flex: 1; 
+        margin-left: 250px; 
+        color: white; 
+        text-align: right;
+        padding-right: 100px;
+      }
+
+      .cta {
+        position: relative;
+        margin-top: 10px;
+        padding: 12px 18px;
+        transition: all 0.2s ease;
+        border: none;
+        background: none;
+        cursor: pointer;
     
- 
+    }
+    
+    .cta span {
+        font-size: clamp(1.2rem, 1.5vw + 1rem, 2rem);
+    }
+    
+    .cta:before {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 3px;
+        display: block;
+        border-radius: 50px;
+        background: blueviolet;
+        width: 50px;
+        height: 50px;
+        transition: all 0.3s ease;
+    }
+    
+    .cta span {
+        position: relative;
+        font-family: var(--font-pequena);
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        color: var(--color-white);
+        top: 4px;
+    }
+    
+    .cta svg {
+        position: relative;
+        top: 4px;
+        margin-left: 10px;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke: #FFFAF0;
+        stroke-width: 2;
+        transform: translateX(-5px);
+        transition: all 0.3s ease;
+    }
+    
+    .cta:hover:before {
+        width: 100%;
+        background: purple;
+    }
+    
+    .cta:hover svg {
+        transform: translateX(0);
+        stroke: #FFE4B5;
+    }
+    
+    .cta:active {
+        transform: scale(0.95);
+    }
+
+    
+ }
 
 

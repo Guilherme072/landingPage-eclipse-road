@@ -150,7 +150,8 @@ a {
     gap: 20px;
     padding: 60px;
     box-sizing: border-box;
-    bottom: 10px;
+    padding-bottom: 0px;
+    
 }
 
 .container-box {
@@ -667,7 +668,7 @@ a {
     height: 120px; /* Altura da linha */
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
     filter: blur(0.7px); /* Suaviza as bordas */
-    margin: 0 20px;
+    margin: 0 -30px;
   }
 
 .container-texto-final {
