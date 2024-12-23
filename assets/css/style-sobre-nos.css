@@ -868,9 +868,13 @@ form {
   }
   .titulo-produtora {
     font-size: 2.4rem;
+    position: relative;
+    bottom: 30px;
   }
   .subtitulo-produtora {
     font-size: 1.1rem;
+    position: relative;
+    bottom: 30px;
   }
   .titulo-produtora-1 {
     font-size: 2.3rem;
