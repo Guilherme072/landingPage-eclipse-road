@@ -883,6 +883,7 @@ a {
   border-bottom: 2px solid #fff; /* Linha visível */
   width: 200px; /* Largura ajustável */
   padding-left: 3px;
+  transition: all 0.3s ease-out;
 }
 .filter-search input {
   border: none;
@@ -902,6 +903,27 @@ a {
 }
 .search-icon {
   margin-right: 5px;
+}
+
+
+.filter-plataforma:hover,
+.filter-category:hover,
+.filter-followers:hover,
+.filter-engajament:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+  transform: scale(1.05); /* Aumenta levemente o botão ao passar o mouse */
+  box-shadow: 0 0 10px #836FFF;
+}
+
+
+.filter-plataforma:focus,
+.filter-category:focus,
+.filter-followers:focus,
+.filter-engajament:focus {
+  outline: none; /* Remove o contorno padrão */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.7); /* Sombra suave para destaque */
+  border-color: #fcfcfc; /* Muda a cor da borda quando focado */
 }
 
 .navbar {
