@@ -684,7 +684,15 @@ a {
 }
 
 .image-section img {
-  max-width: 60%;
+  max-width: 100%;
+  height: auto;
+}
+.image-section-celular {
+  margin-top: 50px;
+}
+
+.image-section-celular img {
+  max-width: 100%;
   height: auto;
 }
 
@@ -913,8 +921,12 @@ form {
     flex-direction: column;
     align-items: center;
   }
-  .image-section img {
-    max-width: 100%;
+  .image-section {
+    display: none;
+  }
+  
+  .image-section-celular img {
+    max-width: 105%;
     height: auto;
   }
   .icon-sobre img {
