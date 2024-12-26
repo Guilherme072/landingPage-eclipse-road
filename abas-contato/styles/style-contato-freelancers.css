@@ -599,6 +599,10 @@ a {
   animation: rotateGlow 2s linear infinite;
 }
 
+.estilo-sobre {
+  color: #836FFF;
+}
+
 
 @media (max-width: 1024px) {
   .navbar {
