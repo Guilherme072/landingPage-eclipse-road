@@ -688,12 +688,7 @@ a {
   height: auto;
 }
 .image-section-celular {
-  margin-top: 50px;
-}
-
-.image-section-celular img {
-  max-width: 100%;
-  height: auto;
+  display: none;
 }
 
 .icon-circle {
@@ -923,6 +918,9 @@ form {
   }
   .image-section {
     display: none;
+  }
+  .image-section-celular {
+    display: block;
   }
   
   .image-section-celular img {
