@@ -53,4 +53,4 @@ Este projeto foi desenvolvido como parte de um trabalho colaborativo. Caso tenha
 
 ---
 
-**Desenvolvido por [Seu Nome]**
+**Desenvolvido por [Guilherme Vieira & Nem Tudo]**
