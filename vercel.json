@@ -1,0 +1,11 @@
+{
+    "cleanUrls": true,
+    "rewrites": [
+      { "source": "/index", "destination": "/index.html" },
+      { "source": "/agenciados", "destination": "/agenciados.html" },
+      { "source": "/produtora", "destination": "/produtora.html" },
+      { "source": "/sobre-nos", "destination": "/sobre-nos.html" }
+    ]
+  }
+  
+  
