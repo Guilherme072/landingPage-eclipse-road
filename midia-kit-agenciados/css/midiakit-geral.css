@@ -44,12 +44,12 @@ html {
 }
 
 body {
-  background-image: url(/assets/img2/imgestilo4.png);
+    background-color: #000;
     background-size: cover;
     color: #fff;
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     font-family: var(--font-pequena);
     overflow-x: hidden;
@@ -378,7 +378,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3rem 0rem;
+    padding: 0rem 0rem;
     z-index: 1;
     user-select: none;
     padding-bottom: 0px;
@@ -394,97 +394,17 @@ a {
     justify-content: center;
 }
 
-/* Estilo geral do popup */
-.popup {
-  background-color: #1a1a1a; /* Fundo escuro */
-  padding: 80px;
-  border-radius: 20px;
-  width: 355px;
-  height: 400px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column; /* Alinhar elementos verticalmente */
-  justify-content: center; /* Centralizar verticalmente */
-  align-items: center; /* Centralizar horizontalmente */
-  margin-top: 30px;
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
-/* Estilo do título */
-.popup h2 {
-  color: white;
-  margin-bottom: 15px;
-  font-size: 28px;
-}
-
-/* Estilo dos botões */
-.popup-button {
-  display: block;
-  background-color: #333;
-  color: white;
-  border: none;
-  padding: 10px;
-  margin: 5px 0;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 20px;
-  width: 210px; /* Botões ocupam toda a largura do contêiner */
-  max-width: 210px; /* Limitar largura máxima */
-  height: 60px; /* Altura fixa para todos os botões */
-  transition: background-color 0.3s;
-  text-align: center;
-}
-
-.popup-links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 210px;
-}
-
-.popup-button:hover {
-  background-color: #555;
-  box-shadow: 1px 1px 14px #836FFF;
-}
-
-.titulo-inicio {
-  font-size: 2rem;
-  background: linear-gradient(270deg, 
-  #fff 0%,   /* Branco no lado direito */
-  #eee 20%,  /* Cinza muito claro */
-  #ddd 40%,  /* Cinza claro */
-  #bbb 60%,  /* Cinza médio */
-  #888 80%,  /* Cinza escuro */
-  #353535 100%  /* Cinza mais escuro no lado esquerdo */); /* Branco à direita, cinza à esquerda */
-  -webkit-background-clip: text; /* Permite o gradiente afetar o texto */
-  -webkit-text-fill-color: transparent; /* Deixa o texto transparente */
-}
-
-.subtitulo-inicio {
-  font-size: 1.4rem;
-  text-align: center;
-  background: linear-gradient(270deg, 
-  #fff 0%,   /* Branco no lado direito */
-  #eee 20%,  /* Cinza muito claro */
-  #ddd 40%,  /* Cinza claro */
-  #bbb 60%,  /* Cinza médio */
-  #888 80%,  /* Cinza escuro */
-  #353535 100%  /* Cinza mais escuro no lado esquerdo */); /* Branco à direita, cinza à esquerda */
-  -webkit-background-clip: text; /* Permite o gradiente afetar o texto */
-  -webkit-text-fill-color: transparent; /* Deixa o texto transparente */
-  margin-bottom: 95px;
-  
-}
-
-.container-contato {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 90vh;
-}
 
 .navbar {
   position: fixed; /* Fixa no topo */
@@ -527,7 +447,6 @@ a {
 .nav-links a:hover {
   color: #836FFF;
 }
-
 .nav-link {
   color: #000;
   text-decoration: none;
@@ -598,34 +517,77 @@ a {
   border: 2px solid rgba(255, 149, 0, 0.8); /* Borda giratória fora do botão */
   animation: rotateGlow 2s linear infinite;
 }
-.estilo-sobre {
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.profile {
+  text-align: left;
+}
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: white;
+  display: inline-block;
+}
+.verified {
+  font-size: 20px;
+  color: #4c8bf5;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.stat {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.stat img {
+  width: 30px;
+}
+.share-btn {
+  background: white;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+.rede-social-link {
+  font-size: 40px;
+    margin: 0 5px;
+    color: #fff;
+    transition: color 0.3s;
+    display: flex;
+    justify-content: center;
+}
+
+.rede-social-link:hover {
   color: #836FFF;
 }
 
-.back-button {
-  background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradiente chamativo */
-  color: white; /* Texto branco para contraste */
-  border: none;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px; /* Espaço entre o ícone e o texto */
-  transition: all 0.3s ease;
-  width: 120px;
-  height: 30px;
-  margin-top: 20px;
+.verified-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  vertical-align: middle;
 }
 
-.back-button:hover {
-  transform: scale(1.05); /* Leve aumento ao passar o mouse */
-  box-shadow: 0 0 10px rgba(106, 17, 203, 0.7); /* Efeito de brilho */
+.share-icon {
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  margin-right: 5px;
+  vertical-align: middle;
 }
-
 
 @media (max-width: 1024px) {
   .navbar {
@@ -634,29 +596,49 @@ a {
   .logo {
     display: block;
   }
+  
+  .container {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .profile {
+    text-align: center;
+  }
+
+  .stat {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .hamburger {
     display: block;
   }
-  .titulo-inicio {
-    font-size: 1.9rem;
-  }
-  .subtitulo-inicio {
-    font-size: 1rem;
+  body {
+    background-image: url(../videos/fundoembrevecel.mp4);
+    background-size: cover;
   }
   .logo img {
     width: 110px;
-  } 
+  }
   .logo {
     width: 0;
   }
   .nav-menu a {
     font-size: 30px;
-  }
-  .popup {
-    width: 300px;
-    padding: 50px;
-    position: relative;
-    bottom: 70px;
   }
 }
 

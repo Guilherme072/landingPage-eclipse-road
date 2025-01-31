@@ -1168,7 +1168,8 @@ a {
     padding: 2rem 0rem 3rem 0rem;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-white);
+    background-image: url(../img2/imgestilo4.png);
+    background-size: cover;
 }
 
 .container-contato {
@@ -1197,7 +1198,7 @@ a {
 }
 
 .titulo-contato h1 {
-    color: var(--color-black);
+    color: var(--color-white);
     width: 100%;
     font-size: 2.2vw;
     font-weight: lighter;
@@ -1205,9 +1206,10 @@ a {
     margin-top: -60px;
 }
 
-.vamos p {
-    font-size: 2vw;
+.vamos  {
+    font-size: 1.4vw;
     text-align: left;
+    color: var(--color-white);
 }
 
 .titulo-contato h2 {
@@ -1221,7 +1223,7 @@ a {
 
 .sizetext {
     font-size: 2.3vw;
-    color: var(--color-black);
+    color: var(--color-white);
     font-family: var(--font-grande);
 }
 
@@ -1235,7 +1237,7 @@ a {
 
 .descricao-contato a {
     text-decoration: none;
-    color: var(--color-black);
+    color: var(--color-white);
     font-size: 2rem;
     letter-spacing: 1.5px;
     line-height: 1.4;
@@ -1263,6 +1265,8 @@ a {
 
 .formulario-contato h2 {
     font-size: 2rem;
+    color: var(--color-white);
+    margin-bottom: 30px;
 }
 
 .formulario-contato p {
@@ -1312,6 +1316,7 @@ a {
     border: 2px solid rgba(128, 128, 128, 0.5);
     outline: none;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 .logo-contato {
@@ -1670,4 +1675,3 @@ a img {
     bottom: 10px;
     display: flex;
 }
-

@@ -684,7 +684,7 @@ a {
 }
 
 .image-section img {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
 }
 .image-section-celular {
@@ -859,6 +859,79 @@ form {
 
 .footer-links a:hover {
   color: #836FFF;
+}
+
+.contact-section-temporario {
+  width: 800px;
+  max-width: 1000px;
+  
+  background: linear-gradient(to bottom right, #292828, #000000);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: start;
+  margin-bottom: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.new-contact {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #f7f5f5;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-sobre {
+  width: 200px;
+  height: 60px;
+  max-width: 310px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.button-sobre p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.popup-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  gap: 10px;
+  color: black;
+  border: none;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 200px; /* Botões ocupam toda a largura do contêiner */
+  max-width: 220px; /* Limitar largura máxima */
+  height: 50px; /* Altura fixa para todos os botões */
+  transition: background-color 0.3s;
+  text-align: right;
+}
+
+.popup-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 210px;
+}
+
+.popup-button:hover {
+  background-color: #dad7d7;
 }
 
 

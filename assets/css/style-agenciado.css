@@ -56,11 +56,8 @@
     background-color: var(--color-gray2);
 }
 
-html {
-    scroll-behavior: smooth;
-}
 
-body {
+html, body {
     background-color: #1a1a1a;
     color: #fff;
     width: 100%;
@@ -81,6 +78,7 @@ body {
     -moz-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
      text-size-adjust: 100%;
+     scroll-behavior: smooth;
 }
 main {
   flex: 1;
@@ -785,7 +783,7 @@ a {
 
 .final {
   background-image: url(../img2/imgestilo4.png);
-  width: 100vw; /* Faz a seção ocupar toda a largura disponível */
+  width: 100%; /* Faz a seção ocupar toda a largura disponível */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1068,6 +1066,19 @@ a {
   border-radius: 10px;
   border: 2px solid rgba(255, 149, 0, 0.8); /* Borda giratória fora do botão */
   animation: rotateGlow 2s linear infinite;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .container-inicio {
+      width: 100vw; 
+      height: 100vh; 
+      max-width: 100%;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
 }
 
 
