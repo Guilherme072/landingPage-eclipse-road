@@ -24,9 +24,19 @@
 <body>
   
   <!--Botão voltar ao topo-->
-  
   <div id="backToTop" class="fixed-button">
     <i class="bi bi-chevron-up"></i>
+  </div>
+
+  <!--Botão WhatsApp-->
+  <div id="buttons-container">
+
+    <div id="whatsappButton" class="fixed-button">
+      <i class="bi bi-whatsapp"></i>
+    </div>
+    
+    <button class="share-btn" onclick="sharePage()">
+      <img src="../assets/img2/share-icon.png" alt="" class="share-icon">compartilhar</button>
   </div>
   
   <div class="container-inicio">
@@ -34,7 +44,7 @@
     <!--Header-->
     <header class="header">
       <div class="logo">
-        <a href="/contato.html">
+        <a href="/index.html">
           <img src="../assets/img/SUA-LOGO-AQUI.png" alt="">
         </a>
       </div>
@@ -108,29 +118,35 @@
           </div>
           <div class="stat">
             <p>+600 MIL DE SEGUIDORES
-                <a href="" class="rede-social-link">
-                  <i class="bi bi-instagram"></i>
-                </a>
-              </p>
+              <a href="" class="rede-social-link">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </p>
           </div>
           <div class="stat">
             <p>+4 MILHÕES DE SEGUIDORES
-                <a href=""  class="rede-social-link">
-                  <i class="bi bi-youtube"></i>
-                </a>
-              </p>
+              <a href=""  class="rede-social-link">
+                <i class="bi bi-youtube"></i>
+              </a>
+            </p>
           </div>
           <div class="stat">
             <p>+1 MILHÃO DE SEGUIDORES
-                <a href="" class="rede-social-link">
-                  <i class="bi bi-tiktok"></i>
-                </a>
-              </p>
+              <a href="" class="rede-social-link">
+                <i class="bi bi-tiktok"></i>
+              </a>
+            </p>
           </div>
       </div>
   </div>
-  <button class="share-btn" onclick="sharePage()">
+  <button class="share-btn-mobile" onclick="sharePage()">
     <img src="../assets/img2/share-icon.png" alt="" class="share-icon">compartilhar</button>
+
+    <section class="container-sobre">
+      <div class="sobre">
+        <h1>Sobre</h1>
+      </div>
+    </section>
     </main>
 
     <script>
@@ -165,7 +181,8 @@
 
       <script src="./assets/js/numbersIncrease.js"></script>
       <script src="../assets/js/header.js"></script>
-      <script src="../assets/js/actionButton-ag.js"></script>
+      <script src="../assets/js/actionButton-mk.js"></script>
+      <script src="/assets/js/actionButton.js"></script>
       <script src="../assets/js/navbar.js"></script>
       <script src="../assets/js/removelink.js"></script>
       

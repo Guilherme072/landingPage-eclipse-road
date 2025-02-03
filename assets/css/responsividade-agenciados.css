@@ -264,6 +264,10 @@
         flex-direction: column;
     }
 
+    .free-your-mind {
+        display: none;
+    }
+
     body {
         font-size: 16px;
         flex-direction: column;
@@ -580,7 +584,7 @@
         background-image: url(../img2/imgestilo3.png);
         width: 100%; /* Faz a seção ocupar toda a largura disponível */
         min-height: 100vh;
-        display: flex;
+        display: none;
         align-items: center;
         flex-direction: column;
         justify-content: flex-end;
@@ -1161,6 +1165,14 @@
       .logo {
         display: block;
       }
+
+      .free-your-mind {
+        display: none;
+    }
+    
+    .final {
+        display: none;
+    }
  }
 
  @media (min-width: 1024px) and (max-width: 1366px) { 
@@ -1262,6 +1274,14 @@
     
     .cta:active {
         transform: scale(0.95);
+    }
+
+    .free-your-mind {
+        display: none;
+    }
+
+    .final {
+        display: none;
     }
 
     

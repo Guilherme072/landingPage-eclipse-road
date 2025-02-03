@@ -403,33 +403,13 @@ a {
 .titulo-produtora {
   font-size: 3.5rem;
   font-weight: bold;
-  background: linear-gradient(
-    90deg,     /* Gradiente da esquerda para a direita */
-    #fff 0%,   /* Branco no lado esquerdo */
-    #b687e2 20%,  /* Cinza muito claro */
-    #ddd 40%,  /* Cinza claro */
-    #bbb 60%,  /* Cinza médio */
-    #888 80%,  /* Cinza escuro */
-    #444 100%  /* Cinza mais escuro no lado direito */
-  );
-  -webkit-background-clip: text; /* Gradiente afeta apenas o texto */
-  -webkit-text-fill-color: transparent; /* Texto transparente */
+  color: var(--color-white);
 }
 
 .subtitulo-produtora {
   font-size: 1.4rem;
   font-weight: bold;
-  background: linear-gradient(
-    90deg,     /* Gradiente da esquerda para a direita */
-    #a868e4 0%,   /* Branco no lado esquerdo */
-    #eee 20%,  /* Cinza muito claro */
-    #ddd 40%,  /* Cinza claro */
-    #bbb 60%,  /* Cinza médio */
-    #888 80%,  /* Cinza escuro */
-    #444 100%  /* Cinza mais escuro no lado direito */
-  );
-  -webkit-background-clip: text; /* Gradiente afeta apenas o texto */
-  -webkit-text-fill-color: transparent; /* Texto transparente */
+  color: var(--color-white);
 }
 
 .video-background {
