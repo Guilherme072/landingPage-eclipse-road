@@ -58,7 +58,7 @@
 
 
 html, body {
-    background-color: #1a1a1a;
+    background-color: #111111;
     color: #fff;
     width: 100%;
     display: flex;
@@ -869,16 +869,16 @@ a {
 }
 
 .filter-plataforma {
-  border: 2px solid #fff;
+  border: 2px solid #690099;
   border-radius: 20px;
   padding: 8px 15px;
   background: transparent;
-  color: #ffffff;
+  color: #fff;
   cursor: pointer;
   font-size: 14px;
 }
 .filter-category {
-  border: 2px solid #fff;
+  border: 2px solid #690099;
   border-radius: 20px;
   padding: 8px 15px;
   background: transparent;
@@ -887,7 +887,7 @@ a {
   font-size: 14px;
 }
 .filter-followers {
-  border: 2px solid #fff;
+  border: 2px solid #690099;
   border-radius: 20px;
   padding: 8px 15px;
   background: transparent;
@@ -896,7 +896,7 @@ a {
   font-size: 14px;
 }
 .filter-engajament {
-  border: 2px solid #fff;
+  border: 2px solid #690099;
   border-radius: 20px;
   padding: 8px 15px;
   background: transparent;
@@ -909,7 +909,7 @@ a {
   display: flex;
   align-items: center;
   position: relative;
-  border-bottom: 2px solid #fff; /* Linha visível */
+  border-bottom: 2px solid #ffffff; /* Linha visível */
   width: 200px; /* Largura ajustável */
   padding-left: 3px;
   transition: all 0.3s ease-out;
