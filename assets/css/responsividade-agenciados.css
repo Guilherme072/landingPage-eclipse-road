@@ -618,7 +618,19 @@
       }
       
 
-
+      .number {
+        position: relative;
+          top: -17px;
+          left: 196px;
+          background: transparent;
+          color: white;
+          padding: 5px 10px;
+          border-radius: 50%;
+          font-weight: bold;
+          display: none;
+          width: 30px;
+          height: 30px;
+      }
 }
 
 

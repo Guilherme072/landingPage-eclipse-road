@@ -1068,17 +1068,25 @@ a {
   animation: rotateGlow 2s linear infinite;
 }
 
-@supports (-webkit-touch-callout: none) {
-  .container-inicio {
-      width: 100vw; 
-      height: 100vh; 
-      max-width: 100%;
-      overflow-x: hidden;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-  }
+.number {
+  position: relative;
+    bottom: 55px;
+    left: 156px;
+    background: transparent;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-weight: bold;
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+
+button {
+  margin-top: 20px; padding: 10px 15px;
+  font-size: 16px; cursor: pointer;
+  border: none; background: #007BFF; color: white;
+  border-radius: 5px;
 }
 
 
