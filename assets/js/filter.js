@@ -2,8 +2,11 @@ document.querySelectorAll('.filter select, #filter_search').forEach(filter => {
     filter.addEventListener('change', applyFilters);
 });
 
+// Chama applyFilters a 200 milissegundos - Gabs
+setInterval(applyFilters, 200);
+
 function applyFilters() {
-    console.log("FILTROS")
+    console.log("FILTROS");
     const platformFilter = document.getElementById('filter_select_plataform').value;
     const categoryFilter = document.getElementById('filter_select_category').value;
     const followersFilter = document.getElementById('filter_select_followers').value;
@@ -12,9 +15,9 @@ function applyFilters() {
 
     const items = document.querySelectorAll('.user-item');
 
-    console.log(items)
+    console.log(items);
 
-    for(const item of items){
+    for (const item of items) {
         const platform = item.getAttribute('filter_plataform').split(',');
         const category = item.getAttribute('filter_category');
         const followers = parseInt(item.getAttribute('filter_followers'), 10);
@@ -29,15 +32,16 @@ function applyFilters() {
 
         if (matchesPlatform && matchesCategory && matchesFollowers && matchesEngagement && matchesSearch) {
             item.style.display = '';
-            item.classList.remove("hidden")
+            item.classList.remove("hidden");
         } else {
             item.style.display = 'none';
-            item.classList.add("hidden")
+            item.classList.add("hidden");
         }
     }
 
     // updateNumbers();
 }
+
 
 
 // function updateNumbers() {
