@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
       renderer: "svg", // 
       loop: true, 
       autoplay: true, 
-      path: "lottieflow-search-08-ffffff-easey.json" 
+      path: "lottieflow-search.json" 
     });
     
     lottie.loadAnimation({
