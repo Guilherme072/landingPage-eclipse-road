@@ -9,13 +9,13 @@ document.getElementById("contact-form").addEventListener("submit", async functio
     const responseMessage = document.getElementById("response-message");
 
     try {
-        const response = await fetch("http://localhost:3000/send-email", {
+        const response = await fetch("/api/send-email", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                to: "silvasvila36@gmail.com",  // Troque pelo e-mail que vai receber as mensagens
+                to: "cunha.guile@gmail.com",  // Troque pelo e-mail que vai receber as mensagens
                 subject: `Contato de ${name} - ${phone}`,
                 text: `Nome: ${name}\nTelefone: ${phone}\nE-mail: ${email}\n\nMensagem:\n${message}`,
             }),
