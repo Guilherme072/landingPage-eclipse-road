@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtora</title>
+
+  <!--Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+
+  <!--CSS-->
+  <link rel="stylesheet" href="assets/css/style-produtora.css">
+  
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <link rel="shortcut icon" href="assets/img/icon.png" type="image/png">
+  <link rel="icon" href="assets/img/icon.png" type="image/png">
+</head>
+
+<body>
+  
+  <!--Botão voltar ao topo-->
+  
+  <div id="backToTop" class="fixed-button">
+    <i class="bi bi-chevron-up"></i>
+  </div>
+  
+  <div class="container-inicio">
+
+    <!--Header-->
+    <header class="header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/img/SUA-LOGO-AQUI.png" alt="">
+        </a>
+      </div>
+      <div class="menu">
+        <label class="hamburger">
+          <input type="checkbox" id="menuToggle">
+          <svg viewBox="0 0 32 32">
+            <path class="line line-top-bottom"
+              d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+            </path>
+            <path class="line" d="M7 16 27 16"></path>
+          </svg>
+        </label>
+      </div>
+      <div class="menu-aberto">
+        <nav class="nav-menu">
+          <a href="index.html">Início</a>
+          <a href="agenciados.html">Nossos influencers</a>
+          <a href="produtora.html">Nosso Time</a>
+          <a href="sobre-nos.html">Sobre nós</a>
+          <a href="contato.html">Contato</a>
+      </nav>
+      </div>
+
+      <!--PARA DESKTOP-->
+
+      <nav class="navbar">
+        <div class="logo-pc">
+          <a href="index.html">
+            <img src="assets/img/SUA-LOGO-AQUI.png" alt="">
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li><a href="agenciados.html" class="nav-link">Nossos influencers</a></li>
+          <li><a href="produtora.html" class="nav-link">Nosso Time</a></li>
+          <li><a href="sobre-nos.html" class="nav-link">Sobre nós</a></li>
+        </ul>
+        <div class="cta-button">
+          <a href="contato.html" class="glow-outline">Contato <span>↗</span></a>
+        </div>
+      </nav>
+    </header>
+    <!--Fim Header-->
+
+    <main id="inicio" class="inicio">
+      <!-- Vídeo de fundo -->
+      <video autoplay muted loop class="video-background">
+        <source src="assets/videos/fundoparaembreve.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+      
+      <section class="container-produtora" data-aos="fade-up" data-aos-delay="200">
+        <div class="titulo-produtora">
+          <h1><strong>
+            EM BREVE!
+          </strong></h1>
+        </div>
+        <div class="subtitulo-produtora">
+          <h2>
+            Aba em desenvolvimento, volte daqui alguns dias.
+          </h2>
+        </div>
+      </section>
+      <div class="logo-produtora">
+          <img src="assets/img/SUA-LOGO-AQUI.png" alt="">
+      </div>
+    </main>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+      <!-- AOS -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+      <!-- Inicialização do AOS -->
+      <script>
+        AOS.init();
+      </script>
+
+      <script src="assets/js/numbersIncrease.js"></script>
+      <script src="assets/js/header.js"></script>
+      <script src="assets/js/actionButton-ag.js"></script>
+      <script src="assets/js/navbar.js"></script>
+      <script src="assets/js/removelink.js"></script>
+      
+
+</body>
+
+</html>
