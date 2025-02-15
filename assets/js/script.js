@@ -9,7 +9,7 @@ document.getElementById("contact-form").addEventListener("submit", async functio
     const responseMessage = document.getElementById("response-message");
 
     try {
-        const response = await fetch("/api/send-email", {
+        const response = await fetch("http://localhost:3000/send-email", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
