@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
+    
+    window.scrollTo(0, 0);
+    
     const seta = document.querySelector("#seta-inicio");
 
     document.addEventListener("scroll", () => {
