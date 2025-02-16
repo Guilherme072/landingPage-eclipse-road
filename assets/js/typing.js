@@ -57,7 +57,7 @@ class TxtType {
 
 var elements = document.querySelectorAll('#typingtext');
 for (var i = 0; i < elements.length; i++) {
-    var toRotate = ["maior agencia de publicidaes do X", "discord server admin", "human", "designer", "animal lover", "software engineer"]
+    var toRotate = ["Somos a maior agência de publicidades no X", "Somos a produtora que vai transformar seu conteúdo", "Somos a agência que vai alavancar sua marca", "Somos inovação, criatividade e performance para sua marca.", "Somos a conexão entre criadores de conteúdo e grandes marcas.", "Somos a produtora que eleva sua marca ao próximo nível."]
     var period = 3000;
     if (toRotate) {
         new TxtType(elements[i], toRotate, period);
