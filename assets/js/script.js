@@ -7,15 +7,14 @@ document.getElementById("contact-form").addEventListener("submit", async functio
     const email = form.email.value;
     const message = form.message.value;
     
-    // Pegar a caixinha de resposta
     const responseBox = document.getElementById("response-box");
     const responseText = document.getElementById("response-text");
     const loader = document.getElementById("loader");
 
-    // Mostrar a caixinha e iniciar o loader
+    // 🔹 Mostrar a caixinha e iniciar o loader
     responseBox.classList.remove("hidden");
     responseBox.classList.remove("success", "error");
-    loader.style.display = "block"; // Mostra a bolinha girando
+    loader.style.display = "block"; 
     responseText.innerText = "Enviando...";
 
     try {
@@ -34,18 +33,18 @@ document.getElementById("contact-form").addEventListener("submit", async functio
         if (response.ok) {
             responseText.innerText = "✅ E-mail enviado com sucesso!";
             responseBox.classList.add("success");
-            loader.style.display = "none"; // Esconde o loader
-            form.reset();
         } else {
             throw new Error("Falha ao enviar o e-mail");
         }
     } catch (error) {
         responseText.innerText = "❌ Erro ao enviar o e-mail!";
         responseBox.classList.add("error");
-        loader.style.display = "none"; // Esconde o loader
     }
 
-    // Ocultar a mensagem após 3 segundos
+    // 🔹 Esconder o loader e manter a mensagem
+    loader.style.display = "none";
+
+    // 🔹 Ocultar a mensagem após 3 segundos
     setTimeout(() => {
         responseBox.classList.add("hidden");
     }, 3000);
