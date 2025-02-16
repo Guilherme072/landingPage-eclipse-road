@@ -549,7 +549,7 @@ a {
   margin: 0;
 }
 .creator-text {
-  color: #b187ff;
+  color: #fff;
   font-size: 2rem;
   position: relative;
   left: 480px
@@ -1013,6 +1013,26 @@ a {
 
 .popup-button:hover {
   background-color: #dad7d7;
+}
+
+.typingcursor {
+  display: inline-block;
+  width: 10px;
+  animation: blink 0.7s infinite;
+}
+
+.typingcursor__typing {
+  animation: none;
+}
+
+@keyframes blink {
+  50% {
+      opacity: 0;
+  }
+}
+
+#typingtext {
+  color:#b187ff ;
 }
 
 
