@@ -12,7 +12,7 @@ document.getElementById("contact-form").addEventListener("submit", async functio
     const loader = document.getElementById("loader");
 
     // 🔹 Mostrar a caixinha e iniciar o loader
-    responseBox.classList.remove("hidden");
+    responseBox.style.display = "block"; // Agora a caixinha aparece corretamente
     responseBox.classList.remove("success", "error");
     loader.style.display = "block"; 
     responseText.innerText = "Enviando...";
@@ -33,6 +33,7 @@ document.getElementById("contact-form").addEventListener("submit", async functio
         if (response.ok) {
             responseText.innerText = "✅ E-mail enviado com sucesso!";
             responseBox.classList.add("success");
+            form.reset(); // 🔹 Limpa o formulário
         } else {
             throw new Error("Falha ao enviar o e-mail");
         }
@@ -46,6 +47,6 @@ document.getElementById("contact-form").addEventListener("submit", async functio
 
     // 🔹 Ocultar a mensagem após 3 segundos
     setTimeout(() => {
-        responseBox.classList.add("hidden");
+        responseBox.style.display = "none";
     }, 3000);
 });
