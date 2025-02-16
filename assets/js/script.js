@@ -6,28 +6,45 @@ document.getElementById("contact-form").addEventListener("submit", async functio
     const phone = form.phone.value;
     const email = form.email.value;
     const message = form.message.value;
-    const responseMessage = document.getElementById("response-message");
+
+    // Pega os elementos do modal
+    const modal = document.getElementById("email-modal");
+    const statusIcon = document.getElementById("status-icon");
+    const modalMessage = document.getElementById("modal-message");
+    const closeModal = document.getElementById("close-modal");
+
+    // Exibir modal e animação de carregamento
+    modal.style.display = "flex";
+    statusIcon.className = "loading";
+    modalMessage.textContent = "Enviando...";
 
     try {
-        const response = await fetch("http://localhost:3000/send-email", {
+        const response = await fetch("https://eclipseroad.com/api/send-email", {
             method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
+            headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
-                to: "silvasvila36@gmail.com",  // Troque pelo e-mail que vai receber as mensagens
+                to: "cunha.guile@gmail.com",
                 subject: `Contato de ${name} - ${phone}`,
                 text: `Nome: ${name}\nTelefone: ${phone}\nE-mail: ${email}\n\nMensagem:\n${message}`,
             }),
         });
 
-        const data = await response.json();
-        responseMessage.textContent = data.message;
-        responseMessage.style.color = "green";
-
-        form.reset(); // Limpa o formulário após envio
+        if (response.ok) {
+            // Sucesso - Ícone verde
+            statusIcon.className = "success";
+            modalMessage.textContent = "E-mail enviado com sucesso!";
+            form.reset(); // Limpa o formulário
+        } else {
+            throw new Error("Falha ao enviar o e-mail");
+        }
     } catch (error) {
-        responseMessage.textContent = "Erro ao enviar o e-mail.";
-        responseMessage.style.color = "red";
+        // Erro - Ícone vermelho
+        statusIcon.className = "error";
+        modalMessage.textContent = "Erro ao enviar. Tente novamente!";
     }
+
+    // Fechar o modal ao clicar no botão
+    closeModal.addEventListener("click", () => {
+        modal.style.display = "none";
+    });
 });
