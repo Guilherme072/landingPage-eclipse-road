@@ -404,6 +404,14 @@
         display: none;
     }
 
+    .logo-contato p {
+        display: none;
+    }
+
+    .logo-contato img {
+        display: none;
+    }
+
     
 
 }

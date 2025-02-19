@@ -20,6 +20,16 @@
 
   <link rel="shortcut icon" href="/assets/img/icon.png" type="image/png">
   <link rel="icon" href="/assets/img/icon.png" type="image/png">
+
+  <!-- SCRIPTS API -->
+
+  <!-- YOUTUBE -->
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src="./js/api-youtube.js"></script>
+
+  <!--TIKTOK
+  <script src="https://open.tiktokapis.com/api/tiktok.js"></script>
+  <script src="./js/api-tiktok.js"></script>-->
 </head>
 
 <body>
@@ -105,12 +115,11 @@
             <h1>Gabriel Kerber</h1>
             <p>+6.1 milhões de seguidores</p>
           </div>
-          <p class="creator-text">
-            Sou <span id="typingtext"></span><span class="typingcursor">|</span>
-          </p>
+          <p class="creator-text">Sou criador de conteúdo</p>
         </div>
       </div>
 
+      <!--Redes e seguidores-->
       <div class="social-container">
         <div class="social-box">
           <a href="https://x.com/kerbitoos" target="_blank">
@@ -136,7 +145,7 @@
             </lord-icon>
           </a>
           <p class="user">@kerbitos</p>
-          <p class="followers"><span class="plus">+4.3</span>M</p>
+          <p class="followers"><span class="plus" id="inscritosYt"></span></p>
           <p class="seguidores">Seguidores</p>
         </div>
         <div class="social-box">
@@ -254,7 +263,6 @@
     <script src="/assets/js/icon-animation.js"></script>
     <script src="/assets/js/graph.js"></script>
     <script src="/assets/js/carrouselparceiros.js"></script>
-    <script src="js/typing-kerb.js"></script>
 
 
 </body>

@@ -24,7 +24,7 @@ document.getElementById("contact-form").addEventListener("submit", async functio
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                to: "cunha.guile@gmail.com",
+                to: "felipedrodrigues5@gmail.com",
                 subject: `Contato de ${name} - ${phone}`,
                 text: `Nome: ${name}\nTelefone: ${phone}\nE-mail: ${email}\n\nMensagem:\n${message}`,
             }),
