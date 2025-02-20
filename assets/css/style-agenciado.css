@@ -82,6 +82,9 @@ html, body {
 }
 main {
   flex: 1;
+  position: relative; /* Permite que elementos absolutos dentro dele usem como referência */
+  min-height: 100vh; /* Garante altura mínima da tela */
+  overflow: hidden;
   padding-bottom: 0px;
   padding-right: 0px;
   padding-left: 0px;
@@ -408,6 +411,93 @@ a {
     user-select: none;
     padding-bottom: 0px;
 }
+
+.container-nuvens {
+    display: flex;
+    z-index: -1;
+    position: absolute;
+    
+    top:0;
+    width: 100%; 
+    height: 100%;
+}
+
+.imgNuvem {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.nuvem1 {
+  width: 120px;
+  height: 90px;
+  animation: nuvem-animation 20s infinite linear;
+}
+
+.nuvem2 {
+  width: 80px;
+  height: 60px;
+  animation: nuvem-animation 30s infinite linear;
+}
+
+.nuvem3 {
+  width: 100px;
+  height: 70px;
+  animation: nuvem-animation 45s infinite linear;
+}
+
+.nuvem4 {
+  width: 90px;
+  height: 50px;
+  animation: nuvem-animation 60s infinite linear;
+}
+
+.nuvem5 {
+  width: 130px;
+  height: 110px;
+  animation: nuvem-animation 32s infinite linear;
+}
+
+.nuvem6 {
+  width: 150px;
+  height: 100px;
+  animation: nuvem-animation 48s infinite linear;
+}
+
+.nuvem7 {
+  width: 110px;
+  height: 90px;
+  animation: nuvem-animation 37s infinite linear;
+}
+
+.nuvem8 {
+  width: 85px;
+  height: 75px;
+  animation: nuvem-animation 50s infinite linear;
+}
+
+.nuvem9 {
+  width: 60px;
+  height: 70px;
+  animation: nuvem-animation 65s infinite linear;
+}
+
+.nuvem10 {
+  width: 75px;
+  height: 65px;
+  animation: nuvem-animation 80s infinite linear;
+}
+
+@keyframes nuvem-animation {
+  0% {
+    transform: translateX(-10vw);
+  }
+  100% {
+    transform: translateX(101vw); 
+  }
+}
+
+
 
 .container-inicio {
     width: 100%;
@@ -866,6 +956,7 @@ a {
   align-items: center;
   gap: 10px;
   padding: 20px;
+  
 }
 
 .filter-plataforma {
@@ -874,6 +965,7 @@ a {
   padding: 8px 15px;
   background: transparent;
   color: #fff;
+  background-color: #111111;
   cursor: pointer;
   font-size: 14px;
 }
@@ -883,6 +975,7 @@ a {
   padding: 8px 15px;
   background: transparent;
   color: #fcfcfc;
+  background-color: #111111;
   cursor: pointer;
   font-size: 14px;
 }
@@ -892,6 +985,7 @@ a {
   padding: 8px 15px;
   background: transparent;
   color: #ffffff;
+  background-color: #111111;
   cursor: pointer;
   font-size: 14px;
 }
@@ -901,6 +995,7 @@ a {
   padding: 8px 15px;
   background: transparent;
   color: #ffffff;
+  background-color: #111111;
   cursor: pointer;
   font-size: 14px;
 }
@@ -910,6 +1005,7 @@ a {
   align-items: center;
   position: relative;
   border-bottom: 2px solid #ffffff; /* Linha visível */
+  
   width: 200px; /* Largura ajustável */
   padding-left: 3px;
   transition: all 0.3s ease-out;
@@ -928,8 +1024,10 @@ a {
   opacity: 0.7;
 }
 .filtros {
-  color: #000;
+  color: #fff;
+  
 }
+
 .search-icon {
   margin-right: 5px;
 }
@@ -1143,7 +1241,6 @@ input:checked + .slider::before {
   display: inline-block;
   margin-bottom: 10px;
 }
-
 
 
 
