@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre nós</title>
+
+  <!--Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+
+  <!--CSS-->
+  <link rel="stylesheet" href="assets/css/style-sobre-nos.css">
+
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <link rel="shortcut icon" href="assets/img/icon.png" type="image/png">
+  <link rel="icon" href="assets/img/icon.png" type="image/png">
+</head>
+
+<body>
+
+  <!--Botão voltar ao topo-->
+
+  <div id="backToTop" class="fixed-button">
+    <i class="bi bi-chevron-up"></i>
+  </div>
+
+  <div class="container-inicio">
+
+    <!--Header-->
+    <header class="header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/img/SUA-LOGO-AQUI.png" alt="">
+        </a>
+      </div>
+      <div class="menu">
+        <label class="hamburger">
+          <input type="checkbox" id="menuToggle">
+          <svg viewBox="0 0 32 32">
+            <path class="line line-top-bottom"
+              d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+            </path>
+            <path class="line" d="M7 16 27 16"></path>
+          </svg>
+        </label>
+      </div>
+      <div class="menu-aberto">
+        <nav class="nav-menu">
+          <a href="index.html">Início</a>
+          <a href="agenciados.html">Nossos influencers</a>
+          <a href="produtora.html">Nosso Time</a>
+          <a href="sobre-nos.html">Sobre nós</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+      </div>
+
+      <!--PARA DESKTOP-->
+
+      <nav class="navbar">
+        <div class="logo-pc">
+          <a href="index.html">
+            <img src="assets/img/SUA-LOGO-AQUI.png" alt="">
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li><a href="agenciados.html" class="nav-link">Nossos influencers</a></li>
+          <li><a href="produtora.html" class="nav-link">Nosso Time</a></li>
+          <li><a href="sobre-nos.html" class="nav-link">Sobre nós</a></li>
+        </ul>
+        <div class="cta-button">
+          <a href="contato.html" class="glow-outline">Contato <span>↗</span></a>
+        </div>
+      </nav>
+    </header>
+    <!--Fim Header-->
+
+    <!-- Vídeo de fundo -->
+    <video autoplay muted loop class="video-background">
+      <source src="assets/videos/fundosobrenosle.mp4" type="video/mp4">
+      Seu navegador não suporta o elemento de vídeo.
+    </video>
+
+    <section class="conteudo-unificado">
+      <!-- Título Principal -->
+      <div class="container-produtora">
+        <div class="titulo-produtora">
+          <h1><strong>Eclipse Road</strong></h1>
+        </div>
+        <div class="subtitulo-produtora">
+          <h2>
+            Onde <span class="estilo-sobre">influenciadores</span> e
+            <span class="estilo-sobre">marcas</span> se conectam!
+          </h2>
+        </div>
+        <div class="seta-inicio" id="seta-inicio" data-aos="fade-up" data-aos-duration="1000"
+              onclick="window.scroll({top: 450, behavior: 'smooth'})">
+              <img src="assets/img/setainicio.gif" />
+          </div>
+      </div>
+              
+      
+      <!-- Objetivo -->
+      <div class="objetivo">
+        <div class="container-final">
+          <!-- Primeira Parte -->
+          <div class="titulo-produtora-1">
+            <h1>Aqui o seu sucesso é o nosso maior objetivo!</h1>
+            <h4 class="texto-produtora-1">
+              Com taxas <span class="destaque-sobre">baixas</span> e sem exigência de
+              <span class="destaque-sobre">exclusividade</span>, oferecemos um ecossistema
+              completo para <span class="destaque-sobre">impulsionar</span> sua carreira
+              como criador de conteúdo.
+            </h4>
+          </div>
+          
+          <!-- Services -->
+          <div class="services" data-aos="fade-up" data-aos-delay="400">
+            <div class="service">
+              <div class="icon-sobre">
+                <img src="assets/videos/quadrado-produtora.gif" alt="">
+              </div>
+              <h3>Produtora Audiovisual</h3>
+              <p>Aumente a retenção, profissionalize sua marca e impulsione resultados com uma estratégia de conteúdo dinâmica e eficaz.</p>
+            </div>
+        
+            <div class="service">
+              <div class="icon-sobre">
+                <img src="assets/videos/quadrado-calculadora.gif" alt="">
+              </div>
+              <h3>Calculadora De Publicidades</h3>
+              <p>Calculadora automática que cria uma base precisa para precificar suas campanhas publicitárias de forma eficiente.</p>
+            </div>
+        
+            <div class="service">
+              <div class="icon-sobre">
+                <img src="assets/videos/quadrado-grupo-de-networking.gif" alt="">
+              </div>
+              <h3>Grupo De Networking</h3>
+              <p>Conecte-se com influenciadores, amplie sua rede de contatos, troque experiências e tire dúvidas em um dos maiores grupos de influencers do Brasil.</p>
+            </div>
+          </div>
+          <!-- Segunda Parte -->
+          <div class="titulo-produtora-2" data-aos="fade-up" data-aos-delay="300">
+            <h1 class="titulo-sobre">
+              Potencializando campanhas com os melhores influenciadores.
+            </h1>
+            <h4 class="texto-produtora-2">
+              Nos comprometemos em fornecer serviços de
+              <span class="destaque-sobre">excelência</span>, garantindo a satisfação dos nossos
+              <span class="destaque-sobre">clientes</span> e <span class="destaque-sobre">parceiros</span>.
+              Trabalhamos com <span class="destaque-sobre">integridade</span>,
+              <span class="destaque-sobre">transparência</span> e <span class="destaque-sobre">respeito</span>
+              para construir relacionamentos duradouros.
+            </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Seção Destaque -->
+    <section class="highlight-section" data-aos="fade-up" data-aos-delay="300">
+      <h2 class="section-title">Te oferecemos mais</h2>
+      <div class="features">
+        <div class="feature-item">
+          <div class="icon-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="42">
+              <path fill="#000" d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z" />
+            </svg>
+          </div>
+          <h3>Influência</h3>
+          <p>Com o alcance de nossa agência, atinja diferentes públicos nas mais variadas redes.</p>
+        </div>
+        <!-- Qualidade -->
+        <div class="feature-item">
+
+          <div class="icon-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="42">
+              <path fill="#000"
+                d="M18.586 7.001L16.707 8.88c-.391.391-1.024.391-1.414 0l-.172-.172c-.39-.391-.39-1.024 0-1.414L17 5.415c1.26-1.26.367-3.414-1.414-3.414h-1.118c-1.845 0-3.615.733-4.92 2.038-1.645 1.645-2.359 4.004-1.903 6.285l.217 1.086c.033.164-.019.333-.137.452l-5.372 5.372c-.976.976-.976 2.559 0 3.536l.879.879c.976.976 2.559.976 3.535 0l5.372-5.372c.118-.118.288-.17.452-.137l1.086.217c2.281.456 4.64-.258 6.285-1.903C21.267 13.149 22 11.379 22 9.534V8.416c0-1.782-2.154-2.674-3.414-1.414zm-.038 6.037c-1.172 1.172-2.853 1.681-4.479 1.356l-1.086-.217c-.82-.164-1.667.093-2.258.684l-5.372 5.372c-.195.195-.512.195-.707 0l-.879-.879c-.195-.195-.195-.512 0-.707l5.372-5.372c.591-.591.848-1.438.684-2.258l-.217-1.086c-.325-1.626.184-3.306 1.356-4.479.93-.93 2.191-1.452 3.506-1.452h1.118l-1.879 1.879c-1.172 1.172-1.172 3.071 0 4.243l.172.172c1.172 1.172 3.071 1.172 4.242 0L20 8.415v1.118c0 1.315-.522 2.576-1.452 3.506z" />
+            </svg>
+          </div>
+          <h3>Qualidade</h3>
+          <p>Desfrute dos serviços disponíveis de nossa produtora, e do nosso marketing estratégico.</p>
+        </div>
+        <!-- Profissionalismo -->
+        <div class="feature-item">
+
+          <div class="icon-circle">
+            <i class="bi-briefcase"></i>
+          </div>
+          <h3>Profissionalismo</h3>
+          <p>Aumente seu repertório de profissionais à disposição para auxiliar no seu crescimento.</p>
+        </div>
+      </div>
+      <div class="image-section" data-aos="fade-up" data-aos-delay="400">
+        <img src="assets/img2/estatisticatodos.png" alt="">
+      </div>
+      <div class="image-section-celular" data-aos="fade-up" data-aos-delay="200">
+        <img src="assets/img2/estatisticatodoscelular.png" alt="">
+      </div>
+    </section>
+
+    <!--Contato-->
+
+    <!-- <div class="contact-section">
+      <h1>Entre em Contato</h1>
+      <p></p>
+      <form action="#" method="POST">
+          <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Seu Nome" required>
+          </div>
+          <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Seu Email" required>
+          </div>
+          <div class="form-group">
+              <textarea id="message" name="message" placeholder="Escreva sua mensagem" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Enviar</button>
+      </form>
+      <div class="footer-links">
+          <a href="https://www.linkedin.com/company/eclipse-road/?viewAsMember=true" target="_blank">LinkedIn</a>
+          <a href="https://www.instagram.com/eclipse.road/profilecard/?igsh=MTF5Mzhlb2pxbWJhZA==" target="_blank">Instagram</a>
+          <a href="https://x.com/EclipseRoad" target="_blank">Twitter</a>
+      </div>
+    </div> -->
+    <div class="contact-section-temporario" data-aos="fade-up" data-aos-delay="300">
+      <div class="new-contact">
+        Impulsione sua marca.<br> Conecte-se com <br>os melhores.
+        <div class="button-sobre">
+          <a href="contato.html" class="popup-link">
+            <button class="popup-button">Entre em contato</button>
+          </a>
+          <a href="agenciados.html">
+            <p>Ver casting</p>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+          <a href="https://www.linkedin.com/company/eclipse-road/?viewAsMember=true" target="_blank">LinkedIn</a>
+          <a href="https://www.instagram.com/eclipse.road/profilecard/?igsh=MTF5Mzhlb2pxbWJhZA==" target="_blank">Instagram</a>
+          <a href="https://x.com/EclipseRoad" target="_blank">Twitter</a>
+      </div>
+    </div>
+    </main>
+  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Inicialização do AOS -->
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="assets/js/numbersIncrease.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/actionButton-ag.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/removelink.js"></script>
+    <script src="assets/js/enviaremail.js"></script>
+    <script src="assets/js/startArrow.js"></script>
+
+
+</body>
+
+</html>

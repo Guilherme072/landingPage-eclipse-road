@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eclipse Road</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsividade.css">
+
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="assets/img/icon.png" type="image/png">
+    <link rel="icon" href="assets/img/icon.png" type="image/png">
+
+
+        
+
+</head>
+
+<body>
+
+    <!--Botão voltar ao topo-->
+    <div id="backToTop" class="fixed-button">
+        <i class="bi bi-chevron-up"></i>
+    </div>
+
+    <!--Botão WhatsApp-->
+    <div id="whatsappButton" class="fixed-button">
+        <i class="bi bi-whatsapp"></i>
+    </div>
+
+    <!--Container Geral-->
+    <div class="container">
+
+        <!--Header-->
+        <header class="header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/img/SUA-LOGO-AQUI.png" alt="">
+                </a>
+            </div>
+            <div class="menu">
+                <label class="hamburger">
+                    <input type="checkbox" id="menuToggle">
+                    <svg viewBox="0 0 32 32">
+                        <path class="line line-top-bottom"
+                            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                        </path>
+                        <path class="line" d="M7 16 27 16"></path>
+                    </svg>
+                </label>
+            </div>
+            <div class="menu-aberto">
+                <nav class="nav-menu">
+                    <a href="index.html">Início</a>
+                    <a href="agenciados.html">Nossos influencers</a>
+                    <a href="produtora.html">Nosso Time</a>
+                    <a href="sobre-nos.html">Sobre nós</a>
+                    <a href="contato.html">Contato</a>
+                </nav>
+            </div>
+
+            <!--PARA DESKTOP-->
+
+            <nav class="navbar">
+                <div class="logo-pc">
+                    <a href="index.html">
+                        <img src="assets/img/SUA-LOGO-AQUI.png" alt="">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="agenciados.html" class="nav-link">Nossos influencers</a></li>
+                    <li><a href="produtora.html" class="nav-link">Nosso Time</a></li>
+                    <li><a href="sobre-nos.html" class="nav-link">Sobre nós</a></li>
+                </ul>
+                <div class="cta-button">
+                    <a href="contato.html" class="glow-outline">Contato <span>↗</span></a>
+                </div>
+            </nav>
+        </header>
+        <!--Fim Header-->
+
+        <!--Início-->
+        <main id="inicio" class="inicio">
+
+            <!-- Vídeo de fundo -->
+            <video autoplay muted loop class="video-background">
+                <source src="assets/videos/videoseclipse.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+
+            <div class="container-inicio">
+                <div class="conteudo-inicio" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="titulo-inicio">
+                        <h1>Eclipse Road</h1>
+                        <h1 class="destaque-inicio">Agência e Produtora Audiovisual</h1>
+                    </div>
+                    <div class="descricao-inicio" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                        <p></p>
+                    </div>
+                    <div class="paragrafo-inicio" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                        <p>
+                           Somos <span id="typingtext"></span><span class="typingcursor">|</span>
+                        </p>
+                    </div>
+                    <a class="cta" href="abas-contato/entre-em-contato.html" target="_blank" data-aos="fade-up"
+                        data-aos-delay="400" data-aos-duration="1000">
+                        <span>Fale Conosco</span>
+                        <svg width="15px" height="10px" viewBox="0 0 13 10">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </a>
+                </div>
+                <div class="seta-inicio" id="seta-inicio" data-aos="fade-up" data-aos-duration="1000"
+                    onclick="window.scroll({top: 450, behavior: 'smooth'})">
+                    <img src="assets/img/setainicio.gif" />
+                </div>
+                <!-- <div class="complemento-inicio">
+                    <img class="text" src="assets/img/complemento-esquerda.png" alt="">
+                    <img class="qr-code" src="assets/img/qr_code_rmdeveloper.png" alt="qr code para seu link bio">
+                </div> -->
+            </div>
+        </main>
+        <!--Fim Início-->
+
+        <!--Skills-->
+        <section id="skills" class="skills">
+            <div class="container-skills" data-aos="fade-up" data-aos-duration="1000">
+                <div class="headline-skills">
+                    <div class="text-headline-skills" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                        <h2>Serviços</h2>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="conteudo-skills">
+                    <div class="box-skills" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                        <i class="bi bi-graph-up"></i>
+                        <h3>Facilitando o marketing pelo X</h3>
+                        <p>No X, somos a agência que transforma suas ideias em resultados reais. Nossa especialidade é
+                            maximizar o alcance de publicidades em diferentes nichos e na expansão para outras redes
+                            sociais.</p>
+                    </div>
+                    <div class="box-skills" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                        <i class="bi bi-camera-reels"></i>
+                        <h3>Produção de conteúdos</h3>
+                        <p>Aumente a retenção do seu público, deixe mais profissional e impulsione os resultados do seu
+                            negócio com uma estratégia de conteúdo dinâmica, atrativa e eficaz.</p>
+                    </div>
+                    <div class="box-skills" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                        <i class="bi bi-diagram-3"></i>
+                        <h3>Campanhas e copyright</h3>
+                        <p>Adaptamos nossas campanhas para atender às suas necessidades específicas em cada perfil,
+                            garantindo a expansão da sua marca em diferentes plataformas e públicos.</p>
+                    </div>
+                    <div class="box-skills" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                        <i class="bi bi-globe"></i>
+                        <h3>Soluções de networking</h3>
+                        <p>Oferecemos um serviço de <span class="tooltip">matchmaking<span class="tooltiptext">Se refere
+                                    à prática de conectar pessoas ou entidades com interesses comuns para gerar
+                                    benefícios mútuos.</span>
+                            </span>, conectando criadores de conteúdo a marcas que se alinham com seus valores e
+                            objetivos, garantindo o sucesso de cada parceria.</p>
+                    </div>
+                    <div class="box-skills" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                        <i class="bi bi-people-fill"></i>
+                        <h3>Agenciados</h3>
+                        <p>Gerenciamos perfis de influenciadores em diversas redes sociais, oferecendo suporte completo
+                            para maximizar o alcance e a influência de cada agenciado, especialmente em publicidades.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Fim Skills-->
+
+        <!--Sobre-->
+        <section id="sobre" class="sobre">
+            <div class="container-sobre">
+                <!--Slide Sobre-->
+                <div class="headline-sobre" data-aos="fade-up" data-aos-duration="1000" style="position: relative;">
+                    <div class="headline-scroll" id="headline-scroll">
+                        <span class="bold">AGENCIADOS</span>
+                        <span class="divisor"></span>
+                        <span class="light">AGENCIADOS</span>
+                        <span class="divisor"></span>
+                        <span class="bold">AGENCIADOS</span>
+                        <span class="divisor"></span>
+                        <span class="light">AGENCIADOS</span>
+                        <span class="divisor"></span>
+                        <span class="bold">AGENCIADOS</span>
+                        <span class="divisor"></span>
+                        <span class="light">AGENCIADOS</span>
+                        <span class="divisor"></span>
+                    </div>
+                </div>
+                <div class="roll-content">
+                    <div class="roll-content-itens roll-content-left-to-right">
+                        <a href="https://x.com/_citoutatuagens" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/citoutatoo.png"></a>
+                        <a href="https://x.com/xaropecomx" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/xarope.png"></a>
+                        <a href="https://x.com/apaginaseria" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/paginaseria.png"></a>
+                        <a href="https://x.com/Zanfa" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/zanfa.png"></a>
+                        <a href="https://www.youtube.com/@Kerbitos" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/kerbitos.png"></a>
+                        <a href="https://x.com/burraookk" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/memesburros.png"></a>
+                        <a href="https://x.com/MbappeBrasiI" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/mbappebrasil.png"></a>
+                        <a href="https://x.com/maricarpool" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/maricaronas.png"></a>
+                        <a href="https://x.com/wolfkickss" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/jp.png"></a>
+                        <a href="https://x.com/joaomercio" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/joaomercio.png"></a>
+                        <a href="https://x.com/itimaliasof" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/itchimalias.png"></a>
+                        <a href="https://x.com/gostosas2d" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/gostosas2d.png"></a>
+                        <a href="https://x.com/foraacademia" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/foraacademia.png"></a>
+                        <a href="https://x.com/FelipeGains" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/felipegains.png"></a>
+                        <a href="https://x.com/neongeneshit" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/evangelicos.png"></a>
+                        <a href="https://x.com/eo_acopalices" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/eoacopalipse.png"></a>
+                        <a href="https://x.com/DataFutebol" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/datafut.png"></a>
+                        <a href="https://x.com/danielpassapicc" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/danielpassa.png"></a>
+                        <a href="https://x.com/CuriosidadesPRL" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/curiosidadespl.png"></a>
+                        <a href="https://x.com/Culernews" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/culenews.png"></a>
+                        <a href="https://x.com/Crimesreais" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/crimesreais.png"></a>
+                        <a href="https://x.com/CR7Brasil" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/cr7brasil.png"></a>
+                        <a href="https://x.com/ComidasEstadios" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/comidasestadios.png"></a>
+                        <a href="https://www.instagram.com/comentaristaedu/" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/comentaristaedu.png"></a>
+                        <a href="https://x.com/coisasmaromba" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/coisasmaromba.png"></a>
+                        <a href="https://www.youtube.com/@TocaDoCoelho" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/coelho.png"></a>
+                        <a href="https://x.com/CinefilosPost" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/cinefalospost.png"></a>
+                        <a href="https://x.com/CentralDoBrega" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/centraldobraga.png"></a>
+                        <a href="https://x.com/burrosgeniais" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/burrosgeniais.png"></a>
+                        <a href="https://x.com/br_dadepressao" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/brdepre.png"></a>
+                        <a href="https://x.com/bellintanner" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/bellintener.png"></a>
+                        <a href="https://x.com/animefla" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/animefla.png"></a>
+                        <a href="https://x.com/PuroSucoDoBr" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/purosucobr.png"></a>
+                        <a href="https://x.com/cortinasdoroubo?t=PqgGG47SOGdytpGc78bwbA&s=09" target="_blank"
+                            class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/cortinasdoroubo.png"></a>
+                        <a href="https://x.com/odeiootaco?t=blzaZEQBFRlX3Hwruy4Slg&s=09" target="_blank"
+                            class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/perfildedicado.png"></a>
+                        <a href="https://x.com/museu_sccp?t=pZYTt8j_ah7Ae-5AzABEEw&s=09" target="_blank"
+                            class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/museucorin.png"></a>
+                        <a href="https://x.com/_FlaDaDepressao" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/fladadepressao.png"></a>
+                        <!-- Devido o looping, a parte abaixo deve ser igual a parte acima -->
+                        <a href="https://x.com/_citoutatuagens" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/citoutatoo.png"></a>
+                        <a href="https://x.com/xaropecomx" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/xarope.png"></a>
+                        <a href="https://x.com/apaginaseria" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/paginaseria.png"></a>
+                        <a href="https://x.com/Zanfa" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/zanfa.png"></a>
+                        <a href="https://www.youtube.com/@Kerbitos" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/kerbitos.png"></a>
+                        <a href="https://x.com/burraookk" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/memesburros.png"></a>
+                        <a href="https://x.com/MbappeBrasiI" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/mbappebrasil.png"></a>
+                        <a href="https://x.com/maricarpool" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/maricaronas.png"></a>
+                        <a href="https://x.com/wolfkickss" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/jp.png"></a>
+                        <a href="https://x.com/joaomercio" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/joaomercio.png"></a>
+                        <a href="https://x.com/itimaliasof" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/itchimalias.png"></a>
+                        <a href="https://x.com/gostosas2d" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/gostosas2d.png"></a>
+                        <a href="https://x.com/foraacademia" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/foraacademia.png"></a>
+                        <a href="https://x.com/FelipeGains" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/felipegains.png"></a>
+                        <a href="https://x.com/neongeneshit" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/evangelicos.png"></a>
+                        <a href="https://x.com/eo_acopalices" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/eoacopalipse.png"></a>
+                        <a href="https://x.com/DataFutebol" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/datafut.png"></a>
+                        <a href="https://x.com/danielpassapicc" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/danielpassa.png"></a>
+                        <a href="https://x.com/CuriosidadesPRL" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/curiosidadespl.png"></a>
+                        <a href="https://x.com/Culernews" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/culenews.png"></a>
+                        <a href="https://x.com/Crimesreais" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/crimesreais.png"></a>
+                        <a href="https://x.com/CR7Brasil" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/cr7brasil.png"></a>
+                        <a href="https://x.com/ComidasEstadios" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/comidasestadios.png"></a>
+                        <a href="https://www.instagram.com/comentaristaedu/" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/comentaristaedu.png"></a>
+                        <a href="https://x.com/coisasmaromba" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/coisasmaromba.png"></a>
+                        <a href="https://www.youtube.com/@TocaDoCoelho" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/coelho.png"></a>
+                        <a href="https://x.com/CinefilosPost" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/cinefalospost.png"></a>
+                        <a href="https://x.com/CentralDoBrega" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/centraldobraga.png"></a>
+                        <a href="https://x.com/burrosgeniais" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/burrosgeniais.png"></a>
+                        <a href="https://x.com/br_dadepressao" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/brdepre.png"></a>
+                        <a href="https://x.com/bellintanner" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/bellintener.png"></a>
+                        <a href="https://x.com/animefla" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/animefla.png"></a>
+                        <a href="https://x.com/PuroSucoDoBr" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/purosucobr.png"></a>
+                        <a href="https://x.com/cortinasdoroubo?t=PqgGG47SOGdytpGc78bwbA&s=09" target="_blank"
+                            class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/cortinasdoroubo.png"></a>
+                        <a href="https://x.com/odeiootaco?t=blzaZEQBFRlX3Hwruy4Slg&s=09" target="_blank"
+                            class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/perfildedicado.png"></a>
+                        <a href="https://x.com/museu_sccp?t=pZYTt8j_ah7Ae-5AzABEEw&s=09" target="_blank"
+                            class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/museucorin.png"></a>
+                        <a href="https://x.com/_FlaDaDepressao" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/fladadepressao.png"></a>
+                    </div>
+                    <div class="roll-content-itens roll-content-right-to-left">
+                        <a href="https://x.com/sobrerinthians" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/sobrerinthias.png"></a>
+                        <a href="https://x.com/memeinteligente" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/memesinteligentes.png"></a>
+                        <a href="https://x.com/CuriosidadesEU" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/curiosidadeseuropa.png"></a>
+                        <a href="https://x.com/CuriosidadesBRL" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/curiosidadesbr.png"></a>
+                        <a href="https://x.com/ctmartinelli" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/ctmartineli.png"></a>
+                        <a href="https://x.com/LaLigaBR" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/laligabr.png"></a>
+                        <a href="https://x.com/melhorpost" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/melhorpost.png"></a>
+                        <a href="https://x.com/mengaorcomics" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/mengaocomics.png"></a>
+                        <a href="https://x.com/MusicaVideojogo" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/musicajogos.png"></a>
+                        <a href="https://x.com/SucumbaEA2" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/sucumba.png"></a>
+                        <a href="https://x.com/paposfut" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/paposfut.png"></a>
+                        <a href="https://x.com/paulbatistta" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/paulobatista.png"></a>
+                        <a href="https://x.com/poetasfla" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/poetasfla.png"></a>
+                        <a href="https://x.com/PraiseTheFrom" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/praisthefrom.png"></a>
+                        <a href="https://x.com/provasextinto" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/provasextinto.png"></a>
+                        <a href="https://x.com/realmilgrauu" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/realmilgrau.png"></a>
+                        <a href="https://youtube.com/@putones?si=rb_0Iwb1-AyTbXxk" target="_blank"
+                            class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/putones.png"></a>
+                        <a href="https://x.com/vittorocriador" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/vittorocriador.png"></a>
+                        <a href="https://www.tiktok.com/@danielpassapi" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/danielpassapikyt.png"></a>
+                        <a href="https://www.youtube.com/@filipleme" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/filipeleme.png"></a>
+                        <a href="https://www.x.com/NemTudo_" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/nemtudo.png"></a>
+                        <a href="https://www.youtube.com/@FelipeLix" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/felipemix.png"></a>
+                        <a href="https://x.com/oque_prefere" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/oqueprefere.png"></a>
+                        <a href="https://x.com/Balotaromantico" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/balota.png"></a>
+                        <a href="https://x.com/salu70220788" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/salu.png"></a>
+                        <a href="https://x.com/coisasmaconhei" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/coisamaconhei.png"></a>
+                        <a href="https://x.com/pcbuildwizard?t=IS84wq3s_iywmS0Sc8LCZw&s=09" target="_blank"
+                            class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/PcBiuld.png"></a>
+                        <a href="https://x.com/futnostalgico?t=YfEpeezRtIJp7tmp2Zbmfg&s=09" target="_blank"
+                            class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/futnostalgico.png"></a>
+                        <a href="https://x.com/liberta___depre?t=sB0uPgkPmpCwnAwizGk2Bw&s=09" target="_blank"
+                            class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/libertadepre.png"></a>
+                        <a href="https://x.com/wolfkickss?t=coecd-BbYD7-Tas_388EMg&s=09" target="_blank"
+                            class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/wolfkickss.png"></a>
+                        <a href="https://x.com/muitohumildee?t=r2tQ-YkT_sqsKX3CH7gBAQ&s=09" target="_blank"
+                            class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/muitohumildee.png"></a>
+                        <!-- Devido o looping, a parte abaixo deve ser igual a parte acima -->
+                        <a href="https://x.com/sobrerinthians" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/sobrerinthias.png"></a>
+                        <a href="https://x.com/memeinteligente" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/memesinteligentes.png"></a>                       
+                        <a href="https://x.com/CuriosidadesEU" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/curiosidadeseuropa.png"></a>
+                        <a href="https://x.com/CuriosidadesBRL" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/curiosidadesbr.png"></a>
+                        <a href="https://x.com/ctmartinelli" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/ctmartineli.png"></a>
+                        <a href="https://x.com/LaLigaBR" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/laligabr.png"></a>
+                        <a href="https://x.com/melhorpost" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/melhorpost.png"></a>
+                        <a href="https://x.com/mengaorcomics" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/mengaocomics.png"></a>
+                        <a href="https://x.com/MusicaVideojogo" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/musicajogos.png"></a>
+                        <a href="https://x.com/SucumbaEA2" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/sucumba.png"></a>
+                        <a href="https://x.com/paposfut" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/paposfut.png"></a>
+                        <a href="https://x.com/paulbatistta" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/paulobatista.png"></a>
+                        <a href="https://x.com/poetasfla" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/poetasfla.png"></a>
+                        <a href="https://x.com/PraiseTheFrom" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/praisthefrom.png"></a>
+                        <a href="https://x.com/provasextinto" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/provasextinto.png"></a>
+                        <a href="https://x.com/realmilgrauu" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/realmilgrau.png"></a>
+                        <a href="https://youtube.com/@putones?si=rb_0Iwb1-AyTbXxk" target="_blank"
+                            class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/putones.png"></a>
+                        <a href="https://x.com/vittorocriador" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/vittorocriador.png"></a>
+                        <a href="https://www.tiktok.com/@danielpassapi" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/danielpassapikyt.png"></a>
+                        <a href="https://www.youtube.com/@filipleme" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/filipeleme.png"></a>
+                        <a href="https://www.x.com/NemTudo_" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/nemtudo.png"></a>
+                        <a href="https://www.youtube.com/@FelipeLix" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/felipemix.png"></a>
+                        <a href="https://x.com/oque_prefere" target="_blank" class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/oqueprefere.png"></a>
+                        <a href="https://x.com/Balotaromantico" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/balota.png"></a>
+                        <a href="https://x.com/salu70220788" target="_blank" class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/salu.png"></a>
+                        <a href="https://x.com/coisasmaconhei" target="_blank" class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/coisamaconhei.png"></a>
+                        <a href="https://x.com/pcbuildwizard?t=IS84wq3s_iywmS0Sc8LCZw&s=09" target="_blank"
+                            class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/PcBiuld.png"></a>
+                        <a href="https://x.com/futnostalgico?t=YfEpeezRtIJp7tmp2Zbmfg&s=09" target="_blank"
+                            class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/futnostalgico.png"></a>
+                        <a href="https://x.com/liberta___depre?t=sB0uPgkPmpCwnAwizGk2Bw&s=09" target="_blank"
+                            class="roll-content-item"
+                            style="animation: 8s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/libertadepre.png"></a>
+                        <a href="https://x.com/wolfkickss?t=coecd-BbYD7-Tas_388EMg&s=09" target="_blank"
+                            class="roll-content-item"
+                            style="animation: 12s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/wolfkickss.png"></a>
+                        <a href="https://x.com/muitohumildee?t=r2tQ-YkT_sqsKX3CH7gBAQ&s=09" target="_blank"
+                            class="roll-content-item"
+                            style="animation: 16s linear infinite forwards roll-item-float;"><img
+                                src="assets/img/muitohumildee.png"></a>
+                    </div>
+                </div>
+
+            </div>
+            <video autoplay muted loop class="video-fundo-agenciados">
+                <source src="assets/videos/fundoagenciados.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos.
+            </video>
+        </section>
+        <!--Fim Sobre-->
+
+        <!--Serviços-->
+        <section id="sobrenos" class="sobrenos">
+            <div class="sobrenos-left" data-aos="fade-up" data-aos-delay="200">
+                <img src="/assets/img/logosobrenos.png">
+                <p>ECLIPSE<br>ROAD</p>
+            </div>
+            <div class="sobrenos-right" data-aos="fade-up" data-aos-delay="300">
+                <div>
+                    <p class="sobrenos-titulo">Anunciou com a Eclipse, <br>anunciou com o 𝕏 todo.</p>
+                    <p class="sobrenos-texto">A Eclipse Road tem como missão ajudar influenciadores a se conectarem com
+                        publicidades. Atuamos principalmente no X, mesmo tendo perfis relevantes em todas as redes.
+                        <br><br>Valorizamos a privacidade e a autenticidade dos nossos parceiros e clientes, o que nos
+                        permite criar relações de confiança. Estamos sempre em busca de inovação e excelência para
+                        garantir a realização de cada projeto com dedicação e profissionalismo.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--Fim Serviços-->
+
+        <!--Complemento FREE YOUR MIND-->
+        <section id="free-your-mind" class="free-your-mind">
+            <div class="container-free-your-mind" data-aos="fade-up" data-aos-duration="1000">
+                <span class="container-free-your-mind-title"> <strong>Mensalmente, nós fazemos...</strong></span>
+                <div class="container-free-your-mind-itens" id="increase-numbers">
+                    <div class="container-free-your-mind-item-sem">
+                        <h5>+<span id="youtube-count">1</span>M</h5>
+                        <h6>visualizações no YouTube <br><span style="font-size: 2rem; display: block;">(vídeos
+                                longos)</span></h6>
+                    </div>
+                    <div class="container-free-your-mind-item">
+                        <h5>+<span id="instagram-count">1</span>M</h5>
+                        <h6>visualizações no Instagram</h6>
+                    </div>
+                    <div class="container-free-your-mind-item">
+                        <h5>+<span id="views-count">1</span>B</h5>
+                        <h6>impressões no X</h6>
+                    </div>
+                    <div class="container-free-your-mind-item">
+                        <h5>+<span id="followers-count">1</span>M</h5>
+                        <h6>seguidores</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Fim FREE YOUR MIND-->
+
+        <!--Portfolio-->
+        <section id="portfolio" class="portfolio">
+            <div class="container-portfolio" data-aos="fade-up" data-aos-duration="1000">
+                <div class="headline-portfolio">
+                    <h1 class="titulo">+Agenciados</h1>
+                    <span class="descricao"></span>
+                </div>
+                <div class="container-case">
+                    <!--Case 1-->
+                    <div class="case1" data-aos="fade-right" data-aos-delay="200">
+                        <div class="imagens-case">
+                            <div class="slide">
+                                <!-- <i class="bi bi-chevron-left prev"></i> -->
+                                <img src="assets/img/zanfa.png" alt="">
+                                <!-- <i class="bi bi-chevron-right next"></i> -->
+                            </div>
+                        </div>
+                        <div class="textos-case">
+                            <div class="conteudo-textos-case">
+                                <h1>Zanfa</h1>
+                                <p>Zanfa é dono de um perfil humorístico extremamente engajado na rede social X. Mesmo
+                                    com 300 mil seguidores, a conta tem uma das maiores impressões do site brasileiro.
+                                </p>
+                                <span class="rede-social">
+                                    <a href="https://x.com/Zanfa" target="_blank" class="rede-social-link">
+                                        <i class="bi bi-twitter"></i>
+                                    </a>
+
+                                    <a href="http://fb.com/capinaremos" target="_blank" class="rede-social-link">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/zanfao/" target="_blank"
+                                        class="rede-social-link">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Case 2-->
+                    <div class="case2" data-aos="fade-left" data-aos-delay="300">
+                        <div class="textos-case">
+                            <div class="conteudo-textos-case">
+                                <h1>Xarope com X</h1>
+                                <p>Xarope com X além de ser um excelente editor de vídeo é um youtuber com conteúdos
+                                    dinâmicos e mais de 100 mil inscritos. Além de um perfil no X bem engajado. </p>
+                                <span class="rede-social">
+                                    <a href="https://www.youtube.com/@XAROPECOMX" target="_blank"
+                                        class="rede-social-link">
+                                        <i class="bi bi-youtube"></i>
+                                    </a>
+
+                                    <a href="https://x.com/xaropecomx" target="_blank" class="rede-social-link">
+                                        <i class="bi bi-twitter"></i>
+                                    </a>
+
+                                </span>
+                            </div>
+                        </div>
+                        <div class="imagens-case">
+                            <div class="slide">
+                                <!-- <i class="bi bi-chevron-left prev"></i> -->
+                                <img src="assets/img/xarope.png" alt="">
+                                <!-- <i class="bi bi-chevron-right next"></i> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--Case 3-->
+                    <div class="case3" data-aos="fade-right" data-aos-delay="400">
+                        <div class="imagens-case">
+                            <div class="slide">
+                                <!-- <i class="bi bi-chevron-left prev"></i> -->
+                                <img src="assets/img/kerbito.png" alt="">
+                                <!-- <i class="bi bi-chevron-right next"></i> -->
+                            </div>
+                        </div>
+                        <div class="textos-case">
+                            <div class="conteudo-textos-case">
+                                <h1>Kerbitos</h1>
+                                <p>Kerbitos além de um Instagram com mais de 250 mil seguidores e bem engajado, tem um
+                                    canal no YouTube com mais de 3 milhões de inscritos.</p>
+                                <span class="rede-social">
+                                    <a href="https://www.youtube.com/@Kerbitos" target="_blank"
+                                        class="rede-social-link">
+                                        <i class="bi bi-youtube"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/kerbitos/" target="_blank"
+                                        class="rede-social-link">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                    <a href="https://www.tiktok.com/@kerbitos" target="_blank" class="rede-social-link">
+                                        <i class="bi bi-tiktok"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Case 4-->
+                    <div class="case4" data-aos="fade-left" data-aos-delay="500">
+                        <div class="textos-case">
+                            <div class="conteudo-textos-case">
+                                <h1>Filipe Leme</h1>
+                                <p>Felipe Leme tem um público extremamente engajado, com interações que superam canais
+                                    maiores. Seu público confia no seu trabalho e está sempre ativo, inclusive nas
+                                    publicidades.
+                                </p>
+                                <span class="rede-social">
+                                    <a href="https://www.instagram.com/filipleme/" target="_blank"
+                                        class="rede-social-link">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/user/IssoDaria1Video" target="_blank"
+                                        class="rede-social-link">
+                                        <i class="bi bi-youtube"></i>
+                                    </a>
+                                    <a href="https://www.tiktok.com/@filipleme?lang=pt-BR" target="_blank" class="rede-social-link">
+                                        <i class="bi bi-tiktok"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="imagens-case">
+                            <div class="slide">
+                                <!-- <i class="bi bi-chevron-left prev"></i> -->
+                                <img src="assets/img/filipeleme.png" alt="">
+                                <!-- <i class="bi bi-chevron-right next"></i> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Fim Portfolio-->
+
+        <!--Contato-->
+        <section id="contato" class="contato">
+            <div class="container-contato" data-aos="fade-up" data-aos-duration="1000">
+                <div class="headline-contato" data-aos="fade-up" data-aos-delay="200">
+                    <div style="display: flex; flex-direction: column;">
+                        <h1 style="font-weight: 600;"><strong class="sizetext">Empresas, influenciadores e
+                                freelancers</strong><br>
+                            <p class="vamos">vamos conversar?</p>
+                        </h1>
+                        <h2 class="subtexto" style="margin-top: 30px; color: var(--color-white)">Uma parceria
+                            estratégica para alcançar
+                            resultados<br> e fortalecer a sua presença
+                            digital.</h2>
+                    </div>
+                    <div class="descricao-contato">
+                        <ul class="lista-contato">
+                            <li><a href="https://api.whatsapp.com/send/?phone=5518997403693&text&type=phone_number&app_absent=0"
+                                    target="_blank">WhatsApp: (18) 99740 - 3693</a></li>
+                            <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSKjgLCRDPJDsBKHrgjTlcqllzBNFcCLqWBTFBzfFfhZFxWLqBQwPHNgxBjdNxRstGtSDtlb"
+                                    target="_blank">agencia@eclipseroad.com</a></li>
+                            <li><a href="https://x.com/EclipseRoad" target="_blank">@eclipseroad</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="conteudo-contato" data-aos="fade-up" data-aos-delay="400">
+                    <div class="formulario-contato">
+                        <h2>Entre em contato</h2>
+                        <form class="form" id="contact-form">
+                            <input type="text" name="name" placeholder="Digite seu nome completo" required>
+                            <input type="phone" name="phone" placeholder="(55) 22222-2222" required>
+                            <input type="email" name="email" placeholder="Seu melhor email" required>
+                            <textarea name="message" id="mensagem" placeholder="Escreva o que você deseja aqui..."
+                                required></textarea>
+                            <button type="submit" class="btn">Enviar</button>
+                        </form>
+                        <p id="response-message"></p>
+                    </div>
+                    <div class="logo-contato" data-aos="fade-up" data-aos-delay="600">
+                        <img src="assets/img/logosobrenos.png" alt="">
+                        <p>ECLIPSE<br>ROAD</p>
+                    </div>
+                </div>
+
+                <div id="response-box" class="hidden">
+                    <div id="loader" class="loader"></div>
+                    <p id="response-text">Enviando...</p>
+                </div>
+                
+                <div class="descricao-contato-a">
+                    <ul class="lista-contato">
+                        <li><a href="https://api.whatsapp.com/send/?phone=5518997403693&text&type=phone_number&app_absent=0"
+                                target="_blank">WhatsApp: (18) 99740 - 3693</a></li>
+                        <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSKjgLCRDPJDsBKHrgjTlcqllzBNFcCLqWBTFBzfFfhZFxWLqBQwPHNgxBjdNxRstGtSDtlb"
+                                target="_blank">agencia@eclipseroad.com</a></li>
+                        <li><a href="https://x.com/EclipseRoad" target="_blank">@eclipseroad</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--Fim Contato-->
+
+        <!--Footer-->
+        <footer class="footer" id="footer">
+            <div class="container-footer">
+                <div class="footer-column logo-column">
+                    <img src="assets/img/SUA-LOGO-AQUI.png" alt="">
+                </div>
+                <div class="footer-column menu-column">
+                    <nav class="footer-nav">
+                        <a href="#inicio">Início</a>
+                        <a href="#sobre">Agenciados</a>
+                        <a href="#sobrenos">Sobre Nós</a>
+                        <a href="#portfolio">+Agenciados</a>
+                        <a href="#contato">Contato</a>
+                    </nav>
+                </div>
+                <div class="footer-column social-column">
+                    <ul class="social-links">
+                        <li><a href="https://x.com/EclipseRoad" target="_blank"><i class="bi bi-twitter"></i>X</a></li>
+                        <li><a href="https://www.instagram.com/eclipse.road/profilecard/?igsh=MTF5Mzhlb2pxbWJhZA=="
+                                target="_blank"><i class="bi bi-instagram"></i> Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/company/eclipse-road/?viewAsMember=true"
+                                target="_blank"><i class="bi bi-linkedin"></i>Linkedin</a></li>
+                        <!-- <li><a href="#"><i class="bi bi-facebook"></i> Facebook</a></li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-column credits-column">
+                <p style="margin-top: 10px; font-weight: 800;">Desenvolvido por</p>
+                <span style="margin-top: 12px; font-size: 1.3rem;">GV│Dev</span>
+                <a style="margin-top: 12px; font-size: 1.3rem;" href="https://nemtudo.me" target="_blank">Nem Tudo</a>
+                <p>&copy; 2024 Todos os direitos reservados.</p>
+            </div>
+        </footer>
+        <!--Fim Footer-->
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Inicialização do AOS -->
+    <script>
+        AOS.init();
+    </script>
+
+    <!--JavaScript-->
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/actionButton.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/slideSobre.js"></script>
+    <script src="assets/js/slidePortfolio.js"></script>
+    <script src="assets/js/numbersIncrease.js"></script>
+    <script src="assets/js/startArrow.js"></script>
+    <script src="assets/js/headerBackground.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/removelink.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/typing.js"></script>
+
+</body>
+
+</html>
