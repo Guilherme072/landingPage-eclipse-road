@@ -18,16 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
   lottie.loadAnimation({
     container: document.getElementById("push"),
     renderer: "svg",
-    loop: true,
+    loop: false,
     autoplay: true,
     path: "/icon-json/Push-notification.json"
-  });
-
-  lootie.loadAnimation({
-    container: document.getElementById("celular"),
-    renderer: "svg",
-    loop: true,
-    autoplay: true,
-    path: "/icon-json/celular.json"
   });
 });
