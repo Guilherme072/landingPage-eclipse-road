@@ -530,10 +530,9 @@ a {
 .profile {
   display: flex;
   align-items: center;
-  gap: 15px;
   position: relative;
-  left: 60px;
-  margin-top: 130px;
+  left: 15px;
+  margin-top: 90px;
 }
 .profile img {
   width: 190px;
@@ -545,17 +544,20 @@ a {
 }
 .profile-info p {
   font-size: 25px;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 .profile-info h1 {
   font-size: 2.8rem;
   margin: 0;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 .creator-text {
-  color: #b187ff;
+  color: #fff;
   font-size: 2rem;
   position: relative;
-  left: 480px
-}
+  left: 300px;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+} 
 .social-container {
   display: flex;
   justify-content: center;
@@ -695,40 +697,28 @@ a {
   flex-direction: column;
   margin: 0 auto;
   gap: 10px;
-}
-.about h2 {
-  position: relative; 
-  right: 250px; 
-  margin-top: 135px;
-  font-size: 3rem;
-  text-transform: uppercase; 
+  text-align: left;
 }
 .about-content {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
+  justify-content: space-between;
+  gap: 700px;
+  margin: 0 auto;
+  text-align: left;
 }
 .estilo-sobre {
   color: #b187ff;
 }
-/* .about-text {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  gap: 10px;
-  position: relative;
-  top: 30px;
-  font-size: 1.2rem;
-  padding-left: 40px;
-  max-width: 800px;
-  margin: 0 auto;
-} */
 .about-text {
   display: flex;
   flex-direction: column; /* Mantém o título e o texto em coluna */
-  align-items: flex-start; /* Alinha tudo à esquerda */
+  align-items: center; /* Alinha tudo à esquerda */
+  position: relative;
+  flex: 1;
+  max-width: 600px;
+  gap: 15px;
+  margin-left: 20px;
 }
 .about-text p {
   font-size: 30px;
@@ -737,9 +727,15 @@ a {
   max-width: 900px;
   text-align: left;
   margin: 0 auto;
-  position: relative;
-  right: 250px;
-  top: 20px;
+}
+.about-text h2 {
+  text-align: left;
+  display: flex;
+  align-items: start;
+  width: 100%;
+  margin: 0;
+  padding-left: 0;
+  font-size: 3rem;
 }
 .estilo-text {
   color: #b187ff;
@@ -1185,8 +1181,30 @@ a {
   width: 270px;
   height: 270px;
   border-radius: 50%;
+  position: relative;
+  left: 9px;
+}
+
+#typingtext {
+  color: #b187ff;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+}
+
+.verificadoMK{
+  position: relative;
+  width: 40px !important;
+  height: 40px !important;
+  top: 6px;
 }
   
+#push {
+  width: 25%;
+  height: 25%;
+  position: relative;
+  bottom: 30px;
+  left: 10px;
+}
+
   
   
 

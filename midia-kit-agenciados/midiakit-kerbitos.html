@@ -117,10 +117,14 @@
           <div id="profilee"></div>
           <!-- <img src="../assets/img/kerbitos.png" alt="Foto de Perfil"> -->
           <div class="profile-info">
-            <h1>Gabriel Kerber</h1>
+            <h1>Gabriel Kerber
+              <img src="/assets/img/verificado_azul.png" alt="verificado" class="verificadoMK">
+            </h1>
             <p>+6.1 milhões de seguidores</p>
           </div>
-          <p class="creator-text">Sou criador de conteúdo</p>
+          <p class="creator-text">
+            Sou <span id="typingtext"></span><span class="typingcursor">|</span>
+          </p>
         </div>
       </div>
 
@@ -169,8 +173,8 @@
 
       <section class="about">
         <div class="about-content">
-          <h2>SOBRE <span class="estilo-sobre">MIM</span></h2>
           <div class="about-text">
+            <h2>SOBRE <span class="estilo-sobre">MIM</span></h2>
             <p>Sou um criador de conteúdo com a missão de trazer um toque de humor na vida de quem me assiste. Com mais
               de <span class="estilo-text">um bilhão</span> de visualizações no Youtube, sou conhecido por produzir
               conteúdos curtos de humor pra o
@@ -181,8 +185,12 @@
               divertidos pra melhorar o seu dia com
               uma dose de diversão.</p>
           </div>
+          <div id="push" data-aos="fade-up" data-aos-duration="1000" class="push"></div>
         </div>
       </section>
+      
+      <!-- ANIMAÇÃO DO CELULAR, VÊ ISSO AQUI GUI!!!!! -->
+      
 
       <!-- Gráfico -->
 
@@ -315,6 +323,7 @@
     <script src="js/scene.js"></script>
     <script src="./js/grafico.js"></script>
     <script src="./js/grafico2.js"></script>
+    <script src="js/typing-kerb.js"></script>
 </body>
 
 </html>
