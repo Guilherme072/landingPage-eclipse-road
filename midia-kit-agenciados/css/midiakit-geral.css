@@ -715,10 +715,11 @@ a {
   flex-direction: column; /* Mantém o título e o texto em coluna */
   align-items: center; /* Alinha tudo à esquerda */
   position: relative;
+  text-align: justify;
   flex: 1;
-  max-width: 600px;
+  max-width: 900px;
   gap: 15px;
-  margin-left: 20px;
+  left: 330px;
 }
 .about-text p {
   font-size: 30px;
@@ -727,6 +728,8 @@ a {
   max-width: 900px;
   text-align: left;
   margin: 0 auto;
+  position: relative;
+  top: 15px;
 }
 .about-text h2 {
   text-align: left;
@@ -736,6 +739,7 @@ a {
   margin: 0;
   padding-left: 0;
   font-size: 3rem;
+  gap: 10px;
 }
 .estilo-text {
   color: #b187ff;
@@ -943,7 +947,7 @@ a {
   width: 800px;
   max-width: 1000px;
   /*position: absolute;*/
-  background: linear-gradient(to bottom, #292828, #000000);
+  background: linear-gradient(to right, #1a1919, #202020);
   border-radius: 16px;
   padding: 40px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
@@ -1045,10 +1049,10 @@ a {
   display: flex;
   flex-direction: column; /* Empilha verticalmente */
   align-items: flex-start; /* Alinha todos os itens à esquerda */
-  gap: 100px; /* Espaço entre os gráficos */
+  gap: 200px; /* Espaço entre os gráficos */
   margin-top: 150px;
   width: 100%;
-  padding-left: 100px; /* Mesmo padding do .about */
+  padding-left: 200px; /* Mesmo padding do .about */
 }
 
 /* Ajuste individual para cada container de gráfico */
