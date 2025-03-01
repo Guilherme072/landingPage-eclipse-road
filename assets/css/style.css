@@ -317,10 +317,10 @@ a {
     transition: all 0.3s;
   }
   
-  .cta-button a:hover {
+  /* .cta-button a:hover {
     border: 1px solid #836FFF;
     box-shadow: 0 0 10px #836FFF;
-  }
+  } */
   
   /* Conteúdo para testar */
   .content {
