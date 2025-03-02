@@ -1362,7 +1362,111 @@ a {
   color: var(--color-destaque3);
 }
 
+.container-grafico {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between; /* Gráficos à esquerda e estatísticas à direita */
+  align-items: center;
+}
+
+/* Container para os gráficos e legendas */
+.graficos {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Layout do gráfico + legenda */
+.grafico-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 30%;
+  width: 30%;
+  position: relative;
+  right: 350px;
   
+}
+
+/* Ajusta tamanho do gráfico */
+canvas {
+  width: 250px;
+  height: 250px;
+}
+
+/* Estilização da legenda */
+.legenda {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.legenda div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.legenda span {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+/* Estatísticas fixas do lado direito */
+.estatisticas {
+  text-align: left;
+  font-size: 30px;
+  color: #7d2ae8; /* Roxo */
+  font-weight: bold;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: 380px;
+  width: 30%;
+  top: 70px;
+}
+
+.counter {
+  font-size: 50px;
+  color: #7d2ae8;
+}
+
+.counter-estilo {
+  color: #fff;
+}
+  
+.minha-legenda {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: 30px;
+}
+
+.legenda-item {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espaço entre o botão e o texto */
+}
+
+.legenda-item button {
+  width: 30px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20%;
+}
+
+.legenda-item span {
+  color: white;
+  font-size: 16px;
+}
+
   
 
 
