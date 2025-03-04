@@ -30,36 +30,16 @@ const semicircleOptionsIdade = {
             title: {
                 display: true,
                 text: 'Idade',  // Título da legenda "Idade"
+                color: 'white',  // Cor do título
                 font: {
                     size: 16,  // Tamanho da fonte do título
                     weight: 'bold',
-                    color: 'white'  // Cor do título
                 },
                 padding: {
                     bottom: 10  // Espaço abaixo do título
                 }
             }
         },
-        // Adicionando título "YouTube" abaixo do gráfico
-        beforeDraw: function(chart) {
-            const ctx = chart.chart.ctx;
-            ctx.save();
-
-            // Calculando a posição para o título abaixo do gráfico
-            const chartHeight = chart.chart.height;
-            const chartWidth = chart.chart.width;
-            const positionX = chart.chartArea.left + (chartWidth / 2);
-            const positionY = chart.chartArea.bottom + 20; // Distância do gráfico para o título
-
-            // Desenhando o título "YouTube" abaixo do gráfico
-            ctx.font = 'bold 16px Arial';
-            ctx.fillStyle = 'white';
-            ctx.textAlign = 'center';
-            ctx.textBaseline = 'top';
-            ctx.fillText('YouTube', positionX, positionY);
-
-            ctx.restore();
-        }
     }
 };
 
@@ -94,36 +74,16 @@ const semicircleOptionsGenero = {
             title: {
                 display: true,
                 text: 'Gêneros',  // Título da legenda "Gêneros"
+                color: 'white',  // Cor do título
                 font: {
                     size: 16,  // Tamanho da fonte do título
                     weight: 'bold',
-                    color: 'white'  // Cor do título
                 },
                 padding: {
                     bottom: 10  // Espaço abaixo do título
                 }
             }
         },
-        // Adicionando título "Instagram" abaixo do gráfico
-        beforeDraw: function(chart) {
-            const ctx = chart.chart.ctx;
-            ctx.save();
-
-            // Calculando a posição para o título abaixo do gráfico
-            const chartHeight = chart.chart.height;
-            const chartWidth = chart.chart.width;
-            const positionX = chart.chartArea.left + (chartWidth / 2);
-            const positionY = chart.chartArea.bottom + 20; // Distância do gráfico para o título
-
-            // Desenhando o título "Instagram" abaixo do gráfico
-            ctx.font = 'bold 16px Arial';
-            ctx.fillStyle = 'white';
-            ctx.textAlign = 'center';
-            ctx.textBaseline = 'top';
-            ctx.fillText('Instagram', positionX, positionY);
-
-            ctx.restore();
-        }
     }
 };
 
@@ -161,9 +121,9 @@ const ctx3 = document.getElementById('idadeCharti').getContext('2d');
 new Chart(ctx3, {
     type: 'doughnut',
     data: {
-         labels: ['18-24', '25-34', '13-17', '45+'],
+         labels: ['18-24', '13-17', '25-34', '35-44'],
         datasets: [{
-            data: [39, 25, 17, 19],
+            data: [38.4, 34.3, 13.7, 7.8],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
         }]
     },
@@ -175,10 +135,10 @@ const ctx4 = document.getElementById('generoCharti').getContext('2d');
 new Chart(ctx4, {
     type: 'doughnut',
     data: {
-        labels: ['Masculino', 'Feminino', 'Outro'],
+        labels: ['Masculino', 'Feminino',],
         datasets: [{
-            data: [59, 38, 3],
-            backgroundColor: ['#7d2ae8', '#f7c300', '#888888']
+            data: [63.9, 36.1,],
+            backgroundColor: ['#7d2ae8', '#f7c300']
         }]
     },
     options: semicircleOptionsGenero
@@ -190,7 +150,7 @@ counters.forEach(counter => {
     const updateCount = () => {
         const target = +counter.getAttribute('data-target');
         const count = +counter.innerText;
-        const increment = target / 1000;
+        const increment = target / 650;
 
         if (count < target) {
             counter.innerText = `+${Math.ceil(count + increment)}`;

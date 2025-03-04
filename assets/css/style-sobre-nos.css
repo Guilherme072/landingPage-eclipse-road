@@ -864,8 +864,7 @@ form {
 .contact-section-temporario {
   width: 800px;
   max-width: 1000px;
-  
-  background: linear-gradient(to bottom, #292828, #000000);
+  background: linear-gradient(to right, #1a1919, #202020);
   border-radius: 16px;
   padding: 40px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
@@ -875,6 +874,7 @@ form {
   text-align: start;
   margin-bottom: 30px;
   font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
 }
 
 .new-contact {

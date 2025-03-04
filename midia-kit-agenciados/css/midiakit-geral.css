@@ -935,7 +935,7 @@ a {
 
 .carouselTitle {
   font-size: 30px;
-  margin-top: 200px;
+  margin-top: 55px;
 }
 
 .footer-links {
@@ -968,8 +968,8 @@ a {
   flex-direction: column;
   gap: 24px;
   text-align: start;
-  margin-top: 200px;
-  margin-bottom: 30px;
+  margin-top: 150px;
+  margin-bottom: 70px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -1226,6 +1226,8 @@ a {
 #scene {
   width: 45%;
   height: 50%;
+  position: relative;
+  top: 90px;
 }
 
 #profilee {
@@ -1368,6 +1370,8 @@ a {
   display: flex;
   justify-content: space-between; /* Gráficos à esquerda e estatísticas à direita */
   align-items: center;
+  position: relative;
+  bottom: 200px;
 }
 
 /* Container para os gráficos e legendas */
@@ -1387,7 +1391,6 @@ a {
   width: 30%;
   position: relative;
   right: 350px;
-  
 }
 
 /* Ajusta tamanho do gráfico */
@@ -1421,7 +1424,7 @@ canvas {
 .estatisticas {
   text-align: left;
   font-size: 30px;
-  color: #7d2ae8; /* Roxo */
+  color: #836FFF; /* Roxo */
   font-weight: bold;
   gap: 50px;
   display: flex;
@@ -1434,7 +1437,7 @@ canvas {
 
 .counter {
   font-size: 50px;
-  color: #7d2ae8;
+  color: #836FFF;
 }
 
 .counter-estilo {
@@ -1465,6 +1468,47 @@ canvas {
 .legenda-item span {
   color: white;
   font-size: 16px;
+}
+
+.container-graficoi {
+  display: flex;
+  justify-content: space-between; /* Distribui estatísticas e gráficos */
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  bottom: 140px;
+}
+
+.estatisticasi {
+  text-align: left;
+  font-size: 30px;
+  color: #836FFF; /* Roxo */
+  font-weight: bold;
+  width: 50%; /* Deixa metade da tela para as estatísticas */
+  position: relative;
+  left: 260px;
+  top: 20px;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.graficosi {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start; /* Mantém alinhado à esquerda */
+  width: 50%; /* A outra metade da tela para os gráficos */
+  position: relative;
+  left: 90px;
+}
+
+.grafico-containeri {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Empurra os gráficos para a direita */
+  width: 35%;
 }
 
   
