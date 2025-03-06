@@ -40,11 +40,11 @@
         gap: 20px; /* Espaço entre os itens */
         padding: 0 10px;
         justify-items: center;
-        align-items: center;
-        display: flex;
+        display: grid;
         flex-direction: column;
         width: 100%;
         max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     /************************** SOBRE ***/

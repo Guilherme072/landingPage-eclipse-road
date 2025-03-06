@@ -12,7 +12,7 @@
 
   <!--CSS-->
   <link rel="stylesheet" href="css/midiakit-geral.css">
-  <!--<link rel="stylesheet" href="./css/responsividade-midiakit.css">-->
+  <link rel="stylesheet" href="css/responsividade-midiakit.css">
 
 
   <!-- AOS -->
@@ -27,9 +27,9 @@
   <script src="https://apis.google.com/js/api.js"></script>
   <script src="./js/api-youtube.js"></script>
 
-  <!--TIKTOK
-  <script src="https://open.tiktokapis.com/api/tiktok.js"></script>
-  <script src="./js/api-tiktok.js"></script>-->
+  <!--TIKTOK -->
+  <!-- <script src="https://open.tiktokapis.com/api/tiktok.js"></script>
+  <script src="./js/api-tiktok.js"></script> -->
 
   <!-- estilo dos gráficos
   <link rel="stylesheet" href="./css/grafico.css">
@@ -138,7 +138,7 @@
             </lord-icon>
           </a>
           <p class="user">@kerbitoos</p>
-          <p class="followers"><span class="estilo">+7</span>MIL</p>
+          <p class="followers"><span class="estilo" data-target="7">7</span>MIL</p>
           <p class="seguidores">Seguidores</p>
         </div>
         <div class="social-box">
@@ -148,7 +148,7 @@
             </lord-icon>
           </a>
           <p class="user">@kerbitos</p>
-          <p class="followers"><span class="estilo">+277</span>MIL</p>
+          <p class="followers"><span class="estilo" data-target="">277</span>MIL</p>
           <p class="seguidores">Seguidores</p>
         </div>
         <div class="social-box">
@@ -191,81 +191,23 @@
         </div>
       </section>
       
-      <!-- ANIMAÇÃO DO CELULAR, VÊ ISSO AQUI GUI!!!!! -->
-      
 
       <!-- Gráfico -->
 
-      <!-- <div class="graficos">
-        <div class="containerChart">
-          <div class="chart">
-            <div class="segment" id="segment1">
-              <span></span>
-            </div>
-            <div class="segment" id="segment2">
-              <span></span>
-            </div>
-            <div class="segment" id="segment3">
-              <span></span>
-            </div>
-            <div class="segment" id="segment4">
-              <span></span>
-            </div>
-            <div class="mask"></div>
-          </div>
-
-          <div class="legend">
-            <h3>IDADE</h3>
-            <div class="legend-item">
-                <span class="color-box" style="background-color: #800080;"></span>
-                <span>18 - 24</span>
-            </div>
-            <div class="legend-item">
-                <span class="color-box" style="background-color: #FFD700;"></span>
-                <span>25 - 34</span>
-            </div>
-            <div class="legend-item">
-                <span class="color-box" style="background-color: #A9A9A9;"></span>
-                <span>13 - 17</span>
-            </div>
-            <div class="legend-item">
-                <span class="color-box" style="background-color: #696969;"></span>
-                <span>+45</span>
-            </div>
-        </div>
-        </div>
-  
-        <div class="containerChart2">
-          <div class="chart2">
-            <div class="segment2" id="segment21">
-              <span></span>
-            </div>
-            <div class="segment2" id="segment22">
-              <span></span>
-            </div>
-            <div class="segment2" id="segment23">
-              <span></span>
-            </div>
-            <div class="segment2" id="segment24">
-              <span></span>
-            </div>
-            <div class="mask2"></div>
-          </div>
-        </div>
-
-      </div> -->
-
-    
       <div class="container-grafico">
         <div class="graficos">
             <!-- Gráfico de Idade -->
             <div class="grafico-container"> 
               <canvas id="idadeChart"></canvas>
+              <span style="margin-right: 69px;
+    font-size: 2rem;">Youtube</span>
             </div>
 
             <!-- Gráfico de Gênero -->
             <div class="grafico-container">
               <canvas id="generoChart"></canvas>
+              <span style="margin-right: 69px;
+    font-size: 2rem;">Youtube</span>
             </div>
         </div>
 

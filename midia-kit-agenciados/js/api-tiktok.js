@@ -1,20 +1,35 @@
 async function obterSeguidores() {
-    try {
-        const token = ''; // Token precisa ser válido e atualizado
-        // Verifique se a biblioteca TikTokApi está corretamente importada!
-        const response = await TikTokApi.getUserInfo(token, { user_id: '6873939833853871106' });
-        const seguidores = response.user?.statistics?.follower_count; // Uso opcional chaining
-        console.log('Número de seguidores TikTok:', seguidores);
-    } catch (error) {
-        console.error('Erro ao obter seguidores:', error);
-    }
+  try {
+    const token = "qCBwZPeXCXX4PwmzKTRGsF61rTarQJwv"; // Token precisa ser válido e atualizado
+
+    const url =
+      "https://corsproxy.io/?url=https://open.tiktokapis.com/v2/research/user/info/?fields=follower_count";
+
+    const options = {
+      method: "POST",
+      headers: {
+        Authorization: `bearer ${token}`,
+        "Content-Type": "application/json",
+        origin: "eclipseroad.com"
+      },
+      body: JSON.stringify({
+        username: "kerbitos",
+      }),
+    };
+
+    fetch(url, options)
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.error("Erro:", error));
+  } catch (error) {
+    console.error("Erro ao obter seguidores:", error);
+  }
 }
 
 // Forma correta de associar função assíncrona ao onload
 window.onload = () => {
-    obterSeguidores();
+  obterSeguidores();
 };
-
 
 /*async function obterSeguidores() {
     const token = ''; // Substitua pelo seu token de acesso
@@ -25,4 +40,3 @@ window.onload = () => {
 
 window.onload = obterSeguidores;
 */
-

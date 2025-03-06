@@ -830,109 +830,6 @@ a {
 
 
 
-
-
-@media (max-width: 1024px) {
-  .navbar {
-    display: none;
-  }
-  .logo {
-    display: block;
-  }
-  
-  .container {
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  .avatar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 120px;
-    height: 120px;
-  }
-
-  .profile {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-  }
-
-  .stat {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-  }
-
-  .hamburger {
-    display: block;
-  }
-  body {
-    background-image: url(../videos/fundoembrevecel.mp4);
-    background-size: cover;
-  }
-  .logo img {
-    width: 110px;
-  }
-  .logo {
-    width: 0;
-  }
-  .nav-menu a {
-    font-size: 30px;
-  }
-
-  .share-btn {
-    background: white;
-    color: black;
-    padding: 10px 15px;
-    border-radius: 20px;
-    margin-top: 20px;
-    text-decoration: none;
-    display: none;
-    cursor: pointer;
-    justify-content: end;
-    width: 125px;
-    height: 42px;
-    align-items: center;
-  }
-  
-  .share-btn-mobile {
-    background: white;
-    color: black;
-    padding: 10px 15px;
-    border-radius: 20px;
-    margin-top: 20px;
-    text-decoration: none;
-    display: flex;
-    cursor: pointer;
-    justify-content: end;
-    width: 125px;
-    height: 42px;
-    align-items: center;
-  }
-
-  .rede-social-link {
-    font-size: 30px;
-      margin: 0 5px;
-      color: #fff;
-      transition: color 0.3s;
-      display: flex;
-      justify-content: center;
-  }
-
-}
-
-
 .carouselTitle {
   font-size: 30px;
   margin-top: 55px;
@@ -1385,6 +1282,7 @@ a {
 /* Layout do gráfico + legenda */
 .grafico-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   height: 30%;

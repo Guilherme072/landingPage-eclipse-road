@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
+        console.log("INTERSECt")
         // Ativa a animação quando o elemento entra na tela
         pushAnimation();
         observer.unobserve(entry.target); // Interrompe o observador após ativar a animação
