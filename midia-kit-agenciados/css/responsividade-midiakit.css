@@ -10,19 +10,7 @@
     max-width: 100%;
   }
 
-  .header {
-    padding: 10px 20px;
-  }
-
-  .about-content {
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-    max-width: 100%;
-  }
-
   .about-text {
-    max-width: 100%;
     left: 0;
     text-align: center;
   }
@@ -98,14 +86,9 @@
     top: 15px;
   }
   .about-text h2 {
-    text-align: left;
-    display: flex;
-    align-items: start;
-    width: 100%;
-    margin: 0;
-    padding-left: 0;
-    font-size: 3rem;
-    gap: 10px;
+    text-align: center;  /* Centraliza o título no celular */
+    padding-left: 0;     /* Remove o padding da esquerda */
+    justify-content: center;  /* Garante que o título será centralizado */
   }
 }
 
@@ -124,13 +107,68 @@
     flex-direction: column;
   }
 
-  .menu {
+   
+  .nav-menu a {
+    font-size: 30px;
+}
+.header {
+    padding: 0.4rem 2.2rem;
+}
+.logo img {
+    width: 110px;
+}
+
+.logo {
     display: block;
+    width: 0;
+}
+.hamburger {
+    display: block; /* Exibe o menu hambúrguer */
+    margin-left: 20px;
+  }
+
+.hamburger svg {
+    display: flex;
+}  
+
+
+.search-container {
+    display: none; /* Esconde a barra de pesquisa em telas menores */
+  }
+
+.search-container input {
+    display: none;
+}  
+
+.navbar-links {
+    display: none; /* Esconde os links da barra de navegação em telas menores */
+    position: absolute;
+    top: 60px; /* Ajuste a distância do topo para que os links fiquem abaixo do menu hambúrguer */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    z-index: 5;
+  }
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    z-index: 100;
+    width: 100%; 
+}
+
+  .navbar {
+    display: none;
   }
 
   .social-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    bottom: 30px;
   }
 
   .social-box {
@@ -140,19 +178,17 @@
   
   .container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+   
+}
 
   .profile {
     display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .header {
     flex-direction: column;
     align-items: center;
+    justify-content: center; /* Se precisar de ajuste vertical */
+    text-align: center;
   }
 
   .about-text p {
@@ -180,32 +216,76 @@
     width: 200px;
     height: 50px;
   }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 130px;
+    width: 100%;
+  }
+
+  #push {
+    order: 1;
+    align-self: flex-end;
+    position: relative;
+    bottom: 440px;
+    width: 65%;
+    height: 30%;
+  }
+
+  .about-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+  }
+
+  .vertical-text {
+    transform: translateY(-10%);
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    letter-spacing: 3px;
+    order: -1;
+    position: relative;
+    right: 120px;
+  }
+
+  .about-text p {
+    font-size: 1.1rem;
+    text-align: center;
+    color: white;
+    max-width: 90%;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
 
   .about-text {
-    display: flex;
-    flex-direction: column; /* Mantém o título e o texto em coluna */
-    align-items: center; /* Alinha tudo à esquerda */
-    text-align: justify;
-    flex: 1;
-    max-width: 500px;
-  }
-  .about-text p {
-    font-size: 20px;
-    color: white;
-    line-height: 1.1;
-    max-width: 350px;
-    margin: 0 auto;
-    top: 15px;
-  }
-  .about-text h2 {
-    text-align: left;
-    display: flex;
-    align-items: start;
     width: 100%;
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .about-text h2 {
+    font-size: 2.5rem; /* Ajuste conforme necessário */
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    width: 100%;
     padding-left: 0;
-    font-size: 3rem;
-    gap: 10px;
+  }
+
+  .vertical-text span {
+    font-family: 'Caveat', cursive;
+  }
+  .estilo-unico {
+    color: #836FFF;
   }
 
   #scene {
@@ -257,5 +337,28 @@
 
   .seguidores {
     font-size: 20px;
+  }
+
+  .off-mobile {
+    display: none;
+  }
+
+  .share-btn {
+    display: none;
+  }
+  
+  .share-btn-mobile {
+    background: white;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin-top: 15px;
+  text-decoration: none;
+  display: flex;
+  cursor: pointer;
+  justify-content: end;
+  width: 125px;
+  height: 42px;
+  align-items: center;
   }
 }

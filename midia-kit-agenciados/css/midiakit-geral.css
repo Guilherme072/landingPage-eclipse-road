@@ -301,7 +301,7 @@ a {
   font-size: 14px;
   color: white;
   background-color: black;
-  display: none;
+  display: NONE;
   justify-content: end;
 }
 
@@ -358,7 +358,7 @@ a {
   font-size: 3rem;
   font-weight: bold;
   opacity: 0;
-  transform: translateY(-20px);
+  transform: translateY(-20px); 
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
@@ -1131,8 +1131,6 @@ a {
   width: 270px;
   height: 270px;
   border-radius: 50%;
-  position: relative;
-  left: 9px;
 }
 
 #typingtext {
@@ -1407,6 +1405,11 @@ canvas {
   align-items: center;
   justify-content: flex-end; /* Empurra os gráficos para a direita */
   width: 35%;
+  flex-direction: column;
+}
+
+.about-image-container {
+  display: none;
 }
 
   
