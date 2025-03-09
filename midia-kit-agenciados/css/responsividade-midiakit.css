@@ -172,7 +172,7 @@
   }
 
   .social-box {
-    width: 180px;
+    width: 165px;
     height: 230px;
   }
   
@@ -195,12 +195,10 @@
     font-size: 1rem;
   }
 
-  .graficos,
-  .estatisticas {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+  .carouselTitle {
+    font-size: 30px;
+    margin-top: -120px;
+}
 
   .contact-section-temporario {
     width: 100%;
@@ -301,7 +299,7 @@
 
   .carousel-container::before,
   .carousel-container::after {
-    width: 50px; /* Reduz o efeito fade */
+    width: 10px; /* Reduz o efeito fade */
   }
 
   #icon-twitter {
@@ -361,4 +359,58 @@
   height: 42px;
   align-items: center;
   }
+
+  .container-grafico {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    bottom: 390px;
+}
+  .container-graficoi {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    bottom: 220px;
+}
+
+.graficos, .graficosi {
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+}
+
+.grafico-container {
+    width: 100%; /* Aumenta o espaço dos gráficos */
+    max-width: 400px;
+    right: 80px;
+    bottom: 60px;
+    position: relative;
+}
+.grafico-containeri {
+    width: 50%; /* Aumenta o espaço dos gráficos */
+    max-width: 400px;
+    right: 80px;
+    bottom: 60px;
+    position: relative;
+}
+
+.estatisticas, .estatisticasi {
+    width: 100%;
+    text-align: center;
+    position: static;
+    left: 0;
+    right: 0;
+    font-size: 24px; /* Diminui um pouco a fonte */
+}
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
+    position: relative;
+    top: 38px;
+}
 }

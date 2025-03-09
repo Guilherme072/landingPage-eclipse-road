@@ -1,6 +1,6 @@
 /******************** Fontes usadas */
 @import url('https://fonts.cdnfonts.com/css/tt-hoves-pro-trial');
-@import url('clash-grotesk.css');
+@import url('/assets/css/clash-grotesk.css');
 
 * {
     margin: 0;
@@ -180,7 +180,7 @@ a {
     transition: top 0.3s ease-in-out;
     backdrop-filter: blur(10px);
     background-color: transparent;
-
+    font-family: var(--font-pequena);
 }
 
 /* Logo */
@@ -309,13 +309,7 @@ a {
   color: white;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex: 1;
-  position: relative;
-}
+
 
 /* Menu Navegação */
 .menu-aberto {
@@ -867,7 +861,7 @@ a {
   text-align: start;
   margin-top: 150px;
   margin-bottom: 70px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-pequena)
 }
 
 .new-contact {
@@ -1291,30 +1285,10 @@ a {
 
 /* Ajusta tamanho do gráfico */
 canvas {
-  width: 250px;
-  height: 250px;
+  width: 100% !important;
+  height: auto !important;
 }
 
-/* Estilização da legenda */
-.legenda {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.legenda div {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 16px;
-}
-
-.legenda span {
-  width: 15px;
-  height: 15px;
-  display: inline-block;
-  border-radius: 50%;
-}
 
 /* Estatísticas fixas do lado direito */
 .estatisticas {
@@ -1339,32 +1313,7 @@ canvas {
 .counter-estilo {
   color: #fff;
 }
-  
-.minha-legenda {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-left: 30px;
-}
 
-.legenda-item {
-  display: flex;
-  align-items: center;
-  gap: 8px; /* Espaço entre o botão e o texto */
-}
-
-.legenda-item button {
-  width: 30px;
-  height: 20px;
-  border: none;
-  cursor: pointer;
-  border-radius: 20%;
-}
-
-.legenda-item span {
-  color: white;
-  font-size: 16px;
-}
 
 .container-graficoi {
   display: flex;
