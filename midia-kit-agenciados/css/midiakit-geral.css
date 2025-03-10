@@ -178,7 +178,7 @@ a {
     justify-content: space-between;
     z-index: 99;
     transition: top 0.3s ease-in-out;
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
     background-color: transparent;
     font-family: var(--font-pequena);
 }
