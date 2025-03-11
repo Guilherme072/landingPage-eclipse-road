@@ -1,32 +1,28 @@
-// Função para animar a contagem
-function startCounting() {
+// Função para animar a contagem dos números
+const startCounting = () => {
     const counters = document.querySelectorAll('.counter');
-    
     counters.forEach(counter => {
-        const target = +counter.getAttribute('data-target');
-        const start = 0;
-        const increment = target / 400;
-        let current = start;
-        
-        const updateCounter = () => {
-            if (current < target) {
-                current += increment;
-                counter.innerText = current.toFixed(1); // Atualiza o número no span
-                requestAnimationFrame(updateCounter);
+        const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText;
+            const increment = target / 650;
+
+            if (count < target) {
+                counter.innerText = `+${Math.ceil(count + increment)}`; // Atualiza o número de forma arredondada
+                setTimeout(updateCount, 10); // Chama novamente para continuar a contagem
             } else {
-                
+                counter.innerText = `+${target}`; // Garante que o número final seja exato
             }
         };
-        
-        updateCounter();
+        updateCount();
     });
-}
+};
 
 // Configuração do Intersection Observer
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            startCounting(); // Inicia a contagem quando o elemento entrar na tela
+            startCounting(); // Inicia a contagem quando o elemento entra na tela
             observer.disconnect(); // Desconecta o observer após a contagem começar
         }
     });

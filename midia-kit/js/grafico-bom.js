@@ -144,20 +144,4 @@ new Chart(ctx4, {
     options: semicircleOptionsGenero
 });
 
-// Animação dos números
-const counters = document.querySelectorAll('.counter');
-counters.forEach(counter => {
-    const updateCount = () => {
-        const target = +counter.getAttribute('data-target');
-        const count = +counter.innerText;
-        const increment = target / 650;
 
-        if (count < target) {
-            counter.innerText = `+${Math.ceil(count + increment)}`;
-            setTimeout(updateCount, 10);
-        } else {
-            counter.innerText = `+${target}`;
-        }
-    };
-    updateCount();
-});
