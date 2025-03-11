@@ -14,7 +14,7 @@ function startCounting() {
                 counter.innerText = current.toFixed(1); // Atualiza o número no span
                 requestAnimationFrame(updateCounter);
             } else {
-                counter.innerText = target.toFixed(1); // Garante que o número final seja exato
+                
             }
         };
         
