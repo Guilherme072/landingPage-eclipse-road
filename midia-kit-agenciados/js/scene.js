@@ -43,3 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const pushElement = document.getElementById("push");
   observer.observe(pushElement);
 });
+
+window.scrollTo(0, 0);
+

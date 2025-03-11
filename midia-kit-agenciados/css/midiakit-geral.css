@@ -40,7 +40,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    
 }
 
 body {
@@ -178,7 +178,7 @@ a {
     justify-content: space-between;
     z-index: 99;
     transition: top 0.3s ease-in-out;
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
     background-color: transparent;
     font-family: var(--font-pequena);
 }
@@ -563,7 +563,7 @@ a {
   font-size: 2rem;
   position: relative;
   left: 300px;
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 1);
 } 
 .social-container {
   display: flex;
@@ -1129,7 +1129,7 @@ a {
 
 #typingtext {
   color: #b187ff;
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 1);
 }
 
 .verificadoMK{
