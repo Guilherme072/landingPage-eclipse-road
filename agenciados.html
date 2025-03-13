@@ -258,7 +258,7 @@
 
 
       <section class="container">
-        <div class="container-box">
+        <div class="container-box" id="conteudo">
           <div class="box user-item" filter_name="memes inteligentes" filter_plataform="x,instagram"
             filter_category="memes" filter_followers="980000" filter_engajament="50000">
             <span class="number"></span>
@@ -408,6 +408,7 @@
                 <i class="bi bi-instagram"></i>
               </a>
             </div>
+            <button>Confira</button>
           </div>
           
           <div class="box user-item" filter_name="central do braga" filter_plataform="x,instagram,twitch"
@@ -1874,7 +1875,7 @@
               </a>
             </div>
           </div>
-
+          <button id="downloadPDF">Baixar PDF</button>
         </div>
       </section>
     </main>
@@ -1990,7 +1991,24 @@
     </section>
   </div>
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script>
+    document.getElementById("downloadPDF").addEventListener("click", () => {
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF("p", "mm", "a4");
+      const conteudo = document.getElementById("conteudo"); // Capturar apenas a div desejada
+  
+      html2canvas(conteudo, { scale: 2 }).then((canvas) => {
+        const imgData = canvas.toDataURL("image/png");
+        const imgWidth = 210; // Largura A4 em mm
+        const imgHeight = (canvas.height * imgWidth) / canvas.width;
+  
+        doc.addImage(imgData, "PNG", 0, 0, imgWidth, imgHeight);
+        doc.save("pagina.pdf");
+      });
+    });
+  </script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
