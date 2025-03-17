@@ -540,10 +540,11 @@ a {
   position: relative;
   left: 15px;
   margin-top: 90px;
+  gap: 20px;
 }
 .profile img {
-  width: 190px;
-  height: 190px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
 }
 .profile-info {
@@ -1143,7 +1144,7 @@ a {
   width: 25%;
   height: 25%;
   position: relative;
-  bottom: 30px;
+  bottom: 20px;
   left: 10px;
 }
 
