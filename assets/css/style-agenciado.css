@@ -1251,6 +1251,11 @@ input:checked + .slider::before {
   margin-bottom: 10px;
 }
 
+.button-planilha {
+  width: 145px;
+  height: 25px;
+}
+
 
 
 

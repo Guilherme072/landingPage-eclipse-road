@@ -9,11 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   lottie.loadAnimation({
-    container: document.getElementById("profilee"),
+    container: document.getElementById("poetas"),
     renderer: "svg",
     loop: false,
     autoplay: true,
-    path: "/icon-json/Profile.json"
+    path: "/icon-json/perfil-poetasfla.json"
   });
 
   // Função para ativar a animação do #push quando ele aparecer na tela

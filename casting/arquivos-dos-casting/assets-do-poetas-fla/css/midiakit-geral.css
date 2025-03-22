@@ -44,7 +44,7 @@ html {
 }
 
 body {
-    background-image: url(/assets/img2/fundokerbitos.png);
+    background-image: url(/assets/img2/fundopoetasfla.png);
     background-size: contain;
     background-color: #000;
     background-repeat: no-repeat;
@@ -574,16 +574,15 @@ a {
 }
 .social-box {
   background: rgba(34, 34, 34, 0.8);
-  padding: 10px;
+  padding: 25px;
   border-radius: 20px;
-  width: 280px;
-  height: 310px;
+  width: 760px;
+  height: 200px;
   text-align: center;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
   display: flex;
-  flex-direction: column;
-  text-align: center;
+  align-items: center;
 }
 .social-box:hover {
   transform: translateY(-5px);
@@ -599,7 +598,7 @@ a {
 }
 .seguidores {
   font-weight: bold;
-  color: #b187ff;
+  color: #fff;
   font-size: 1.8rem;
 }
 .social-container i  {
@@ -1123,7 +1122,7 @@ a {
   top: 90px;
 }
 
-#profilee {
+#poetas {
   width: 270px;
   height: 270px;
   border-radius: 50%;
@@ -1362,7 +1361,15 @@ canvas {
 .about-image-container {
   display: none;
 }
+.seguidores-mobile {
+  display: none;
+}
 
+.parceria {
+  width: 14%;
+  height: 20%;
+  margin-top: 20px;
+}
   
 
 

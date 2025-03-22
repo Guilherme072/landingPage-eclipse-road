@@ -100,6 +100,14 @@
     padding-left: 0;     /* Remove o padding da esquerda */
     justify-content: center;  /* Garante que o título será centralizado */
   }
+
+  .seguidores {
+    display: none;
+  }
+
+  .sem-mobile {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -108,7 +116,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/assets/img2/Fundocelularkerb.png);
+    background-image: url(/assets/img2/Fundo_celular_Poetas_FLa.png);
   }
   
   .container-inicio {
@@ -176,17 +184,19 @@
   }
 
   .social-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
     position: relative;
     bottom: 30px;
     margin-top: 80px;
   }
 
   .social-box {
-    width: 165px;
-    height: 230px;
+    width: 220px;
+    height: 245px;
     gap: 2px;
+    display: flex;
+    flex-direction: column;
   }
   
   .container {
@@ -449,5 +459,14 @@ position: relative;
 .grafico-containeri span {
   bottom: 180px;
 position: relative;
+}
+
+.parceria {
+  width: 40%;
+  height: 40%;
+}
+
+.footer {
+  display: none;
 }
 }

@@ -39,6 +39,22 @@ function applyFilters() {
         }
     }
 
+    const botao = document.getElementById('meuBotao');
+const isFiltered = 
+    platformFilter !== 'all' ||
+    categoryFilter !== 'all' ||
+    followersFilter !== 'all' ||
+    engagementFilter !== 'all' ||
+    searchQuery.trim() !== '';
+
+if (isFiltered) {
+    botao.style.display = 'none';
+} else {
+    botao.style.display = 'inline-block'; // Para garantir que ele volte ao normal
+}
+
+    
+
     // updateNumbers();
 }
 
