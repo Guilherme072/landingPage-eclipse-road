@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
       renderer: "svg",
       loop: false,
       autoplay: true,
-      path: "/icon-json/Push-notification.json"
+      path: "/icon-json/Push-notificationkerb.json"
     });
   };
 
