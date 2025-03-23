@@ -47,7 +47,7 @@
   .profile-info h1 {
     font-size: 2rem;
     position: relative;
-    left: 20px;
+    left: 43px;
   }
 
   .profile-info p {
@@ -242,7 +242,7 @@
     order: 1;
     align-self: flex-end;
     position: relative;
-    bottom: 440px;
+    bottom: 480px;
     width: 65%;
     height: 30%;
   }
@@ -438,7 +438,7 @@ canvas {
     right: 25px;
 }
 
-#profilee {
+#filipe {
   position: relative;
   right: 10px;
 }
