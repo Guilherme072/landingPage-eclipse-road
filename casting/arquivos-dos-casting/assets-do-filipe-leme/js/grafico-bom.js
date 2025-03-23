@@ -119,7 +119,7 @@ new Chart(ctx1, {
     options: semicircleOptionsIdade
 });
 
-// Gráfico de Gênero (Instagram)
+// Gráfico de Gênero (YouYube)
 const ctx2 = document.getElementById('generoChart').getContext('2d');
 new Chart(ctx2, {
     type: 'doughnut',
@@ -133,14 +133,14 @@ new Chart(ctx2, {
     options: semicircleOptionsGenero
 });
 
-// Gráfico de Idade (YouTube)
+// Gráfico de Idade (Instagram)
 const ctx3 = document.getElementById('idadeCharti').getContext('2d');
 new Chart(ctx3, {
     type: 'doughnut',
     data: {
          labels: ['18-24', '13-17', '25-34', '35-44'],
         datasets: [{
-            data: [38.4, 34.3, 13.7, 7.8],
+            data: [38.5, 24.6, 22.1, 9.2],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
         }]
     },
@@ -154,7 +154,7 @@ new Chart(ctx4, {
     data: {
         labels: ['Masculino', 'Feminino',],
         datasets: [{
-            data: [63.9, 36.1,],
+            data: [56.8, 43.2,],
             backgroundColor: ['#7d2ae8', '#f7c300']
         }]
     },

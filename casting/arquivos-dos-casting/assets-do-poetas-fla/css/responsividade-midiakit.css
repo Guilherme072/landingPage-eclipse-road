@@ -391,7 +391,7 @@
     justify-content: center;
     width: 100%;
     position: relative;
-    bottom: 390px;
+    bottom: 365px;
 }
   .container-graficoi {
     flex-direction: column-reverse;
@@ -445,15 +445,16 @@ canvas {
     height: auto !important;
     position: relative;
     bottom: 170px;
+    right: 20px;
 }
 
-#profilee {
+#poetas {
   position: relative;
   right: 10px;
 }
 
 .grafico-container span {
-  bottom: 180px;
+  bottom: 170px;
 position: relative;
 }
 .grafico-containeri span {
