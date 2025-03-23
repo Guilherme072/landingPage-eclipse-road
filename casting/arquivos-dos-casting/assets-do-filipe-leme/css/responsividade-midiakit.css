@@ -210,7 +210,7 @@
 
   .carouselTitle {
     font-size: 30px;
-    margin-top: -400px;
+    margin-top: -360px;
 }
 
   .contact-section-temporario {
@@ -381,7 +381,7 @@
     justify-content: center;
     width: 100%;
     position: relative;
-    bottom: 390px;
+    bottom: 330px;
 }
   .container-graficoi {
     flex-direction: column-reverse;
@@ -389,7 +389,7 @@
     justify-content: center;
     width: 100%;
     position: relative;
-    bottom: 315px;
+    bottom: 250px;
 }
 
 .graficos, .graficosi {
