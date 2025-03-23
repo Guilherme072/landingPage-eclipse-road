@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filipe Leme</title>
+
+  <!--Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+
+  <!--CSS-->
+  <link rel="stylesheet" href="/casting/arquivos-dos-casting/assets-do-filipe-leme/css/midiakit-geral.css">
+  <link rel="stylesheet" href="/casting/arquivos-dos-casting/assets-do-filipe-leme/css/responsividade-midiakit.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <link rel="shortcut icon" href="/assets/img/icon.png" type="image/png">
+  <link rel="icon" href="/assets/img/icon.png" type="image/png">
+
+  <!-- SCRIPTS API -->
+
+  <!-- YOUTUBE -->
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src="./js/api-youtube.js"></script>
+
+  <!--TIKTOK -->
+  <!-- <script src="https://open.tiktokapis.com/api/tiktok.js"></script>
+  <script src="./js/api-tiktok.js"></script> -->
+
+  <!-- estilo dos gráficos
+  <link rel="stylesheet" href="./css/grafico.css">
+  <link rel="stylesheet" href="./css/grafico2.css"> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+  <!--Botão voltar ao topo-->
+  <div id="backToTop" class="fixed-button">
+    <i class="bi bi-chevron-up"></i>
+  </div>
+
+  <!--Botão WhatsApp-->
+  <div id="buttons-container">
+
+    <div id="whatsappButton" class="fixed-button">
+      <i class="bi bi-whatsapp"></i>
+    </div>
+
+    <button class="share-btn" onclick="sharePage()">
+      <img src="/assets/img2/share-icon.png" alt="" class="share-icon">compartilhar</button>
+  </div>
+
+  <div class="container-inicio">
+
+    <!--Header-->
+    <header class="header">
+      <div class="logo">
+        <a href="/index.html">
+          <img src="/assets/img/SUA-LOGO-AQUI.png" alt="">
+        </a>
+      </div>
+      <div class="menu">
+        <label class="hamburger">
+          <input type="checkbox" id="menuToggle">
+          <svg viewBox="0 0 32 32">
+            <path class="line line-top-bottom"
+              d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+            </path>
+            <path class="line" d="M7 16 27 16"></path>
+          </svg>
+        </label>
+      </div>
+      <div class="menu-aberto">
+        <nav class="nav-menu">
+          <a href="/index.html">Início</a>
+          <a href="/agenciados.html">Nossos influencers</a>
+          <a href="/produtora.html">Nosso Time</a>
+          <a href="/sobre-nos.html">Sobre nós</a>
+          <a href="/contato.html">Contato</a>
+        </nav>
+      </div>
+
+      <!--PARA DESKTOP-->
+
+      <nav class="navbar">
+        <div class="logo-pc">
+          <a href="/index.html">
+            <img src="/assets/img/SUA-LOGO-AQUI.png" alt="">
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/index.html" class="nav-link">Inicio</a></li>
+          <li><a href="/agenciados.html" class="nav-link">Nossos influencers</a></li>
+          <li><a href="/produtora.html" class="nav-link">Nosso Time</a></li>
+          <li><a href="/sobre-nos.html" class="nav-link">Sobre nós</a></li>
+        </ul>
+        <div class="cta-button">
+          <a href="/contato.html" class="glow-outline">Contato <span>↗</span></a>
+        </div>
+      </nav>
+    </header>
+    <!--Fim Header-->
+
+    <main id="inicio" class="inicio">
+      <!-- Vídeo de fundo -->
+      <!-- <video autoplay muted loop class="video-background">
+        <source src="../assets/videos/fundosobrenosle.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+      </video> -->
+
+      <div class="container">
+        <div class="profile">
+          <div id="filipe"></div>
+          <div class="profile-info">
+            <h1>Filipe Leme
+              <img src="/assets/img/verificado_azul.png" alt="verificado" class="verificadoMK" title="Verificado!">
+            </h1>
+            <p>+3.9 milhões de seguidores</p>
+          </div>
+          <p class="creator-text">
+            Sou <span id="typingtext"></span><span class="typingcursor">|</span>
+          </p>
+        </div>
+      </div>
+
+      <button class="share-btn-mobile" onclick="sharePage()">
+        <img src="/assets/img2/share-icon.png" alt="" class="share-icon">compartilhar</button>
+
+      <!--Redes e seguidores-->
+      <div class="social-container">
+        <div class="social-box">
+          <a href="https://x.com/FilipLeme" target="_blank">
+            <lord-icon id="icon-twitter" src="/icon-json/icon-twitter.json" trigger="hover" stroke="bold" state="hover">
+            </lord-icon>
+          </a>
+          <p class="user">@filipleme</p>
+          <p class="followers"><span class="estilo" data-target="7">30</span>MIL</p>
+          <p class="seguidores">Seguidores</p>
+        </div>
+        <div class="social-box">
+          <a href="https://www.instagram.com/filipleme/" target="_blank">
+            <lord-icon id="icon-instagram" src="/icon-json/icon-instagram.json" trigger="hover" stroke="bold"
+              state="hover">
+            </lord-icon>
+          </a>
+          <p class="user">@filipleme</p>
+          <p class="followers"><span class="estilo" data-target="">339</span>MIL</p>
+          <p class="seguidores">Seguidores</p>
+        </div>
+        <div class="social-box">
+          <a href="https://www.youtube.com/@filipleme" target="_blank">
+            <lord-icon id="icon-youtube" src="/icon-json/icon-youtube.json" trigger="hover" stroke="bold" state="hover">
+            </lord-icon>
+          </a>
+          <p class="user">@filipleme</p>
+          <p class="followers"><span class="plus" id="inscritosYt"></span>MIL</p>
+          <p class="seguidores">Seguidores</p>
+        </div>
+        <div class="social-box">
+          <a href="https://www.tiktok.com/@filipleme?lang=pt-BR" target="_blank">
+            <lord-icon id="icon-tiktok" src="/icon-json/icon-tiktok.json" trigger="hover" stroke="bold" state="hover">
+            </lord-icon>
+          </a>
+          <p class="user">@filipleme</p>
+          <p class="followers"><span class="plus">2.7</span>M</p>
+          <p class="seguidores">Seguidores</p>
+        </div>
+      </div>
+
+      <section class="about">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>SOBRE <span class="estilo-sobre">MIM</span></h2>
+            <p>Sou um criador de conteúdo que transformou a paixão por fazer as pessoas rirem em um canal de sucesso no
+              YouTube. Produzo vídeos de react e sátira, sempre alinhados aos assuntos mais comentados da internet.
+
+            </p><br>
+            <p>O grande diferencial do meu trabalho é o alto engajamento do público, que interage ativamente, inclusive
+              nas propagandas. Essa conexão gera resultados expressivos, mostrando a fidelidade da audiência e a força
+              da minha comunidade.</p>
+          </div>
+          <div id="push"></div>
+          <div class="about-image-container">
+            <div class="vertical-text">
+              <span class="estilo-unico">F</span>
+              <span>I</span>
+              <span>L</span>
+              <span>I</span>
+              <span>P</span>
+              <span>E</span>
+              <span style="color: black;">O</span>
+              <span>L</span>
+              <span>E</span>
+              <span>M</span>
+              <span>E</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Gráfico -->
+
+      <div class="container-grafico">
+        <div class="graficos">
+          <!-- Gráfico de Idade -->
+          <div class="grafico-container">
+            <canvas id="idadeChart"></canvas>
+            <span style="margin-right: 69px;
+    font-size: 2rem;">Youtube</span>
+          </div>
+
+          <!-- Gráfico de Gênero -->
+          <div class="grafico-container">
+            <canvas id="generoChart"></canvas>
+            <span style="margin-right: 69px;
+    font-size: 2rem;">Youtube</span>
+          </div>
+        </div>
+
+        <!-- Estatísticas (Fixas no lado direito) -->
+        <div class="estatisticas" id="estatistica">
+          <p><span class="counter" data-target="2.6">0</span> <span class="counter-estilo">MILHÕES</span><br> DE
+            VISUALIZAÇÕES</p>
+          <p><span class="counter" data-target="12.3">0</span><span
+              class="counter-estilo">MILHÕES</span><br>ESPECTADORES UNICOS</p>
+          <p class="off-mobile"><span class="counter" data-target="669">0</span> <span
+              class="counter-estilo">MIL</span><br> DE INSCRITOS</p>
+        </div>
+      </div>
+
+
+      <div class="container-graficoi">
+        <!-- Estatísticas (Fixas no lado direito) -->
+        <div class="estatisticasi" id="estatistica">
+          <p><span class="counter" data-target="829">0</span> <span class="counter-estilo">MIL</span><br> DE
+            VISUALIZAÇÕES</p>
+          <p><span class="counter" data-target="278">0</span><span class="counter-estilo">MIL</span><br>CONTAS
+            ALCANÇADAS</p>
+          <p class="off-mobile"><span class="counter" data-target="278">0</span> <span
+              class="counter-estilo">MIL</span><br> DE SEGUIDORES</p>
+        </div>
+        <div class="graficosi">
+          <!-- Gráfico de Idade -->
+          <div class="grafico-containeri">
+            <canvas id="idadeCharti"></canvas>
+            <span style="margin-right: 69px;
+    font-size: 2rem;">Instagram</span>
+          </div>
+
+          <!-- Gráfico de Gênero -->
+          <div class="grafico-containeri">
+            <canvas id="generoCharti"></canvas>
+            <span style="margin-right: 69px;
+    font-size: 2rem;">Instagram</span>
+          </div>
+        </div>
+
+
+      </div>
+
+
+      <span class="carouselTitle">Parceiros e <span style="color: #836FFF;">clientes</span></span>
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="carousel-track">
+            <img src="/casting/arquivos-dos-casting/assets-do-filipe-leme/logos-parcerias/SaintSeiya-branco.png"
+              alt="Parceiro 1">
+            <img src="/casting/arquivos-dos-casting/assets-do-filipe-leme/logos-parcerias/Terabyte-branco.png"
+              alt="Parceiro 2">
+            <img src="/casting/arquivos-dos-casting/assets-do-filipe-leme/logos-parcerias/wondersharefilmora-branco.png"
+              alt="Parceiro 3">
+            <img src="/casting/arquivos-dos-casting/assets-do-filipe-leme/logos-parcerias/emma-logo.png"
+              alt="Parceiro 4">
+            <img src="/casting/arquivos-dos-casting/assets-do-filipe-leme/logos-parcerias/insider-logo-branca.png"
+              alt="Parceiro 5" class="logo-wonder">
+            <img src="/casting/arquivos-dos-casting/assets-do-filipe-leme/logos-parcerias/dl7-assessoria.png"
+              alt="Parceiro 5">
+          </div>
+        </div>
+      </div>
+
+      <!-- <div id="scene"></div> -->
+
+      <div class="contact-section-temporario" data-aos="fade-up" data-aos-delay="200">
+        <div class="new-contact" data-aos="fade-up" data-aos-delay="400">
+          Impulsione seus<br> resultados com nossos <br>influenciadores
+          <div class="button-sobre">
+            <a href="/contato.html" class="popup-link">
+              <button class="popup-button">Entre em contato</button>
+            </a>
+            <a href="/sobre-nos.html">
+              <p>Saiba mais</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- <div class="footer-links">
+          <a href="https://www.linkedin.com/company/eclipse-road/?viewAsMember=true" target="_blank">LinkedIn</a>
+          <a href="https://www.instagram.com/eclipse.road/profilecard/?igsh=MTF5Mzhlb2pxbWJhZA=="
+            target="_blank">Instagram</a>
+          <a href="https://x.com/EclipseRoad" target="_blank">Twitter</a>
+        </div> -->
+      </div>
+
+
+      <!--Footer-->
+      <footer class="footer" id="footer">
+        <div class="container-footer">
+          <div class="footer-column logo-column">
+            <img src="/assets/img/SUA-LOGO-AQUI.png" alt="">
+          </div>
+          <div class="footer-column menu-column">
+            <nav class="footer-nav">
+              <a href="/index.html">Início</a>
+              <a href="/agenciados.html">Agenciados</a>
+              <a href="/sobre-nos.html">Sobre Nós</a>
+              <a href="/produtora.html">+Agenciados</a>
+              <a href="/contato.html">Contato</a>
+            </nav>
+          </div>
+          <div class="footer-column social-column">
+            <ul class="social-links">
+              <li><a href="https://x.com/EclipseRoad" target="_blank"><i class="bi bi-twitter"></i>X</a></li>
+              <li><a href="https://www.instagram.com/eclipse.road/profilecard/?igsh=MTF5Mzhlb2pxbWJhZA=="
+                  target="_blank"><i class="bi bi-instagram"></i> Instagram</a></li>
+              <li><a href="https://www.linkedin.com/company/eclipse-road/?viewAsMember=true" target="_blank"><i
+                    class="bi bi-linkedin"></i>Linkedin</a></li>
+              <!-- <li><a href="#"><i class="bi bi-facebook"></i> Facebook</a></li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="footer-column credits-column">
+          <p style="margin-top: 10px; font-weight: 800;">Desenvolvido por</p>
+          <span style="margin-top: 12px; font-size: 1.3rem;">GV│Dev</span>
+          <a style="margin-top: 12px; font-size: 1.3rem;" href="https://nemtudo.me" target="_blank">Nem Tudo</a>
+          <p>&copy; 2025 Todos os direitos reservados.</p>
+        </div>
+      </footer>
+      <!--Fim Footer-->
+    </main>
+
+    <script>
+      function sharePage() {
+        const url = window.location.href;
+        if (navigator.share) {
+          navigator.share({
+            title: document.title,
+            url: url
+          }).catch(err => {
+            console.error('Erro ao compartilhar:', err);
+          });
+        } else {
+          navigator.clipboard.writeText(url).then(() => {
+            alert('Link copiado para a área de transferência!');
+          }).catch(err => {
+            console.error('Erro ao copiar o link:', err);
+          });
+        }
+      }
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Importa a biblioteca amCharts -->
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Inicialização do AOS -->
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="/assets/js/header.js"></script>
+    <script src="/assets/js/actionButton-mk.js"></script>
+    <script src="/assets/js/navbar.js"></script>
+    <script src="/assets/js/removelink.js"></script>
+    <script src="/assets/js/icon-animation.js"></script>
+    <script src="/assets/js/carrouselparceiros.js"></script>
+    <script src="/casting/arquivos-dos-casting/assets-do-filipe-leme/js/scene.js"></script>
+    <script src="/casting/arquivos-dos-casting/assets-do-filipe-leme/js/typing-kerb.js"></script>
+    <script src="/casting/arquivos-dos-casting/assets-do-filipe-leme/js/iconsanimate.js"></script>
+    <script src="/casting/arquivos-dos-casting/assets-do-filipe-leme/js/ligthanimate.js"></script>
+    <script src="/casting/arquivos-dos-casting/assets-do-filipe-leme/js/grafico-bom.js"></script>
+    <script src="/casting/arquivos-dos-casting/assets-do-filipe-leme/js/subirnumeros.js"></script>
+    <script src="/casting/arquivos-dos-casting/assets-do-filipe-leme/js/api-youtube.js"></script>
+
+</body>
+
+</html>

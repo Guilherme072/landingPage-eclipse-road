@@ -92,10 +92,10 @@ const ctx1 = document.getElementById('idadeChart').getContext('2d');
 new Chart(ctx1, {
     type: 'doughnut',
     data: {
-         labels: ['13-17', '18-24', '25-34', '35-44', '+45'],
+         labels: ['13-17', '18-24', '25-34', '35-44'],
         datasets: [{
-            data: [2.7, 54, 34.5, 6.4, 2.4],
-            backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444', '#333333']
+            data: [2.7, 54, 34.5, 6.4,],
+            backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
 
         }]
     },
