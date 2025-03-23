@@ -435,6 +435,7 @@ canvas {
     height: auto !important;
     position: relative;
     bottom: 170px;
+    right: 25px;
 }
 
 #profilee {
@@ -443,11 +444,11 @@ canvas {
 }
 
 .grafico-container span {
-  bottom: 180px;
+  bottom: 175px;
 position: relative;
 }
 .grafico-containeri span {
-  bottom: 180px;
+  bottom: 175px;
 position: relative;
 }
 }
