@@ -69,7 +69,10 @@ const semicircleOptionsGenero = {
                 borderRadius: 15,  // Arredondamento das bordas
                 backgroundColor: 'rgba(0, 0, 0, 0.5)',  // Cor de fundo sem borda extra
                 color: 'white',
-                padding: 5  // Distância interna dos itens
+                padding: 10,  // Distância interna dos itens
+                font: {
+                    size: 14
+                }
             },
             title: {
                 display: true,
@@ -86,6 +89,7 @@ const semicircleOptionsGenero = {
         },
     }
 };
+
 
 // Gráfico de Idade (YouTube)
 const ctx1 = document.getElementById('idadeChart').getContext('2d');
