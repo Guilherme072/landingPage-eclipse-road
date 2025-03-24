@@ -33,7 +33,7 @@
   <!--Botão WhatsApp-->
   <div id="whatsappButton" class="fixed-button">
     <i class="bi bi-whatsapp"></i>
-</div>
+  </div>
 
   <div class="container-inicio">
     <!--Header-->
@@ -65,9 +65,9 @@
       </div>
 
       <!--PARA DESKTOP-->
-      
+
       <button class="ellipsis" id="ellipsisButton">...</button>
-      
+
       <nav class="navbar">
         <div class="logo-pc">
           <a href="index.html">
@@ -81,17 +81,22 @@
           <li><a href="/sobre-nos.html" class="nav-link">Sobre nós</a></li>
         </ul>
         <div class="cta-button">
-          <a href="contato.html" class="glow-outline">Contato <span>↗</span></a>
+          <button class="Button">
+            <div class="dots_border"></div>
+            <a href="contato.html">
+              <span class="text_button">Contato <span>↗</span></span>
+            </a>
+          </button>
         </div>
       </nav>
     </header>
 
-    
+
     <!--Fim Header-->
-    
+
     <main id="inicio" class="inicio">
       <!-- Brincadeira do avião -->
-       <!-- <div class="container-aviao">
+      <!-- <div class="container-aviao">
          <div class="aviao">
            <img src="assets/img/aviao.png" alt="" class="imgAviao">
          </div>
@@ -195,10 +200,10 @@
           <img src="./assets/img2/nuvens.png" alt="" class="nuvem3">
           <img src="./assets/img2/nuvem.png" alt="" class="nuvem2">
           <img src="./assets/img2/nuvens.png" alt="" class="nuvem1">
-  
+
         </div>
       </div>
-      
+
       <div class="filter">
         <select name="plaforma" id="filter_select_plataform" class="filter-plataforma">
           <option value="all" class="filtros" selected>Todos as plataforma</option>
@@ -285,7 +290,7 @@
               </a>
             </div>
           </div>
-          
+
           <!-- <div class="box user-item" filter_name="samengo" filter_plataform="x,instagram,twitch,facebook" filter_category="futebol" filter_followers="400000" filter_engajament="60000">
           <img src="assets/img/same.png" alt="Samengo" class="profile-img">
           <h3 class="profile-name">Samengo
@@ -366,10 +371,8 @@
 
           <div class="box user-item" filter_name="gabriel kerber" filter_plataform="x,instagram,youtube,tiktok"
             filter_category="entretenimento" filter_followers="6100000" filter_engajament="50000">
-            <span class="number"></span>
-            <a href="casting/perfil/kerbitos.html">
-              <img src="assets/img/kerbitos.png" alt="Kerbitos" class="profile-img">
-            </a>
+            <span class="number"></span> 
+              <img src="assets/img/foto-de-perfil-kerb.png" alt="Kerbitos" class="profile-img">
             <h3 class="profile-name">Gabriel Kerber
               <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
             </h3>
@@ -392,6 +395,16 @@
                 <i class="bi bi-tiktok"></i>
               </a>
             </div>
+            <a href="casting/perfil/kerbitos.html">
+              <button class="button">
+                Confira
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </button>
+            </a>
           </div>
           <div class="box user-item" filter_name="estagiario da F1" filter_plataform="x,instagram"
             filter_category="formula1" filter_followers="340000" filter_engajament="50000">
@@ -413,9 +426,18 @@
                 <i class="bi bi-instagram"></i>
               </a>
             </div>
-            <!-- <button>Confira</button> -->
+            <a href="casting/perfil/estagiario-da-f1.html">
+              <button class="button">
+                Confira
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </button>
+            </a>
           </div>
-          
+
           <div class="box user-item" filter_name="central do braga" filter_plataform="x,instagram,twitch"
             filter_category="futebol" filter_followers="290000" filter_engajament="30000">
             <span class="number"></span>
@@ -468,58 +490,69 @@
               </a>
             </div>
           </div>
-          <div class="box user-item" filter_name="iti malias" filter_plataform="x,instagram" filter_category="animais"
-            filter_followers="2200000" filter_engajament="70000">
+          <div class="box user-item" filter_name="xarope com x" filter_plataform="x,instagram,youtube"
+            filter_category="entretenimento" filter_followers="225000" filter_engajament="50000">
             <span class="number"></span>
-            <img src="assets/img/itchimalias.png" alt="itimaliasof" class="profile-img">
-            <h3 class="profile-name">Iti malias
+            <img src="assets/img/xarope.png" alt="xaropecomx" class="profile-img">
+            <h3 class="profile-name">Xarope com X
               <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
             </h3>
             <h5 class="descricao-ag">
-              <p class="descricao-titulo">@itimaliasof</p><br>
-              <p class="seguidores">+2.2M Seguidores</p>
-              <p class="categoria">Animais</p><br>
+              <p class="descricao-titulo">@xaropecomx</p><br>
+              <p class="seguidores">+225K Seguidores</p>
+              <p class="categoria">Memes</p><br>
             </h5><br>
             <div class="social-links">
-              <a href="https://x.com/itimaliasof" target="_blank" class="social-links-redes">
+              <a href="https://x.com/xaropecomx" target="_blank" class="social-links-redes">
                 <i class="bi bi-twitter"></i>
               </a>
-              <a href="https://www.instagram.com/itimaliascomeback/" target="_blank" class="social-links-redes">
+              <a href="https://www.youtube.com/xaropecomx" target="_blank" class="social-links-redes">
+                <i class="bi bi-youtube"></i>
+              </a>
+              <a href="https://www.instagram.com/xaropee/?hl=pt-br" target="_blank" class="social-links-redes">
                 <i class="bi bi-instagram"></i>
               </a>
             </div>
           </div>
 
           <div class="box user-item" filter_name="filipe leme" filter_plataform="x,instagram,youtube,tiktok"
-          filter_category="entretenimento" filter_followers="3900000" filter_engajament="50000">
-          <span class="number"></span>
-          <a href="casting/perfil/filipe-leme.html">
+            filter_category="entretenimento" filter_followers="3900000" filter_engajament="50000">
+            <span class="number"></span>
             <img src="assets/img/filipeleme.png" alt="filipeleme" class="profile-img">
-          </a>
-          <h3 class="profile-name">Filipe Leme
-            <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
-          </h3>
-          <h5 class="descricao-ag">
-            <p class="descricao-titulo">@filipleme</p><br>
-            <p class="seguidores">+3.9M Seguidores</p>
-            <p class="categoria">Entretenimento</p><br>
-          </h5><br>
-          <div class="social-links">
-            <a href="https://x.com/FilipLeme" target="_blank" class="social-links-redes">
-              <i class="bi bi-twitter"></i>
-            </a>
-            <a href="https://www.youtube.com/user/IssoDaria1Video" target="_blank" class="social-links-redes">
-              <i class="bi bi-youtube"></i>
-            </a>
-            <a href="https://www.instagram.com/filipleme/" target="_blank" class="social-links-redes">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.tiktok.com/@filipleme?lang=pt-BR" target="_blank" class="social-links-redes">
-              <i class="bi bi-tiktok"></i>
+            <h3 class="profile-name">Filipe Leme
+              <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
+            </h3>
+            <h5 class="descricao-ag">
+              <p class="descricao-titulo">@filipleme</p><br>
+              <p class="seguidores">+3.9M Seguidores</p>
+              <p class="categoria">Entretenimento</p><br>
+            </h5><br>
+            <div class="social-links">
+              <a href="https://x.com/FilipLeme" target="_blank" class="social-links-redes">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="https://www.youtube.com/user/IssoDaria1Video" target="_blank" class="social-links-redes">
+                <i class="bi bi-youtube"></i>
+              </a>
+              <a href="https://www.instagram.com/filipleme/" target="_blank" class="social-links-redes">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="https://www.tiktok.com/@filipleme?lang=pt-BR" target="_blank" class="social-links-redes">
+                <i class="bi bi-tiktok"></i>
+              </a>
+            </div>
+            <a href="casting/perfil/filipe-leme.html">
+              <button class="button">
+                Confira
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </button>
             </a>
           </div>
-        </div>
-        
+
           <div class="box user-item" filter_name="splash and go" filter_plataform="x,instagram,youtube"
             filter_category="formula1" filter_followers="298000" filter_engajament="50000">
             <span class="number"></span>
@@ -546,101 +579,101 @@
           </div>
 
           <div class="box user-item" filter_name="zanfavive" filter_plataform="x,instagram,facebook"
-          filter_category="humor" filter_followers="60000" filter_engajament="50000">
-          <span class="number"></span>
-          <img src="assets/img/zanfa2.png" alt="Zanfa" class="profile-img">
-          <h3 class="profile-name">Zanfa 2
-            <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
-          </h3>
-          <h5 class="descricao-ag">
-            <p class="descricao-titulo">@zanfavive</p><br>
-            <p class="seguidores">+60K Seguidores</p>
-            <p class="categoria">Humor</p><br>
-          </h5><br>
-          <div class="social-links">
-            <a href="https://x.com/ZanfaVive" target="_blank" class="social-links-redes">
-              <i class="bi bi-twitter"></i>
-            </a>
-            <a href="https://www.instagram.com/zanfao/" target="_blank" class="social-links-redes">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/capinaremos" target="_blank" class="social-links-redes">
-              <i class="bi bi-facebook"></i>
-            </a>
-          </div>
-        </div>
-        <div class="box user-item" filter_name="zanfa" filter_plataform="x,instagram,facebook" filter_category="humor"
-          filter_followers="1800000" filter_engajament="50000">
-          <span class="number"></span>
-          <img src="assets/img/zanfa.png" alt="Zanfa" class="profile-img">
-          <h3 class="profile-name">Zanfa
-            <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
-          </h3>
-          <h5 class="descricao-ag">
-            <p class="descricao-titulo">@zanfa</p><br>
-            <p class="seguidores">+1.8M Seguidores</p>
-            <p class="categoria">Humor</p><br>
-          </h5><br>
-          <div class="social-links">
-            <a href="https://x.com/zanfa" target="_blank" class="social-links-redes">
-              <i class="bi bi-twitter"></i>
-            </a>
-            <a href="https://www.instagram.com/zanfao/" target="_blank" class="social-links-redes">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/capinaremos" target="_blank" class="social-links-redes">
-              <i class="bi bi-facebook"></i>
-            </a>
-          </div>
-        </div>
-        <div class="box user-item" filter_name="o bon vivant muitohumilde"
-        filter_plataform="x,instagram,twitch,tiktok" filter_category="entretenimento" filter_followers="480000"
-        filter_engajament="50000">
-        <span class="number"></span>
-        <img src="assets/img/muitohumildee.png" alt="muitohumildee" class="profile-img">
-        <h3 class="profile-name">O Bon Vivant MuitoHumilde
-          <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
-        </h3>
-        <h5 class="descricao-ag">
-          <p class="descricao-titulo">@muitohumildee</p><br>
-          <p class="seguidores">+480K Seguidores</p>
-          <p class="categoria">Futebol</p><br>
-        </h5><br>
-        <div class="social-links">
-          <a href="https://x.com/muitohumildee?t=r2tQ-YkT_sqsKX3CH7gBAQ&s=09" target="_blank"
-            class="social-links-redes">
-            <i class="bi bi-twitter"></i>
-          </a>
-          <a href="https://www.instagram.com/muitohumildee?igsh=bTJ4Y3NsYTF2MXFk" target="_blank"
-            class="social-links-redes">
-            <i class="bi bi-instagram"></i>
-          </a>
-          <a href="https://www.tiktok.com/@muitohumilde10?lang=en&is_from_webapp=1&sender_device=mobile&sender_web_id=7438372298145875512"
-            target="_blank" class="social-links-redes">
-            <i class="bi bi-tiktok"></i>
-          </a>
-          <a href="https://www.twitch.tv/muitohumildee" target="_blank" class="social-links-redes">
-            <i class="bi bi-twitch"></i>
-          </a>
-        </div>
-      </div>
-          <div class="box user-item" filter_name="cr7 brasil" filter_plataform="x,instagram" filter_category="futebol"
-            filter_followers="360000" filter_engajament="50000">
+            filter_category="humor" filter_followers="60000" filter_engajament="50000">
             <span class="number"></span>
-            <img src="assets/img/cr7brasil.png" alt="CR7Brasil" class="profile-img">
-            <h3 class="profile-name">CR7 Brasil
+            <img src="assets/img/zanfa2.png" alt="Zanfa" class="profile-img">
+            <h3 class="profile-name">Zanfa 2
               <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
             </h3>
             <h5 class="descricao-ag">
-              <p class="descricao-titulo">@cr7brasil</p><br>
-              <p class="seguidores">+360K Seguidores</p>
+              <p class="descricao-titulo">@zanfavive</p><br>
+              <p class="seguidores">+60K Seguidores</p>
+              <p class="categoria">Humor</p><br>
+            </h5><br>
+            <div class="social-links">
+              <a href="https://x.com/ZanfaVive" target="_blank" class="social-links-redes">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/zanfao/" target="_blank" class="social-links-redes">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/capinaremos" target="_blank" class="social-links-redes">
+                <i class="bi bi-facebook"></i>
+              </a>
+            </div>
+          </div>
+          <div class="box user-item" filter_name="zanfa" filter_plataform="x,instagram,facebook" filter_category="humor"
+            filter_followers="1800000" filter_engajament="50000">
+            <span class="number"></span>
+            <img src="assets/img/zanfa.png" alt="Zanfa" class="profile-img">
+            <h3 class="profile-name">Zanfa
+              <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
+            </h3>
+            <h5 class="descricao-ag">
+              <p class="descricao-titulo">@zanfa</p><br>
+              <p class="seguidores">+1.8M Seguidores</p>
+              <p class="categoria">Humor</p><br>
+            </h5><br>
+            <div class="social-links">
+              <a href="https://x.com/zanfa" target="_blank" class="social-links-redes">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/zanfao/" target="_blank" class="social-links-redes">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/capinaremos" target="_blank" class="social-links-redes">
+                <i class="bi bi-facebook"></i>
+              </a>
+            </div>
+          </div>
+          <div class="box user-item" filter_name="o bon vivant muitohumilde"
+            filter_plataform="x,instagram,twitch,tiktok" filter_category="entretenimento" filter_followers="480000"
+            filter_engajament="50000">
+            <span class="number"></span>
+            <img src="assets/img/muitohumildee.png" alt="muitohumildee" class="profile-img">
+            <h3 class="profile-name">O Bon Vivant MuitoHumilde
+              <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
+            </h3>
+            <h5 class="descricao-ag">
+              <p class="descricao-titulo">@muitohumildee</p><br>
+              <p class="seguidores">+480K Seguidores</p>
               <p class="categoria">Futebol</p><br>
             </h5><br>
             <div class="social-links">
-              <a href="https://x.com/CR7Brasil" target="_blank" class="social-links-redes">
+              <a href="https://x.com/muitohumildee?t=r2tQ-YkT_sqsKX3CH7gBAQ&s=09" target="_blank"
+                class="social-links-redes">
                 <i class="bi bi-twitter"></i>
               </a>
-              <a href="https://www.instagram.com/crsevenbrasil " target="_blank" class="social-links-redes">
+              <a href="https://www.instagram.com/muitohumildee?igsh=bTJ4Y3NsYTF2MXFk" target="_blank"
+                class="social-links-redes">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="https://www.tiktok.com/@muitohumilde10?lang=en&is_from_webapp=1&sender_device=mobile&sender_web_id=7438372298145875512"
+                target="_blank" class="social-links-redes">
+                <i class="bi bi-tiktok"></i>
+              </a>
+              <a href="https://www.twitch.tv/muitohumildee" target="_blank" class="social-links-redes">
+                <i class="bi bi-twitch"></i>
+              </a>
+            </div>
+          </div>
+          <div class="box user-item" filter_name="futebol nostalgico" filter_plataform="x,instagram"
+            filter_category="futebol" filter_followers="410000" filter_engajament="50000">
+            <span class="number"></span>
+            <img src="assets/img/futnostalgico.png" alt="futnostalgico" class="profile-img">
+            <h3 class="profile-name">Futebol Nostálgico!
+              <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
+            </h3>
+            <h5 class="descricao-ag">
+              <p class="descricao-titulo">@futnostalgico</p><br>
+              <p class="seguidores">+410K Seguidores</p>
+              <p class="categoria">Futebol</p><br>
+            </h5><br>
+            <div class="social-links">
+              <a href="https://x.com/futnostalgico" target="_blank" class="social-links-redes">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/futebolnostalgico_/" target="_blank" class="social-links-redes">
                 <i class="bi bi-instagram"></i>
               </a>
             </div>
@@ -698,8 +731,8 @@
               </a>
             </div>
           </div>
-          
-         
+
+
           <div class="box user-item" filter_name="meme burros" filter_plataform="x,instagram" filter_category="memes"
             filter_followers="590000" filter_engajament="50000">
             <span class="number"></span>
@@ -721,53 +754,60 @@
               </a>
             </div>
           </div>
-          <div class="box user-item" filter_name="fora academia" filter_plataform="x,instagram"
-            filter_category="academia" filter_followers="525000" filter_engajament="40000">
+          <div class="box user-item" filter_name="poetas" filter_plataform="x,instagram" filter_category="futebol"
+            filter_followers="250000" filter_engajament="50000">
             <span class="number"></span>
-            <img src="assets/img/foraacademia.png" alt="foraacademia" class="profile-img">
-            <h3 class="profile-name">Fora Academia
+              <img src="assets/img/poetasfla.png" alt="poetasfla" class="profile-img">
+            <h3 class="profile-name">Poetas
               <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
             </h3>
             <h5 class="descricao-ag">
-              <p class="descricao-titulo">@foraacademia</p><br>
-              <p class="seguidores">+525K Seguidores</p>
-              <p class="categoria">Academia</p><br>
+              <p class="descricao-titulo">@poetasfla</p><br>
+              <p class="seguidores">+250K Seguidores</p>
+              <p class="categoria">Futebol</p><br>
             </h5><br>
             <div class="social-links">
-              <a href="https://x.com/foraacademia" target="_blank" class="social-links-redes">
+              <a href="https://x.com/PoetasFla" target="_blank" class="social-links-redes">
                 <i class="bi bi-twitter"></i>
               </a>
-              <a href="https://www.instagram.com/foraacademia/ " target="_blank" class="social-links-redes">
+              <a href="https://www.instagram.com/poetasfla" target="_blank" class="social-links-redes">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </div>
+            <a href="casting/perfil/poetas-fla.html">
+              <button class="button">
+                Confira
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </button>
+            </a>
+          </div>
+
+          <div class="box user-item" filter_name="iti malias" filter_plataform="x,instagram" filter_category="animais"
+            filter_followers="2200000" filter_engajament="70000">
+            <span class="number"></span>
+            <img src="assets/img/itchimalias.png" alt="itimaliasof" class="profile-img">
+            <h3 class="profile-name">Iti malias
+              <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
+            </h3>
+            <h5 class="descricao-ag">
+              <p class="descricao-titulo">@itimaliasof</p><br>
+              <p class="seguidores">+2.2M Seguidores</p>
+              <p class="categoria">Animais</p><br>
+            </h5><br>
+            <div class="social-links">
+              <a href="https://x.com/itimaliasof" target="_blank" class="social-links-redes">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/itimaliascomeback/" target="_blank" class="social-links-redes">
                 <i class="bi bi-instagram"></i>
               </a>
             </div>
           </div>
-          
-          <div class="box user-item" filter_name="xarope com x" filter_plataform="x,instagram,youtube"
-            filter_category="entretenimento" filter_followers="225000" filter_engajament="50000">
-            <span class="number"></span>
-            <img src="assets/img/xarope.png" alt="xaropecomx" class="profile-img">
-            <h3 class="profile-name">Xarope com X
-              <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
-            </h3>
-            <h5 class="descricao-ag">
-              <p class="descricao-titulo">@xaropecomx</p><br>
-              <p class="seguidores">+225K Seguidores</p>
-              <p class="categoria">Memes</p><br>
-            </h5><br>
-            <div class="social-links">
-              <a href="https://x.com/xaropecomx" target="_blank" class="social-links-redes">
-                <i class="bi bi-twitter"></i>
-              </a>
-              <a href="https://www.youtube.com/xaropecomx" target="_blank" class="social-links-redes">
-                <i class="bi bi-youtube"></i>
-              </a>
-              <a href="https://www.instagram.com/xaropee/?hl=pt-br" target="_blank" class="social-links-redes">
-                <i class="bi bi-instagram"></i>
-              </a>
-            </div>
-          </div>
-          
+
           <!-- <div class="box user-item" filter_name="bellintanner" filter_plataform="x" filter_category="futebol"
           filter_followers="30000" filter_engajament="50000">
           <span class="number"></span>
@@ -786,8 +826,8 @@
             </a>
           </div>
         </div> -->
-        
-        <div class="box user-item" filter_name="memes inteligentes" filter_plataform="x,instagram"
+
+          <div class="box user-item" filter_name="memes inteligentes" filter_plataform="x,instagram"
             filter_category="memes" filter_followers="980000" filter_engajament="50000">
             <span class="number"></span>
             <img src="assets/img/memesinteligentes.png" alt="memeinteligente" class="profile-img">
@@ -886,7 +926,7 @@
           <div class="box user-item" filter_name="paola costa" filter_plataform="instagram" filter_category="futebol"
             filter_followers="35000" filter_engajament="50000">
             <span class="number"></span>
-            <img src="assets/img/paolacosta.png" alt="paola costa" class="profile-img">
+            <img src="assets/img/paolacosta.jpeg" alt="paola costa" class="profile-img">
             <h3 class="profile-name">Paola Costa
 
             </h3>
@@ -900,6 +940,16 @@
                 <i class="bi bi-instagram"></i>
               </a>
             </div>
+            <a href="casting/perfil/paola-fut.html">
+              <button class="button">
+                Confira
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </button>
+            </a>
           </div>
 
           <!-- <div class="box user-item" filter_name="memes pra ver antes do acopalices" filter_plataform="x"
@@ -942,7 +992,7 @@
               </a>
             </div>
           </div> -->
-          
+
           <div class="box user-item" filter_name="balotaromantico" filter_plataform="x" filter_category="futebol"
             filter_followers="160000" filter_engajament="50000">
             <span class="number"></span>
@@ -961,7 +1011,7 @@
               </a>
             </div>
           </div>
-          
+
           <div class="box user-item" filter_name="filipe lemure" filter_plataform="x,instagram,youtube,tiktok"
             filter_category="entretenimento" filter_followers="4250000" filter_engajament="50000">
             <span class="number"></span>
@@ -1029,8 +1079,8 @@
             </div>
           </div>
 
-          <div class="box user-item" filter_name="massinha f1" filter_plataform="x,instagram"
-            filter_category="formula1" filter_followers="129000" filter_engajament="50000">
+          <div class="box user-item" filter_name="massinha f1" filter_plataform="x,instagram" filter_category="formula1"
+            filter_followers="129000" filter_engajament="50000">
             <span class="number"></span>
             <img src="assets/img/massinhaf1.png" alt="massinha f1" class="profile-img">
             <h3 class="profile-name">Massinha F1
@@ -1135,7 +1185,7 @@
               </a>
             </div>
           </div>
-        <!-- <div class="box user-item" filter_name="coisas burras ditas de forma inteligente" filter_plataform="x"
+          <!-- <div class="box user-item" filter_name="coisas burras ditas de forma inteligente" filter_plataform="x"
           filter_category="memes" filter_followers="480000" filter_engajament="50000">
           <span class="number"></span>
           <img src="assets/img/burrosgeniais.png" alt="burrosgeniais" class="profile-img">
@@ -1156,7 +1206,7 @@
           <div class="box user-item" filter_name="cules news br" filter_plataform="x,instagram,tiktok"
             filter_category="futebol" filter_followers="90000" filter_engajament="50000">
             <span class="number"></span>
-            <img src="assets/img/culenews.png" alt="Culernews" class="profile-img">
+            <img src="assets/img/Culenews_Ellen.jpg" alt="Culernews" class="profile-img">
             <h3 class="profile-name">Culés News Br
               <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
             </h3>
@@ -1275,7 +1325,7 @@
           <div class="box user-item" filter_name="joao mercio" filter_plataform="x,instagram,youtube,tiktok"
             filter_category="futebol" filter_followers="265000" filter_engajament="50000">
             <span class="number"></span>
-            <img src="assets/img/joaomercio.png" alt="joaomercio" class="profile-img">
+            <img src="assets/img/joaomercio.jpg" alt="joaomercio" class="profile-img">
             <h3 class="profile-name">João Mercio
               <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
             </h3>
@@ -1320,7 +1370,7 @@
               </a>
             </div>
           </div> -->
-          
+
           <div class="box user-item" filter_name="curiosidades prl" filter_plataform="x,instagram"
             filter_category="futebol" filter_followers="190000" filter_engajament="50000">
             <span class="number"></span>
@@ -1387,7 +1437,7 @@
               </a>
             </div>
           </div>
-          
+
           <div class="box user-item" filter_name="coisas de maromba" filter_plataform="x" filter_category="academia"
             filter_followers="205000" filter_engajament="50000">
             <span class="number"></span>
@@ -1588,31 +1638,29 @@
               </a>
             </div>
           </div> -->
-          
-          <div class="box user-item" filter_name="poetas" filter_plataform="x,instagram" filter_category="futebol"
-            filter_followers="250000" filter_engajament="50000">
+
+          <div class="box user-item" filter_name="fora academia" filter_plataform="x,instagram"
+            filter_category="academia" filter_followers="525000" filter_engajament="40000">
             <span class="number"></span>
-            <a href="casting/perfil/poetas-fla.html">
-              <img src="assets/img/poetasfla.png" alt="poetasfla" class="profile-img">
-            </a>
-            <h3 class="profile-name">Poetas
+            <img src="assets/img/foraacademia.png" alt="foraacademia" class="profile-img">
+            <h3 class="profile-name">Fora Academia
               <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
             </h3>
             <h5 class="descricao-ag">
-              <p class="descricao-titulo">@poetasfla</p><br>
-              <p class="seguidores">+250K Seguidores</p>
-              <p class="categoria">Futebol</p><br>
+              <p class="descricao-titulo">@foraacademia</p><br>
+              <p class="seguidores">+525K Seguidores</p>
+              <p class="categoria">Academia</p><br>
             </h5><br>
             <div class="social-links">
-              <a href="https://x.com/PoetasFla" target="_blank" class="social-links-redes">
+              <a href="https://x.com/foraacademia" target="_blank" class="social-links-redes">
                 <i class="bi bi-twitter"></i>
               </a>
-              <a href="https://www.instagram.com/poetasfla" target="_blank" class="social-links-redes">
+              <a href="https://www.instagram.com/foraacademia/ " target="_blank" class="social-links-redes">
                 <i class="bi bi-instagram"></i>
               </a>
             </div>
           </div>
-          
+
           <!-- <div class="box user-item" filter_name="enquanto a fromsoftware existir eu serei feliz"
             filter_plataform="x,instagram,tiktok,facebook" filter_category="games" filter_followers="150000"
             filter_engajament="50000">
@@ -1781,23 +1829,23 @@
               </a>
             </div>
           </div> -->
-          <div class="box user-item" filter_name="futebol nostalgico" filter_plataform="x,instagram"
-            filter_category="futebol" filter_followers="410000" filter_engajament="50000">
+          <div class="box user-item" filter_name="cr7 brasil" filter_plataform="x,instagram" filter_category="futebol"
+            filter_followers="360000" filter_engajament="50000">
             <span class="number"></span>
-            <img src="assets/img/futnostalgico.png" alt="futnostalgico" class="profile-img">
-            <h3 class="profile-name">Futebol Nostálgico!
+            <img src="assets/img/cr7brasil.png" alt="CR7Brasil" class="profile-img">
+            <h3 class="profile-name">CR7 Brasil
               <img src="assets/img/verificado-icon.png" alt="verificado-icon" class="verified-icon" title="Verificado!">
             </h3>
             <h5 class="descricao-ag">
-              <p class="descricao-titulo">@futnostalgico</p><br>
-              <p class="seguidores">+410K Seguidores</p>
+              <p class="descricao-titulo">@cr7brasil</p><br>
+              <p class="seguidores">+360K Seguidores</p>
               <p class="categoria">Futebol</p><br>
             </h5><br>
             <div class="social-links">
-              <a href="https://x.com/futnostalgico" target="_blank" class="social-links-redes">
+              <a href="https://x.com/CR7Brasil" target="_blank" class="social-links-redes">
                 <i class="bi bi-twitter"></i>
               </a>
-              <a href="https://www.instagram.com/futebolnostalgico_/" target="_blank" class="social-links-redes">
+              <a href="https://www.instagram.com/crsevenbrasil " target="_blank" class="social-links-redes">
                 <i class="bi bi-instagram"></i>
               </a>
             </div>
@@ -1821,9 +1869,9 @@
             </div>
           </div>
           <!-- <button id="downloadPDF">Baixar PDF</button> -->
-           <a href="assets/img2/Casting-ECLIPSE ROAD.xlsx" download="Casting-ECLIPSE.xlsx" class="button-planilha" id="meuBotao">
+          <!-- <a href="assets/img2/Casting-ECLIPSE ROAD.xlsx" download="Casting-ECLIPSE.xlsx" class="button-planilha" id="meuBotao">
             <button>Baixar Planilha</button>
-           </a>
+           </a> -->
         </div>
       </section>
     </main>
@@ -1946,12 +1994,12 @@
       const { jsPDF } = window.jspdf;
       const doc = new jsPDF("p", "mm", "a4");
       const conteudo = document.getElementById("conteudo"); // Capturar apenas a div desejada
-  
+
       html2canvas(conteudo, { scale: 2 }).then((canvas) => {
         const imgData = canvas.toDataURL("image/png");
         const imgWidth = 210; // Largura A4 em mm
         const imgHeight = (canvas.height * imgWidth) / canvas.width;
-  
+
         doc.addImage(imgData, "PNG", 0, 0, imgWidth, imgHeight);
         doc.save("pagina.pdf");
       });
