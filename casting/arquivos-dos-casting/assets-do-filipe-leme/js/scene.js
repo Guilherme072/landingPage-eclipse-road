@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     renderer: "svg",
     loop: true,
     autoplay: true,
-    path: "/icon-json/Scene.json"
+    path: "/icon-json/Carrossel-Filipe-Leme.json"
   });
 
   lottie.loadAnimation({
