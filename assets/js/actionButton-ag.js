@@ -13,16 +13,20 @@ document.addEventListener('DOMContentLoaded', function () {
         if (scrollPosition > 100) {
             backToTopButton.style.display = 'flex';
             whatsappButton.style.display = 'flex';
+            planilhaButton.style.display = 'flex';
             setTimeout(() => {
                 backToTopButton.style.opacity = '1';
                 whatsappButton.style.opacity = '1';
+                planilhaButton.style.opacity = '1';
             }, 10);
         } else {
             backToTopButton.style.opacity = '0';
             whatsappButton.style.opacity = '0';
+            planilhaButton.style.opacity = '0';
             setTimeout(() => {
                 backToTopButton.style.display = 'none';
                 whatsappButton.style.display = 'none';
+                planilhaButton.style.display = 'none';
             }, 500);
         }
     }

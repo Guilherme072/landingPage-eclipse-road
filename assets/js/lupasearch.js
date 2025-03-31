@@ -14,6 +14,13 @@ document.addEventListener("DOMContentLoaded", function () {
       autoplay: false,
       path: "/icon-json/lottieflow-background.json" 
     });
+    lottie.loadAnimation({
+      container: document.getElementById("botao-download"), 
+      renderer: "svg",
+      loop: false,
+      autoplay: false,
+      path: "/icon-json/botao-download.json" 
+    });
   });
 
 

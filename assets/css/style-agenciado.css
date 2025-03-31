@@ -1499,6 +1499,59 @@ input:checked + .slider::before {
   color: transparent;
 }
 
+.share-btn {
+  background: white;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  display: none;
+  cursor: pointer;
+  justify-content: end;
+  width: 155px;
+  height: 42px;
+  align-items: center;
+  position: fixed;
+  bottom: 22px;
+  right: 85px;
+  z-index: 2;
+  gap: 7px;
+}
+
+#planilhaButton {
+  bottom: 22px;
+  right: 90px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #6a5acd;
+  animation: pulsee 2s infinite;
+}
+
+@keyframes pulsee {
+  0% {
+      transform: scale(1);
+      box-shadow: 0 0 10px rgba(106, 90, 205, 0.5);
+  }
+
+  50% {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(106, 90, 205, 0.9);
+  }
+
+  100% {
+      transform: scale(1);
+      box-shadow: 0 0 10px rgba(106, 90, 205, 0.5);
+  }
+}
+
+#botao-download {
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
 
 
 
