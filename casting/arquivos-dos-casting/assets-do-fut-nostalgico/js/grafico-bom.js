@@ -102,14 +102,14 @@ const semicircleOptionsGenero = {
     semicircleOptionsGenero.plugins.legend.labels.padding = window.innerWidth <= 600 ? 5 : 10;
   });
 
-// Gráfico de Idade (Instagram)
+// Gráfico de Idade (X/Twitter)
 const ctx1 = document.getElementById('idadeChart').getContext('2d');
 new Chart(ctx1, {
     type: 'doughnut',
     data: {
          labels: ['13-17', '18-24', '25-34', '35+'],
         datasets: [{
-            data: [5.4, 31.1, 44, 19.5],
+            data: [1.4, 35.5, 41.5, 21.6],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
 
         }]
@@ -117,29 +117,29 @@ new Chart(ctx1, {
     options: semicircleOptionsIdade
 });
 
-// Gráfico de Gênero (Instagram)
+// Gráfico de Gênero (X/Twitter)
 const ctx2 = document.getElementById('generoChart').getContext('2d');
 new Chart(ctx2, {
     type: 'doughnut',
     data: {
-        labels: ['Masculino', 'Feminino',],
+        labels: ['Masculino', 'Feminino', 'Outro'],
         datasets: [{
-            data: [83.7, 16.3,],
-            backgroundColor: ['#7d2ae8', '#f7c300',]
+            data: [95, 4.5, 0.5],
+            backgroundColor: ['#7d2ae8', '#f7c300', '#888888']
         }]
     },
     options: semicircleOptionsGenero
 });
 
-// Gráfico de Idade (YouTube)
+// Gráfico de Idade (Instagram)
 const ctx3 = document.getElementById('idadeCharti').getContext('2d');
 new Chart(ctx3, {
     type: 'doughnut',
     data: {
-         labels: ['18-24', '13-17', '25-34', '35-44'],
+         labels: ['13-17', '18-24', '25-34', '35-44','45+'],
         datasets: [{
-            data: [38.4, 34.3, 13.7, 7.8],
-            backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
+            data: [1.1, 7.8, 36.7, 31.2, 22.7],
+            backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444', '#555555']
         }]
     },
     options: semicircleOptionsIdade
@@ -152,7 +152,7 @@ new Chart(ctx4, {
     data: {
         labels: ['Masculino', 'Feminino',],
         datasets: [{
-            data: [63.9, 36.1,],
+            data: [97.4, 2.6,],
             backgroundColor: ['#7d2ae8', '#f7c300']
         }]
     },

@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     renderer: "svg",
     loop: false,
     autoplay: true,
-    path: "/icon-json/perfil-estagiario-da-f1.json"
+    path: "/icon-json/Futebol-nostágico-fotodeperfil.json"
   });
 
   // Função para ativar a animação do #push quando ele aparecer na tela
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
       renderer: "svg",
       loop: false,
       autoplay: true,
-      path: "/icon-json/celular-estagiário-da-F1.json"
+      path: "/icon-json/futebol-nostalgico-celular-animação.json"
     });
   };
 
