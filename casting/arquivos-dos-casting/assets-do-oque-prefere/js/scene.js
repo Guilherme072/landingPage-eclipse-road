@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     renderer: "svg",
     loop: false,
     autoplay: true,
-    path: "/icon-json/fotodeperfil-joaomercio.json"
+    path: "/icon-json/foto-perfil-oquevoceprefere.json"
   });
 
   // Função para ativar a animação do #push quando ele aparecer na tela
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
       renderer: "svg",
       loop: false,
       autoplay: true,
-      path: "/icon-json/joaomercio-celular.json"
+      path: "/icon-json/celular-oqevoceprefere.json"
     });
   };
 
