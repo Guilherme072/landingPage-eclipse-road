@@ -47,7 +47,7 @@
   .profile-info h1 {
     font-size: 2rem;
     position: relative;
-    left: 20px;
+    left: 75px;
   }
 
   .profile-info p {
@@ -108,7 +108,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/assets/img2/Fundocelularkerb.png);
+    background-image: url(/assets/img2/Fundo-zanfa-celular.png);
   }
   
   .container-inicio {

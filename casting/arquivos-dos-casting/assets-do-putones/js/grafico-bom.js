@@ -107,9 +107,9 @@ const ctx1 = document.getElementById('idadeChart').getContext('2d');
 new Chart(ctx1, {
     type: 'doughnut',
     data: {
-         labels: ['18-24', '25-34', '13-17', '45+'],
+         labels: ['13-17', '18-24', '25-34', '35+'],
         datasets: [{
-            data: [39, 25, 17, 19],
+            data: [10.2, 47.7, 21.5, 20.7],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
 
         }]
@@ -124,7 +124,7 @@ new Chart(ctx2, {
     data: {
         labels: ['Masculino', 'Feminino', 'Outro'],
         datasets: [{
-            data: [59, 38, 3],
+            data: [60, 37.3, 2.8],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888']
         }]
     },
@@ -138,7 +138,7 @@ new Chart(ctx3, {
     data: {
          labels: ['18-24', '13-17', '25-34', '35-44'],
         datasets: [{
-            data: [38.4, 34.3, 13.7, 7.8],
+            data: [56.4, 19.2, 17.1, 4.4],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
         }]
     },
@@ -152,7 +152,7 @@ new Chart(ctx4, {
     data: {
         labels: ['Masculino', 'Feminino',],
         datasets: [{
-            data: [63.9, 36.1,],
+            data: [51.6, 48.3,],
             backgroundColor: ['#7d2ae8', '#f7c300']
         }]
     },
