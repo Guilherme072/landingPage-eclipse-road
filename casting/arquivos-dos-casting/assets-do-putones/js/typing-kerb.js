@@ -57,7 +57,7 @@ class TxtType {
 
 var elements = document.querySelectorAll('#typingtext');
 for (var i = 0; i < elements.length; i++) {
-    var toRotate = ["criador de conteudo", "YouTuber", "editor de videos", "influenciador"]
+    var toRotate = ["a voz que diz o que você pensa, mas não tem coragem de falar.", "a opinião que incomoda, mas faz pensar.", "o tapa na cara da sua bolha de conforto.", "influenciador"]
     var period = 3000;
     if (toRotate) {
         new TxtType(elements[i], toRotate, period);

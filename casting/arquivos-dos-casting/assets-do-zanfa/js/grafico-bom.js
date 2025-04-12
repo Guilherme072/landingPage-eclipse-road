@@ -102,14 +102,14 @@ const semicircleOptionsGenero = {
     semicircleOptionsGenero.plugins.legend.labels.padding = window.innerWidth <= 600 ? 5 : 10;
   });
 
-// Gráfico de Idade (YouTube)
+// Gráfico de Idade (X/Twitter)
 const ctx1 = document.getElementById('idadeChart').getContext('2d');
 new Chart(ctx1, {
     type: 'doughnut',
     data: {
-         labels: ['18-24', '25-34', '13-17', '45+'],
+         labels: ['13-17', '18-24', '25-34', '35+'],
         datasets: [{
-            data: [39, 25, 17, 19],
+            data: [1.7, 42.7, 36.6, 18.9],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
 
         }]
@@ -117,14 +117,14 @@ new Chart(ctx1, {
     options: semicircleOptionsIdade
 });
 
-// Gráfico de Gênero (Youtube)
+// Gráfico de Gênero (X/Twitter)
 const ctx2 = document.getElementById('generoChart').getContext('2d');
 new Chart(ctx2, {
     type: 'doughnut',
     data: {
         labels: ['Masculino', 'Feminino', 'Outro'],
         datasets: [{
-            data: [59, 38, 3],
+            data: [77.3, 20.8, 1.9],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888']
         }]
     },
@@ -136,9 +136,9 @@ const ctx3 = document.getElementById('idadeCharti').getContext('2d');
 new Chart(ctx3, {
     type: 'doughnut',
     data: {
-         labels: ['18-24', '13-17', '25-34', '35-44'],
+         labels: ['13-17', '18-24', '25-34', '35-44'],
         datasets: [{
-            data: [38.4, 34.3, 13.7, 7.8],
+            data: [33.1, 25.2, 22, 12.2],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
         }]
     },
@@ -152,7 +152,7 @@ new Chart(ctx4, {
     data: {
         labels: ['Masculino', 'Feminino',],
         datasets: [{
-            data: [63.9, 36.1,],
+            data: [90.6, 9.4,],
             backgroundColor: ['#7d2ae8', '#f7c300']
         }]
     },
