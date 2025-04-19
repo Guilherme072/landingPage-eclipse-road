@@ -110,7 +110,7 @@ new Chart(ctx1, {
     data: {
          labels: ['13-17', '18-24', '25-34', '35-44'],
         datasets: [{
-            data: [2, 55.7, 34.9, 6.4,1],
+            data: [2, 60.7, 29.9, 7.4,],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
 
         }]
@@ -125,7 +125,7 @@ new Chart(ctx2, {
     data: {
         labels: ['Masculino', 'Feminino', 'Outro'],
         datasets: [{
-            data: [86.8, 12.4, 0.8],
+            data: [76.8, 22.4, 0.8],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888']
         }]
     },
