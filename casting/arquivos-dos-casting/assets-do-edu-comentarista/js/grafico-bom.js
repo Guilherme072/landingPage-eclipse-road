@@ -102,7 +102,7 @@ const semicircleOptionsGenero = {
     semicircleOptionsGenero.plugins.legend.labels.padding = window.innerWidth <= 600 ? 5 : 10;
   });
 
-// Gráfico de Idade (YouTube)
+// Gráfico de Idade (X/Twitter)
 const ctx1 = document.getElementById('idadeChart').getContext('2d');
 new Chart(ctx1, {
     type: 'doughnut',
@@ -117,7 +117,7 @@ new Chart(ctx1, {
     options: semicircleOptionsIdade
 });
 
-// Gráfico de Gênero (Youtube)
+// Gráfico de Gênero (X/Twitter)
 const ctx2 = document.getElementById('generoChart').getContext('2d');
 new Chart(ctx2, {
     type: 'doughnut',
@@ -136,9 +136,9 @@ const ctx3 = document.getElementById('idadeCharti').getContext('2d');
 new Chart(ctx3, {
     type: 'doughnut',
     data: {
-         labels: ['18-24', '13-17', '25-34', '35-44'],
+         labels: ['13-17', '18-24', '25-34', '+35'],
         datasets: [{
-            data: [38.4, 34.3, 13.7, 7.8],
+            data: [6.8, 42.4, 38.9, 3.5],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
         }]
     },

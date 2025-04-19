@@ -57,7 +57,7 @@ class TxtType {
 
 var elements = document.querySelectorAll('#typingtext');
 for (var i = 0; i < elements.length; i++) {
-    var toRotate = ["Sou um entusiasta e jogador de PC", "Sou um estudioso de hardware para PCs", "Sou um consultor para montagem de PCs", "um perfil humorístico"]
+    var toRotate = ["um entusiasta e jogador de PC", "um estudioso de hardware para PCs", "um consultor para montagem de PCs"]
     var period = 3000;
     if (toRotate) {
         new TxtType(elements[i], toRotate, period);
