@@ -133,31 +133,31 @@ new Chart(ctx2, {
 });
 
 // Gráfico de Idade (Instagram)
-const ctx3 = document.getElementById('idadeCharti').getContext('2d');
-new Chart(ctx3, {
-    type: 'doughnut',
-    data: {
-         labels: ['18-24', '13-17', '25-34', '35-44'],
-        datasets: [{
-            data: [38.4, 34.3, 13.7, 7.8],
-            backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
-        }]
-    },
-    options: semicircleOptionsIdade
-});
+// const ctx3 = document.getElementById('idadeCharti').getContext('2d');
+// new Chart(ctx3, {
+ //    type: 'doughnut',
+ //   data: {
+  //        labels: ['18-24', '13-17', '25-34', '35-44'],
+   //      datasets: [{
+   //          data: [38.4, 34.3, 13.7, 7.8],
+    //         backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
+ //        }]
+  //   },
+  //   options: semicircleOptionsIdade
+// });
 
 // Gráfico de Gênero (Instagram)
-const ctx4 = document.getElementById('generoCharti').getContext('2d');
-new Chart(ctx4, {
-    type: 'doughnut',
-    data: {
-        labels: ['Masculino', 'Feminino',],
-        datasets: [{
-            data: [63.9, 36.1,],
-            backgroundColor: ['#7d2ae8', '#f7c300']
-        }]
-    },
-    options: semicircleOptionsGenero
-});
+// const ctx4 = document.getElementById('generoCharti').getContext('2d');
+// new Chart(ctx4, {
+   //  type: 'doughnut',
+   //  data: {
+  //       labels: ['Masculino', 'Feminino',],
+     //    datasets: [{
+    //         data: [63.9, 36.1,],
+      //       backgroundColor: ['#7d2ae8', '#f7c300']
+    //     }]
+  //   },
+ //    options: semicircleOptionsGenero
+// });
 
 
