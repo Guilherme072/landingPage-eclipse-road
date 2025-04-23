@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     renderer: "svg",
     loop: false,
     autoplay: true,
-    path: "/icon-json/sohbrerinthians-fotoperfil.json"
+    path: "/icon-json/foto-de-perfil-computador-meme-burros.json"
   });
 
   // Função para ativar a animação do #push quando ele aparecer na tela
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
       renderer: "svg",
       loop: false,
       autoplay: true,
-      path: "/icon-json/sobrerinthians-celularanimançao.json"
+      path: "/icon-json/foto-de-perfil-celular-meme-burros.json"
     });
   };
 
