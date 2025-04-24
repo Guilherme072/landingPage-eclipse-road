@@ -1,6 +1,6 @@
 function init() {
     gapi.load('client', function() {
-        gapi.client.setApiKey("AIzaSyC_IsfpOGaSnl5sMKnq9fTuDl2mr8n1Ubs");
+        gapi.client.setApiKey("OiJ5Q5TGjxg?si=ZgFuFpZXNUYoLbbd");
         gapi.client.load('youtube', 'v3', function() {
             // Chame a função para obter os dados do canal
             getChannelData();
