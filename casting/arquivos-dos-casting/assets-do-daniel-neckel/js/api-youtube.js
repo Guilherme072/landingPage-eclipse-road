@@ -11,7 +11,7 @@ function init() {
 function getChannelData() {
     var request = gapi.client.youtube.channels.list({
         part: 'statistics',
-        id: 'UCKqXFyiXKF8jtYl18EDpHwA'
+        id: 'SIN60cYVQak?si=stK3pk2dqUBYrGgO'
     });
     request.execute(function(response) {
         var subscriberCount = response.items[0].statistics.subscriberCount;
