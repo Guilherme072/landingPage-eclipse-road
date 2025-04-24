@@ -124,35 +124,35 @@ new Chart(ctx2, {
     data: {
         labels: ['Masculino', 'Feminino', 'Outro'],
         datasets: [{
-            data: [77.3, 20.8, 1.9],
+            data: [70.2, 28.1, 1.7],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888']
         }]
     },
     options: semicircleOptionsGenero
 });
 
-// Gráfico de Idade (Tik Tok)
+// Gráfico de Idade (Instagram)
 const ctx3 = document.getElementById('idadeCharti').getContext('2d');
 new Chart(ctx3, {
     type: 'doughnut',
     data: {
-         labels: ['13-17', '18-24', '25-34', '35-44'],
+         labels: ['13-17', '18-24', '25-34', '+35'],
         datasets: [{
-            data: [33.1, 25.2, 22, 12.2],
+            data: [8.1, 47.4, 35.8, 8.7],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
         }]
     },
     options: semicircleOptionsIdade
 });
 
-// Gráfico de Gênero (Tik Tok)
+// Gráfico de Gênero (Instagram)
 const ctx4 = document.getElementById('generoCharti').getContext('2d');
 new Chart(ctx4, {
     type: 'doughnut',
     data: {
         labels: ['Masculino', 'Feminino','Outros',],
         datasets: [{
-            data: [70.2, 28.1, 1.7,],
+            data: [73.2, 25.1, 1.7,],
             backgroundColor: ['#7d2ae8', '#f7c300']
         }]
     },

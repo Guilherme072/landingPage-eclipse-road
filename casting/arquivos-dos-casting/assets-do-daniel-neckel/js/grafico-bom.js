@@ -102,14 +102,14 @@ const semicircleOptionsGenero = {
     semicircleOptionsGenero.plugins.legend.labels.padding = window.innerWidth <= 600 ? 5 : 10;
   });
 
-// Gráfico de Idade (YouTube)
+// Gráfico de Idade (Tik Tok)
 const ctx1 = document.getElementById('idadeChart').getContext('2d');
 new Chart(ctx1, {
     type: 'doughnut',
     data: {
          labels: ['18-24', '25-34', '13-17', '45+'],
         datasets: [{
-            data: [39, 25, 17, 19],
+            data: [55, 15, 25, 5],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
 
         }]
@@ -117,14 +117,14 @@ new Chart(ctx1, {
     options: semicircleOptionsIdade
 });
 
-// Gráfico de Gênero (Youtube)
+// Gráfico de Gênero (TikTok)
 const ctx2 = document.getElementById('generoChart').getContext('2d');
 new Chart(ctx2, {
     type: 'doughnut',
     data: {
         labels: ['Masculino', 'Feminino', 'Outro'],
         datasets: [{
-            data: [59, 38, 3],
+            data: [55, 42, 3],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888']
         }]
     },
@@ -138,7 +138,7 @@ new Chart(ctx3, {
     data: {
          labels: ['18-24', '13-17', '25-34', '35-44'],
         datasets: [{
-            data: [38.4, 34.3, 13.7, 7.8],
+            data: [55.3, 18.4, 17, 5.1],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
         }]
     },
@@ -152,7 +152,7 @@ new Chart(ctx4, {
     data: {
         labels: ['Masculino', 'Feminino',],
         datasets: [{
-            data: [63.9, 36.1,],
+            data: [52.4, 47.5,],
             backgroundColor: ['#7d2ae8', '#f7c300']
         }]
     },
