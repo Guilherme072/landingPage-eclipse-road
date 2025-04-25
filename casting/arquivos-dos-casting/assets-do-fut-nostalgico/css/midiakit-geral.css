@@ -1265,7 +1265,7 @@ a {
   justify-content: space-between; /* Gráficos à esquerda e estatísticas à direita */
   align-items: center;
   position: relative;
-  bottom: 137px;
+  bottom: 200px;
 }
 
 /* Container para os gráficos e legendas */
@@ -1544,6 +1544,9 @@ canvas {
   color: transparent;
 }
 
+.vbet {
+  width: 50%; 
+}
   
 
 
