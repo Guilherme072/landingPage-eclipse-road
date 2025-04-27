@@ -8,17 +8,17 @@ function init() {
     });
 }
 
-function getChannelData() {
-    var request = gapi.client.youtube.channels.list({
-        part: 'statistics',
-        id: 'UCKqXFyiXKF8jtYl18EDpHwA'
-    });
-    request.execute(function(response) {
-        var subscriberCount = response.items[0].statistics.subscriberCount;
-        console.log('Número de inscritos:', subscriberCount); //remover depois
-        document.getElementById('inscritosYt').textContent = formatNumber(subscriberCount);
-    });
-}
+// // function getChannelData() {
+// //     var request = gapi.client.youtube.channels.list({
+// //         part: 'statistics',
+// //         id: 'UCKqXFyiXKF8jtYl18EDpHwA'
+// //     });
+//     request.execute(function(response) {
+//         var subscriberCount = response.items[0].statistics.subscriberCount;
+//         console.log('Número de inscritos:', subscriberCount); //remover depois
+//         document.getElementById('inscritosYt').textContent = formatNumber(subscriberCount);
+//     });
+// }
 
 window.onload = init;
 
