@@ -1,3 +1,4 @@
+
 // Configuração base para gráficos semicirculares
 const semicircleOptionsIdade = {
     responsive: true,
@@ -102,14 +103,14 @@ const semicircleOptionsGenero = {
     semicircleOptionsGenero.plugins.legend.labels.padding = window.innerWidth <= 600 ? 5 : 10;
   });
 
-// Gráfico de Idade (Instagram)
+// Gráfico de Idade (X/Twitter)
 const ctx1 = document.getElementById('idadeChart').getContext('2d');
 new Chart(ctx1, {
     type: 'doughnut',
     data: {
-         labels: ['18-24', '25-34', '13-17', '35-44'],
+         labels: ['13-17', '18-24', '25-34', '+35'],
         datasets: [{
-            data: [33.7, 37.4, 7.1, 14.3],
+            data: [6.1, 66.2, 22.2, 5.4],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
 
         }]
@@ -117,46 +118,46 @@ new Chart(ctx1, {
     options: semicircleOptionsIdade
 });
 
-// Gráfico de Gênero (Instagram)
+// Gráfico de Gênero (X/Twitter)
 const ctx2 = document.getElementById('generoChart').getContext('2d');
 new Chart(ctx2, {
     type: 'doughnut',
     data: {
-        labels: ['Masculino', 'Feminino'],
+        labels: ['Masculino', 'Feminino', 'Outro'],
         datasets: [{
-            data: [87.9, 12.1],
+            data: [55, 43.3, 1.7],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888']
         }]
     },
     options: semicircleOptionsGenero
 });
 
-// Gráfico de Idade (Tik Tok)
-const ctx3 = document.getElementById('idadeCharti').getContext('2d');
-new Chart(ctx3, {
-    type: 'doughnut',
-    data: {
-         labels: ['18-24', '13-17', '25-34', '35-44'],
-        datasets: [{
-            data: [33.7, 7.1, 37.4, 14.3],
-            backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
-        }]
-    },
-    options: semicircleOptionsIdade
-});
+// Gráfico de Idade (Instagram)
+//const ctx3 = document.getElementById('idadeCharti').getContext('2d');
+//new Chart(ctx3, {
+   // type: 'doughnut',
+    //data: {
+       //  labels: ['18-24', '13-17', '25-34', '35-44'],
+        //datasets: [{
+         //   data: [38.4, 34.3, 13.7, 7.8],
+        //    backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
+    //    }]
+  //  },
+  //  options: semicircleOptionsIdade
+//});
 
-// Gráfico de Gênero (Tik Tok)
-const ctx4 = document.getElementById('generoCharti').getContext('2d');
-new Chart(ctx4, {
-    type: 'doughnut',
-    data: {
-        labels: ['Masculino', 'Feminino',],
-        datasets: [{
-            data: [71, 29,],
-            backgroundColor: ['#7d2ae8', '#f7c300']
-        }]
-    },
-    options: semicircleOptionsGenero
-});
+// Gráfico de Gênero (Instagram)
+//const ctx4 = document.getElementById('generoCharti').getContext('2d');
+//new Chart(ctx4, {
+  //  type: 'doughnut',
+  //  data: {
+   //     labels: ['Masculino', 'Feminino',],
+    //    datasets: [{
+   //         data: [63.9, 36.1,],
+     //       backgroundColor: ['#7d2ae8', '#f7c300']
+  //      }]
+ //   },
+ //   options: semicircleOptionsGenero
+//});
 
 
