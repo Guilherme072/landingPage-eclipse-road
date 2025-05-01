@@ -109,7 +109,7 @@ new Chart(ctx1, {
     data: {
          labels: ['13-17', '18-24', '25-34', '35+'],
         datasets: [{
-            data: [1.4, 35.5, 41.5, 21.6],
+            data: [1.7, 43.5, 37.6, 17.2],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
 
         }]
@@ -124,7 +124,7 @@ new Chart(ctx2, {
     data: {
         labels: ['Masculino', 'Feminino', 'Outro'],
         datasets: [{
-            data: [95, 4.5, 0.5],
+            data: [87.2, 12.4, 0.4],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888']
         }]
     },
@@ -138,7 +138,7 @@ new Chart(ctx3, {
     data: {
          labels: ['13-17', '18-24', '25-34', '35-44','45+'],
         datasets: [{
-            data: [1.1, 7.8, 36.7, 31.2, 22.7],
+            data: [2.6, 29.4, 42, 17.2, 8.8],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444', '#555555']
         }]
     },
@@ -152,7 +152,7 @@ new Chart(ctx4, {
     data: {
         labels: ['Masculino', 'Feminino',],
         datasets: [{
-            data: [97.4, 2.6,],
+            data: [74.1, 25.9,],
             backgroundColor: ['#7d2ae8', '#f7c300']
         }]
     },
