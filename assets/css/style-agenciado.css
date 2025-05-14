@@ -75,6 +75,7 @@ html, body {
     text-size-adjust: 100%;
     scroll-behavior: smooth;
 }
+
 main {
   flex: 1;
   min-height: 100vh; /* Garante altura mínima da tela */
@@ -393,120 +394,29 @@ a {
 /*************** INICIO *****/
 .inicio {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh; /* Garante no mínimo a tela toda, mas permite scroll */
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Deixa o conteúdo subir normal */
     padding: 10rem 0rem;
     z-index: 1;
     user-select: none;
     padding-bottom: 0px;
 }
 
-.container-nuvens {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    pointer-events: none;
-}
-
-.imgNuvem {
-    position: absolute;
-    pointer-events: none;
-    display: flex;
-    flex-direction: column;
-}
-
-.nuvem1 {
-  width: 120px;
-  height: 90px;
-  animation: nuvem-animation 20s infinite linear;
-}
-.nuvem2 {
-  width: 80px;
-  height: 60px;
-  animation: nuvem-animation 30s infinite linear;
-}
-.nuvem3 {
-  width: 100px;
-  height: 70px;
-  animation: nuvem-animation 45s infinite linear;
-}
-.nuvem4 {
-  width: 90px;
-  height: 50px;
-  animation: nuvem-animation 60s infinite linear;
-}
-.nuvem5 {
-  width: 130px;
-  height: 110px;
-  animation: nuvem-animation 32s infinite linear;
-}
-.nuvem6 {
-  width: 150px;
-  height: 100px;
-  position: absolute;
-  top: 100%;
-  left: 100%;
-  animation: nuvem-animation 48s infinite linear;
-}
-.nuvem7 {
-  width: 110px;
-  height: 90px;
-  position: absolute;
-  top: 100%;
-  left: 100%;
-  animation: nuvem-animation 37s infinite linear;
-  
-}
-.nuvem8 {
-  width: 85px;
-  height: 75px;
-  position: absolute;
-  top: 100%;
-  left: 100%;
-  animation: nuvem-animation 50s infinite linear;
-  
-}
-.nuvem9 {
-  width: 60px;
-  height: 70px;
-  position: absolute;
-  top: 100%;
-  left: 100%;
-  animation: nuvem-animation 65s infinite linear;
-}
-.nuvem10 {
-  width: 75px;
-  height: 65px;
-  
-  animation: nuvem-animation 80s infinite linear;
-  
-}
-
-@keyframes nuvem-animation {
-  0% {
-    transform: translateX(-10vw);
-  }
-  100% {
-    transform: translateX(101vw);
-  }
-}
-
-
-
-
 
 
 .container-inicio {
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     color: var(--color-white);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    pointer-events: auto;
 }
 
 .conteudo-inicio {
@@ -1235,10 +1145,10 @@ input:checked + .slider::before {
   margin-bottom: 10px;
 }
 
-.button-planilha {
+/* .button-planilha {
   width: 145px;
   height: 25px;
-}
+} */
 
 /* From Uiverse.io by satyamchaudharydev */ 
 .button {
@@ -1556,3 +1466,12 @@ input:checked + .slider::before {
   
   
   
+
+
+
+
+
+
+
+
+

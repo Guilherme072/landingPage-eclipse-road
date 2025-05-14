@@ -44,7 +44,7 @@
         flex-direction: column;
         width: 100%;
         max-width: 100%;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .container-free-your-mind-itens{
@@ -52,12 +52,11 @@
     }
 
     .free-your-mind {
-        display: none;
+        display: block;
     }
 
     body {
         font-size: 16px;
-        flex-direction: column;
         align-items: center;
         padding: 0;
         margin: 0;
@@ -371,7 +370,7 @@
         background-image: url(../img2/imgestilo3.png);
         width: 100%; /* Faz a seção ocupar toda a largura disponível */
         min-height: 100vh;
-        display: none;
+        display: block;
         align-items: center;
         flex-direction: column;
         justify-content: flex-end;
