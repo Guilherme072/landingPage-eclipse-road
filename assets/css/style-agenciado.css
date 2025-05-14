@@ -85,6 +85,8 @@ main {
   position: relative; /* Permite que elementos absolutos dentro dele usem como referência */
   min-height: 100vh; /* Garante altura mínima da tela */
   overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 li {
@@ -409,88 +411,85 @@ a {
 }
 
 .container-nuvens {
-    display: flex;
-    z-index: -1;
-    position: absolute;
-    
-    width: 100%; 
+    position: relative;
+    width: 100%;
     height: 100%;
+    z-index: -1;
+    pointer-events: none;
 }
 
 .imgNuvem {
+    position: absolute;
+    pointer-events: none;
     display: flex;
-    position: relative;
     flex-direction: column;
 }
 
 .nuvem1 {
   width: 120px;
   height: 90px;
-  margin-bottom: 100px;
   animation: nuvem-animation 20s infinite linear;
 }
-
 .nuvem2 {
   width: 80px;
   height: 60px;
-  margin-bottom: 50px;
   animation: nuvem-animation 30s infinite linear;
 }
-
 .nuvem3 {
   width: 100px;
   height: 70px;
-  margin-bottom: 80px;
   animation: nuvem-animation 45s infinite linear;
 }
-
 .nuvem4 {
   width: 90px;
   height: 50px;
-  margin-bottom: 50px;
   animation: nuvem-animation 60s infinite linear;
 }
-
 .nuvem5 {
   width: 130px;
   height: 110px;
-  margin-bottom: 100px;
   animation: nuvem-animation 32s infinite linear;
 }
-
 .nuvem6 {
   width: 150px;
   height: 100px;
-  margin-bottom: 80px;
+  position: absolute;
+  top: 100%;
+  left: 100%;
   animation: nuvem-animation 48s infinite linear;
 }
-
 .nuvem7 {
   width: 110px;
   height: 90px;
-  margin-bottom: 50px;
+  position: absolute;
+  top: 100%;
+  left: 100%;
   animation: nuvem-animation 37s infinite linear;
+  
 }
-
 .nuvem8 {
   width: 85px;
   height: 75px;
-  margin-bottom: 100px;
+  position: absolute;
+  top: 100%;
+  left: 100%;
   animation: nuvem-animation 50s infinite linear;
+  
 }
-
 .nuvem9 {
   width: 60px;
   height: 70px;
-  margin-bottom: 80px;
+  position: absolute;
+  top: 100%;
+  left: 100%;
   animation: nuvem-animation 65s infinite linear;
 }
-
 .nuvem10 {
   width: 75px;
   height: 65px;
-  margin-bottom: 50px;
+  
   animation: nuvem-animation 80s infinite linear;
+  
 }
 
 @keyframes nuvem-animation {
@@ -498,9 +497,12 @@ a {
     transform: translateX(-10vw);
   }
   100% {
-    transform: translateX(101vw); 
+    transform: translateX(101vw);
   }
 }
+
+
+
 
 
 
