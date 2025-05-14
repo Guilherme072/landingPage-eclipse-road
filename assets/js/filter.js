@@ -1,5 +1,9 @@
 document.querySelectorAll('.filter select, #filter_search').forEach(filter => {
-    filter.addEventListener('change', applyFilters);
+    filter.addEventListener('change', function(event) {
+        event.preventDefault();  // Previne o comportamento padrão
+        event.stopPropagation(); // Impede a propagação do evento
+        applyFilters();
+    });
 });
 
 // Chama applyFilters a 200 milissegundos - Gabs
