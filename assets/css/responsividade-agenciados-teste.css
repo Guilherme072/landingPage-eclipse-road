@@ -52,7 +52,7 @@
     }
 
     .free-your-mind {
-        display: none;
+        display: block;
     }
 
     body {
@@ -370,7 +370,7 @@
         background-image: url(../img2/imgestilo3.png);
         width: 100%; /* Faz a seção ocupar toda a largura disponível */
         min-height: 100vh;
-        display: none;
+        display: block;
         align-items: center;
         flex-direction: column;
         justify-content: flex-end;
