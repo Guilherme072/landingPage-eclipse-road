@@ -1,8 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // // Ajusta para garantir que o site comece no topo ao recarregar
-    // if (window.location.hash !== '#inicio') {
-    //     window.location.hash = '#inicio';
-    // }
+    
 
     const backToTopButton = document.getElementById('backToTop');
     
@@ -13,20 +10,28 @@ document.addEventListener('DOMContentLoaded', function () {
         if (scrollPosition > 100) {
             backToTopButton.style.display = 'flex';
             whatsappButton.style.display = 'flex';
-            planilhaButton.style.display = 'flex';
+            // planilhaButton.style.display = 'flex';
+            // pdfButton.style.display = 'flex';
+            buttonCasting.style.display = 'flex';
             setTimeout(() => {
                 backToTopButton.style.opacity = '1';
                 whatsappButton.style.opacity = '1';
-                planilhaButton.style.opacity = '1';
+                // planilhaButton.style.opacity = '1';
+                // pdfButton.style.display = '1';
+                buttonCasting.style.display = '1';
             }, 10);
         } else {
             backToTopButton.style.opacity = '0';
             whatsappButton.style.opacity = '0';
-            planilhaButton.style.opacity = '0';
+            // planilhaButton.style.opacity = '0';
+            // pdfButton.style.display = '0';
+            buttonCasting.style.display = '0';
             setTimeout(() => {
                 backToTopButton.style.display = 'none';
                 whatsappButton.style.display = 'none';
-                planilhaButton.style.display = 'none';
+                // planilhaButton.style.display = 'none';
+                // pdfButton.style.display = 'none';
+                buttonCasting.style.display = 'none';
             }, 500);
         }
     }
