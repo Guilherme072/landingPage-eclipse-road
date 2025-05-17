@@ -101,15 +101,17 @@ const semicircleOptionsGenero = {
     semicircleOptionsGenero.plugins.legend.labels.boxHeight = window.innerWidth <= 600 ? 12 : 20;
     semicircleOptionsGenero.plugins.legend.labels.padding = window.innerWidth <= 600 ? 5 : 10;
   });
+  
+
 
 // Gráfico de Idade (X/Twitter)
 const ctx1 = document.getElementById('idadeChart').getContext('2d');
 new Chart(ctx1, {
     type: 'doughnut',
     data: {
-         labels: ['18-24', '25-34', '13-17', '45+'],
+         labels: ['13-17', '18-24', '25-34', '+35'],
         datasets: [{
-            data: [60, 10, 25, 5 ],
+            data: [4.2, 47.8, 30.7, 17.3],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
 
         }]
@@ -124,7 +126,7 @@ new Chart(ctx2, {
     data: {
         labels: ['Masculino', 'Feminino', 'Outro'],
         datasets: [{
-            data: [75, 32, 3],
+            data: [60.5, 24, 15.5],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888']
         }]
     },
@@ -136,9 +138,9 @@ const ctx3 = document.getElementById('idadeCharti').getContext('2d');
 new Chart(ctx3, {
     type: 'doughnut',
     data: {
-         labels: ['18-24', '13-17', '25-34', '35-44'],
+         labels: ['13-17','18-24', '25-34', '+35'],
         datasets: [{
-            data: [38.4, 34.3, 13.7, 7.8],
+            data: [5.7, 46, 36.9, 11.4],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
         }]
     },
@@ -152,7 +154,7 @@ new Chart(ctx4, {
     data: {
         labels: ['Masculino', 'Feminino',],
         datasets: [{
-            data: [73, 37,],
+            data: [81.9, 18.1,],
             backgroundColor: ['#7d2ae8', '#f7c300']
         }]
     },

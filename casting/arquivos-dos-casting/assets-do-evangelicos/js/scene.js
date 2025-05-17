@@ -5,15 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
     renderer: "svg",
     loop: true,
     autoplay: true,
-    path: "/icon-json/Scene.json"
+    path: "/icon-json/Carrossel-Filipe-Leme.json"
   });
 
   lottie.loadAnimation({
-    container: document.getElementById("profilee"),
+    container: document.getElementById("filipe"),
     renderer: "svg",
     loop: false,
     autoplay: true,
-    path: "/icon-json/Profile.json"
+    path: "/icon-json/evangelicos-foto-de-perfil.json"
   });
 
   // Função para ativar a animação do #push quando ele aparecer na tela
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
       renderer: "svg",
       loop: false,
       autoplay: true,
-      path: "/icon-json/Push-notificationkerb.json"
+      path: "/icon-json/evangelicos-celular.json"
     });
   };
 

@@ -1,5 +1,9 @@
 document.querySelectorAll('.filter select, #filter_search').forEach(filter => {
-    filter.addEventListener('change', applyFilters);
+    filter.addEventListener('change', function(event) {
+        event.preventDefault();  // Previne o comportamento padrão
+        event.stopPropagation(); // Impede a propagação do evento
+        applyFilters();
+    });
 });
 
 // Chama applyFilters a 200 milissegundos - Gabs
@@ -10,7 +14,6 @@ function applyFilters() {
     const platformFilter = document.getElementById('filter_select_plataform').value;
     const categoryFilter = document.getElementById('filter_select_category').value;
     const followersFilter = document.getElementById('filter_select_followers').value;
-    const engagementFilter = document.getElementById('filter_select_engajament').value;
     const searchQuery = document.getElementById('filter_search').value.toLowerCase();
 
     const items = document.querySelectorAll('.user-item');
@@ -21,16 +24,14 @@ function applyFilters() {
         const platform = item.getAttribute('filter_plataform').split(',');
         const category = item.getAttribute('filter_category');
         const followers = parseInt(item.getAttribute('filter_followers'), 10);
-        const engagement = parseInt(item.getAttribute('filter_engajament'), 10);
         const name = item.getAttribute('filter_name') ? item.getAttribute('filter_name').toLowerCase() : "noname";
 
         const matchesPlatform = platformFilter === 'all' || platform.includes(platformFilter);
         const matchesCategory = categoryFilter === 'all' || category === categoryFilter;
         const matchesFollowers = followersFilter === 'all' || followers >= parseInt(followersFilter, 10);
-        const matchesEngagement = engagementFilter === 'all' || engagement >= parseInt(engagementFilter, 10);
         const matchesSearch = name.includes(searchQuery);
 
-        if (matchesPlatform && matchesCategory && matchesFollowers && matchesEngagement && matchesSearch) {
+        if (matchesPlatform && matchesCategory && matchesFollowers &&  matchesSearch) {
             item.style.display = '';
             item.classList.remove("hidden");
         } else {
@@ -44,7 +45,6 @@ const isFiltered =
     platformFilter !== 'all' ||
     categoryFilter !== 'all' ||
     followersFilter !== 'all' ||
-    engagementFilter !== 'all' ||
     searchQuery.trim() !== '';
 
 if (isFiltered) {

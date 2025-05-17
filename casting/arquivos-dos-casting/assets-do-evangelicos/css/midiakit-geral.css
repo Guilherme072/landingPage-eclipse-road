@@ -44,7 +44,7 @@ html {
 }
 
 body {
-    background-image: url(/assets/img2/fundo-pc-evangelicos.png);
+    background-image: url(/assets/img2/fundo-cert-evangelicos-\ PC.png);
     background-size: contain;
     background-color: #000;
     background-repeat: no-repeat;
@@ -1117,7 +1117,7 @@ a {
   top: 90px;
 }
 
-#profilee {
+#filipe {
   width: 270px;
   height: 270px;
   border-radius: 50%;
@@ -1535,6 +1535,11 @@ canvas {
   color: transparent;
 }
 
+.ubsofit {
+  width: 40%;
+  position: relative;
+  top: 18px;
+}
   
 
 
