@@ -21,6 +21,13 @@ document.addEventListener("DOMContentLoaded", function () {
       autoplay: false,
       path: "/icon-json/botao-download.json" 
     });
+    lottie.loadAnimation({
+      container: document.getElementById("botao-download-pdf"), 
+      renderer: "svg",
+      loop: false,
+      autoplay: false,
+      path: "/icon-json/botao-download.json" 
+    });
   });
 
 

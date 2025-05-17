@@ -1145,10 +1145,6 @@ input:checked + .slider::before {
   margin-bottom: 10px;
 }
 
-/* .button-planilha {
-  width: 145px;
-  height: 25px;
-} */
 
 /* From Uiverse.io by satyamchaudharydev */ 
 .button {
@@ -1420,6 +1416,7 @@ input:checked + .slider::before {
   gap: 7px;
 }
 
+
 #planilhaButton {
   bottom: 22px;
   right: 90px;
@@ -1445,6 +1442,54 @@ input:checked + .slider::before {
   }
 }
 
+.pdf-btn {
+  background: white;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  display: none;
+  cursor: pointer;
+  justify-content: end;
+  width: 155px;
+  height: 42px;
+  align-items: center;
+  position: fixed;
+  bottom: 22px;
+  left: 85px;
+  z-index: 2;
+}
+.pdf-btn span {
+  position: relative;
+  right: 9px
+}
+
+#pdfButton {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #6a5acd;
+  animation: pdf 2s infinite;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes pdf {
+  0% {
+      transform: scale(1);
+      box-shadow: 0 0 10px rgba(106, 90, 205, 0.5);
+  }
+
+  50% {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(106, 90, 205, 0.9);
+  }
+
+  100% {
+      transform: scale(1);
+      box-shadow: 0 0 10px rgba(106, 90, 205, 0.5);
+  }
+}
+
 #botao-download {
   width: 15px;
   height: 15px;
@@ -1452,6 +1497,97 @@ input:checked + .slider::before {
   margin-right: 5px;
   vertical-align: middle;
 }
+#botao-download-pdf {
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  margin-right: 5px;
+  vertical-align: middle;
+  position: relative;
+  right: 5px
+}
+
+.button-casting {
+      position: fixed;
+      bottom: 22px;
+      right: 20px;
+      z-index: 2;
+    }
+
+    .main-btn {
+      background: white;
+      color: black;
+      padding: 10px 15px;
+      border-radius: 20px;
+      text-decoration: none;
+      cursor: pointer;
+      width: 155px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      position: relative;
+      right: 65px;
+    }
+
+    .options {
+      display: none;
+      position: absolute;
+      bottom: 50px;
+      right: 0;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .options a {
+      padding: 8px 12px;
+      text-decoration: none;
+      color: black;
+      background: #f1f1f1;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .options a:hover {
+      background-color: #ddd;
+    }
+
+    .show {
+      display: flex;
+    }
+
+    #buttonCasting {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #6a5acd;
+  animation: casting 2s infinite;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes casting {
+  0% {
+      transform: scale(1);
+      box-shadow: 0 0 10px rgba(106, 90, 205, 0.5);
+  }
+
+  50% {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(106, 90, 205, 0.9);
+  }
+
+  100% {
+      transform: scale(1);
+      box-shadow: 0 0 10px rgba(106, 90, 205, 0.5);
+  }
+}
+
+
 
 
 

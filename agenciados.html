@@ -35,11 +35,25 @@
     <i class="bi bi-whatsapp"></i>
   </div>
          
-  <a href="assets/img2/Casting-ECLIPSE ROAD.xlsx" download="Casting-ECLIPSE.xlsx" class="button-planilha" id="meuBotao">
+  <!-- <a href="assets/img2/Casting-ECLIPSE ROAD.xlsx" download="Casting-ECLIPSE.xlsx" class="button-planilha">
     <button class="share-btn" id="planilhaButton">Baixar Casting
       <div id="botao-download"></div>
     </button>
   </a>
+  
+  <a href="assets/img2/Conheça-o-nosso-casting-Completo.pdf" download="Conheça-o-nosso-casting-Completo.pdf" class="">
+    <button class="pdf-btn" id="pdfButton"> <span>Baixar PDF</span>
+      <div id="botao-download-pdf"></div>
+    </button>
+  </a> -->
+
+  <div class="button-casting">
+  <button class="main-btn" id="buttonCasting" onclick="toggleOptions()">Baixar Casting</button>
+  <div id="optionsMenu" class="options">
+    <a href="assets/img2/Casting-ECLIPSE ROAD.xlsx" download>Baixar Planilha</a>
+    <a href="assets/img2/Conheça-o-nosso-casting-Completo.pdf" download>Baixar PDF</a>
+  </div>
+</div>
 
   <div class="container-inicio">
     <!--Header-->
@@ -1867,10 +1881,6 @@
               </a>
             </div>
           </div>
-          <!-- <button id="downloadPDF">Baixar PDF</button> -->
-          <!-- <a href="assets/img2/Casting-ECLIPSE ROAD.xlsx" download="Casting-ECLIPSE.xlsx" class="button-planilha" id="meuBotao">
-            <button>Baixar Planilha</button>
-           </a> -->
         </div>
       </section>
     </main>
@@ -2027,6 +2037,7 @@
   <script src="assets/js/activenumbers.js"></script>
   <script src="assets/js/lupasearch.js"></script>
   <script src="assets/js/tooglebutton.js"></script>
+  <script src="assets/js/casting-options.js"></script>
 </body>
 
 </html>
