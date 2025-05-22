@@ -9,11 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   lottie.loadAnimation({
-    container: document.getElementById("poetas"),
+    container: document.getElementById("profilee"),
     renderer: "svg",
     loop: false,
     autoplay: true,
-    path: "/icon-json/foto-perfil-curiosidades-prl.json"
+    path: "/icon-json/foto-perfil-fora-academia.json"
   });
 
   // Função para ativar a animação do #push quando ele aparecer na tela
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
       renderer: "svg",
       loop: false,
       autoplay: true,
-      path: "/icon-json/Push-notification.json"
+      path: "/icon-json/masssinha-celular.json"
     });
   };
 
