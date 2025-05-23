@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
       renderer: "svg",
       loop: false,
       autoplay: true,
-      path: "/icon-json/balota-animação-celulat.json"
+      path: "/icon-json/.json"
     });
   };
 

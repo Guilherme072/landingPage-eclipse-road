@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     renderer: "svg",
     loop: false,
     autoplay: true,
-    path: "/icon-json/daniel-foto-perfil.json"
+    path: "/icon-json/daniel-foto-perfil.json.json"
   });
 
   // Função para ativar a animação do #push quando ele aparecer na tela

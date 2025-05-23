@@ -57,7 +57,7 @@ class TxtType {
 
 var elements = document.querySelectorAll('#typingtext');
 for (var i = 0; i < elements.length; i++) {
-    var toRotate = ["burro", "influenciador do X", "uma página de memes", "um perfil humorístico"]
+    var toRotate = ["o maior fã de bichinhos fofos", "especialista em vídeos que derretem corações", "colecionador de memes animais adoráveis", "fonte diária de fofura peluda"]
     var period = 3000;
     if (toRotate) {
         new TxtType(elements[i], toRotate, period);

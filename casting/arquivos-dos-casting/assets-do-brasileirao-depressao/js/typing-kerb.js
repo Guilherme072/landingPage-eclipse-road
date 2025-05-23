@@ -57,7 +57,7 @@ class TxtType {
 
 var elements = document.querySelectorAll('#typingtext');
 for (var i = 0; i < elements.length; i++) {
-    var toRotate = ["a maior conta sobre o brasileirão", "um perfil humoristico", "influenciador"]
+    var toRotate = ["a maior conta sobre brasileirão", "um perfil humoristico", "influenciador"]
     var period = 3000;
     if (toRotate) {
         new TxtType(elements[i], toRotate, period);

@@ -108,11 +108,10 @@ const ctx1 = document.getElementById('idadeChart').getContext('2d');
 new Chart(ctx1, {
     type: 'doughnut',
     data: {
-         labels: ['13-17', '18-24', '25-34', '35-44'],
+        labels: ['13-17', '18-24', '25-34', '35+'],
         datasets: [{
-            data: [2, 55.7, 34.9, 6.4,1],
+            data: [22.7, 61.3, 13.5, 2.5], // Pico extremo em 18-24 anos (memes)
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
-
         }]
     },
     options: semicircleOptionsIdade
@@ -125,39 +124,40 @@ new Chart(ctx2, {
     data: {
         labels: ['Masculino', 'Feminino', 'Outro'],
         datasets: [{
-            data: [86.8, 12.4, 0.8],
+            data: [91.4, 7.8, 0.8], // Altíssima predominância masculina (torcida organizada digital)
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888']
         }]
     },
     options: semicircleOptionsGenero
 });
 
-// Gráfico de Idade (Instagram)
-const ctx3 = document.getElementById('idadeCharti').getContext('2d');
-new Chart(ctx3, {
-    type: 'doughnut',
-    data: {
-         labels: ['18-24', '13-17', '25-34', '35-44'],
-        datasets: [{
-            data: [38.4, 34.3, 13.7, 7.8],
-            backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
-        }]
-    },
-    options: semicircleOptionsIdade
-});
 
-// Gráfico de Gênero (Instagram)
-const ctx4 = document.getElementById('generoCharti').getContext('2d');
-new Chart(ctx4, {
-    type: 'doughnut',
-    data: {
-        labels: ['Masculino', 'Feminino',],
-        datasets: [{
-            data: [63.9, 36.1,],
-            backgroundColor: ['#7d2ae8', '#f7c300']
-        }]
-    },
-    options: semicircleOptionsGenero
-});
+// // Gráfico de Idade (Instagram)
+// const ctx3 = document.getElementById('idadeCharti').getContext('2d');
+// new Chart(ctx3, {
+//     type: 'doughnut',
+//     data: {
+//          labels: ['18-24', '13-17', '25-34', '35-44'],
+//         datasets: [{
+//             data: [38.4, 34.3, 13.7, 7.8],
+//             backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
+//         }]
+//     },
+//     options: semicircleOptionsIdade
+// });
+
+// // Gráfico de Gênero (Instagram)
+// const ctx4 = document.getElementById('generoCharti').getContext('2d');
+// new Chart(ctx4, {
+//     type: 'doughnut',
+//     data: {
+//         labels: ['Masculino', 'Feminino',],
+//         datasets: [{
+//             data: [63.9, 36.1,],
+//             backgroundColor: ['#7d2ae8', '#f7c300']
+//         }]
+//     },
+//     options: semicircleOptionsGenero
+// });
 
 

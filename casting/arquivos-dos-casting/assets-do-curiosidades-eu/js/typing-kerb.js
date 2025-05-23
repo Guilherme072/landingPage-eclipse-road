@@ -57,7 +57,7 @@ class TxtType {
 
 var elements = document.querySelectorAll('#typingtext');
 for (var i = 0; i < elements.length; i++) {
-    var toRotate = ["especialista em futebol europeu", "caçador de curiosidades do velho continente", "contador de histórias do futebol estrangeiro", "fã de estatísticas e dados inusitados"]
+    var toRotate =["especialista em futebol europeu", "caçador de curiosidades", "contador de histórias do futebol"] 
     var period = 3000;
     if (toRotate) {
         new TxtType(elements[i], toRotate, period);
