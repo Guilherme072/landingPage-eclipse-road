@@ -861,12 +861,17 @@ a {
   border: none; /* Remove borda residual */
 }
 
+select {
+  -webkit-appearance: none; /* para evitar comportamento nativo estranho */
+  appearance: none;
+}
+
+
 .filter {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 20px;
-  
+  padding: 20px; 
 }
 
 .filter-plataforma {
