@@ -55,4 +55,9 @@ const allItems = Array.from(document.querySelectorAll('.user-item'));
   });
 
   // Aplica inicialmente
-//   applyFilters();
+  applyFilters();
+
+  const filterDiv = document.querySelector('.filter');
+filterDiv.addEventListener('click', (e) => {
+  e.stopPropagation(); // impede o clique subir para os pais
+});
