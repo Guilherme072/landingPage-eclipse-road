@@ -51,13 +51,13 @@ const allItems = Array.from(document.querySelectorAll('.user-item'));
   // Atualiza em tempo real ao digitar
   document.getElementById('filter_search').addEventListener('input', applyFilters);
   document.querySelectorAll('.filter select').forEach(el => {
-    el.addEventListener('change', applyFilters);
+  el.addEventListener('change', (event) => {
+    event.preventDefault();  // Evita navegação padrão no iOS
+    applyFilters();
   });
+});
 
   // Aplica inicialmente
-  applyFilters();
+  
 
-  const filterDiv = document.querySelector('.filter');
-filterDiv.addEventListener('click', (e) => {
-  e.stopPropagation(); // impede o clique subir para os pais
-});
+
