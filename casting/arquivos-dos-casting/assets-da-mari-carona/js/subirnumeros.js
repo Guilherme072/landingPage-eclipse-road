@@ -5,7 +5,7 @@ const startCounting = () => {
         const updateCount = () => {
             const target = +counter.getAttribute('data-target');
             const count = +counter.innerText;
-            const increment = target / 1100;
+            const increment = target / 650;
 
             if (count < target) {
                 counter.innerText = `+${Math.ceil(count + increment)}`; // Atualiza o número de forma arredondada

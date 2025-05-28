@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   lottie.loadAnimation({
-    container: document.getElementById("poetas"),
+    container: document.getElementById("profilee"),
     renderer: "svg",
     loop: false,
     autoplay: true,

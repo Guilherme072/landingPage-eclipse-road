@@ -349,11 +349,13 @@ a {
   overflow: hidden;
   transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
   opacity: 0;
+  pointer-events: none;
 }
 
 .menu-aberto.active {
   height: 100vh;
   opacity: 1;
+  pointer-events: auto;
 }
 
 .nav-menu {
@@ -861,12 +863,12 @@ a {
   border: none; /* Remove borda residual */
 }
 
+
 .filter {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 20px;
-  
+  padding: 20px; 
 }
 
 .filter-plataforma {

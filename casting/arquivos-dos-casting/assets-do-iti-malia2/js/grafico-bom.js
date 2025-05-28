@@ -1,4 +1,3 @@
-
 // Configuração base para gráficos semicirculares
 const semicircleOptionsIdade = {
     responsive: true,
@@ -108,11 +107,10 @@ const ctx1 = document.getElementById('idadeChart').getContext('2d');
 new Chart(ctx1, {
     type: 'doughnut',
     data: {
-         labels: ['13-17', '18-24', '25-34', '35-44'],
+        labels: ['13-17', '18-24', '25-34', '35+'],
         datasets: [{
-            data: [2.7, 54, 34.5, 6.4,],
+            data: [23.8, 44.2, 25.7, 6.3], // Distribuição mais equilibrada (conteúdo universal)
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
-
         }]
     },
     options: semicircleOptionsIdade
@@ -125,7 +123,7 @@ new Chart(ctx2, {
     data: {
         labels: ['Masculino', 'Feminino', 'Outro'],
         datasets: [{
-            data: [70, 29, 1],
+            data: [38.6, 59.7, 1.7], // Predomínio feminino (conteúdo fofo)
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888']
         }]
     },
@@ -137,10 +135,10 @@ const ctx3 = document.getElementById('idadeCharti').getContext('2d');
 new Chart(ctx3, {
     type: 'doughnut',
     data: {
-         labels: ['18-24', '13-17', '25-34', '35-44'],
+        labels: ['13-17', '18-24', '25-34', '35-44','45+'],
         datasets: [{
-            data: [56, 14, 25, 5],
-            backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
+            data: [31.5, 47.1, 16.3, 4.2, 0.9], // Instagram mais jovem (pico 18-24)
+            backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444', '#555555']
         }]
     },
     options: semicircleOptionsIdade
@@ -151,13 +149,12 @@ const ctx4 = document.getElementById('generoCharti').getContext('2d');
 new Chart(ctx4, {
     type: 'doughnut',
     data: {
-        labels: ['Masculino', 'Feminino',],
+        labels: ['Masculino', 'Feminino'],
         datasets: [{
-            data: [73, 27,],
+            data: [28.4, 71.6], // Instagram com dominância feminina (maior que Twitter)
             backgroundColor: ['#7d2ae8', '#f7c300']
         }]
     },
     options: semicircleOptionsGenero
 });
-
 

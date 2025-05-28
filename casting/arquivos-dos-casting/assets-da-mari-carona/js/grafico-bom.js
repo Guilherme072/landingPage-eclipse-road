@@ -1,4 +1,3 @@
-
 // Configuração base para gráficos semicirculares
 const semicircleOptionsIdade = {
     responsive: true,
@@ -108,10 +107,11 @@ const ctx1 = document.getElementById('idadeChart').getContext('2d');
 new Chart(ctx1, {
     type: 'doughnut',
     data: {
-        labels: ['13-17', '18-24', '25-34', '35+'],
+         labels: ['13-17', '18-24', '25-34', '35+'],
         datasets: [{
-            data: [23.8, 44.2, 25.7, 6.3], // Distribuição mais equilibrada (conteúdo universal)
+            data: [1.7, 43.5, 37.6, 17.2],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
+
         }]
     },
     options: semicircleOptionsIdade
@@ -124,7 +124,7 @@ new Chart(ctx2, {
     data: {
         labels: ['Masculino', 'Feminino', 'Outro'],
         datasets: [{
-            data: [38.6, 59.7, 1.7], // Predomínio feminino (conteúdo fofo)
+            data: [87.2, 12.4, 0.4],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888']
         }]
     },
@@ -136,9 +136,9 @@ const ctx3 = document.getElementById('idadeCharti').getContext('2d');
 new Chart(ctx3, {
     type: 'doughnut',
     data: {
-        labels: ['13-17', '18-24', '25-34', '35-44','45+'],
+         labels: ['13-17', '18-24', '25-34', '35-44','45+'],
         datasets: [{
-            data: [31.5, 47.1, 16.3, 4.2, 0.9], // Instagram mais jovem (pico 18-24)
+            data: [2.6, 29.4, 42, 17.2, 8.8],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444', '#555555']
         }]
     },
@@ -150,11 +150,13 @@ const ctx4 = document.getElementById('generoCharti').getContext('2d');
 new Chart(ctx4, {
     type: 'doughnut',
     data: {
-        labels: ['Masculino', 'Feminino'],
+        labels: ['Masculino', 'Feminino',],
         datasets: [{
-            data: [28.4, 71.6], // Instagram com dominância feminina (maior que Twitter)
+            data: [74.1, 25.9,],
             backgroundColor: ['#7d2ae8', '#f7c300']
         }]
     },
     options: semicircleOptionsGenero
 });
+
+
