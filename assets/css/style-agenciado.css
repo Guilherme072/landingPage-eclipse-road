@@ -901,7 +901,7 @@ a {
   cursor: pointer;
   font-size: 14px;
 }
-.filter-engajament {
+.filter-ordenar {
   border: 2px solid #690099;
   border-radius: 20px;
   padding: 8px 15px;
@@ -910,6 +910,8 @@ a {
   background-color: #111111;
   cursor: pointer;
   font-size: 14px;
+  text-align: center;
+  width: 160px;
 }
 
 .filter-search {
