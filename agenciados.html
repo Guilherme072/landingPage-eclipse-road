@@ -173,6 +173,14 @@
           <option value="3000000" class="filtros">+3M</option>
         </select>
 
+        <select id="ordenar" onchange="ordenarInfluencers()" class="filter-ordenar">
+          <option value="">Ordenar por</option>
+          <option value="nome-asc">Nome (A-Z)</option>
+          <option value="nome-desc">Nome (Z-A)</option>
+          <option value="seguidores-asc">Menos seguidores</option>
+          <option value="seguidores-desc">Mais seguidores</option>
+        </select>
+
         <div class="filter-search">
           <div id="lottie-search" style="width: 20px; height: 20px; bottom: 3px; position: relative;"></div>
             <input type="text" name="nome" id="filter_search" placeholder="Pesquisar...">
