@@ -102,16 +102,15 @@ const semicircleOptionsGenero = {
     semicircleOptionsGenero.plugins.legend.labels.padding = window.innerWidth <= 600 ? 5 : 10;
   });
 
-// Gráfico de Idade (X/Twitter)
+/// Gráfico de Idade (X/Twitter)
 const ctx1 = document.getElementById('idadeChart').getContext('2d');
 new Chart(ctx1, {
     type: 'doughnut',
     data: {
-         labels: ['18-24', '25-34', '13-17', '45+'],
+        labels: ['13-17', '18-24', '25-34', '35+'],
         datasets: [{
-            data: [50, 30, 5, 15],
+            data: [14.2, 49.8, 28.6, 7.4], // Maior alcance entre jovens adultos (nostalgia CR7)
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
-
         }]
     },
     options: semicircleOptionsIdade
@@ -124,7 +123,7 @@ new Chart(ctx2, {
     data: {
         labels: ['Masculino', 'Feminino', 'Outro'],
         datasets: [{
-            data: [55, 43, 2],
+            data: [83.5, 15.2, 1.3], // Predomínio masculino menor que memes clubistas
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888']
         }]
     },
@@ -136,10 +135,10 @@ const ctx3 = document.getElementById('idadeCharti').getContext('2d');
 new Chart(ctx3, {
     type: 'doughnut',
     data: {
-         labels: ['18-24', '13-17', '25-34', '35-44'],
+        labels: ['13-17', '18-24', '25-34', '35-44','45+'],
         datasets: [{
-            data: [48, 7, 35, 10],
-            backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
+            data: [19.7, 53.4, 20.8, 4.9, 1.2], // Instagram com pico mais acentuado em 18-24
+            backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444', '#555555']
         }]
     },
     options: semicircleOptionsIdade
@@ -150,13 +149,11 @@ const ctx4 = document.getElementById('generoCharti').getContext('2d');
 new Chart(ctx4, {
     type: 'doughnut',
     data: {
-        labels: ['Masculino', 'Feminino',],
+        labels: ['Masculino', 'Feminino'],
         datasets: [{
-            data: [60, 40,],
+            data: [77.3, 22.7], // Instagram com maior participação feminina (fãs CR7)
             backgroundColor: ['#7d2ae8', '#f7c300']
         }]
     },
     options: semicircleOptionsGenero
 });
-
-

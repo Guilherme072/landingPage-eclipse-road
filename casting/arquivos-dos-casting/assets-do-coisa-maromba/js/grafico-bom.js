@@ -1,3 +1,4 @@
+
 // Configuração base para gráficos semicirculares
 const semicircleOptionsIdade = {
     responsive: true,
@@ -101,17 +102,15 @@ const semicircleOptionsGenero = {
     semicircleOptionsGenero.plugins.legend.labels.boxHeight = window.innerWidth <= 600 ? 12 : 20;
     semicircleOptionsGenero.plugins.legend.labels.padding = window.innerWidth <= 600 ? 5 : 10;
   });
-
 // Gráfico de Idade (X/Twitter)
 const ctx1 = document.getElementById('idadeChart').getContext('2d');
 new Chart(ctx1, {
     type: 'doughnut',
     data: {
-         labels: ['18-24', '25-34', '13-17', '45+'],
+        labels: ['13-17', '18-24', '25-34', '35+'],
         datasets: [{
-            data: [50, 30, 5, 15],
+            data: [5.2, 63.8, 27.5, 3.5], // Pico em 18-34 anos (faixa que mais frequenta academias)
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
-
         }]
     },
     options: semicircleOptionsIdade
@@ -124,39 +123,38 @@ new Chart(ctx2, {
     data: {
         labels: ['Masculino', 'Feminino', 'Outro'],
         datasets: [{
-            data: [55, 43, 2],
+            data: [72.4, 26.3, 1.3], // Predomínio masculino, mas com significativa presença feminina
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888']
         }]
     },
     options: semicircleOptionsGenero
 });
+// // Gráfico de Idade (Instagram)
+// const ctx3 = document.getElementById('idadeCharti').getContext('2d');
+// new Chart(ctx3, {
+//     type: 'doughnut',
+//     data: {
+//          labels: ['18-24', '13-17', '25-34', '35-44'],
+//         datasets: [{
+//             data: [38.4, 34.3, 13.7, 7.8],
+//             backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
+//         }]
+//     },
+//     options: semicircleOptionsIdade
+// });
 
-// Gráfico de Idade (Instagram)
-const ctx3 = document.getElementById('idadeCharti').getContext('2d');
-new Chart(ctx3, {
-    type: 'doughnut',
-    data: {
-         labels: ['18-24', '13-17', '25-34', '35-44'],
-        datasets: [{
-            data: [48, 7, 35, 10],
-            backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
-        }]
-    },
-    options: semicircleOptionsIdade
-});
-
-// Gráfico de Gênero (Instagram)
-const ctx4 = document.getElementById('generoCharti').getContext('2d');
-new Chart(ctx4, {
-    type: 'doughnut',
-    data: {
-        labels: ['Masculino', 'Feminino',],
-        datasets: [{
-            data: [60, 40,],
-            backgroundColor: ['#7d2ae8', '#f7c300']
-        }]
-    },
-    options: semicircleOptionsGenero
-});
+// // Gráfico de Gênero (Instagram)
+// const ctx4 = document.getElementById('generoCharti').getContext('2d');
+// new Chart(ctx4, {
+//     type: 'doughnut',
+//     data: {
+//         labels: ['Masculino', 'Feminino',],
+//         datasets: [{
+//             data: [63.9, 36.1,],
+//             backgroundColor: ['#7d2ae8', '#f7c300']
+//         }]
+//     },
+//     options: semicircleOptionsGenero
+// });
 
 

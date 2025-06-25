@@ -39,9 +39,12 @@
     background-color: var(--color-gray2);
 }
 
+html {
+    
+}
 
 body {
-    background-image: url(/assets/img2/fundo-pc-crimes-reais.png);
+  background-image: url(/assets/img2/fundo-pc-curiosidades-prl.png);
     background-size: contain;
     background-color: #000;
     background-repeat: no-repeat;
@@ -465,8 +468,6 @@ a {
   position: relative;
 }
 
-
-
 .light {
   position: absolute;
   top: 50%;
@@ -555,7 +556,7 @@ a {
   color: #fff;
   font-size: 2rem;
   position: relative;
-  left: 253px;
+  left: 120px;
   text-shadow: 1px 2px 3px rgba(0, 0, 0, 1);
 } 
 .social-container {
@@ -568,14 +569,14 @@ a {
   background: rgba(34, 34, 34, 0.8);
   padding: 10px;
   border-radius: 20px;
-  width: 280px;
-  height: 310px;
+  width: 420px;
+  height: 245px;
   text-align: center;
   justify-content: center;
-  gap: 10px;
+  gap: 70px;
   display: flex;
-  flex-direction: column;
   text-align: center;
+  align-items: center;
 }
 .social-box:hover {
   transform: translateY(-5px);
@@ -584,6 +585,17 @@ a {
 .social-box i {
   font-size: 24px;
 }
+
+.social-box-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  right: 50px;
+}
+
 .followers {
   font-weight: bold;
   color: #fff;

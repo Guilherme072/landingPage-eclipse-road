@@ -107,11 +107,10 @@ const ctx1 = document.getElementById('idadeChart').getContext('2d');
 new Chart(ctx1, {
     type: 'doughnut',
     data: {
-         labels: ['18-24', '25-34', '13-17', '45+'],
+         labels: ['13-17', '18-24', '25-34', '35+'],
         datasets: [{
-            data: [50, 30, 5, 15],
+            data: [18.7, 47.2, 25.4, 8.7],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
-
         }]
     },
     options: semicircleOptionsIdade
@@ -124,7 +123,7 @@ new Chart(ctx2, {
     data: {
         labels: ['Masculino', 'Feminino', 'Outro'],
         datasets: [{
-            data: [55, 43, 2],
+            data: [81.6, 17.1, 1.3],
             backgroundColor: ['#7d2ae8', '#f7c300', '#888888']
         }]
     },
@@ -136,10 +135,10 @@ const ctx3 = document.getElementById('idadeCharti').getContext('2d');
 new Chart(ctx3, {
     type: 'doughnut',
     data: {
-         labels: ['18-24', '13-17', '25-34', '35-44'],
+         labels: ['13-17', '18-24', '25-34', '35-44','45+'],
         datasets: [{
-            data: [48, 7, 35, 10],
-            backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444']
+            data: [22.5, 49.1, 20.3, 6.2, 1.9],
+            backgroundColor: ['#7d2ae8', '#f7c300', '#888888', '#444444', '#555555']
         }]
     },
     options: semicircleOptionsIdade
@@ -150,13 +149,11 @@ const ctx4 = document.getElementById('generoCharti').getContext('2d');
 new Chart(ctx4, {
     type: 'doughnut',
     data: {
-        labels: ['Masculino', 'Feminino',],
+        labels: ['Masculino', 'Feminino'],
         datasets: [{
-            data: [60, 40,],
+            data: [73.4, 26.6],
             backgroundColor: ['#7d2ae8', '#f7c300']
         }]
     },
     options: semicircleOptionsGenero
 });
-
-
