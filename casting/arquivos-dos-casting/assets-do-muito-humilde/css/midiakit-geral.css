@@ -44,7 +44,7 @@ html {
 }
 
 body {
-  background-image: url(/assets/img2/fundo-certo-Luiz.png);
+    background-image: url(/assets/img2/fundo-computador-muito-humilde.png);
     background-size: contain;
     background-color: #000;
     background-repeat: no-repeat;
@@ -468,6 +468,8 @@ a {
   position: relative;
 }
 
+
+
 .light {
   position: absolute;
   top: 50%;
@@ -569,14 +571,14 @@ a {
   background: rgba(34, 34, 34, 0.8);
   padding: 10px;
   border-radius: 20px;
-  width: 420px;
-  height: 245px;
+  width: 280px;
+  height: 310px;
   text-align: center;
   justify-content: center;
-  gap: 70px;
+  gap: 10px;
   display: flex;
+  flex-direction: column;
   text-align: center;
-  align-items: center;
 }
 .social-box:hover {
   transform: translateY(-5px);
@@ -585,17 +587,6 @@ a {
 .social-box i {
   font-size: 24px;
 }
-
-.social-box-2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  right: 50px;
-}
-
 .followers {
   font-weight: bold;
   color: #fff;
@@ -1265,7 +1256,7 @@ a {
   justify-content: space-between; /* Gráficos à esquerda e estatísticas à direita */
   align-items: center;
   position: relative;
-  bottom: 134px;
+  bottom: 137px;
 }
 
 /* Container para os gráficos e legendas */
@@ -1543,19 +1534,6 @@ canvas {
   font-size: 1rem;
   color: transparent;
 }
-
-.basicamente {
-  width: 20%;
-  position: relative;
-  left: 15px;
-  bottom: 45px;
-}
-
-.mrjack {
-  width: 140px;
-}
-
-
 
   
 

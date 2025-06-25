@@ -44,7 +44,7 @@ html {
 }
 
 body {
-  background-image: url(/assets/img2/fundo-certo-Luiz.png);
+  background-image: url(/assets/img2/fundo-pc-gatinhos.png);
     background-size: contain;
     background-color: #000;
     background-repeat: no-repeat;
@@ -556,7 +556,7 @@ a {
   color: #fff;
   font-size: 2rem;
   position: relative;
-  left: 300px;
+  left: 121px;
   text-shadow: 1px 2px 3px rgba(0, 0, 0, 1);
 } 
 .social-container {
@@ -1265,7 +1265,7 @@ a {
   justify-content: space-between; /* Gráficos à esquerda e estatísticas à direita */
   align-items: center;
   position: relative;
-  bottom: 134px;
+  bottom: 137px;
 }
 
 /* Container para os gráficos e legendas */
@@ -1543,19 +1543,6 @@ canvas {
   font-size: 1rem;
   color: transparent;
 }
-
-.basicamente {
-  width: 20%;
-  position: relative;
-  left: 15px;
-  bottom: 45px;
-}
-
-.mrjack {
-  width: 140px;
-}
-
-
 
   
 

@@ -44,7 +44,7 @@ html {
 }
 
 body {
-  background-image: url(/assets/img2/fundo-certo-Luiz.png);
+    background-image: url(/assets/img2/fundo-pc-papos-fut.png);
     background-size: contain;
     background-color: #000;
     background-repeat: no-repeat;
@@ -534,10 +534,11 @@ a {
   position: relative;
   left: 15px;
   margin-top: 90px;
+  gap: 20px;
 }
 .profile img {
-  width: 190px;
-  height: 190px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
 }
 .profile-info {
@@ -556,7 +557,7 @@ a {
   color: #fff;
   font-size: 2rem;
   position: relative;
-  left: 300px;
+  left: 200px;
   text-shadow: 1px 2px 3px rgba(0, 0, 0, 1);
 } 
 .social-container {
@@ -567,15 +568,14 @@ a {
 }
 .social-box {
   background: rgba(34, 34, 34, 0.8);
-  padding: 10px;
+  padding: 25px;
   border-radius: 20px;
-  width: 420px;
-  height: 245px;
+  width: 760px;
+  height: 200px;
   text-align: center;
   justify-content: center;
-  gap: 70px;
+  gap: 20px;
   display: flex;
-  text-align: center;
   align-items: center;
 }
 .social-box:hover {
@@ -585,17 +585,6 @@ a {
 .social-box i {
   font-size: 24px;
 }
-
-.social-box-2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  right: 50px;
-}
-
 .followers {
   font-weight: bold;
   color: #fff;
@@ -603,7 +592,7 @@ a {
 }
 .seguidores {
   font-weight: bold;
-  color: #b187ff;
+  color: #fff;
   font-size: 1.8rem;
 }
 .social-container i  {
@@ -718,6 +707,7 @@ a {
   gap: 700px;
   margin: 0 auto;
   text-align: left;
+  margin-top: 50px;
 }
 .estilo-sobre {
   color: #b187ff;
@@ -1126,7 +1116,7 @@ a {
   top: 90px;
 }
 
-#profilee {
+#poetas {
   width: 270px;
   height: 270px;
   border-radius: 50%;
@@ -1148,7 +1138,7 @@ a {
   width: 25%;
   height: 25%;
   position: relative;
-  bottom: 30px;
+  bottom: 20px;
   left: 10px;
 }
 
@@ -1265,7 +1255,7 @@ a {
   justify-content: space-between; /* Gráficos à esquerda e estatísticas à direita */
   align-items: center;
   position: relative;
-  bottom: 134px;
+  bottom: 137px;
 }
 
 /* Container para os gráficos e legendas */
@@ -1365,7 +1355,16 @@ canvas {
 .about-image-container {
   display: none;
 }
+.seguidores-mobile {
+  display: none;
+}
 
+.parceria {
+  width: 14%;
+  height: 20%;
+  margin-top: 20px;
+}
+  
 /* From Uiverse.io by MuhammadHasann */ 
 .Button {
   --black-700: hsla(0 0% 14% / 1);
@@ -1543,22 +1542,6 @@ canvas {
   font-size: 1rem;
   color: transparent;
 }
-
-.basicamente {
-  width: 20%;
-  position: relative;
-  left: 15px;
-  bottom: 45px;
-}
-
-.mrjack {
-  width: 140px;
-}
-
-
-
-  
-
 
 
 
