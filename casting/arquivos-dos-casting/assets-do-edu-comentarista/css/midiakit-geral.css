@@ -39,10 +39,12 @@
     background-color: var(--color-gray2);
 }
 
-
+html {
+    
+}
 
 body {
-    background-image: url(/assets/img2/fundo-cert-evangelicos-\ PC.png);
+    background-image: url(/assets/img2/comentarista-edu-fundo-PC.png);
     background-size: contain;
     background-color: #000;
     background-repeat: no-repeat;
@@ -1115,7 +1117,7 @@ a {
   top: 90px;
 }
 
-#filipe {
+#profilee {
   width: 270px;
   height: 270px;
   border-radius: 50%;
@@ -1533,11 +1535,6 @@ canvas {
   color: transparent;
 }
 
-.ubsofit {
-  width: 40%;
-  position: relative;
-  top: 18px;
-}
   
 
 

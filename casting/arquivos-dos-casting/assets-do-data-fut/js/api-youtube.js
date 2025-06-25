@@ -11,7 +11,7 @@ function init() {
 function getChannelData() {
     var request = gapi.client.youtube.channels.list({
         part: 'statistics',
-        id: 'UC5Dthna_0bM5_1QFoG2sptQ'
+        id: 'UCKqXFyiXKF8jtYl18EDpHwA'
     });
     request.execute(function(response) {
         var subscriberCount = response.items[0].statistics.subscriberCount;
@@ -26,8 +26,6 @@ window.onload = init;
 function formatNumber(num) {
     if (num >= 1e9) return (num / 1e9).toFixed(2).replace(/\.00$/, '') + "B";
     if (num >= 1e6) return (num / 1e6).toFixed(2).replace(/\.00$/, '') + "";
-
-    if (num >= 1e3) return (num / 1e3).toFixed(2).replace(/\.00$/, '') + "";
-dd2e63db6cc295b4242d66a44834a1b6969a2
+    if (num >= 1e3) return (num / 1e3).toFixed(2).replace(/\.00$/, '') + "K";
     return num.toString();
 }
