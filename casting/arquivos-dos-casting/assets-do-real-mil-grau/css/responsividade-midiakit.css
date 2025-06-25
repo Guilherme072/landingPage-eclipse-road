@@ -47,19 +47,29 @@
   .profile-info h1 {
     font-size: 2rem;
     position: relative;
-    left: 20px;
+
   }
 
   .profile-info p {
     font-size: 25px;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
     position: relative;
-    right: 12px;
+    right: -1px;
 }
 
   .social-container {
     flex-direction: column;
     gap: 20px;
+  }
+
+  .social-box-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    right: 0;
   }
 
   .creator-text {
@@ -100,14 +110,6 @@
     padding-left: 0;     /* Remove o padding da esquerda */
     justify-content: center;  /* Garante que o título será centralizado */
   }
-
-  .seguidores {
-    display: none;
-  }
-
-  .sem-mobile {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -116,7 +118,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/assets/img2/fundo-celular-poetas-fla.png);
+    background-image: url(/assets/img2/fundo-celular-real-mil-grau.png);
   }
   
   .container-inicio {
@@ -184,18 +186,17 @@
   }
 
   .social-container {
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr); */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     position: relative;
     bottom: 30px;
     margin-top: 80px;
   }
 
   .social-box {
-    width: 220px;
-    height: 245px;
+    width: 165px;
+    height: 230px;
     gap: 2px;
-    display: flex;
     flex-direction: column;
   }
   
@@ -252,9 +253,10 @@
     order: 1;
     align-self: flex-end;
     position: relative;
-    bottom: 440px;
-    width: 65%;
+    bottom: 580px;
+    width: 70%;
     height: 30%;
+    left: 45px;
   }
 
   .about-image-container {
@@ -320,6 +322,8 @@
     width: 100%;
     padding: 10px 0;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
   }
 
   .carousel-container::before,
@@ -391,7 +395,7 @@
     justify-content: center;
     width: 100%;
     position: relative;
-    bottom: 315px;
+    bottom: 390px;
 }
   .container-graficoi {
     flex-direction: column-reverse;
@@ -445,16 +449,16 @@ canvas {
     height: auto !important;
     position: relative;
     bottom: 170px;
-    right: 20px;
+    right: 40px;
 }
 
-#poetas {
+#profilee {
   position: relative;
   right: 10px;
 }
 
 .grafico-container span {
-  bottom: 170px;
+  bottom: 180px;
 position: relative;
 }
 .grafico-containeri span {
@@ -462,12 +466,8 @@ position: relative;
 position: relative;
 }
 
-.parceria {
-  width: 40%;
-  height: 40%;
+.fut-interativo {
+  width: 90%;
 }
 
-.footer {
-  display: none;
-}
 }

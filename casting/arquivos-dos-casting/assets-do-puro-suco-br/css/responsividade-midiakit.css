@@ -47,14 +47,14 @@
   .profile-info h1 {
     font-size: 2rem;
     position: relative;
-    left: 20px;
+    left: -5px;
   }
 
   .profile-info p {
     font-size: 25px;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
     position: relative;
-    right: 12px;
+    right: -43px;
 }
 
   .social-container {
@@ -116,7 +116,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/assets/img2/fundo-celular-poetas-fla.png);
+    background-image: url(/assets/img2/fundo-celular-puro-suco-do-brasil.png);
   }
   
   .container-inicio {

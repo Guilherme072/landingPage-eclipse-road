@@ -44,7 +44,7 @@ html {
 }
 
 body {
-    background-image: url(/assets/img2/fundo-pc-poetas-fla.png);
+    background-image: url(/assets/img2/fundo-pc-sucumba-games.png);
     background-size: contain;
     background-color: #000;
     background-repeat: no-repeat;
@@ -468,6 +468,8 @@ a {
   position: relative;
 }
 
+
+
 .light {
   position: absolute;
   top: 50%;
@@ -534,11 +536,10 @@ a {
   position: relative;
   left: 15px;
   margin-top: 90px;
-  gap: 20px;
 }
 .profile img {
-  width: 160px;
-  height: 160px;
+  width: 190px;
+  height: 190px;
   border-radius: 50%;
 }
 .profile-info {
@@ -568,15 +569,16 @@ a {
 }
 .social-box {
   background: rgba(34, 34, 34, 0.8);
-  padding: 25px;
+  padding: 10px;
   border-radius: 20px;
-  width: 760px;
-  height: 200px;
+  width: 280px;
+  height: 310px;
   text-align: center;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 .social-box:hover {
   transform: translateY(-5px);
@@ -592,7 +594,7 @@ a {
 }
 .seguidores {
   font-weight: bold;
-  color: #fff;
+  color: #b187ff;
   font-size: 1.8rem;
 }
 .social-container i  {
@@ -707,7 +709,6 @@ a {
   gap: 700px;
   margin: 0 auto;
   text-align: left;
-  margin-top: 50px;
 }
 .estilo-sobre {
   color: #b187ff;
@@ -1116,7 +1117,7 @@ a {
   top: 90px;
 }
 
-#poetas {
+#profilee {
   width: 270px;
   height: 270px;
   border-radius: 50%;
@@ -1138,7 +1139,7 @@ a {
   width: 25%;
   height: 25%;
   position: relative;
-  bottom: 20px;
+  bottom: 30px;
   left: 10px;
 }
 
@@ -1355,16 +1356,7 @@ canvas {
 .about-image-container {
   display: none;
 }
-.seguidores-mobile {
-  display: none;
-}
 
-.parceria {
-  width: 14%;
-  height: 20%;
-  margin-top: 20px;
-}
-  
 /* From Uiverse.io by MuhammadHasann */ 
 .Button {
   --black-700: hsla(0 0% 14% / 1);
@@ -1542,6 +1534,9 @@ canvas {
   font-size: 1rem;
   color: transparent;
 }
+
+  
+
 
 
 
