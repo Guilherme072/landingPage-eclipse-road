@@ -1,0 +1,473 @@
+@media screen and (max-width: 1024px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  
+  .container {
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin-top: -75px;
+  }
+
+  .about-text {
+    left: 0;
+    text-align: center;
+  }
+
+  .contact-section-temporario {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  
+  .navbar {
+    display: none;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-info h1 {
+    font-size: 2rem;
+    position: relative;
+
+  }
+
+  .profile-info p {
+    font-size: 25px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    right: -5px;
+}
+
+  .social-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .social-box-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    right: 0;
+  }
+
+  .creator-text {
+    display: none;
+  }
+
+  .contact-section-temporario {
+    width: auto;
+    max-width: 500px;
+    padding: 15px;
+  }
+
+  .popup-button {
+    width: 140px; /* Botões ocupam toda a largura do contêiner */
+  max-width: 180px; /* Limitar largura máxima */
+  height: 50px; /* Altura fixa para todos os botões */
+  }
+
+  .about-text {
+    display: flex;
+    flex-direction: column; /* Mantém o título e o texto em coluna */
+    align-items: center; /* Alinha tudo à esquerda */
+    text-align: justify;
+    flex: 1;
+    max-width: 500px;
+  }
+  .about-text p {
+    font-size: 20px;
+    color: white;
+    line-height: 1.1;
+    max-width: 600px;
+    text-align: left;
+    margin: 0 auto;
+    top: 15px;
+  }
+  .about-text h2 {
+    text-align: center;  /* Centraliza o título no celular */
+    padding-left: 0;     /* Remove o padding da esquerda */
+    justify-content: center;  /* Garante que o título será centralizado */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html, body {
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/assets/img2/fundo-celular-massinha-f1.png);
+  }
+  
+  .container-inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+   
+  .nav-menu a {
+    font-size: 30px;
+}
+.header {
+    padding: 0.4rem 2.2rem;
+}
+.logo img {
+    width: 110px;
+}
+
+.logo {
+    display: block;
+    width: 0;
+}
+.hamburger {
+    display: block; /* Exibe o menu hambúrguer */
+    margin-left: 20px;
+  }
+
+.hamburger svg {
+    display: flex;
+}  
+
+
+.search-container {
+    display: none; /* Esconde a barra de pesquisa em telas menores */
+  }
+
+.search-container input {
+    display: none;
+}  
+
+.navbar-links {
+    display: none; /* Esconde os links da barra de navegação em telas menores */
+    position: absolute;
+    top: 60px; /* Ajuste a distância do topo para que os links fiquem abaixo do menu hambúrguer */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    z-index: 5;
+  }
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    z-index: 100;
+    width: 100%; 
+}
+
+  .navbar {
+    display: none;
+  }
+
+  .social-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    bottom: 30px;
+    margin-top: 80px;
+  }
+
+  .social-box {
+    width: 165px;
+    height: 230px;
+    gap: 2px;
+    flex-direction: column;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+   
+}
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Se precisar de ajuste vertical */
+    text-align: center;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .carouselTitle {
+    font-size: 30px;
+    margin-top: -400px;
+}
+
+  .contact-section-temporario {
+    width: 100%;
+    height: 140px;
+    padding: 20px;
+  }
+
+  .new-contact {
+    font-size: 20px;
+  }
+
+  .popup-button {
+    width: 170px;
+    height: 48px;
+    font-size: 18px;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 130px;
+    width: 100%;
+  }
+
+  #push {
+    order: 1;
+    align-self: flex-end;
+    position: relative;
+    bottom: 580px;
+    width: 70%;
+    height: 30%;
+    left: 45px;
+  }
+
+  .about-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+  }
+
+  .vertical-text {
+    transform: translateY(-10%);
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    letter-spacing: 3px;
+    order: -1;
+    position: relative;
+    right: 120px;
+  }
+
+  .about-text p {
+    font-size: 1.1rem;
+    text-align: center;
+    color: white;
+    max-width: 90%;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+
+  .about-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -45px;
+  }
+  
+  .about-text h2 {
+    font-size: 2.5rem; /* Ajuste conforme necessário */
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .vertical-text span {
+    font-family: 'Caveat', cursive;
+  }
+  .estilo-unico {
+    color: #836FFF;
+  }
+
+  #scene {
+    width: auto;
+    height: auto;
+  }
+
+  .carousel-container {
+    width: 100%;
+    padding: 10px 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+
+  .carousel-container::before,
+  .carousel-container::after {
+    width: 10px; /* Reduz o efeito fade */
+  }
+
+  #icon-twitter {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    bottom: 14px;
+  }
+  #icon-youtube {
+    width: 70px;
+    height: 70px;
+  }
+  #icon-instagram {
+    width: 70px;
+    height: 70px;
+  }
+  #icon-facebook {
+    width: 70px;
+    height: 70px;
+  }
+  #icon-tiktok {
+    width: 70px;
+    height: 70px;
+  }
+
+  .user {
+    font-size: 20px;
+  }
+
+  .followers {
+    font-size: 25px;
+  }
+
+  .seguidores {
+    font-size: 20px;
+  }
+
+  .off-mobile {
+    display: none;
+  }
+
+  .share-btn {
+    display: none;
+  }
+  
+  .share-btn-mobile {
+    background: white;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin-top: 15px;
+  text-decoration: none;
+  display: flex;
+  cursor: pointer;
+  justify-content: end;
+  width: 125px;
+  height: 42px;
+  align-items: center;
+  }
+
+  .container-grafico {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    bottom: 390px;
+}
+  .container-graficoi {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    bottom: 315px;
+}
+
+.graficos, .graficosi {
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+}
+
+.grafico-container {
+    width: 100%; /* Aumenta o espaço dos gráficos */
+    max-width: 400px;
+    right: 80px;
+    bottom: 60px;
+    position: relative;
+}
+.grafico-containeri {
+    width: 50%; /* Aumenta o espaço dos gráficos */
+    max-width: 400px;
+    right: 80px;
+    bottom: 60px;
+    position: relative;
+}
+
+.estatisticas {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: -185px;
+  right: 0;
+  font-size: 24px;
+}
+.estatisticasi {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: -185px;
+  left: 0px;
+  font-size: 24px;
+}
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
+    position: relative;
+    bottom: 170px;
+    right: 40px;
+}
+
+#profilee {
+  position: relative;
+  right: 10px;
+}
+
+.grafico-container span {
+  bottom: 180px;
+position: relative;
+}
+.grafico-containeri span {
+  bottom: 180px;
+position: relative;
+}
+
+.fut-interativo {
+  width: 90%;
+}
+
+}

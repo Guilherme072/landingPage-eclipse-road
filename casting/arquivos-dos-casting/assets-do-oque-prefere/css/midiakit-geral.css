@@ -1265,7 +1265,7 @@ a {
   justify-content: space-between; /* Gráficos à esquerda e estatísticas à direita */
   align-items: center;
   position: relative;
-  bottom: 200px;
+  bottom: 134px;
 }
 
 /* Container para os gráficos e legendas */

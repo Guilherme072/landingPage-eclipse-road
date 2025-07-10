@@ -39,12 +39,9 @@
     background-color: var(--color-gray2);
 }
 
-html {
-    
-}
 
 body {
-    background-image: url(/assets/img2/fundo-pc-crimes.png);
+    background-image: url(/assets/img2/fundo-pc-crimes-reais.png);
     background-size: contain;
     background-color: #000;
     background-repeat: no-repeat;
@@ -558,7 +555,7 @@ a {
   color: #fff;
   font-size: 2rem;
   position: relative;
-  left: 300px;
+  left: 253px;
   text-shadow: 1px 2px 3px rgba(0, 0, 0, 1);
 } 
 .social-container {
@@ -1256,7 +1253,7 @@ a {
   justify-content: space-between; /* Gráficos à esquerda e estatísticas à direita */
   align-items: center;
   position: relative;
-  bottom: 200px;
+  bottom: 137px;
 }
 
 /* Container para os gráficos e legendas */
