@@ -623,6 +623,28 @@ a {
   padding: 0 2rem;
 }
 
+.top-background {
+  background-image: url(/assets/img2/fundokerbitos.png);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.mask-fake {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 185px;
+  width: 100%;
+  background: linear-gradient(to bottom, #000, transparent);
+}
+
 /* Space Background */
 .space-background {
   position: fixed;
@@ -831,13 +853,14 @@ a {
 }
 
 .profile-image {
-  width: 6rem;
-  height: 6rem;
+  width: 9rem;
+  height: 9rem;
   border-radius: 50%;
   overflow: hidden;
   border: 2px solid #4b5563;
   background: rgba(75, 85, 99, 0.5);
   backdrop-filter: blur(10px);
+  margin-left: 1.7rem;
 }
 
 .profile-image img {
@@ -866,38 +889,36 @@ a {
   font-size: 1.75rem;
   font-weight: bold;
   letter-spacing: 0.1em;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-.verified-badge {
-  width: 1.25rem;
-  height: 1.25rem;
-  background: #3b82f6;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 0.625rem;
+
+.verificadoMK{
+  width: 40px;
+  height: 40px;
 }
 
 .followers-count {
-  font-size: 1rem;
-  color: #9ca3af;
+  font-size: 1.5rem;
+  color:#fff;
   margin: 0;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .profile-description {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin-left: 0;
-  margin-right: 0;
+  margin-right: 190px;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 1);
+  font-weight: bold;
 }
 
 #typingtext {
-  color: #b187ff;
+  color: #D494FF;
 }
 
 .highlight {
-  color: #b187ff;
+  color: #D494FF;
 }
 
 /* Social Stats - DESKTOP LAYOUT BY DEFAULT */
@@ -930,6 +951,8 @@ a {
 
 .stat-card:hover {
   border-color: rgba(177, 135, 255, 0.5);
+  transform: translateY(-5px);
+  box-shadow: 2px 2px 12px #836FFF;
 }
 
 .stat-card i {
@@ -940,13 +963,13 @@ a {
 .stat-card i:hover {
   font-size: 3rem;
   margin-bottom: 0.75rem;
-  color: #b187ff;
+  color: #D494FF;
 }
 
 .username {
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #9ca3af;
+  color: #fff;
 }
 
 .stat-numbers {
@@ -956,7 +979,7 @@ a {
 .number-highlight {
   font-size: 1.75rem;
   font-weight: bold;
-  color: #b187ff;
+  color: #D494FF;
 }
 
 .number-white {
@@ -966,8 +989,8 @@ a {
 }
 
 .stat-label {
-  font-size: 0.875rem;
-  color: #b187ff;
+  font-size: 1.3rem;
+  color: #D494FF;
 }
 
 /* About Section - DESKTOP LAYOUT BY DEFAULT */
@@ -1027,7 +1050,7 @@ a {
 
 .demo-value {
   font-size: 1rem;
-  color: #b187ff;
+  color: #D494FF;
   font-weight: bold;
 }
 
@@ -1067,7 +1090,7 @@ a {
 .tab-btn:hover,
 .tab-btn.active {
   background: rgba(177, 135, 255, 0.2);
-  color: #b187ff;
+  color: #D494FF;
 }
 
 .tab-btn i {
@@ -1129,7 +1152,7 @@ a {
 .metric-value {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #b187ff;
+  color: #D494FF;
 }
 
 .demographics-data,
@@ -1151,7 +1174,7 @@ a {
 
 .content-value {
   font-size: 1rem;
-  color: #b187ff;
+  color: #D494FF;
   font-weight: bold;
 }
 
@@ -1198,29 +1221,12 @@ a {
   background: transparent;
   padding: 20px 0;
   top: 10px;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
 }
 
 /* Efeito fade nas extremidades do carrossel (Início e Final) */
-.carrousel-container::before,
-.carrousel-container::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 850px; /* Ajuste a largura da opacidade conforme necessário */
-  height: 100%;
-  z-index: 1;
-  pointer-events: none;
-}
 
-.carousel-container::before {
-  left: 0;
-  background: linear-gradient(to right, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
-}
-
-.carousel-container::after {
-  right: 0;
-  background: linear-gradient(to left, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
-}
 
 /* Configuração do carrossel */
 .carousel {
@@ -1326,7 +1332,7 @@ a {
 }
 
 .play-btn:hover {
-  background: #b187ff;
+  background: #D494FF;
 }
 
 .duration-badge {
@@ -1367,7 +1373,7 @@ a {
 }
 
 .video-card:hover .video-info h3 {
-  color: #b187ff;
+  color: #D494FF;
 }
 
 .video-info p {
@@ -1409,7 +1415,7 @@ a {
 .see-more-btn {
   background: transparent;
   border: none;
-  color: #b187ff;
+  color: #D494FF;
   font-size: 0.75rem;
   cursor: pointer;
   transition: color 0.3s;
@@ -1482,7 +1488,7 @@ a {
 }
 
 .dot.active {
-  background: #b187ff;
+  background: #D494FF;
 }
 
 /* CTA Section - DESKTOP LAYOUT BY DEFAULT */
@@ -1575,14 +1581,14 @@ a {
 }
 
 .suggestions-title i {
-  color: #b187ff;
+  color: #D494FF;
   font-size: 1.5rem;
 }
 
 .see-all-btn {
   background: transparent;
   border: 1px solid rgba(177, 135, 255, 0.5);
-  color: #b187ff;
+  color: #D494FF;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   cursor: pointer;
@@ -1618,7 +1624,7 @@ a {
 
 .suggestion-image img {
   border-radius: 1rem;
-  border: 3px solid #b187ff;
+  border: 3px solid #D494FF;
 }
 
 .my-gradient-overlay {
@@ -1641,13 +1647,13 @@ a {
   width: 100%;
   aspect-ratio: 1;
   border-radius: 1rem;
-  background: linear-gradient(135deg, #b187ff, #9d5cff);
+  background: linear-gradient(135deg, #D494FF, #9d5cff);
   padding: 2px;
   transition: all 0.3s;
 }
 
 .suggestion-card:hover .image-border {
-  background: linear-gradient(135deg, #c49fff, #b187ff);
+  background: linear-gradient(135deg, #c49fff, #D494FF);
   box-shadow: 0 10px 25px rgba(177, 135, 255, 0.25);
 }
 
@@ -1691,7 +1697,7 @@ a {
   right: -0.25rem;
   width: 1.5rem;
   height: 1.5rem;
-  background: #b187ff;
+  background: #D494FF;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1715,7 +1721,7 @@ a {
 }
 
 .suggestion-card:hover .suggestion-info h3 {
-  color: #b187ff;
+  color: #D494FF;
 }
 
 .suggestion-info p {
@@ -1728,7 +1734,7 @@ a {
   display: inline-block;
   padding: 0.25rem 0.5rem;
   background: rgba(177, 135, 255, 0.2);
-  color: #b187ff;
+  color: #D494FF;
   font-size: 0.625rem;
   border-radius: 9999px;
   border: 1px solid rgba(177, 135, 255, 0.3);
@@ -1761,7 +1767,7 @@ a {
 }
 
 .pagination-dot.active {
-  background: #b187ff;
+  background: #D494FF;
 }
 
 .pagination-text {
