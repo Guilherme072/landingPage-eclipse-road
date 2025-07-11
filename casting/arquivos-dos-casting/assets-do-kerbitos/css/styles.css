@@ -1020,6 +1020,10 @@ a {
   padding: 1.5rem;
   min-height: 300px;
 }
+.about-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(177, 135, 255, 0.5);
+}
 
 .about-card h3 {
   font-size: 1.125rem;
@@ -1027,10 +1031,10 @@ a {
   margin-bottom: 1rem;
 }
 
-.about-card p {
+/* .about-card p {
   color: #fff;
   line-height: 1.6;
-}
+} */
 
 .demographics-grid {
   display: grid;
@@ -1043,7 +1047,7 @@ a {
 }
 
 .demo-label {
-  color: #9ca3af;
+  color:rgb(255, 255, 255);
   font-size: 0.875rem;
   margin-bottom: 0.25rem;
 }
@@ -1122,6 +1126,10 @@ a {
   border: 1px solid rgba(75, 85, 99, 0.5);
   border-radius: 0.75rem;
   padding: 1.5rem;
+}
+.metric-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(177, 135, 255, 0.5);
 }
 
 .metric-card h3 {
