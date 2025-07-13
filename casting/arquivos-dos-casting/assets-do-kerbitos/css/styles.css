@@ -624,25 +624,16 @@ a {
 }
 
 .top-background {
-  background-image: url(/assets/img2/fundokerbitos.png);
+  background-image: url(/assets/img2/teste-fundo-kerbitos.png);
   background-size: cover;
   background-position: center;
-  position: absolute;
+  position: absolute; /* Mantém a imagem de fundo cobrindo o topo da tela */
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 100vh; /* Ocupa a altura total da viewport */
   width: 100%;
-  z-index: 1;
+  z-index: 1; /* Garante que fique acima de outros elementos de fundo, mas abaixo do conteúdo principal */
   overflow: hidden;
-}
-
-.mask-fake {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 185px;
-  width: 100%;
-  background: linear-gradient(to bottom, #000, transparent);
 }
 
 /* Space Background */
@@ -968,12 +959,11 @@ a {
 
 .username {
   font-size: 1.5rem;
-  margin-bottom: 0.5rem;
   color: #fff;
 }
 
 .stat-numbers {
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
 }
 
 .number-highlight {
@@ -991,6 +981,8 @@ a {
 .stat-label {
   font-size: 1.3rem;
   color: #D494FF;
+  position: relative;
+  bottom: 10px;
 }
 
 /* About Section - DESKTOP LAYOUT BY DEFAULT */
@@ -1207,6 +1199,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.collaboration-card:hover {
+  border-color: rgba(177, 135, 255, 0.5);
 }
 
 .logo-placeholder {
@@ -2200,6 +2195,12 @@ a {
     flex-direction: column;
     text-align: center;
   }
+
+  .top-background {
+  background-image: url(/assets/img2/fundo-kerbitos-celular.png);
+  background-size: cover;
+  background-position: center;
+  }
 }
 
 /* Mobile Large (480px - 767px) */
@@ -2295,6 +2296,12 @@ a {
   .footer-content {
     flex-direction: column;
     text-align: center;
+  }
+
+  .top-background {
+  background-image: url(/assets/img2/fundo-kerbitos-celular.png);
+  background-size: cover;
+  background-position: center;
   }
 }
 
@@ -2407,6 +2414,8 @@ a {
   .social-icon-link {
     width: 45px;
     height: 45px;
+    position: relative;
+    top: 10px;
   }
 
   .social-svg {
